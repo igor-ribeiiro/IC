@@ -48,35 +48,34 @@
 \section{Resumo do Plano Inicial}
 \label{secao:plano_inicial}
 
-O objetivo deste trabalho é desenvolver e implementar um algoritmo para planejamento de trajetória para um robô diferencial. O contexto é uma partida de futebol segundo a Competição Brasileira de Robótica (CBR), categoria IEEE Very Small Size Soccer. A partir da posição do robô, da bola e dos oponentes no campo, traçar a melhor trajetória para que ele chegue à bola com o ângulo adequado e leve-a ao gol oponente considerando as limitações mecânicas – o robô recebe apenas as velocidades das duas rodas. Visa-se utilizar os algoritmos aqui implementados pela equipe da ITAndroids, que representa o ITA, na competição da Latin America Robotics Competition (LARC)/CBR de 2015 em diante.
+O objetivo deste trabalho é desenvolver e implementar um algoritmo para a estratégia de um time composto por três robôs diferenciais. O contexto é uma partida de futebol segundo a Competição Brasileira de Robótica (CBR), categoria IEEE Very Small Size Soccer. A partir da posição de cada robô, incluindo robôs oponentes, e da bola, deve-se obter a melhor ação que cada robô aliado deverá executar para que faça o maior número de gols no fim de uma partida considerando limitações mecânicas e de controle. Visa-se utilizar os algoritmos aqui implementados pela equipe da ITAndroids, que representa o ITA, na competição da Latin America Robotics Competition (LARC)/CBR de 2017 em diante.
 
 Planejamento:
 \begin{itemize}
 
-\item 1o Bimestre (ago / set): Estudo da literatura e revisão bibliográfica sobre o tema de planejamento de trajetórias na presença de obstáculos.
+\item 1o Bimestre (ago / set): Estudo da literatura e revisão bibliográfica sobre o tema de tomada de decisão para robôs jogadores de futebol.
 
 \item 2o Bimestre (out / nov): Seleção de métodos a serem implementados para planejamento e codificação da implementação.
 
-\item 3o Bimestre (dez / jan): Simulações computacionais da aplicação dos métodos para cenário simplificado: um robô e obstáculos fixos. Redação do relatório parcial.
+\item 3o Bimestre (dez / jan): Codificação de testes automatizados para comprovação da correta implementação do algoritmo. Redação do relatório parcial.
 
-\item 4o Bimestre (fev / mar): Simulações computacionais da aplicação dos métodos em cenários realistas de futebol de robôs: múltiplos robôs e obstáculos móveis.
+\item 4o Bimestre (fev / mar): Simulações computacionais de um partida completa para análise e adaptações do método em cenários realistas de futebol de robôs.
 
-\item 5o Bimestre (abr / mai): Análise dos algoritmos implementados em termos de carga computacional e eficácia.
+\item 5o Bimestre (abr / mai): Análise dos algoritmos implementados em termos de carga computacional e eficácia. Integração da estratégia com o restante do código.
 
-\item 6o Bimestre (jun / jul): Redação do relatório final. Redação do artigo para o ENCITA.
+\item 6o Bimestre (jun / jul): Redação do relatório final. Redação do artigo para o ENCITA. Teste final para o software completo no robô real, com todas as áreas do projeto operantes.
 
 \end{itemize}
 
 \section{Resumo das Atividades Realizadas}
 \label{secao:atividades_realizadas}
 
-Ao longo do primeiro mês, foram realizados estudos e foi decidido que será usado um sistema de controle preditivo para a navegação e controle do robô. A seguir, no segundo mês, foram escolhidos três métodos de planejamento de trajetórias para serem implementados e repassados ao controlador: um baseado em campos potenciais, um em Rapidly-exploring Random Tree (RRT), e um modelando o problema de navegação como um de otimização.
+Ao longo dos dois primeiros meses, foram realizados estudos e foi decidido que será usado o algoritmo Behavior Tree (Árvore de Comportamentos) para tomada de decisão. Esse algoritmo foi escolhido dentre de opções como Máquina de Estados Finita, Árvore de Decisões e Action Chain. Uma introdução a esses assuntos que não foram escolhidos pode ser encontrada em ARTIGO DA MÁQUINA DE ESTADOS para máquina de estados finita; Russel e Norvig, 2009, para Árvore de Decisões e ARTIGO PARA ACTION CHAIN para Action Chain. 
 
-Ao longo do segundo e terceiro bimestres, os algoritmos foram todos implementados utilizando a plataforma MATLAB e foi realizada a simulação para o cenário simplificado (nenhum obstáculo móvel). Foi realizado o ajuste de constantes e os dois primeiros mostraram resultados satisfatórios e condizentes com o que foi previsto. No quarto bimestre, foi realizado o levantamento da carga computacional para ambos os métodos, além de otimizações.
+Ao longo do segundo e terceiro bimestres, a base do algoritmo foi implementada utilizando C++, que é a linguagem utilizada pela equipe. Foi, em seguida, realizada a codificação dos testes de unidade para os componentes principais do algoritmo, os nós intermediários da árvore. A performance computacional da Behavior Tree foi analisada e mostrou resultados satisfatórios e condizentes com o que foi previsto. A estrutura básica do algoritmo estava pronta.
 
-O método de campos potenciais foi implementado em C++ e testado no robô real para uso efetivo na competição, ocorrida entre os dias 28 de outubro e 1 de novembro de 2015. As funções de desvio de obstáculos apresentaram problemas de codificação. O algoritmo, porém, funcionou perfeitamente com estas funções desativadas. A equipe da ITAndroids conquistou o quarto lugar de 30.
-
-O algoritmo de RRT foi implementado em C++ de forma compatível com o robô real e os testes desse código em cenário realista foram feitos com o auxílio do MATLAB. O método de modelar o problema de navegação como de otimização foi testado e reprovado no requisito de tempo e de precisão ainda na simulação com cenário simples.
+A parte da Behavior Tree que considera as limitações de um robô real foi implementada e testada no time. 
+O método  foi mostrado efetivo na competição, ocorrida entre os dias 7 a 11 de novembro de 2017. O algoritmo mostrou que realiza troca de posições entre jogadores de forma fluida, de modo que a equipe tinha o posicionamento mais dinâmico da competição. A equipe da ITAndroids conquistou o sétimo lugar de 30.
 
 \section{Descrição do Problema}
 \label{secao:enunciado_problema}
@@ -569,7 +568,7 @@ Do ponto de vista técnico, o uso do algoritmo já consagrado de planejamento po
 
 \section{Bibliografia}
 
+- S. Russel and P. Norvig (2009), Prentice Hall, 3rd Edition. \textit{Artificial Intelligence: A Modern Approach}. v.3, pp. 697-707
 
-\printbibliography[heading=none]
 
 \end{document}
