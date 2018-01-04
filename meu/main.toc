@@ -1,0 +1,39 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\defcounter {refsection}{0}\relax 
+\select@language {brazil}
+\defcounter {refsection}{0}\relax 
+\select@language {brazil}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1}Resumo do Plano Inicial}{5}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2}Resumo das Atividades Realizadas}{5}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3}Descri\IeC {\c c}\IeC {\~a}o do Problema}{6}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.1}Campos Potenciais}{8}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.2}RRT}{9}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.3}Otimiza\IeC {\c c}\IeC {\~a}o com Mixed Integer-Linear Programming (MILP)}{12}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.3.1}Navega\IeC {\c c}\IeC {\~a}o sobre todo o campo}{12}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.3.2}Navega\IeC {\c c}\IeC {\~a}o por uma triangula\IeC {\c c}\IeC {\~a}o}{14}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4}Resultados Obtidos}{16}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.1}Campos potenciais}{18}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.2}RRT}{18}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.3}Otimiza\IeC {\c c}\IeC {\~a}o com MILP}{20}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {4.3.1}Navega\IeC {\c c}\IeC {\~a}o sobre todo o campo}{20}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {4.3.2}Navega\IeC {\c c}\IeC {\~a}o por uma triangula\IeC {\c c}\IeC {\~a}o}{21}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5}Conclus\IeC {\~o}es}{22}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6}Agradecimentos}{22}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7}Bibliografia}{22}
