@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.23)  4 JAN 2018 17:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.23)  14 JAN 2018 22:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -872,18 +872,18 @@ LaTeX Warning: Label `euclid' multiply defined.
 )
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
  (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count308
@@ -985,12 +985,12 @@ Package biblatex Warning: Data encoding is 'utf8'.
 \openout3 = `main-blx.bib'.
 
 Package biblatex Info: Trying to load bibliographic data...
-Package biblatex Info: ... file 'main.bbl' not found.
-No file main.bbl.
-Package biblatex Info: Reference section=0 on input line 38.
-Package biblatex Info: Reference segment=0 on input line 38.
+Package biblatex Info: ... file 'main.bbl' found.
+(./main.bbl)
+Package biblatex Info: Reference section=0 on input line 37.
+Package biblatex Info: Reference segment=0 on input line 37.
 \AtBeginShipoutBox=\box33
-(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/pdflscape.sty
+ (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/pdflscape.sty
 Package: pdflscape 2008/08/11 v0.10 Display of landscape pages in PDF (HO)
 
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/lscape.sty
@@ -1001,35 +1001,35 @@ Package pdflscape Info: Auto-detected driver: pdftex on input line 80.
 <Inicio.pdf, id=1, 597.23125pt x 845.1575pt>
 File: Inicio.pdf Graphic file (type pdf)
  <use Inicio.pdf>
-Package pdftex.def Info: Inicio.pdf used on input line 41.
+Package pdftex.def Info: Inicio.pdf used on input line 40.
 (pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
 File: Inicio.pdf Graphic file (type pdf)
  <use Inicio.pdf>
-Package pdftex.def Info: Inicio.pdf used on input line 41.
+Package pdftex.def Info: Inicio.pdf used on input line 40.
 (pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
 
 <Inicio.pdf, id=4, page=1, 597.23125pt x 845.1575pt>
 File: Inicio.pdf Graphic file (type pdf)
  <use Inicio.pdf, page 1>
-Package pdftex.def Info: Inicio.pdf, page1 used on input line 41.
+Package pdftex.def Info: Inicio.pdf, page1 used on input line 40.
 (pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
 File: Inicio.pdf Graphic file (type pdf)
 
 <use Inicio.pdf, page 1>
-Package pdftex.def Info: Inicio.pdf, page1 used on input line 41.
+Package pdftex.def Info: Inicio.pdf, page1 used on input line 40.
 (pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
 File: Inicio.pdf Graphic file (type pdf)
  <use Inicio.pdf, page 1>
-Package pdftex.def Info: Inicio.pdf, page1 used on input line 41.
+Package pdftex.def Info: Inicio.pdf, page1 used on input line 40.
 (pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
 File: Inicio.pdf Graphic file (type pdf)
  <use Inicio.pdf, page 1>
-Package pdftex.def Info: Inicio.pdf, page1 used on input line 41.
+Package pdftex.def Info: Inicio.pdf, page1 used on input line 40.
 (pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
 File: Inicio.pdf Graphic file (type pdf)
 
 <use Inicio.pdf, page 1>
-Package pdftex.def Info: Inicio.pdf, page1 used on input line 41.
+Package pdftex.def Info: Inicio.pdf, page1 used on input line 40.
 (pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
  [1
 
@@ -1037,31 +1037,31 @@ Package pdftex.def Info: Inicio.pdf, page1 used on input line 41.
 <Inicio.pdf, id=56, page=2, 597.23125pt x 845.1575pt>
 File: Inicio.pdf Graphic file (type pdf)
  <use Inicio.pdf, page 2>
-Package pdftex.def Info: Inicio.pdf, page2 used on input line 41.
+Package pdftex.def Info: Inicio.pdf, page2 used on input line 40.
 (pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
 File: Inicio.pdf Graphic file (type pdf)
 
 <use Inicio.pdf, page 2>
-Package pdftex.def Info: Inicio.pdf, page2 used on input line 41.
+Package pdftex.def Info: Inicio.pdf, page2 used on input line 40.
 (pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
 File: Inicio.pdf Graphic file (type pdf)
  <use Inicio.pdf, page 2>
-Package pdftex.def Info: Inicio.pdf, page2 used on input line 41.
+Package pdftex.def Info: Inicio.pdf, page2 used on input line 40.
 (pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
  [2 <./Inicio.pdf>]
 <Inicio.pdf, id=61, page=3, 597.23125pt x 845.1575pt>
 File: Inicio.pdf Graphic file (type pdf)
  <use Inicio.pdf, page 3>
-Package pdftex.def Info: Inicio.pdf, page3 used on input line 41.
+Package pdftex.def Info: Inicio.pdf, page3 used on input line 40.
 (pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
 File: Inicio.pdf Graphic file (type pdf)
 
 <use Inicio.pdf, page 3>
-Package pdftex.def Info: Inicio.pdf, page3 used on input line 41.
+Package pdftex.def Info: Inicio.pdf, page3 used on input line 40.
 (pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
 File: Inicio.pdf Graphic file (type pdf)
  <use Inicio.pdf, page 3>
-Package pdftex.def Info: Inicio.pdf, page3 used on input line 41.
+Package pdftex.def Info: Inicio.pdf, page3 used on input line 40.
 (pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
  [3 <./Inicio.pdf>]
 (./main.toc
@@ -1078,21 +1078,18 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 \openout4 = `main.toc'.
 
  [4{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 56.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 55.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 56.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 55.
  [5]
-
-LaTeX Warning: Citation 'cbr2008' on page 6 undefined on input line 85.
-
 <figures/vss.JPG, id=75, 3276.24pt x 2457.18pt>
 File: figures/vss.JPG Graphic file (type jpg)
  <use figures/vss.JPG>
-Package pdftex.def Info: figures/vss.JPG used on input line 92.
+Package pdftex.def Info: figures/vss.JPG used on input line 93.
 (pdftex.def)             Requested size: 227.62206pt x 170.7079pt.
  [6]
 [7 <./figures/vss.JPG>] [8]
@@ -1100,166 +1097,119 @@ Package pdftex.def Info: figures/vss.JPG used on input line 92.
 File: figures/thetamax.jpg Graphic file (type jpg)
 
 <use figures/thetamax.jpg>
-Package pdftex.def Info: figures/thetamax.jpg used on input line 160.
+Package pdftex.def Info: figures/thetamax.jpg used on input line 161.
 (pdftex.def)             Requested size: 227.62206pt x 141.94037pt.
-
-
-LaTeX Warning: Citation 'lavalle2011' on page 9 undefined on input line 166.
-
-[9 <./figures/thetamax.jpg>]
-
-LaTeX Warning: Citation 'james2002' on page 10 undefined on input line 168.
-
+ [9 <./figures/thetamax.jpg>]
 <figures/RRT.png, id=95, 661.72218pt x 325.96782pt>
 File: figures/RRT.png Graphic file (type png)
  <use figures/RRT.png>
-Package pdftex.def Info: figures/RRT.png used on input line 173.
+Package pdftex.def Info: figures/RRT.png used on input line 174.
 (pdftex.def)             Requested size: 227.62206pt x 112.12576pt.
 
-
-LaTeX Warning: Citation 'lavalle2011' on page 10 undefined on input line 174.
-
-
-Underfull \hbox (badness 1946) in paragraph at lines 188--189
+Underfull \hbox (badness 1946) in paragraph at lines 189--190
 []\OT1/cmr/bx/n/12 pro-ce-dure \OT1/cmr/m/sc/12 Es-ten-der ([]Arvore $\OML/cmm/
 m/it/12 T$\OT1/cmr/m/sc/12 ,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 213--214
+Underfull \hbox (badness 10000) in paragraph at lines 214--215
 []\OT1/cmr/bx/n/12 pro-ce-dure \OT1/cmr/m/sc/12 Cal-cu-lar-Tra-jet[]oria
  []
 
 
-Underfull \hbox (badness 2495) in paragraph at lines 229--230
+Underfull \hbox (badness 2495) in paragraph at lines 230--231
 [] \OT1/cmr/bx/n/12 re-turn \OT1/cmr/m/it/12 Tra-jet^^Soria raiz($\OML/cmm/m/it
 /12 T[]$\OT1/cmr/m/it/12 )-$\OML/cmm/m/it/12 P[]$\OT1/cmr/m/it/12 -$\OML/cmm/m/
 it/12 P[]$\OT1/cmr/m/it/12 -
  []
 
 
-Overfull \hbox (2.61108pt too wide) in paragraph at lines 183--235
+Overfull \hbox (2.61108pt too wide) in paragraph at lines 184--236
 [][]  [] 
  []
 
 [10 <./figures/RRT.png>]
-Overfull \hbox (5.15543pt too wide) in paragraph at lines 248--248
+Overfull \hbox (5.15543pt too wide) in paragraph at lines 249--249
 []\OT1/cmr/bx/n/14.4 Otimiza^^Xc~ao com Mi-xed Integer-Linear Pro-gram-ming (MI
 LP) 
  []
 
-[11] [12] [13]
-
-LaTeX Warning: Citation 'delaunay34' on page 14 undefined on input line 344.
-
-
-LaTeX Warning: Citation 'dijkstra59' on page 14 undefined on input line 344.
-
-
-LaTeX Warning: Citation 'voronoi08' on page 14 undefined on input line 344.
-
-[14] <figures/allmilp.png, id=118, 816.04875pt x 690.32906pt>
+[11] [12] [13] <figures/allmilp.png, id=115, 816.04875pt x 690.32906pt>
 File: figures/allmilp.png Graphic file (type png)
 
 <use figures/allmilp.png>
-Package pdftex.def Info: figures/allmilp.png used on input line 381.
+Package pdftex.def Info: figures/allmilp.png used on input line 382.
 (pdftex.def)             Requested size: 455.24411pt x 385.10693pt.
 
-Overfull \hbox (28.45277pt too wide) in paragraph at lines 381--383
+Overfull \hbox (28.45277pt too wide) in paragraph at lines 382--384
 []|[]
  []
 
 
-Overfull \hbox (1.17204pt too wide) in paragraph at lines 378--385
+Overfull \hbox (1.17204pt too wide) in paragraph at lines 379--386
 [][] 
  []
 
-[15 <./figures/allmilp.png>]
-
-LaTeX Warning: Citation 'maciejowski2002' on page 16 undefined on input line 40
-4.
-
-
-LaTeX Warning: Citation 'bellingham2002' on page 16 undefined on input line 412
-.
-
-
-LaTeX Warning: Citation 'rubens2015' on page 16 undefined on input line 412.
-
-[16]
-
-LaTeX Warning: Citation 'khatib1986' on page 17 undefined on input line 414.
-
-
-LaTeX Warning: Citation 'lavalle2011' on page 17 undefined on input line 416.
-
-
-LaTeX Warning: Citation 'rubens2009' on page 17 undefined on input line 416.
-
-
-LaTeX Warning: Citation 'howiechoset' on page 17 undefined on input line 416.
-
-[17] <figures/campospotML.jpg, id=128, 613.29124pt x 585.18625pt>
+[14] [15 <./figures/allmilp.png>] [16]
+<figures/campospotML.jpg, id=125, 613.29124pt x 585.18625pt>
 File: figures/campospotML.jpg Graphic file (type jpg)
 
 <use figures/campospotML.jpg>
-Package pdftex.def Info: figures/campospotML.jpg used on input line 435.
+Package pdftex.def Info: figures/campospotML.jpg used on input line 436.
 (pdftex.def)             Requested size: 213.96529pt x 204.15749pt.
 
-<figures/campospotC++.jpg, id=129, 702.625pt x 649.42625pt>
+<figures/campospotC++.jpg, id=126, 702.625pt x 649.42625pt>
 File: figures/campospotC++.jpg Graphic file (type jpg)
 
 <use figures/campospotC++.jpg>
-Package pdftex.def Info: figures/campospotC++.jpg used on input line 436.
+Package pdftex.def Info: figures/campospotC++.jpg used on input line 437.
 (pdftex.def)             Requested size: 213.96529pt x 197.76257pt.
-
+ [17]
 <figures/rrtML.jpg, id=130, 562.1pt x 421.575pt>
 File: figures/rrtML.jpg Graphic file (type jpg)
  <use figures/rrtML.jpg>
-Package pdftex.def Info: figures/rrtML.jpg used on input line 449.
+Package pdftex.def Info: figures/rrtML.jpg used on input line 450.
 (pdftex.def)             Requested size: 213.96529pt x 160.47032pt.
 
 <figures/rrtC++.jpg, id=131, 562.1pt x 421.575pt>
 File: figures/rrtC++.jpg Graphic file (type jpg)
  <use figures/rrtC++.jpg>
-Package pdftex.def Info: figures/rrtC++.jpg used on input line 450.
+Package pdftex.def Info: figures/rrtC++.jpg used on input line 451.
 (pdftex.def)             Requested size: 213.96529pt x 160.47032pt.
 
 [18 <./figures/campospotML.jpg> <./figures/campospotC++.jpg>] [19 <./figures/rr
-tML.jpg> <./figures/rrtC++.jpg>] [20]
-<figures/allsim.png, id=142, 757.32938pt x 575.14874pt>
+tML.jpg> <./figures/rrtC++.jpg>]
+<figures/allsim.png, id=139, 757.32938pt x 575.14874pt>
 File: figures/allsim.png Graphic file (type png)
 
 <use figures/allsim.png>
-Package pdftex.def Info: figures/allsim.png used on input line 529.
+Package pdftex.def Info: figures/allsim.png used on input line 530.
 (pdftex.def)             Requested size: 455.24411pt x 345.73256pt.
 
-Overfull \hbox (312.98033pt too wide) in paragraph at lines 529--531
+Overfull \hbox (312.98033pt too wide) in paragraph at lines 530--532
 []|[]
  []
 
-[21 <./figures/allsim.png>] [22] [23] (./main.aux)
+[20] [21 <./figures/allsim.png>] [22]
+Overfull \hbox (12.5065pt too wide) in paragraph at lines 573--573
+[]\OT1/cmr/m/n/12 R. J. M. Afonso, ``De-ve-lop-ment of an user in-ter-face and 
+al-go-rithm for three-dimensional
+ []
 
-LaTeX Warning: There were undefined references.
-
+[23] [24] (./main.aux)
 
 LaTeX Warning: There were multiply-defined labels.
-
-
-Package biblatex Warning: Please (re)run BibTeX on the file(s):
-(biblatex)                main
-(biblatex)                and rerun LaTeX afterwards.
 
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  )
-(\end occurred when \iftrue on line 38 was incomplete) 
+(\end occurred when \iftrue on line 37 was incomplete) 
 Here is how much of TeX's memory you used:
- 11042 strings out of 493029
- 166635 string characters out of 6136234
- 337428 words of memory out of 5000000
- 14344 multiletter control sequences out of 15000+600000
+ 11074 strings out of 493029
+ 167199 string characters out of 6136234
+ 340412 words of memory out of 5000000
+ 14374 multiletter control sequences out of 15000+600000
  11797 words of font info for 44 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  41i,19n,49p,816b,1555s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1277,10 +1227,10 @@ exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-
 dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/f
 onts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on main.pdf (23 pages, 3810602 bytes).
+Output written on main.pdf (24 pages, 3816768 bytes).
 PDF statistics:
- 198 PDF objects out of 1000 (max. 8388607)
- 124 compressed objects within 2 object streams
+ 201 PDF objects out of 1000 (max. 8388607)
+ 126 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  76 words of extra memory for PDF output out of 10000 (max. 10000000)
 

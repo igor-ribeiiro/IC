@@ -1,0 +1,278 @@
+% $ biblatex auxiliary file $
+% $ biblatex version 2.6 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\entry{orozcomaquinas}{article}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Orozco}{O.}%
+     {Jorge Alejandro~Guti{\'e}rrez}{J.~A.~G.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {C{\'o}mputo}{C.}%
+     {Escuela~Superior}{E.~S.}%
+     {de}{d.}%
+     {}{}}%
+  }
+  \strng{namehash}{OJAGCESd1}
+  \strng{fullhash}{OJAGCESd1}
+  \field{title}{M{\'a}quinas de Estados Finitos}
+\endentry
+
+\entry{decision_tree}{inbook}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Russel}{R.}%
+     {S.}{S.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Norvig}{N.}%
+     {P.}{P.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Prentice Hall}%
+  }
+  \strng{namehash}{RSNP1}
+  \strng{fullhash}{RSNP1}
+  \field{edition}{3}
+  \field{pages}{697\bibrangedash 707}
+  \field{title}{Artificial Intelligence: A Modern Approach}
+  \field{volume}{3}
+  \field{year}{2009}
+\endentry
+
+\entry{cbr2008}{misc}{}
+  \field{note}{http://www.cbrobotica.
+  org/wp-content/uploads/2014/03/VerySmall2008\_en.pdf}
+\endentry
+
+\entry{lavalle2011}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {LaValle}{L.}%
+     {Steven~M.}{S.~M.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{LSM1}
+  \strng{fullhash}{LSM1}
+  \field{number}{1}
+  \field{pages}{79 \bibrangedash  89}
+  \field{title}{Motion planning: The essentials}
+  \field{volume}{18}
+  \field{journaltitle}{IEEE Robotics and Automation Society Magazine}
+  \field{year}{2011}
+\endentry
+
+\entry{james2002}{inproceedings}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Bruce}{B.}%
+     {James}{J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Veloso}{V.}%
+     {M.}{M.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{BJVM1}
+  \strng{fullhash}{BJVM1}
+  \field{booktitle}{Intelligent Robots and Systems, IEEE/RSJ International
+  Conference}
+  \field{pages}{2383 \bibrangedash  2388}
+  \field{title}{Real-Time Randomized Path Planning for Robot Navigation}
+  \field{year}{2002}
+\endentry
+
+\entry{delaunay34}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Delaunay}{D.}%
+     {Boris}{B.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{DB1}
+  \strng{fullhash}{DB1}
+  \field{pages}{793\bibrangedash 800}
+  \field{title}{Sur la sph\'{e}re vide}
+  \field{volume}{6}
+  \field{journaltitle}{Bulletin de l'Académie des Sciences de l'URSS}
+  \field{year}{1934}
+\endentry
+
+\entry{dijkstra59}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Dijkstra}{D.}%
+     {Edsger.~W.}{E.~W.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{DEW1}
+  \strng{fullhash}{DEW1}
+  \field{pages}{269\bibrangedash 271}
+  \field{title}{A note on two problems in connexion with graphs.}
+  \field{volume}{1}
+  \field{journaltitle}{Numerische Mathematik}
+  \field{year}{1959}
+\endentry
+
+\entry{voronoi08}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Voronoi}{V.}%
+     {Georgy}{G.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{VG1}
+  \strng{fullhash}{VG1}
+  \field{pages}{97\bibrangedash 178}
+  \field{title}{Nouvelles applications des paramètres continus à la théorie
+  des formes quadratiques}
+  \field{volume}{133}
+  \field{journaltitle}{Journal für die Reine und Angewandte Mathematik}
+  \field{year}{1908}
+\endentry
+
+\entry{maciejowski2002}{inbook}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Maciejowski}{M.}%
+     {Jan~Marian}{J.~M.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Prentice Hall}%
+  }
+  \strng{namehash}{MJM1}
+  \strng{fullhash}{MJM1}
+  \field{chapter}{1-3}
+  \field{pages}{1\bibrangedash 107}
+  \field{title}{Predictive Control with Constraints}
+  \field{year}{2002}
+\endentry
+
+\entry{bellingham2002}{inproceedings}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Bellingham}{B.}%
+     {John}{J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Richards}{R.}%
+     {Arthur}{A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {How}{H.}%
+     {Jonathan~P.}{J.~P.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{BJRAHJP1}
+  \strng{fullhash}{BJRAHJP1}
+  \field{booktitle}{Proceedings of the American Control Conference, Anchorage,
+  AK, USA}
+  \field{pages}{3741 \bibrangedash  3746}
+  \field{title}{Receding Horizon Control of Autonomous Aerial Vehicles}
+  \field{year}{2002}
+\endentry
+
+\entry{rubens2015}{thesis}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Afonso}{A.}%
+     {Rubens Junqueira~Magalhães}{R.~J.~M.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{ARJM1}
+  \strng{fullhash}{ARJM1}
+  \field{title}{Fault-Tolerant Predictive Control with trajectory planning in
+  the presence of obstacles}
+  \list{institution}{1}{%
+    {Instituto Tecnol\'{o}gico de Aeron\'{a}utica}%
+  }
+  \field{type}{Tese de Doutorado}
+  \field{year}{2015}
+\endentry
+
+\entry{khatib1986}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Khatib}{K.}%
+     {Oussama}{O.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{KO1}
+  \strng{fullhash}{KO1}
+  \field{number}{1}
+  \field{pages}{90 \bibrangedash  98}
+  \field{title}{Real-Time Obstacle Avoidance for Manipulators and Mobile
+  Robots}
+  \field{volume}{5}
+  \field{journaltitle}{The International Journal of Robotics Research}
+  \field{year}{1986}
+\endentry
+
+\entry{rubens2009}{thesis}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Afonso}{A.}%
+     {Rubens Junqueira~Magalhães}{R.~J.~M.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{ARJM1}
+  \strng{fullhash}{ARJM1}
+  \field{title}{Development of an User Interface and Algorithm for
+  Three-Dimensional Path Planning for an Umanned Aerial Vehicle}
+  \list{institution}{1}{%
+    {Instituto Tecnol\'{o}gico de Aeron\'{a}utica}%
+  }
+  \field{type}{Trabalho de Gradua\c{c}\~{a}o}
+  \field{year}{2009}
+\endentry
+
+\entry{howiechoset}{misc}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Kuffner}{K.}%
+     {James}{J.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{KJ1}
+  \strng{fullhash}{KJ1}
+  \field{title}{Howie {C}hoset with slides from {J}ames {K}uffner}
+\endentry
+
+\lossort
+\endlossort
+
+\endinput
