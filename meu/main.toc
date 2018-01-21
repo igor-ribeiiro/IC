@@ -10,30 +10,30 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3}Descri\IeC {\c c}\IeC {\~a}o do Problema}{6}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1}Campos Potenciais}{7}
+\contentsline {subsection}{\numberline {3.1}Campos Potenciais}{8}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2}RRT}{9}
+\contentsline {subsection}{\numberline {3.2}RRT}{10}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3}Otimiza\IeC {\c c}\IeC {\~a}o com Mixed Integer-Linear Programming (MILP)}{11}
+\contentsline {subsection}{\numberline {3.3}Otimiza\IeC {\c c}\IeC {\~a}o com Mixed Integer-Linear Programming (MILP)}{12}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.3.1}Navega\IeC {\c c}\IeC {\~a}o sobre todo o campo}{12}
+\contentsline {subsubsection}{\numberline {3.3.1}Navega\IeC {\c c}\IeC {\~a}o sobre todo o campo}{13}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {3.3.2}Navega\IeC {\c c}\IeC {\~a}o por uma triangula\IeC {\c c}\IeC {\~a}o}{14}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4}Resultados Obtidos}{16}
+\contentsline {section}{\numberline {4}Resultados Obtidos}{17}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1}Campos potenciais}{17}
+\contentsline {subsection}{\numberline {4.1}Campos potenciais}{18}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2}RRT}{18}
+\contentsline {subsection}{\numberline {4.2}RRT}{19}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3}Otimiza\IeC {\c c}\IeC {\~a}o com MILP}{20}
+\contentsline {subsection}{\numberline {4.3}Otimiza\IeC {\c c}\IeC {\~a}o com MILP}{21}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.3.1}Navega\IeC {\c c}\IeC {\~a}o sobre todo o campo}{20}
+\contentsline {subsubsection}{\numberline {4.3.1}Navega\IeC {\c c}\IeC {\~a}o sobre todo o campo}{21}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.3.2}Navega\IeC {\c c}\IeC {\~a}o por uma triangula\IeC {\c c}\IeC {\~a}o}{21}
+\contentsline {subsubsection}{\numberline {4.3.2}Navega\IeC {\c c}\IeC {\~a}o por uma triangula\IeC {\c c}\IeC {\~a}o}{22}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5}Conclus\IeC {\~o}es}{22}
+\contentsline {section}{\numberline {5}Conclus\IeC {\~o}es}{23}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6}Agradecimentos}{22}
+\contentsline {section}{\numberline {6}Agradecimentos}{23}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7}Bibliografia}{22}
+\contentsline {section}{\numberline {7}Bibliografia}{23}

@@ -69,43 +69,37 @@ Planejamento:
 \section{Resumo das Atividades Realizadas}
 \label{secao:atividades_realizadas}
 
-Ao longo dos dois primeiros meses, foram realizados estudos e foi decidido que será usado o algoritmo Behavior Tree (Árvore de Comportamentos) para tomada de decisão. Esse algoritmo foi escolhido dentre de opções como Máquina de Estados Finita e Árvore de Decisões. Uma introdução a esses assuntos pode ser encontrada em Orozco~\cite{orozcomaquinas} para máquina de estados finita e em Russel e Norvig~\cite{decision_tree}, para Árvore de Decisões. 
+Ao longo dos dois primeiros meses, foram realizados estudos e foi decidido que será usado o algoritmo Behavior Tree (Árvore de Comportamentos) para tomada de decisão. Esse algoritmo foi escolhido dentre de opções como Máquina de Estados Finita e Árvore de Decisões. Uma introdução a esses assuntos pode ser encontrada em Orozco~\cite{orozcomaquinas}, para máquina de estados finita, e em Russel e Norvig~\cite{decision_tree}, para Árvore de Decisões. Para uma descrição sobre a eficácia do algoritmo Behavior Tree (BT) no contexto da robótica, pode-se encontrar na referência \cite{behavior_tree_robotics}
 
-Ao longo do segundo e terceiro bimestres, a base do algoritmo foi implementada utilizando C++, que é a linguagem utilizada pela equipe. Foi, em seguida, realizada a codificação dos testes de unidade para os componentes principais do algoritmo, os nós intermediários da árvore. A performance computacional da Behavior Tree foi analisada e mostrou resultados satisfatórios e condizentes com o que foi previsto. A estrutura básica do algoritmo estava pronta.
+Ao longo do segundo e terceiro bimestres, a base do algoritmo foi implementada utilizando C++, que é a linguagem utilizada pela equipe. Foi, em seguida, realizada a codificação dos testes de unidade para os componentes principais do algoritmo, os nós intermediários da árvore. A performance computacional da BT foi analisada e mostrou resultados satisfatórios e condizentes com o que foi previsto. A estrutura básica do algoritmo estava pronta.
 
-A parte da Behavior Tree que considera as limitações de um robô real foi implementada e testada no time. 
+A parte da BT que considera as limitações de um robô real foi implementada e testada no time. 
 O método  foi mostrado efetivo na competição, ocorrida entre os dias 7 a 11 de novembro de 2017. O algoritmo mostrou que realiza troca de posições entre jogadores de forma fluida, de modo que a equipe tinha o posicionamento mais dinâmico da competição. A equipe da ITAndroids conquistou o sétimo lugar de 30.
 
 \section{Descrição do Problema}
 \label{secao:enunciado_problema}
 
-No contexto da Robótica, a navegação traz muitos novos desafios. Existe uma diferença muito grande entre ter um robô com um controlador bem implementado e funcional e ter um algoritmo que utilize esse controlador da melhor maneira possível. Isso nos traz a um desafio de nível mais alto: planejar uma trajetória executável pelo controle que permita ao robô executar a tarefa desejada.
+No contexto do futebol de robôs, a tomada de decisão traz muitos desafios. A estratégia consiste no fato de se implementar um algoritmo que consiga utilizar o planejamento de trajetórias do robô da melhor maneira possível. Isso nos traz a um desafio de nível mais alto: decidir qual a melhor decisão que cada robô pode tomar em um certo momento considerando limitações de trajetórias possíveis de serem seguidas.
 
-Nesse projeto, trabalhou-se com os robôs da competição IEEE Very Small Size: uma competição de futebol de robôs completamente automatizada em que cada robô tem como tamanho máximo um cubo de 7,5 cm de aresta. O campo de futebol possuil 1,5 m de comprimento e 1,3 m de largura. Cada time tem 3 jogadores: um atacante, um defensor e um goleiro. Uma câmera proporciona a visão aérea com as posições de todos os elementos da partida. As regras completas podem ser lidas em \cite{cbr2008}. 
+Nesse projeto, trabalhou-se com os robôs da competição IEEE Very Small Size (VSS): uma competição de futebol de robôs completamente automatizada em que cada robô tem como tamanho máximo um cubo de 7,5 cm de aresta. O campo de futebol possuil 1,5 m de comprimento e 1,3 m de largura. Cada time tem 3 jogadores: que podem assumir posições dinâmicas, como goleiro e atacante, ao decorrer de uma partida. Uma câmera proporciona a visão aérea com as posições de todos os elementos da partida. As regras completas podem ser lidas em \cite{cbr2008}. 
 
-O robô foi projetado com duas rodas laterais e duas esferas livres à frente e atrás para manter o equilíbrio. Essa característica o torna um robô diferencial. Ou seja, temos o controle sobre as velocidades linear e angular.
+O robô foi projetado com duas rodas laterais e duas esferas livres à frente e atrás para manter o equilíbrio. Essa característica o torna um robô diferencial. Ou seja, temos o controle sobre as velocidades linear e angular, mas não é possível mover o robô para os lados.
 
-\begin{figure}
+\begin{figure}[H]
 	\label{fig: vss}
 	\centering
 	\includegraphics[width=0.5\textwidth]{figures/vss.JPG}
    \caption{A categoria IEEE VSS.}
 \end{figure}
 
-Nesse contexto, surgem várias questões a serem resolvidas para se ter um time vencedor. Nesse projeto abordaremos o problema do planejamento de trajetórias: dada a posição inicial do robô, sua velocidade atual, a posição desejada e a velocidade desejada ao se chegar nessa posição, deve-se montar uma trajetória - uma sequência de posições no espaço e de velocidades.
+Nesse contexto, surgem várias questões a serem resolvidas para se ter um time vencedor. Nesse projeto, será abordado o seguinte problema de estratégia: dada a posição e a velocidade de cada robô no campo, da bola e da direção que os nossos robores estão (não é possível descobrir a posição dos robôs oponentes, pois não sabemos a distribuição de cores que eles usam no seu topo), deve-se escolher qual posição o robô irá, com qual controlador  e qual planejamento de trajetórias utilizar. Deve-se também montar um plano para ações futuras, planejando uma sequência de posições que o robô deve ir para efetuar um gol.
 
-O algoritmo de planejamento de trajetória deve: executar em tempo hábil para o processamento - a frequência de execução do time é de 30 Hz, deixando cerca de 2 ms para o planejamento de trajetórias; levar em consideração todas as restrições de robô diferencial; desviar de possíveis obstáculos (outros jogadores) e não colidir com paredes; retornar uma trajetória ótima de forma a maximizar a eficiência do time; e retornar uma sequência de velocidades aplicável pelo controlador.
+O algoritmo de estratégia deve executar em tempo de execução de, no máximo, 16 ms para todo o time, que é o tempo de amostragem da câmera. A maior parte desse tempo é gasto com o planejamento de trajetórias usado, que é o Rapidly-exploring Random Tree (RRT). O tempo para cada execução de um RRT é de 1 ms, de acordo com \cite{franzoni_rrt}, limitando a em torno de um limite de doze chamadas do algoritmo por execução completa da estratégia, com uma margem de erro trinta e três porcento. Ressalta-se a importância de não ultrapassar esse tempo máximo, já que se isso acontecer perde-se uma imagem da câmera e o funcionamento do jogo é realizado de forma atrasado.
 
-%O algoritmo de planejamento de trajetória deve:
-%\begin{enumerate}
-%\item executar em tempo hábil para o processamento - a frequência de execução do time é de 30 Hz, deixando cerca de 2 ms para o planejamento de trajetórias;
-%\item levar em consideração todas as restrições de robô diferencial;
-%\item desviar de possíveis obstáculos (outros jogadores) e não colidir com paredes;
-%\item retornar uma trajetória ótima de forma a maximizar a eficiência do time; e
-%\item retornar uma sequência de velocidades aplicável pelo controlador.
-%\end{enumerate}
+Deve-se, então, ser montado um esquema de posicionamento dinâmico em que não existam nem atacante, nem zagueiro, nem goleiro fixos, mas sim, uma ideia de que as posições dependam da posição de jogo, garantindo que os três jogadores possam estar mais bem posicionados e tenham liberdade para escolherem suas próximas ações.
 
-Para resolver esse problema, foram escolhidos três algoritmos para a modelagem do ambiente e para o cálculo da trajetória: um baseado em campo potenciais e descida gradiente, um baseado em Rapidly-exploring Random Tree (RRT) e um modelando o problema de navegação como um de otimização usando Controle Preditivo e com artifícios de Programação Linear Mista-Inteira (\textit{Mixed-Integer Linear Programming} -- MILP).
+Para resolver esse problema, foi escolhido como principal algoritmo para a tomada de decisão a Behavior Tree, embasado na decisão de um time referência no futebol de robô mundial na categoria Small Size League \cite{ssl}, the Near East University team: the NEUIslanders\cite{NEUIslanders_ssl}.
+
 
 \subsection{Campos Potenciais}
 
@@ -569,7 +563,6 @@ Do ponto de vista técnico, o uso do algoritmo já consagrado de planejamento po
 
 \printbibliography
 
-- S. Russel and P. Norvig (2009), Prentice Hall, 3rd Edition. \textit{Artificial Intelligence: A Modern Approach}. v.3, pp. 697-707
 
 
 \end{document}

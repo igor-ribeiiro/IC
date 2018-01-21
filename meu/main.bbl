@@ -59,9 +59,82 @@
   \field{year}{2009}
 \endentry
 
+\entry{behavior_tree_robotics}{thesis}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Colledanchise}{C.}%
+     {Michele}{M.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{CM1}
+  \strng{fullhash}{CM1}
+  \field{title}{Behavior Trees in Robotics}
+  \list{institution}{1}{%
+    {KTH Royal Institute of Technology}%
+  }
+  \field{type}{phdthesis}
+  \field{month}{02}
+  \field{year}{2016}
+\endentry
+
 \entry{cbr2008}{misc}{}
   \field{note}{http://www.cbrobotica.
   org/wp-content/uploads/2014/03/VerySmall2008\_en.pdf}
+\endentry
+
+\entry{franzoni_rrt}{thesis}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Okuyama}{O.}%
+     {Igor~Franzoni}{I.~F.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{OIF1}
+  \strng{fullhash}{OIF1}
+  \field{title}{TRAJECTORY PLANNING CONSIDERING ACCELERATION LIMITS FOR AN
+  AUTONOMOUS SOCCER PLAYER}
+  \list{institution}{1}{%
+    {Instituto Tecnol\'{o}gico de Aeron\'{a}utica}%
+  }
+  \field{type}{Trabalho de Gradua\c{c}\~{a}o}
+  \field{year}{2017}
+\endentry
+
+\entry{ssl}{misc}{}
+  \field{note}{http://www.cbrobotica.
+  org/wp-content/uploads/2014/03/VerySmall2008\_en.pdf}
+\endentry
+
+\entry{NEUIslanders_ssl}{misc}{}
+  \name{author}{4}{}{%
+    {{}%
+     {Abiyev}{A.}%
+     {Rahib~H.}{R.~H.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Bektas}{B.}%
+     {}{}%
+     {Åženol}{Å.}%
+     {}{}}%
+    {{}%
+     {Akkaya}{A.}%
+     {Nurullah}{N.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Aytac}{A.}%
+     {Ersin}{E.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{ARHBÅAN+1}
+  \strng{fullhash}{ARHBÅANAE1}
+  \field{howpublished}{Robocup}
+  \field{title}{NEUIslanders 2017 Team Description Paper}
+  \field{year}{2017}
 \endentry
 
 \entry{lavalle2011}{article}{}
