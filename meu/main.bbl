@@ -137,6 +137,26 @@
   \field{year}{2017}
 \endentry
 
+\entry{west2001introduction}{book}{}
+  \true{moreauthor}
+  \name{author}{1}{}{%
+    {{}%
+     {West}{W.}%
+     {Douglas~Brent}{D.~B.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Prentice hall Upper Saddle River}%
+  }
+  \strng{namehash}{WDB+1}
+  \strng{fullhash}{WDB+1}
+  \field{chapter}{2}
+  \field{title}{Introduction to graph theory}
+  \field{volume}{2}
+  \field{year}{2001}
+\endentry
+
 \entry{lavalle2011}{article}{}
   \name{author}{1}{}{%
     {{}%

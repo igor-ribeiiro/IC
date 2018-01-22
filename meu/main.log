@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.23)  21 JAN 2018 17:40
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.23)  21 JAN 2018 22:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1091,106 +1091,106 @@ File: figures/vss.JPG Graphic file (type jpg)
  <use figures/vss.JPG>
 Package pdftex.def Info: figures/vss.JPG used on input line 91.
 (pdftex.def)             Requested size: 227.62206pt x 170.7079pt.
- [7 <./figures/vss.JPG>] [8] <figures/thetamax.jpg, id=90, 931.98187pt x 581.17
-125pt>
+ [7 <./figures/vss.JPG>] [8] [9]
+<figures/thetamax.jpg, id=93, 931.98187pt x 581.17125pt>
 File: figures/thetamax.jpg Graphic file (type jpg)
 
 <use figures/thetamax.jpg>
-Package pdftex.def Info: figures/thetamax.jpg used on input line 153.
+Package pdftex.def Info: figures/thetamax.jpg used on input line 180.
 (pdftex.def)             Requested size: 227.62206pt x 141.94037pt.
- [9]
-<figures/RRT.png, id=94, 661.72218pt x 325.96782pt>
+ [10]
+<figures/RRT.png, id=97, 661.72218pt x 325.96782pt>
 File: figures/RRT.png Graphic file (type png)
  <use figures/RRT.png>
-Package pdftex.def Info: figures/RRT.png used on input line 166.
+Package pdftex.def Info: figures/RRT.png used on input line 193.
 (pdftex.def)             Requested size: 227.62206pt x 112.12576pt.
 
-Underfull \hbox (badness 1946) in paragraph at lines 181--182
+Underfull \hbox (badness 1946) in paragraph at lines 208--209
 []\OT1/cmr/bx/n/12 pro-ce-dure \OT1/cmr/m/sc/12 Es-ten-der ([]Arvore $\OML/cmm/
 m/it/12 T$\OT1/cmr/m/sc/12 ,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 206--207
+Underfull \hbox (badness 10000) in paragraph at lines 233--234
 []\OT1/cmr/bx/n/12 pro-ce-dure \OT1/cmr/m/sc/12 Cal-cu-lar-Tra-jet[]oria
  []
 
 
-Underfull \hbox (badness 2495) in paragraph at lines 222--223
+Underfull \hbox (badness 2495) in paragraph at lines 249--250
 [] \OT1/cmr/bx/n/12 re-turn \OT1/cmr/m/it/12 Tra-jet^^Soria raiz($\OML/cmm/m/it
 /12 T[]$\OT1/cmr/m/it/12 )-$\OML/cmm/m/it/12 P[]$\OT1/cmr/m/it/12 -$\OML/cmm/m/
 it/12 P[]$\OT1/cmr/m/it/12 -
  []
 
 
-Overfull \hbox (2.61108pt too wide) in paragraph at lines 176--228
+Overfull \hbox (2.61108pt too wide) in paragraph at lines 203--255
 [][]  [] 
  []
 
-[10 <./figures/thetamax.jpg> <./figures/RRT.png>] [11]
-Overfull \hbox (5.15543pt too wide) in paragraph at lines 241--241
+[11 <./figures/thetamax.jpg> <./figures/RRT.png>] [12]
+Overfull \hbox (5.15543pt too wide) in paragraph at lines 268--268
 []\OT1/cmr/bx/n/14.4 Otimiza^^Xc~ao com Mi-xed Integer-Linear Pro-gram-ming (MI
 LP) 
  []
 
-[12] [13] [14] <figures/allmilp.png, id=118, 816.04875pt x 690.32906pt>
+[13] [14] [15] <figures/allmilp.png, id=121, 816.04875pt x 690.32906pt>
 File: figures/allmilp.png Graphic file (type png)
 
 <use figures/allmilp.png>
-Package pdftex.def Info: figures/allmilp.png used on input line 374.
+Package pdftex.def Info: figures/allmilp.png used on input line 401.
 (pdftex.def)             Requested size: 455.24411pt x 385.10693pt.
 
-Overfull \hbox (28.45277pt too wide) in paragraph at lines 374--376
+Overfull \hbox (28.45277pt too wide) in paragraph at lines 401--403
 []|[]
  []
 
 
-Overfull \hbox (1.17204pt too wide) in paragraph at lines 371--378
+Overfull \hbox (1.17204pt too wide) in paragraph at lines 398--405
 [][] 
  []
 
-[15] [16 <./figures/allmilp.png>] [17]
-<figures/campospotML.jpg, id=128, 613.29124pt x 585.18625pt>
+[16 <./figures/allmilp.png>] [17] [18]
+<figures/campospotML.jpg, id=131, 613.29124pt x 585.18625pt>
 File: figures/campospotML.jpg Graphic file (type jpg)
 
 <use figures/campospotML.jpg>
-Package pdftex.def Info: figures/campospotML.jpg used on input line 428.
+Package pdftex.def Info: figures/campospotML.jpg used on input line 455.
 (pdftex.def)             Requested size: 213.96529pt x 204.15749pt.
 
-<figures/campospotC++.jpg, id=129, 702.625pt x 649.42625pt>
+<figures/campospotC++.jpg, id=132, 702.625pt x 649.42625pt>
 File: figures/campospotC++.jpg Graphic file (type jpg)
 
 <use figures/campospotC++.jpg>
-Package pdftex.def Info: figures/campospotC++.jpg used on input line 429.
+Package pdftex.def Info: figures/campospotC++.jpg used on input line 456.
 (pdftex.def)             Requested size: 213.96529pt x 197.76257pt.
- [18]
+
 <figures/rrtML.jpg, id=133, 562.1pt x 421.575pt>
 File: figures/rrtML.jpg Graphic file (type jpg)
  <use figures/rrtML.jpg>
-Package pdftex.def Info: figures/rrtML.jpg used on input line 442.
+Package pdftex.def Info: figures/rrtML.jpg used on input line 469.
 (pdftex.def)             Requested size: 213.96529pt x 160.47032pt.
 
 <figures/rrtC++.jpg, id=134, 562.1pt x 421.575pt>
 File: figures/rrtC++.jpg Graphic file (type jpg)
  <use figures/rrtC++.jpg>
-Package pdftex.def Info: figures/rrtC++.jpg used on input line 443.
+Package pdftex.def Info: figures/rrtC++.jpg used on input line 470.
 (pdftex.def)             Requested size: 213.96529pt x 160.47032pt.
 
 [19 <./figures/campospotML.jpg> <./figures/campospotC++.jpg>] [20 <./figures/rr
-tML.jpg> <./figures/rrtC++.jpg>]
-<figures/allsim.png, id=142, 757.32938pt x 575.14874pt>
+tML.jpg> <./figures/rrtC++.jpg>] [21]
+<figures/allsim.png, id=145, 757.32938pt x 575.14874pt>
 File: figures/allsim.png Graphic file (type png)
 
 <use figures/allsim.png>
-Package pdftex.def Info: figures/allsim.png used on input line 522.
+Package pdftex.def Info: figures/allsim.png used on input line 549.
 (pdftex.def)             Requested size: 455.24411pt x 345.73256pt.
 
-Overfull \hbox (312.98033pt too wide) in paragraph at lines 522--524
+Overfull \hbox (312.98033pt too wide) in paragraph at lines 549--551
 []|[]
  []
 
-[21] [22 <./figures/allsim.png>] [23] [24]
-Overfull \hbox (12.5065pt too wide) in paragraph at lines 565--565
+[22 <./figures/allsim.png>] [23] [24]
+Overfull \hbox (12.5065pt too wide) in paragraph at lines 592--592
 []\OT1/cmr/m/n/12 R. J. M. Afonso, ``De-ve-lop-ment of an user in-ter-face and 
 al-go-rithm for three-dimensional
  []
@@ -1205,10 +1205,10 @@ Package logreq Info: Writing requests to 'main.run.xml'.
  )
 (\end occurred when \iftrue on line 37 was incomplete) 
 Here is how much of TeX's memory you used:
- 11079 strings out of 493029
- 167306 string characters out of 6136234
- 340412 words of memory out of 5000000
- 14379 multiletter control sequences out of 15000+600000
+ 11081 strings out of 493029
+ 167352 string characters out of 6136234
+ 337412 words of memory out of 5000000
+ 14381 multiletter control sequences out of 15000+600000
  11797 words of font info for 44 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  41i,19n,49p,816b,1555s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1226,7 +1226,7 @@ exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-
 dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/f
 onts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on main.pdf (25 pages, 3818436 bytes).
+Output written on main.pdf (25 pages, 3820734 bytes).
 PDF statistics:
  205 PDF objects out of 1000 (max. 8388607)
  129 compressed objects within 2 object streams
