@@ -157,6 +157,25 @@
   \field{year}{2001}
 \endentry
 
+\entry{hunt2013gang}{incollection}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Hunt}{H.}%
+     {John}{J.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Springer}%
+  }
+  \strng{namehash}{HJ1}
+  \strng{fullhash}{HJ1}
+  \field{booktitle}{Scala Design Patterns}
+  \field{pages}{135\bibrangedash 136}
+  \field{title}{Gang of four design patterns}
+  \field{year}{2013}
+\endentry
+
 \entry{lavalle2011}{article}{}
   \name{author}{1}{}{%
     {{}%

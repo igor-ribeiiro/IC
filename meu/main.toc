@@ -14,30 +14,32 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {3.1.1}N\IeC {\'o} Folha}{8}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.1.2}N\IeC {\'o}s composto}{8}
+\contentsline {subsubsection}{\numberline {3.1.2}N\IeC {\'o} composto}{8}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2}RRT}{10}
+\contentsline {subsection}{\numberline {3.2}Behavior Tree VSS implementation}{10}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3}Otimiza\IeC {\c c}\IeC {\~a}o com Mixed Integer-Linear Programming (MILP)}{13}
+\contentsline {subsection}{\numberline {3.3}RRT}{11}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.3.1}Navega\IeC {\c c}\IeC {\~a}o sobre todo o campo}{13}
+\contentsline {subsection}{\numberline {3.4}Otimiza\IeC {\c c}\IeC {\~a}o com Mixed Integer-Linear Programming (MILP)}{14}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.3.2}Navega\IeC {\c c}\IeC {\~a}o por uma triangula\IeC {\c c}\IeC {\~a}o}{15}
+\contentsline {subsubsection}{\numberline {3.4.1}Navega\IeC {\c c}\IeC {\~a}o sobre todo o campo}{14}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4}Resultados Obtidos}{17}
+\contentsline {subsubsection}{\numberline {3.4.2}Navega\IeC {\c c}\IeC {\~a}o por uma triangula\IeC {\c c}\IeC {\~a}o}{16}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1}Campos potenciais}{19}
+\contentsline {section}{\numberline {4}Resultados Obtidos}{18}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2}RRT}{19}
+\contentsline {subsection}{\numberline {4.1}Campos potenciais}{20}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3}Otimiza\IeC {\c c}\IeC {\~a}o com MILP}{21}
+\contentsline {subsection}{\numberline {4.2}RRT}{20}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.3.1}Navega\IeC {\c c}\IeC {\~a}o sobre todo o campo}{21}
+\contentsline {subsection}{\numberline {4.3}Otimiza\IeC {\c c}\IeC {\~a}o com MILP}{22}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.3.2}Navega\IeC {\c c}\IeC {\~a}o por uma triangula\IeC {\c c}\IeC {\~a}o}{22}
+\contentsline {subsubsection}{\numberline {4.3.1}Navega\IeC {\c c}\IeC {\~a}o sobre todo o campo}{22}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5}Conclus\IeC {\~o}es}{23}
+\contentsline {subsubsection}{\numberline {4.3.2}Navega\IeC {\c c}\IeC {\~a}o por uma triangula\IeC {\c c}\IeC {\~a}o}{23}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6}Agradecimentos}{23}
+\contentsline {section}{\numberline {5}Conclus\IeC {\~o}es}{24}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7}Bibliografia}{24}
+\contentsline {section}{\numberline {6}Agradecimentos}{24}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7}Bibliografia}{25}

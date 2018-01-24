@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.23)  21 JAN 2018 22:58
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.23)  24 JAN 2018 00:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -848,6 +848,10 @@ File: pppdftex.def 2015/09/18 v0.5d Pdfpages driver for pdfTeX (AM)
 \c@AM@survey=\count305
 \AM@templatesizebox=\box31
 )
+(/usr/share/texlive/texmf-dist/tex/latex/tools/enumerate.sty
+Package: enumerate 2015/07/23 v3.00 enumerate extensions (DPC)
+\@enLab=\toks30
+)
 Package biblatex Info: Trying to load language 'brazil'...
 Package biblatex Info: ... file 'brazil.lbx' found.
 
@@ -872,18 +876,18 @@ LaTeX Warning: Label `euclid' multiply defined.
 )
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
  (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count308
@@ -891,12 +895,12 @@ LaTeX Font Info:    ... okay on input line 37.
 \scratchbox=\box32
 \nofMPsegments=\count309
 \nofMParguments=\count310
-\everyMPshowfont=\toks30
+\everyMPshowfont=\toks31
 \MPscratchCnt=\count311
 \MPscratchDim=\dimen134
 \MPnumerator=\count312
 \makeMPintoPDFobject=\count313
-\everyMPtoPDFconversion=\toks31
+\everyMPtoPDFconversion=\toks32
 ) (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
 )
@@ -987,8 +991,8 @@ Package biblatex Warning: Data encoding is 'utf8'.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'main.bbl' found.
 (./main.bbl)
-Package biblatex Info: Reference section=0 on input line 37.
-Package biblatex Info: Reference segment=0 on input line 37.
+Package biblatex Info: Reference section=0 on input line 38.
+Package biblatex Info: Reference segment=0 on input line 38.
 \AtBeginShipoutBox=\box33
  (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/pdflscape.sty
 Package: pdflscape 2008/08/11 v0.10 Display of landscape pages in PDF (HO)
@@ -1001,35 +1005,35 @@ Package pdflscape Info: Auto-detected driver: pdftex on input line 80.
 <Inicio.pdf, id=1, 597.23125pt x 845.1575pt>
 File: Inicio.pdf Graphic file (type pdf)
  <use Inicio.pdf>
-Package pdftex.def Info: Inicio.pdf used on input line 40.
+Package pdftex.def Info: Inicio.pdf used on input line 41.
 (pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
 File: Inicio.pdf Graphic file (type pdf)
  <use Inicio.pdf>
-Package pdftex.def Info: Inicio.pdf used on input line 40.
+Package pdftex.def Info: Inicio.pdf used on input line 41.
 (pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
 
 <Inicio.pdf, id=4, page=1, 597.23125pt x 845.1575pt>
 File: Inicio.pdf Graphic file (type pdf)
  <use Inicio.pdf, page 1>
-Package pdftex.def Info: Inicio.pdf, page1 used on input line 40.
+Package pdftex.def Info: Inicio.pdf, page1 used on input line 41.
 (pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
 File: Inicio.pdf Graphic file (type pdf)
 
 <use Inicio.pdf, page 1>
-Package pdftex.def Info: Inicio.pdf, page1 used on input line 40.
+Package pdftex.def Info: Inicio.pdf, page1 used on input line 41.
 (pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
 File: Inicio.pdf Graphic file (type pdf)
  <use Inicio.pdf, page 1>
-Package pdftex.def Info: Inicio.pdf, page1 used on input line 40.
+Package pdftex.def Info: Inicio.pdf, page1 used on input line 41.
 (pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
 File: Inicio.pdf Graphic file (type pdf)
  <use Inicio.pdf, page 1>
-Package pdftex.def Info: Inicio.pdf, page1 used on input line 40.
+Package pdftex.def Info: Inicio.pdf, page1 used on input line 41.
 (pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
 File: Inicio.pdf Graphic file (type pdf)
 
 <use Inicio.pdf, page 1>
-Package pdftex.def Info: Inicio.pdf, page1 used on input line 40.
+Package pdftex.def Info: Inicio.pdf, page1 used on input line 41.
 (pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
  [1
 
@@ -1037,31 +1041,31 @@ Package pdftex.def Info: Inicio.pdf, page1 used on input line 40.
 <Inicio.pdf, id=56, page=2, 597.23125pt x 845.1575pt>
 File: Inicio.pdf Graphic file (type pdf)
  <use Inicio.pdf, page 2>
-Package pdftex.def Info: Inicio.pdf, page2 used on input line 40.
+Package pdftex.def Info: Inicio.pdf, page2 used on input line 41.
 (pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
 File: Inicio.pdf Graphic file (type pdf)
 
 <use Inicio.pdf, page 2>
-Package pdftex.def Info: Inicio.pdf, page2 used on input line 40.
+Package pdftex.def Info: Inicio.pdf, page2 used on input line 41.
 (pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
 File: Inicio.pdf Graphic file (type pdf)
  <use Inicio.pdf, page 2>
-Package pdftex.def Info: Inicio.pdf, page2 used on input line 40.
+Package pdftex.def Info: Inicio.pdf, page2 used on input line 41.
 (pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
  [2 <./Inicio.pdf>]
 <Inicio.pdf, id=61, page=3, 597.23125pt x 845.1575pt>
 File: Inicio.pdf Graphic file (type pdf)
  <use Inicio.pdf, page 3>
-Package pdftex.def Info: Inicio.pdf, page3 used on input line 40.
+Package pdftex.def Info: Inicio.pdf, page3 used on input line 41.
 (pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
 File: Inicio.pdf Graphic file (type pdf)
 
 <use Inicio.pdf, page 3>
-Package pdftex.def Info: Inicio.pdf, page3 used on input line 40.
+Package pdftex.def Info: Inicio.pdf, page3 used on input line 41.
 (pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
 File: Inicio.pdf Graphic file (type pdf)
  <use Inicio.pdf, page 3>
-Package pdftex.def Info: Inicio.pdf, page3 used on input line 40.
+Package pdftex.def Info: Inicio.pdf, page3 used on input line 41.
 (pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
  [3 <./Inicio.pdf>]
 (./main.toc
@@ -1078,124 +1082,124 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 \openout4 = `main.toc'.
 
  [4{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 55.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 56.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 55.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 56.
  [5] [6]
 <figures/vss.JPG, id=78, 3276.24pt x 2457.18pt>
 File: figures/vss.JPG Graphic file (type jpg)
  <use figures/vss.JPG>
-Package pdftex.def Info: figures/vss.JPG used on input line 91.
+Package pdftex.def Info: figures/vss.JPG used on input line 92.
 (pdftex.def)             Requested size: 227.62206pt x 170.7079pt.
- [7 <./figures/vss.JPG>] [8] [9]
-<figures/thetamax.jpg, id=93, 931.98187pt x 581.17125pt>
+ [7 <./figures/vss.JPG>] [8] [9] [10]
+<figures/thetamax.jpg, id=96, 931.98187pt x 581.17125pt>
 File: figures/thetamax.jpg Graphic file (type jpg)
 
 <use figures/thetamax.jpg>
-Package pdftex.def Info: figures/thetamax.jpg used on input line 180.
+Package pdftex.def Info: figures/thetamax.jpg used on input line 189.
 (pdftex.def)             Requested size: 227.62206pt x 141.94037pt.
- [10]
-<figures/RRT.png, id=97, 661.72218pt x 325.96782pt>
+ [11]
+<figures/RRT.png, id=100, 661.72218pt x 325.96782pt>
 File: figures/RRT.png Graphic file (type png)
  <use figures/RRT.png>
-Package pdftex.def Info: figures/RRT.png used on input line 193.
+Package pdftex.def Info: figures/RRT.png used on input line 202.
 (pdftex.def)             Requested size: 227.62206pt x 112.12576pt.
 
-Underfull \hbox (badness 1946) in paragraph at lines 208--209
+Underfull \hbox (badness 1946) in paragraph at lines 217--218
 []\OT1/cmr/bx/n/12 pro-ce-dure \OT1/cmr/m/sc/12 Es-ten-der ([]Arvore $\OML/cmm/
 m/it/12 T$\OT1/cmr/m/sc/12 ,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 233--234
+Underfull \hbox (badness 10000) in paragraph at lines 242--243
 []\OT1/cmr/bx/n/12 pro-ce-dure \OT1/cmr/m/sc/12 Cal-cu-lar-Tra-jet[]oria
  []
 
 
-Underfull \hbox (badness 2495) in paragraph at lines 249--250
+Underfull \hbox (badness 2495) in paragraph at lines 258--259
 [] \OT1/cmr/bx/n/12 re-turn \OT1/cmr/m/it/12 Tra-jet^^Soria raiz($\OML/cmm/m/it
 /12 T[]$\OT1/cmr/m/it/12 )-$\OML/cmm/m/it/12 P[]$\OT1/cmr/m/it/12 -$\OML/cmm/m/
 it/12 P[]$\OT1/cmr/m/it/12 -
  []
 
 
-Overfull \hbox (2.61108pt too wide) in paragraph at lines 203--255
+Overfull \hbox (2.61108pt too wide) in paragraph at lines 212--264
 [][]  [] 
  []
 
-[11 <./figures/thetamax.jpg> <./figures/RRT.png>] [12]
-Overfull \hbox (5.15543pt too wide) in paragraph at lines 268--268
+[12 <./figures/thetamax.jpg> <./figures/RRT.png>]
+Overfull \hbox (5.15543pt too wide) in paragraph at lines 277--277
 []\OT1/cmr/bx/n/14.4 Otimiza^^Xc~ao com Mi-xed Integer-Linear Pro-gram-ming (MI
 LP) 
  []
 
-[13] [14] [15] <figures/allmilp.png, id=121, 816.04875pt x 690.32906pt>
+[13] [14] [15] [16] <figures/allmilp.png, id=124, 816.04875pt x 690.32906pt>
 File: figures/allmilp.png Graphic file (type png)
 
 <use figures/allmilp.png>
-Package pdftex.def Info: figures/allmilp.png used on input line 401.
+Package pdftex.def Info: figures/allmilp.png used on input line 410.
 (pdftex.def)             Requested size: 455.24411pt x 385.10693pt.
 
-Overfull \hbox (28.45277pt too wide) in paragraph at lines 401--403
+Overfull \hbox (28.45277pt too wide) in paragraph at lines 410--412
 []|[]
  []
 
 
-Overfull \hbox (1.17204pt too wide) in paragraph at lines 398--405
+Overfull \hbox (1.17204pt too wide) in paragraph at lines 407--414
 [][] 
  []
 
-[16 <./figures/allmilp.png>] [17] [18]
-<figures/campospotML.jpg, id=131, 613.29124pt x 585.18625pt>
+[17 <./figures/allmilp.png>] [18] [19]
+<figures/campospotML.jpg, id=135, 613.29124pt x 585.18625pt>
 File: figures/campospotML.jpg Graphic file (type jpg)
 
 <use figures/campospotML.jpg>
-Package pdftex.def Info: figures/campospotML.jpg used on input line 455.
+Package pdftex.def Info: figures/campospotML.jpg used on input line 464.
 (pdftex.def)             Requested size: 213.96529pt x 204.15749pt.
 
-<figures/campospotC++.jpg, id=132, 702.625pt x 649.42625pt>
+<figures/campospotC++.jpg, id=136, 702.625pt x 649.42625pt>
 File: figures/campospotC++.jpg Graphic file (type jpg)
 
 <use figures/campospotC++.jpg>
-Package pdftex.def Info: figures/campospotC++.jpg used on input line 456.
+Package pdftex.def Info: figures/campospotC++.jpg used on input line 465.
 (pdftex.def)             Requested size: 213.96529pt x 197.76257pt.
 
-<figures/rrtML.jpg, id=133, 562.1pt x 421.575pt>
+<figures/rrtML.jpg, id=137, 562.1pt x 421.575pt>
 File: figures/rrtML.jpg Graphic file (type jpg)
  <use figures/rrtML.jpg>
-Package pdftex.def Info: figures/rrtML.jpg used on input line 469.
+Package pdftex.def Info: figures/rrtML.jpg used on input line 478.
 (pdftex.def)             Requested size: 213.96529pt x 160.47032pt.
 
-<figures/rrtC++.jpg, id=134, 562.1pt x 421.575pt>
+<figures/rrtC++.jpg, id=138, 562.1pt x 421.575pt>
 File: figures/rrtC++.jpg Graphic file (type jpg)
  <use figures/rrtC++.jpg>
-Package pdftex.def Info: figures/rrtC++.jpg used on input line 470.
+Package pdftex.def Info: figures/rrtC++.jpg used on input line 479.
 (pdftex.def)             Requested size: 213.96529pt x 160.47032pt.
 
-[19 <./figures/campospotML.jpg> <./figures/campospotC++.jpg>] [20 <./figures/rr
-tML.jpg> <./figures/rrtC++.jpg>] [21]
-<figures/allsim.png, id=145, 757.32938pt x 575.14874pt>
+[20 <./figures/campospotML.jpg> <./figures/campospotC++.jpg>] [21 <./figures/rr
+tML.jpg> <./figures/rrtC++.jpg>] [22]
+<figures/allsim.png, id=148, 757.32938pt x 575.14874pt>
 File: figures/allsim.png Graphic file (type png)
 
 <use figures/allsim.png>
-Package pdftex.def Info: figures/allsim.png used on input line 549.
+Package pdftex.def Info: figures/allsim.png used on input line 558.
 (pdftex.def)             Requested size: 455.24411pt x 345.73256pt.
 
-Overfull \hbox (312.98033pt too wide) in paragraph at lines 549--551
+Overfull \hbox (312.98033pt too wide) in paragraph at lines 558--560
 []|[]
  []
 
-[22 <./figures/allsim.png>] [23] [24]
-Overfull \hbox (12.5065pt too wide) in paragraph at lines 592--592
+[23 <./figures/allsim.png>] [24] [25]
+Overfull \hbox (12.5065pt too wide) in paragraph at lines 601--601
 []\OT1/cmr/m/n/12 R. J. M. Afonso, ``De-ve-lop-ment of an user in-ter-face and 
 al-go-rithm for three-dimensional
  []
 
-[25] (./main.aux)
+[26] (./main.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
@@ -1203,12 +1207,12 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  )
-(\end occurred when \iftrue on line 37 was incomplete) 
+(\end occurred when \iftrue on line 38 was incomplete) 
 Here is how much of TeX's memory you used:
- 11081 strings out of 493029
- 167352 string characters out of 6136234
- 337412 words of memory out of 5000000
- 14381 multiletter control sequences out of 15000+600000
+ 11102 strings out of 493029
+ 167670 string characters out of 6136234
+ 337770 words of memory out of 5000000
+ 14400 multiletter control sequences out of 15000+600000
  11797 words of font info for 44 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  41i,19n,49p,816b,1555s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1226,10 +1230,10 @@ exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-
 dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/f
 onts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on main.pdf (25 pages, 3820734 bytes).
+Output written on main.pdf (26 pages, 3823312 bytes).
 PDF statistics:
- 205 PDF objects out of 1000 (max. 8388607)
- 129 compressed objects within 2 object streams
+ 208 PDF objects out of 1000 (max. 8388607)
+ 131 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  76 words of extra memory for PDF output out of 10000 (max. 10000000)
 
