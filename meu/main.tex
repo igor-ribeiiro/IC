@@ -214,70 +214,9 @@ Em seguida, uma interface foi desenvolvida para que fosse possível escolher as 
 
 \item A estratégia do auxiliar utiliza a triangulação de Delaunay para a posição atual da bola, em conjunto com o arquivo de configuração feito, para interpolar as posições discretas escolhidas e fazer que o algoritmo retorna uma posição ótima independente da localização da bola.
 
-\item Com a posição obtida pela triangulação, é usado o algoritmo de planejamento de trajetórias, em conjunto com o seu controlador, para chegar nessa posição interpolada.
+\item Com a posição obtida pela triangulação, é usado o algoritmo de planejamento de trajetórias RRT, em conjunto com o seu controlador, para chegar nessa posição interpolada.
 
 \end{enumerate}
-
-
-
-Para impôr as restrições de desvio de obstáculos e de parede, usa-se as quinas do campo e as pontas dos obstáculos para computar a triangulação de Delaunay \cite{delaunay34}. Assim, podemos obter um grafo de triângulos por onde poderemos estimar o melhor caminho. Basta utilizar o algoritmo de Dijkstra \cite{dijkstra59} sobre o grafo de Voronoi \cite{voronoi08} ou no dos centróides para estimar o melhor caminho proibindo a passagem por triângulos no interior de obstáculos.
-
-%\begin{figure}
-% 	\begin{minipage}[t]{.48\textwidth}
-%		\label{fig:delaunay}
-%		\includegraphics[width=1\textwidth]{figures/delaunay.jpg}
-% 		\caption{Triangulação de Delaunay com as quinas do campo e com pontos aleatórios.}
-%	\end{minipage}
-%   \hfill
-%	\begin{minipage}[t]{.48\textwidth}
-%		\label{fig: MILP}
-%		\includegraphics[width=1\textwidth]{figures/MILP.jpg}
-%		\caption{Algoritmo de otimização para sair de um triângulo por um lado específico. Neste exemplo, o inferior direito.}
-%	\end{minipage}	
-%\end{figure}
-
-%\begin{figure}
-%  \begin{minipage}[t]{.48\textwidth}
-%      \label{fig:voronoi}
-%		\includegraphics[width=1\textwidth]{figures/voronoi.jpg}
-%   		\caption{Grafo de Voronoi. Os pontos representam os obstáculos. As arestas, mediatrizes de dois obstáculos, possíveis caminhos.}
-%    \end{minipage}
-%    \hfill
-%	\begin{minipage}[t]{.48\textwidth}
-%    	\label{fig:centroides}
-%		\includegraphics[width=1\textwidth]{figures/centros.jpg}
-%  		\caption{Em preto, a triangulação de Delaunay. Em azul, o grafo dos centróides.}
-%    \end{minipage}	
-%\end{figure}
-
-Modelar o problema desta forma reduz a probabilidade de ele achar a trajetória ótima, mas reduz o tempo de processamento pois não são levados em consideração obstáculos pelo otimizador, diminuindo tanto o número de variáveis binárias quanto de restrições.
-
-Sejam $P1$ e $P2$ os pontos do triângulo do lado por onde o robô quer sair. Seja $P3$ o terceiro ponto. Seja $<,>$ o produto escalar de dois vetores e $\times$ o produto vetorial. A equação \ref{eq: del1} impõe que no n-ésimo passo o robô está do outro lado da reta que caracteriza o lado em comum entre o triângulo atual e o próximo. As equações \ref{eq: del_par1} e \ref{eq: del_par2} impõem que o robô deve estar entre outros dois lados do triângulo em todos os passos.
-
-\begin{tabular}{p{15cm} p{7cm}}
-    \vspace{0pt} 
-    \label{fig: milp}
-	\includegraphics[width=1\textwidth]{figures/allmilp.png}
-    \vspace{0pt}\\
-    Da esquerda pra direita, de cima pra baixo: triangulação de Delaunay com as quinas do campo e com pontos aleatórios; algoritmo de otimização para sair de um triângulo pelo lado esquerdo; grafo de Voronoi, os pontos representam os obstáculos, as arestas, mediatrizes de dois obstáculos; em preto, a triangulação de Delaunay, em azul, o grafo dos centróides. \\
-\end{tabular}
-
-\begin{equation}
-\label{eq: del1}
-<(S(i)-P1)\times(P2-P1),(P3-P1)\times(P2-P1)>\ \leq \epsilon + MC(i,b)
-\end{equation}
-
-\begin{equation}
-\label{eq: del_par1}
-<(S(i)-P1)\times(P2-P1),(P3-P1)\times(P2-P1)>\ \geq -\epsilon
-\end{equation}
-
-\begin{equation}
-\label{eq: del_par2}
-<(S(i)-P2)\times(P3-P2),(P1-P2)\times(P3-P2)>\ \geq -\epsilon
-\end{equation}
-
-
 
 \subsection{Táticas de Jogo}
 
