@@ -176,6 +176,69 @@
   \field{year}{2013}
 \endentry
 
+\entry{delaunay34}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Delaunay}{D.}%
+     {Boris}{B.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{DB1}
+  \strng{fullhash}{DB1}
+  \field{pages}{793\bibrangedash 800}
+  \field{title}{Sur la sph\'{e}re vide}
+  \field{volume}{6}
+  \field{journaltitle}{Bulletin de l'Académie des Sciences de l'URSS}
+  \field{year}{1934}
+\endentry
+
+\entry{voronoi08}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Voronoi}{V.}%
+     {Georgy}{G.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{VG1}
+  \strng{fullhash}{VG1}
+  \field{pages}{97\bibrangedash 178}
+  \field{title}{Nouvelles applications des paramètres continus à la théorie
+  des formes quadratiques}
+  \field{volume}{133}
+  \field{journaltitle}{Journal für die Reine und Angewandte Mathematik}
+  \field{year}{1908}
+\endentry
+
+\entry{akiyama2007multi}{inproceedings}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Akiyama}{A.}%
+     {Hidehisa}{H.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Noda}{N.}%
+     {Itsuki}{I.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{organization}{1}{%
+    {Springer}%
+  }
+  \strng{namehash}{AHNI1}
+  \strng{fullhash}{AHNI1}
+  \field{booktitle}{Robot Soccer World Cup}
+  \field{pages}{377\bibrangedash 384}
+  \field{title}{Multi-agent positioning mechanism in the dynamic environment}
+  \field{year}{2007}
+\endentry
+
+\entry{Qt}{misc}{}
+  \field{note}{https://www.qt.io/}
+\endentry
+
 \entry{lavalle2011}{article}{}
   \name{author}{1}{}{%
     {{}%
@@ -214,58 +277,6 @@
   \field{pages}{2383 \bibrangedash  2388}
   \field{title}{Real-Time Randomized Path Planning for Robot Navigation}
   \field{year}{2002}
-\endentry
-
-\entry{delaunay34}{article}{}
-  \name{author}{1}{}{%
-    {{}%
-     {Delaunay}{D.}%
-     {Boris}{B.}%
-     {}{}%
-     {}{}}%
-  }
-  \strng{namehash}{DB1}
-  \strng{fullhash}{DB1}
-  \field{pages}{793\bibrangedash 800}
-  \field{title}{Sur la sph\'{e}re vide}
-  \field{volume}{6}
-  \field{journaltitle}{Bulletin de l'Académie des Sciences de l'URSS}
-  \field{year}{1934}
-\endentry
-
-\entry{dijkstra59}{article}{}
-  \name{author}{1}{}{%
-    {{}%
-     {Dijkstra}{D.}%
-     {Edsger.~W.}{E.~W.}%
-     {}{}%
-     {}{}}%
-  }
-  \strng{namehash}{DEW1}
-  \strng{fullhash}{DEW1}
-  \field{pages}{269\bibrangedash 271}
-  \field{title}{A note on two problems in connexion with graphs.}
-  \field{volume}{1}
-  \field{journaltitle}{Numerische Mathematik}
-  \field{year}{1959}
-\endentry
-
-\entry{voronoi08}{article}{}
-  \name{author}{1}{}{%
-    {{}%
-     {Voronoi}{V.}%
-     {Georgy}{G.}%
-     {}{}%
-     {}{}}%
-  }
-  \strng{namehash}{VG1}
-  \strng{fullhash}{VG1}
-  \field{pages}{97\bibrangedash 178}
-  \field{title}{Nouvelles applications des paramètres continus à la théorie
-  des formes quadratiques}
-  \field{volume}{133}
-  \field{journaltitle}{Journal für die Reine und Angewandte Mathematik}
-  \field{year}{1908}
 \endentry
 
 \entry{maciejowski2002}{inbook}{}

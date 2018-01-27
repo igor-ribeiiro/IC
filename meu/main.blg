@@ -15,47 +15,49 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: main-blx.bib
 Database file #2: main.bib
+Warning--I didn't find a database entry for "dijkstra59"
 Biblatex version: 3.3
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
-You've used 21 entries,
+You've used 22 entries,
             6047 wiz_defined-function locations,
-            1227 strings with 10467 characters,
-and the built_in function-call counts, 56971 in all, are:
-= -- 2530
-> -- 1774
-< -- 547
-+ -- 605
-- -- 545
-* -- 3136
-:= -- 3255
+            1231 strings with 10534 characters,
+and the built_in function-call counts, 58969 in all, are:
+= -- 2608
+> -- 1811
+< -- 567
++ -- 627
+- -- 562
+* -- 3227
+:= -- 3324
 add.period$ -- 0
-call.type$ -- 21
-change.case$ -- 339
+call.type$ -- 22
+change.case$ -- 348
 chr.to.int$ -- 37
-cite$ -- 40
-duplicate$ -- 6435
-empty$ -- 6275
-format.name$ -- 976
-if$ -- 13303
+cite$ -- 42
+duplicate$ -- 6679
+empty$ -- 6532
+format.name$ -- 997
+if$ -- 13780
 int.to.chr$ -- 0
-int.to.str$ -- 48
+int.to.str$ -- 50
 missing$ -- 0
-newline$ -- 381
-num.names$ -- 921
-pop$ -- 6422
+newline$ -- 392
+num.names$ -- 932
+pop$ -- 6753
 preamble$ -- 1
-purify$ -- 390
+purify$ -- 401
 quote$ -- 0
-skip$ -- 3586
+skip$ -- 3702
 stack$ -- 0
-substring$ -- 1621
-swap$ -- 1929
-text.length$ -- 386
+substring$ -- 1668
+swap$ -- 1990
+text.length$ -- 399
 text.prefix$ -- 0
 top$ -- 1
-type$ -- 770
+type$ -- 808
 warning$ -- 0
-while$ -- 338
+while$ -- 340
 width$ -- 0
-write$ -- 359
+write$ -- 369
+(There was 1 warning)
