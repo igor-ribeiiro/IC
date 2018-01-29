@@ -139,7 +139,7 @@ Nós compostos são os nós intermediários da árvore, que  são resposáveis p
 \subsection{Técnico}
 
 Uma Behavior Tree, que embora consegue modelar comportamentos complexos com facilidade, nem sempre é a melhor escolha para determinadas situações. Por isso, a estratégia foi dividida em níveis de abstrações diferentes, em que a um Técnico, representado pela classe Coach, seria responsável por escolher e administrar quais árvore cada um dos três jogadores deveria usar no momento.
-Com essa implementação, tem-se um agente externo controlando a função dos jogadores por meio da escolha de uma BT, que pode ser uma árvore para um goleiro, para um principal e para um auxiliar. Isso significa que, em um dterminado momento, o técnico pode escolher que o time tenha 1 goleiro, 1 principal e 1 auxiliar a até mesmo 3 principais ao mesmo tempo. Os requisitos esperados para cada um desses papéis será abortado a seguir.
+Com essa implementação, tem-se um agente externo controlando a função dos jogadores por meio da escolha de uma BT, que pode ser uma árvore para um goleiro, para um principal e para um auxiliar. Isso significa que, em um dterminado momento, o técnico pode escolher que o time tenha 1 goleiro, 1 principal e 1 auxiliar a até mesmo 3 principais ao mesmo tempo. Os requisitos esperados para cada um desses papéis será abortado a seguir. Além disso, também é função do técnico escolher o papel de cada jogador a cada iteração do código, de modo que as posições dos jogadores não sejam fixas ao decorrer do jogo.
 
 \subsubsection{Goleiro} 
 
@@ -180,7 +180,6 @@ O jogador com o papel de Principal é o jogador mais ativo do time, que deve sta
    \caption{Descrição da penalidade penalty.} \label{fig:penalty}
 \end{figure}
 
-
 \end{enumerate}
 
 
@@ -220,241 +219,11 @@ Em seguida, uma interface foi desenvolvida para que fosse possível escolher as 
 
 \subsection{Táticas de Jogo}
 
+Táticas de Jogo, representado pela classe 'Play', é a parte mais alto nível da estratégia. Essa classe é responsável por escolher qual técnico usar em um determinado momento da partida. O Play escolhe qual o melhor modo de se jogar em uma situação, como, por exemplo, ter uma postura mais agressiva ou mais defensiva envolvendo os três jogadores. Só pode existir um Play no jogo, que pode ser tratado como a raiz de uma Behavior Tree que tem os técnicos como filhos, tendo, cada um, três árvores relativas a cada jogador.
 
-\subsection{Triangulação de Delauynay}
+O seu funcionamento é similar ao Selector Behavior, no sentido em que é preciso escolher apenas um técnico a cada momento. Para avaliar quando é necessário fazer uma troca, usa-se o mesmo modelo de retorno: TRUE, FALSE e RUNNING para os técnicos. 
 
-
-
-Seja $S_{0}$ a posição inicial do jogador e $v_{0}$ sua direção inicial. Seja $S_{f}$ a posição desejada e $v_{f}$ a direção com que se deseja chegar a $S_{f}$. A ideia de campos potenciais consiste em modelar o campo com uma função potencial $P(x,y)$, de forma que, executando o algoritmo de descida de gradiente partindo do ponto inicial, gera-se a sequência de pontos $S'(i)$ segundo a seguinte fórmula recursiva:
-\begin{equation}
-S'(1) = S_{0} + (h/2)v_{0}
-\end{equation}
-\begin{equation}
-S'(i) = S'(i-1) - h\nabla P, i = 2,...,n
-\end{equation}
-
-Para escolher uma função P adequada, foi usada a função potencial elétrico com cargas positivas nos obstáculos. Seja a equação de Poisson:
-\begin{equation}
-\varepsilon \nabla \cdot E = -\varepsilon \nabla ^2 V=\rho = 0
-\end{equation}
-
-Pelo teorema do máximo e mínimo, funções com laplaciano zero não podem ter pontos de mínimo não degenerados no interior de um conjunto em que são analíticas. Isso faz com que o algoritmo convirja para alguma singularidade negativa ou divirja. Assim sendo, basta colocar uma carga negativa no ponto desejado, o que produz uma singularidade negativa naquele ponto.
-
-Como o espaçamento entre os pontos é constante, pode-se obter a sequência de posições $S(i)$ e de direções $v(i)$ da seguinte maneira: A posição por onde passará o robô é o ponto médio entre dois pontos calculados $S'(i)$ e $S'(i-1)$. O módulo de $v(i)$ é unitário e sua direção e sentido coincidem com o vetor $S'(i-1)$ a $S'(i)$. $v(1) = v_{0}$. As equações para $S(i)$ são dadas a seguir:
-
-\begin{equation}
-	S(1) = S_{0}
-\end{equation}
-\begin{equation}
-	S(i) = \frac{(S'(i)+S'(i-1))}{2}, i = 2,3,...,n
-\end{equation}
-\begin{equation}
-	S(n+1) = S'(n) + \frac{h}{2} v_{f}
-\end{equation}
-
-A partir destas equações, podemos concordar arcos de circunferência entre os pontos $S(i)$ e $S(i+1)$ segundo a figura \ref{fig: concordancia}.
-
-Para configurar os campos de forma a que eles sejam bem condicionados e produzam uma trajetória adequada, são usados também os seguintes artifícios:
-
-\begin{itemize}
-\item Dipolo elétrico no alvo alinhado com a direção de chegada desejada. A carga positiva fica à frente e a negativa atrás. Para que o efeito do dipolo seja sentido em todo o campo, sua carga é da ordem de 100 vezes maior que as outras. O padrão das linhas de campo faz com que a trajetória, que as seguem aproximadamente, chegue no ângulo desejado.
-\item Existe um limite para o qual o campo repulsivo atua no dipolo da bola. Entre esse limite e o dobro dele, o campo é multiplicado por um fator que decai continuamente para 0. Em pontos distantes, o alvo é puramente atrativo.
-\item Cada parede gera um campo normal à parede que decai pela distância da mesma forma que o campo elétrico de uma carga. O cálculo é feito da seguinte maneira: a fim de calcular o campo da parede em um ponto $C$, projeta-se $C$ na parede e considera-se que seja um obstáculo com uma carga positiva menor.
-\item Para que se mantenha uma velocidade constante no robô, pode-se definir um raio de curvatura mínimo $R_{min}$. Para impor esta restrição no algoritmo de campos potenciais, pode-se calcular um $\theta_{max}$ de acordo com a figura \ref{fig: concordancia}. A fórmula é dada a seguir:
-
-\begin{equation}
-\theta_{max} = arctan(\frac{4hR_{min}^2}{4R_{min}^2 - h^2})
-\end{equation}
-
-\item Caso, durante um passo da descida gradiente, o ângulo entre os trechos $S'(i) - S'(i-1)$ e $S'(i+1) - S'(i)$ seja maior que $\theta_{max}$, faz-se o passo com o ângulo $\theta_{max}$ de forma a que $S'(i+1)$ seja o mais próximo possível do que se fosse usado o ângulo do campo.
-\end{itemize}
-
-\begin{figure}
-	\label{fig: concordancia}
-	\centering
-	\includegraphics[width=0.5\textwidth]{figures/thetamax.jpg}
-   \caption{Circunferência concordada por dois trechos de S' e tangenciando em S}
-\end{figure}
-
-\subsection{RRT}
-
-Este algoritmo consiste em expandir árvores em direções aleatórias a partir da posição do robô e do alvo. Durante a expansão, quando dois nós, um de cada árvore, estiverem a uma distância menor que um parâmetro $h$, conecta-se esses dois nós e forma-se um caminho do robô até o alvo. O fator de aleatoriedade garante uma probabilidade admissível de se achar um caminho. Para que sejam respeitadas as restrições do campo e dos obstáculos, basta que os vértices as respeitem. O algoritmo foi estudado segundo a aula \cite{lavalle2011}.
-
-Para minimizar o tempo de expansão, deve-se evitar que duas arestas - os segmentos de reta no espaço que ligam dois vértices vizinhos - se interceptem. Para manter o bom condicionamento e otimizar o cálculo entre duas iterações, devem-se definir probabilidades $G$ de se escolher como novo ponto a raiz da outra árvore e $P$ a de se escolher um ponto da última trajetória calculada. A função $PA$ (Ponto Aleatório) retorna tal ponto. A técnica foi proposta segundo o artigo \cite{james2002}. Para isso, foram implementadas as seguintes funções:
-
-\begin{figure}
-	\label{fig: rrt_extend}
-	\centering
-	\includegraphics[width=0.5\textwidth]{figures/RRT.png}
-   \caption{Exemplo de passo de extensão do RRT. Fonte: LaValle, 2000 e \cite{lavalle2011}}
-\end{figure}
-
-\makeatletter
-\def\BState{\State\hskip-\ALG@thistlm}
-\makeatother
-
-\begin{figure*}[ttt!]
-
-\begin{minipage}[t]{0.5\textwidth}
-
-\begin{algorithm}[H]
-\caption{função Estender}\label{euclid}
-\begin{algorithmic}[1]
-\Procedure{Estender (Árvore $T$, Ponto $q$)}{}
-\State $\textit{$q_{near}$} \gets \text{PontoMaisPróximoDe($T$, $q$)}$
-\State $\textit{$n$} \gets \text{direção de $q_{near}$ a $q$}$
-\BState \emph{loop}:
-
-\If {($q_{near}+n*h$ é válido e $d(q, q_{near}) > d(q, q_{near}+n*h)$}
-\State $\textit{Adiciona $q_{near}+n*h$ a $T$}$.
-\State $\textit{Liga $q_{near}+n*h$ a $q_{near}$}$.
-\State $q_{near} \gets q_{near}+n*h$.
-\State \textbf{goto} \emph{loop}.
-\State \textbf{close};
-\EndIf
-
-\State \textbf{return} \emph{$q_{near}$}.
-\EndProcedure
-\end{algorithmic}
-\end{algorithm}
-
-\end{minipage}
-\hfill
-\begin{minipage}[t]{0.5\textwidth}
-
-\begin{algorithm}[H]
-\caption{função CalcularTrajetória}\label{euclid}
-\begin{algorithmic}[1]
-\Procedure{CalcularTrajetória ($S_{0}$, $v_{0}$, $S_{f}$, $v_{f}$)}{}
-\State $T_{a} \gets S_{0}+(h/2)*v_{0}$
-\State $T_{b} \gets S_{f}-(h/2)*v_{f}$
-\BState \emph{loop}:
-
-\If {$\textit{($|T_{a}| \leq M$ e $|T_{b}| \leq M$)}$}
-\State $P_A \gets \textit{Estender($T_{a}$, PAl)}$.
-\State $P_B \gets \textit{Estender($T_{b}$, $P_A$)}$.
-\If {$d(P_A, P_B) \leq h$}
-\State \textbf{close} \emph{loop}.
-\EndIf
-\State $\textit{Troca $T_{a}$ e $T_{b}$}$.
-\State \textbf{goto} \emph{loop}.
-\State \textbf{close};
-\EndIf
-
-\State \textbf{return} \emph{Trajetória raiz($T_{a}$)-$P_A$-$P_B$-raiz($T_{b}$)}.
-\EndProcedure
-\end{algorithmic}
-\end{algorithm}
-
- \end{minipage}
-
- \hfill
-
-\end{figure*}
-
-É necessário também colocar um limite no número de nós das árvores para que, caso não haja caminho possível, o algoritmo não entre em loop infinito. Para garantir que sejam respeitadas as direções iniciais e finais, adicionaram-se obstáculos ao lado das posições finais e iniciais, de forma que as árvores possam expandir apenas se alinhando entre eles.
-
-Para se otimizar o passo de escolher o ponto $q_{near}$ de uma árvore mais próximo a um ponto $Q$, foi implementada a estrutura de dados Quadtree, que permite a inserção e busca de ponto mais próximo em $O(\log{n})$, enquanto a inserção e busca normais são, respctivamente, $O(1)$ e $O(n)$. Os resultados de ambos os métodos foram comparados.
-
-Um dos problemas identificados é a possibilidade de mal condicionamento do algoritmo: a cada passo, ele pode gerar um caminho distinto. Além do caminho atual ser orientado para ser semelhante ao da iteração anterior, deve-se executar o algoritmo várias vezes e tomar o menor caminho de cada execução. O menor caminho converge para o mínimo possível.
-
-Deve-se, também, suavizar a trajetória. Percorre-se a trajetória inteira calculando os ângulos entre dois trechos. Caso esse ângulo ultrapasse um limite $\theta_{max}$, definido e calculado a partir de $R_{min}$ da mesma forma descrita nos campos potenciais, elimina-se esse ponto da trajetória e liga-se seus pontos adjacentes. No passo de suavização por arcos de circunferência e na ponte entre as duas árvores, pode-se gerar trechos que não têm tamanho $h$. Basta alterar a concordância dos arcos para que eles comecem ou terminem na metade do trecho de menor comprimento. Assim, basta uma pequena alteração nas equações de concordância para que se obtenham as sequências finais $S$ e $v$ e as velocidades linear e angular.
-
-\subsection{Otimização com Mixed Integer-Linear Programming (MILP)}
-
-Modelar um problema qualquer como um problema de otimização significa definir uma função de erro cujo ponto de mínimo que respeita um conjunto de restrições é a solução. A partir disso, pode-se usar algoritmos computacionais para achar esse ponto.
-
-Foi utlizado, para realizar este cálculo, a biblioteca GLPK para MATLAB. A vantagem dela é o trabalho com Programação Linear Mista-Inteira, o que permite adicionar restrições de tipo nos vetores de variáveis: eles podem ser de reais, inteiros ou binários com limites inferior e superior.
-
-Primeiro definimos a função de custo e as restrições como 
-\begin{equation}
-	\label{eq:custo}
-	J(b) = \sum_{i=1}^{\log_2 {N}} b(i)2^{i-1} = n,
-\end{equation}
-\begin{equation}
-	\label{eq:restr}
-	Av \leq B \; ou \; \sum_{j=1}^{N_{var}} A_{ij}v(j)  \leqslant B_i
-\end{equation}
-
-onde $N$ é o número máximo de passos para a trajetória tomado sempre como potência de $2$ e $N_{ver}$ o número de veriáveis. $b(i)$ é um vetor de variáveis binárias que representa a codificação binária de $n$, o número de passos utilizados. Minimizar $J(b)$ significa percorrer o caminho com o mínimo de passos possíveis.
-
-O pacote GLPK permite adicionar restrições por meio da equação \eqref{eq:restr}, onde $A$ é uma matriz inserida pelo usuário, $v$ é a concatenação de todos os vetores de variáveis (reais, inteiras e binárias) e $B$ é um vetor de constantes também definido pelo usuário. O algoritmo determinará $v$ de forma a que todas as inequações contidas em \eqref{eq:restr} sejam satisfeitas e que $J(b)$ seja minimizado.
-
-Isso significa que podemos adicionar desigualdades sobre uma determinada combinação linear de variáveis. Para preencher as matrizes $A$ e $B$ com os valores que representem todas as retrições do problema, foram feitas duas abordagens.
-
-\subsubsection{Navegação sobre todo o campo}
-
-Nesta abordagem, teremos como variáveis controladas pelo otimizador a parte positiva e negativa das acelerações em $x$ ($x_{p}$ e $x_{n}$, respectivamente) e em $y$ ($y_{p}$ e $y_{n}$, respectivamente). Impõem-se restrições de mínimo zero e máximo $a_{max}$. Sejam $u(i)$ a aceleração no i-ésimo passo, ou seja, $u(i) = (x_{p}(i)-x_{n}(i), y_{p}(i)-y_{n}(i))$, $T$ o tempo de cada passo, $S(1)=S_{0}$ e $v(1)=v_{0}$ as posições iniciais do robô, então as equações para o movimento na i-ésima posição são:
-
-\begin{equation}
-	v(i) = v(1) + T\sum_{j=1}^{i-1}u(j)
-\end{equation}
-\begin{equation}
-	S(i) = S(1) + (i-1)Tv(1) + T^2\sum_{j=1}^{i-1}(n-j-\frac{1}{2})u(j)
-\end{equation}
-
-Para restringir a velocidade máxima, basta adicionar desigualdades do tipo:
-
-\begin{equation}
-	-V_{max} \leq v(i)_x, v(i)_y \leq V_{max}
-\end{equation}
-
-Seja $\epsilon$ um erro admissível para a posição final do robô. Para se chegar na posição final desejada com a direção desejada, devemos adicionar restrições sobre a n-ésima posição calculada. Seja $bin(i,j)$ o j-ésimo algarismo de $i$ em sua representação binária. Para implementar dessa maneira, adiciona-se um termo extra $C(i,b)$ definido da seguinte forma:
-\begin{equation}
-    C(i,b) = \sum_{j=0}^{\log_2{N}} c(i,j)b(j)
-\end{equation}
-\begin{equation}
-    c(i,0) = \sum_{j=1}^{\log_2 {N}} bin(i,j) \qquad
-    c(i,j) = \left\{ \begin{array}{r} 1, se\ bin(i,j) = 0 \\ 
-    -1, se\ bin(i,j) = 1
-    \end{array} \right.
-\end{equation}
-
-$C(i,b)$ é uma função que recebe a representação binária de um inteiro por meio do vetor $b$ e um inteiro $i$. Ela retorna 0 caso $b$ represente $i$ em binário e um valor positivo caso contrário. Seja $M$ um número suficientemente grande. Para $i = 1,...,N$, as inequações de restrição, assim, ficam da seguinte forma:
-
-\begin{equation}
-	x_{f} - \epsilon - MC(i,b) \leq S(i)_x \leq x_{f} + \epsilon + MC(i,b)
-\end{equation}
-\begin{equation}
-	y_{f} - \epsilon - MC(i,b) \leq S(i)_y \leq y_{f} + \epsilon + MC(i,b)
-\end{equation}
-
-Dessa forma, quando o otimizador escolher um valor para $n$ por meio de $b$, essas equações serão relaxadas (reduzidas a $\infty \geq x$) para passos diferentes de $n$ e impostas (último termo eliminado) caso contrário. Da mesma forma, garantimos que a velocidade de chegada seja a desejada por meio das equações:
-
-\begin{equation}
-	v_{fx} - \epsilon - MC(i,b) \leq v(i)_x \leq v_{fx} + \epsilon + MC(i,b)
-\end{equation}
-\begin{equation}
-	v_{fy} - \epsilon - MC(i,b) \leq v(i)_y \leq v_{fy} + \epsilon + MC(i,b)
-\end{equation}
-
-Para as restrições de campo, basta adicionar as desigualdades:
-
-\begin{equation}
-	-X_{max} \leqslant S(i)_{x} \leqslant X_{max}, \qquad -Y_{max} \leqslant S(i)_{y} \leqslant Y_{max}
-\end{equation}
-
-Enfim, para representar as restrições de obstáculos, modelou-se cada um como um quadrado de aresta $L$. Adicionaram-se duas variáveis binárias que formam números de 0 a 3 para cada obstáculo. A função $obs(i, j)$, para o i-ésimo passo e para o j-ésimo obstáculo, representa a seguinte codificação:
-
-\begin{itemize}
-\item $obs(i, j) = 0$: posição abaixo da linha inferior do obstáculo.
-\item $obs(i, j) = 1$: posição à direita da linha direita do obstáculo.
-\item $obs(i, j) = 2$: posição acima da linha superior do obstáculo.
-\item $obs(i, j) = 3$: posição à esquerda da linha esquerda do obstáculo.
-\end{itemize}
-
-Logo, para todo i e j, basta adicionar restrições do tipo:
-
-\begin{equation}
-	x_{obs}(j) +  \frac{L}{2} - \epsilon - MC(1,obs(i,j)) \leq S(i)_x \leq x_{obs}(j) - \frac{L}{2} + \epsilon + MC(3,obs(i,j))
-\end{equation}
-\begin{equation}
-	y_{obs}(j) +  \frac{L}{2} - \epsilon - MC(0,obs(i,j)) \leq S(i)_y \leq y_{obs}(j) -  \frac{L}{2} + \epsilon  + MC(2,obs(i,j))
-\end{equation}
-
-\subsubsection{Navegação por uma triangulação}
-
-Outro jeito de se utilizar o GLPK é da seguinte maneira: suponha que tenhamos uma sequência de triângulos adjacentes tal que o ponto de saída está no primeiro triângulo e o de chegada, no último. Podemos usar o pacote para achar a trajetória por dentro de um triângulo até o próximo.
+Dado essa troca, pode ser criados técnicos temporários para jogadas específicas de jogo, como o goleiro sair do gol e voltar outro jogador, que é uma ação de transição. Isso pode significar que um técnico principal pode chamar esse outro, voltando depois para o mesmo técnico novamente. Então, podemos ter um técnico principal e vários temporários para jogadas ensaidas e específicas que envolvam mais de um jogador.
 
 
 \section{Resultados Obtidos}
