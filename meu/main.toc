@@ -28,18 +28,18 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4}Resultados Obtidos}{15}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1}Campos potenciais}{17}
+\contentsline {subsection}{\numberline {4.1}Campos potenciais}{19}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2}RRT}{18}
+\contentsline {subsection}{\numberline {4.2}RRT}{20}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3}Otimiza\IeC {\c c}\IeC {\~a}o com MILP}{20}
+\contentsline {subsection}{\numberline {4.3}Otimiza\IeC {\c c}\IeC {\~a}o com MILP}{22}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.3.1}Navega\IeC {\c c}\IeC {\~a}o sobre todo o campo}{20}
+\contentsline {subsubsection}{\numberline {4.3.1}Navega\IeC {\c c}\IeC {\~a}o sobre todo o campo}{22}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.3.2}Navega\IeC {\c c}\IeC {\~a}o por uma triangula\IeC {\c c}\IeC {\~a}o}{21}
+\contentsline {subsubsection}{\numberline {4.3.2}Navega\IeC {\c c}\IeC {\~a}o por uma triangula\IeC {\c c}\IeC {\~a}o}{23}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5}Conclus\IeC {\~o}es}{22}
+\contentsline {section}{\numberline {5}Conclus\IeC {\~o}es}{24}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6}Agradecimentos}{22}
+\contentsline {section}{\numberline {6}Agradecimentos}{24}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7}Bibliografia}{22}
+\contentsline {section}{\numberline {7}Bibliografia}{24}

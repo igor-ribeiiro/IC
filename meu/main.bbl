@@ -17,20 +17,15 @@
 \endgroup
 
 \entry{orozcomaquinas}{article}{}
-  \name{author}{2}{}{%
+  \name{author}{1}{}{%
     {{}%
-     {Orozco}{O.}%
-     {Jorge Alejandro~Guti{\'e}rrez}{J.~A.~G.}%
+     {Coelho}{C.}%
+     {Mateus Menezes~Azevedo}{M.~M.~A.}%
      {}{}%
      {}{}}%
-    {{}%
-     {C{\'o}mputo}{C.}%
-     {Escuela~Superior}{E.~S.}%
-     {de}{d.}%
-     {}{}}%
   }
-  \strng{namehash}{OJAGCESd1}
-  \strng{fullhash}{OJAGCESd1}
+  \strng{namehash}{CMMA1}
+  \strng{fullhash}{CMMA1}
   \field{title}{M{\'a}quinas de Estados Finitos}
 \endentry
 
@@ -75,6 +70,20 @@
   }
   \field{type}{phdthesis}
   \field{month}{02}
+  \field{year}{2016}
+\endentry
+
+\entry{tasinaffo_ic}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Coelho}{C.}%
+     {Mateus Menezes~Azevedo}{M.~M.~A.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{CMMA1}
+  \strng{fullhash}{CMMA1}
+  \field{title}{Desenvolvimento de Visão Computacional do Robô Humanoide}
   \field{year}{2016}
 \endentry
 
