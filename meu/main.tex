@@ -146,6 +146,10 @@ Nós compostos são os nós intermediários da árvore, que  são resposáveis p
 Uma Behavior Tree, que embora consegue modelar comportamentos complexos com facilidade, nem sempre é a melhor escolha para determinadas situações. Por isso, a estratégia foi dividida em níveis de abstrações diferentes, em que a um Técnico, representado pela classe Coach, seria responsável por escolher e administrar quais árvore cada um dos três jogadores deveria usar no momento.
 Com essa implementação, tem-se um agente externo controlando a função dos jogadores por meio da escolha de uma BT, que pode ser uma árvore para um goleiro, para um principal e para um auxiliar. Isso significa que, em um dterminado momento, o técnico pode escolher que o time tenha 1 goleiro, 1 principal e 1 auxiliar a até mesmo 3 principais ao mesmo tempo. Os requisitos esperados para cada um desses papéis será abortado a seguir. Além disso, também é função do técnico escolher o papel de cada jogador a cada iteração do código, de modo que as posições dos jogadores não sejam fixas ao decorrer do jogo.
 
+\subsection{Papéis}
+
+Dentre os papéis que o técnico pode escolher, os escolhidos foram Goleiro, Principal e Auxiliar, conforme  proposto por \cite{egly2005decision} como papéis de alta performance.
+
 \subsubsection{Goleiro} 
 
 O goleiro é o jogador que deve ficar próximo ao gol aliado com o objetivo de proteger o gol de ataques oponentes. 
@@ -249,7 +253,7 @@ Nessa seção, são apresentados os resultados obtidos na resolução do problem
 
 \subsection{Papéis}
 
-Aqui, será apresentado os papéis criados pela equipe e as árvores de comportamento criadas para cada um deles.
+Aqui, será apresentado os papéis criados para a competição e as árvores de comportamento criadas para cada um deles.
 
 \subsubsection{Goleiro}
 
@@ -314,7 +318,7 @@ Conforma a figura \ref{fig:principal_bt}, a raiz da árvore do principal é um S
 
 \subsubsection{Auxiliar}
 
-O auxiliar, por sua vez, tem uma Behavior Tree muito simples, representada por apenas um nó que tem como função se posicionar em lugar ótimo com Triangulação de Delaunay\cite{delaunay34}. Sua árvore, é representada simplesmente por \ref{fig:auxiliar_bt}.
+O auxiliar, por sua vez, tem uma Behavior Tree muito simples, representada por apenas um nó que tem como função se posicionar em lugar ótimo com Triangulação de Delaunay\cite{delaunay34}. Sua árvore, é representada simplesmente pela figura \ref{fig:auxiliar_bt}.
 
 \begin{figure}[H]
 	\centering
@@ -322,35 +326,27 @@ O auxiliar, por sua vez, tem uma Behavior Tree muito simples, representada por a
    \caption{Behavior Tree para o auxiliar.} \label{fig:auxiliar_bt}
 \end{figure}
 
+
 \subsection{Técnicos}
 
-\subsubsection{Dois Principais}
-
-\subsubsection{Um principal e um auxiliar}
-
-\subsubsection{Troca de goleiro}
+Finalmente, será mostrado quais técnicos foram usados na estratégia. A princípio, três técnicos foram desenvolvidos. Primeiramente, será descrito o comportamento de cada um deles e quando é esperado que cada um seja usado, seguido das condições de troca entre eles.
 
 
-   
-   
 
-   
+\subsubsection{Dois principais} Esse técnicos usa uma formação de jogadores com 1 goleiro e dois jogadores principais. Isso significa que os dois principais irão para à bola ao mesmo tempo, o que pode ser caótico para uma situação de ataque, em que precisão para acertar a bola é necessária. Porém, para situaçõe defensivas, esse técnico demonstra muita eficácia, porque os dois jogadores se tornam efetivamente zagueiros, indo para a bola e dificultando o avanço do atacante adversário.
 
-   
+\subsubsection{Um principal e um auxiliar} Esse técnico, diferente do anterior, é usado para situações de ataque. Ao utilizar apenas um principal, essa formação é capaz de fornecer ataques muito mais precisos, em que os jogadores aliados não se colidem durante a movimentação. O auxiliar, nessa formação, não fica muito longe da bola, ficando esperando a bola escapar do principal, por uma defesa do oponente por exemplo. No momento que o auxiliar estiver em uma posição mais próxima da bola que o principal, ele se torna o principal, enquanto que o principal se torna o auxiliar, de modo que o ataque seja contínuo. Essa formação se mostrou muito eficaz na CBR, fazendo que a ITAndroids tivesse um dos ataques, em termos de estratégia, mais consistentes da competição.
 
-   
-   
+\subsubsection{Troca de Goleiro} Esse é um tipo de técnico temporário para realizar uma jogada específica de jogo, sendo feito para uma ação de transição. Esse técnico será chamado em situações em que o goleiro deverá sair do gol e se tornar um principal, enquanto que o outro jogador mais próximos do gol se torna o novo goleiro. A situação em que essa troca deve ocorrer é quando a bola está perto do goleiro e todos os jogadores inimigos estão bem longe, condição necessária por se tratar de uma jogada arriscada.
 
-   
-   
+Tecnicamente, esse técnico é usado em situações em que temos 2 principais e um goleiro, já que ele só ocorrer em situações defensivas. Ele funciona fazendo que o goleiro se torne o principal sem o Behavior de esperar a bola sair do gol, como mostrado na figura \ref{fig:OutOfGoal_BT}. Em seguida, o jogador principal mais próximo do gol se torna um goleiro e, como ele está fora do gol, voltará para tal por meio do Behavior Get Back to Goal. Quando o novo goleiro chegar em sua posição, esse técnico é terminado e volta para o técnico que estava anteriormente.
+
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.8\textwidth]{figures/LastGoalierOutOfGoal.png}
    	\caption{Behavior Tree usada para o goleiro quando este sai do gol.} \label{fig:OutOfGoal_BT}
 \end{figure}
 
-   
-   
 
 \section{Conclusões}
 

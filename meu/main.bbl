@@ -190,6 +190,33 @@
   \field{year}{2013}
 \endentry
 
+\entry{egly2005decision}{book}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Egly}{E.}%
+     {Uwe}{U.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Novak}{N.}%
+     {Gregor}{G.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Weber}{W.}%
+     {Daniel}{D.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {na}%
+  }
+  \strng{namehash}{EUNGWD1}
+  \strng{fullhash}{EUNGWD1}
+  \field{title}{Decision making for MiroSOT soccer playing robots}
+  \field{year}{2005}
+\endentry
+
 \entry{delaunay34}{article}{}
   \name{author}{1}{}{%
     {{}%
