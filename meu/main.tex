@@ -233,6 +233,12 @@ Dado essa troca, pode ser criados técnicos temporários para jogadas específic
 \section{Resultados Obtidos}
 	\label{secao: resultados_obtidos}
     
+Nessa seção, são apresentados os resultados obtidos na resolução do problema da tomada de decisão para robôs jogadores de futebol IEEE Very Small Size Soccer.
+
+
+
+Ao longo do primeiro bimestre, foi estudada a teoria necessária para se colocar o projeto em prática.
+    
 No início do trabalho, foi dedicado um mês para estudo de controle preditivo pelo livro \cite{maciejowski2002}, sendo adquirida uma base de conhecimento para nortear como deve ser a resposta do planejador de trajetórias. Não houve, a princípio, dificuldades na escolha dos métodos a serem utilizados. Os três algoritmos apresentados neste projeto foram escolhidos pelos seguintes critérios:
 
 \begin{enumerate}
@@ -416,16 +422,16 @@ Tentar expandir as restrições do triângulo seguinte para o atual acabou por e
 
 \section{Conclusões}
 
-O projeto de Iniciação Científica apresentou bons resultados, especialmete quanto à vitória da equipe do ITA até as semifinais da CBR 2015, rendendo o quarto lugar à equipe. 
+O projeto de Iniciação Científica apresentou bons resultados, especialmente quanto à vitória da equipe do ITA até às quartas de final da CBR 2017, rendendo o sétimo lugar à equipe dentre mais de 25 equipes participantes. Além do fato de que a ITAndroids conquistou o primeiro lugar na competição nacional de VSSS Copa Turing 2017, que ocorreu no final de setembro de 2017.
 
-Do ponto de vista técnico, o uso do algoritmo já consagrado de planejamento por campos potenciais se mostrou factível em tempo real e adequado para o desvio de obstáculos. Contudo, classes mais gerais de problemas podem ser resolvidos com RRT e MILP, visto que estes podem englobar modelos do robô no planejamento, levando em conta suas limitações ao calcular a trajetória. Por esse motivo, visto as dificuldades com o método de otimização, o RRT foi escolhido para prosseguir com os testes e com a otimização de parâmetros a fim de se montar uma classe de planejamento de trajetórias funcional para a equipe da ITAndroids.
+Do ponto de vista técnico, o uso do algoritmo da Behavior Tree, já consagrado e usado por times de nível mundial, se mostrou factível e funcional em partidas reais de competições. Contudo, problemas como pouca escalabilidade e pouca reutilizabilidade se mostraram presentes na estratégia desenvolvida. Isso significa que mudanças ainda deverão ser feitas nas BT, principalmente a respeito do uso de mais nós do tipo paralelo para remover esses problemas citados.
 
 \section{Agradecimentos}
 
 \begin{itemize}
 \item Ao CNPq, pelo apoio financeiro e motivacional.
 \item À ITAndroids, equipe que representa o ITA na competição da LARC/CBR, pela ideia do projeto, pela disponibilidade do robô real para implementação e oportunidade de aplicação dos métodos estudados.
-\item Ao professor Marcos Máximo da Divisão da Ciência da Computação do ITA, pelo apoio nos estudos e no desenvolvimento do projeto.
+\item Ao professor doutor Paulo Marcelo Tasinaffo, meu orientador, e ao professor doutor Marcos Ricardo de Omena Máximo, co-orientador, ambos da Divisão da Ciência da Computação do ITA, pelo apoio nos estudos e no desenvolvimento do projeto.
 
 \end{itemize}
 
