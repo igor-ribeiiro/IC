@@ -141,7 +141,6 @@ Nós compostos são os nós intermediários da árvore, que  são resposáveis p
 \item Invert: muda o retorno do filho de FALSE para TRUE e TRUE para FALSE.
 \end{enumerate}
 
-
 \subsection{Técnico}
 
 Uma Behavior Tree, que embora consegue modelar comportamentos complexos com facilidade, nem sempre é a melhor escolha para determinadas situações. Por isso, a estratégia foi dividida em níveis de abstrações diferentes, em que a um Técnico, representado pela classe Coach, seria responsável por escolher e administrar quais árvore cada um dos três jogadores deveria usar no momento.
@@ -239,58 +238,106 @@ Dado essa troca, pode ser criados técnicos temporários para jogadas específic
 \section{Resultados Obtidos}
 	\label{secao: resultados_obtidos}
     
-Nessa seção, são apresentados os resultados obtidos na resolução do problema da tomada de decisão para robôs jogadores de futebol IEEE Very Small Size Soccer.
+Nessa seção, são apresentados os resultados obtidos na resolução do problema da tomada de decisão para robôs jogadores de futebol IEEE Very Small Size Soccer. Os resultados a seguir foram obtidos estudando o comportamentos de equipes adversárias na competição, além de diversos testes com o time de robôs da ITAndroids contra si mesmo em simulações computacionais em um simulador feito pela própria equipe, como mostrado na figura \ref{fig:simulator}.
 
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.6\textwidth]{figures/SimulatorWithoutButtons.png}
+	\caption{Simulador da ITAndroids.}
+	\label{fig:simulator}
+\end{figure}
 
+\subsection{Papéis}
 
-Ao longo do primeiro bimestre, foi estudada a teoria necessária para se colocar o projeto em prática.
-    
-No início do trabalho, foi dedicado um mês para estudo de controle preditivo pelo livro \cite{maciejowski2002}, sendo adquirida uma base de conhecimento para nortear como deve ser a resposta do planejador de trajetórias. Não houve, a princípio, dificuldades na escolha dos métodos a serem utilizados. Os três algoritmos apresentados neste projeto foram escolhidos pelos seguintes critérios:
+Aqui, será apresentado os papéis criados pela equipe e as árvores de comportamento criadas para cada um deles.
 
-\begin{enumerate}
-\item Campos potenciais já é largamente utilizado por equipes da competição IEEE Very Small Size. Em 2014, a ITAndroids tentou sua implementação, porém fracassou. O método foi assim escolhido por ser onipresente na competição e simples para a resolução deste problema.
-\item RRT possui uma ampla gama de aplicações acadêmicas em robótica, sendo um método famoso. Em contraste com o anterior, ele é mais complexo e pode resolver o problema para casos mais genéricos: navegação por labirintos e por caminhos estreitos.
-\item Otimização por MILP é um algoritmo que, em contraste com os anteriores, é menos empregado em estudos de robótica. Este método pode levar a resultados melhores que os anteriores, além de ser largamente explorado em diversos trabalhos de pesquisa recentes.
-\end{enumerate}
+\subsubsection{Goleiro}
 
-Nos meses seguintes, até outubro, com o material passado pelo orientador, nas referências \cite{bellingham2002} e \cite{rubens2015}, foi estudado o método de otimização por MILP para navegação completa pelo mapa. A implementação foi feita em MATLAB, porém seu tempo de execução se mostrou muito longo e o método foi temporariamente descartado. Era necessária uma reformulação do algoritmo para simplificá-lo e torná-lo rápido o bastante.
+A BT criada para o goleiro está representada na figura \ref{fig:goalier_bt}.
 
-Na primeira semana de outubro, foi implementado o método de campos potenciais em MATLAB e logo em seguida em C++. A fonte para os estudos foi o artigo \cite{khatib1986}. Foi realizado o teste para o ajuste de parâmetros e para a adaptação de casos especiais.
-
-Nas duas semanas seguintes, prosseguiu-se para o estudo pelas fontes \cite{lavalle2011}, \cite{rubens2009} e \cite{howiechoset} e implementação do método RRT. As implementações em MATLAB e em C++ ficariam prontas ao final de outubro, sendo realizados os testes em cenário simplificado de forma que se pudesse ajustar as constantes e avaliar se o algoritmo seria aplicável ao robô real.
-
-Nessa época, aproximava-se a competição da CBR 2015, sendo interrompida a série de testes do RRT. Foi escolhido o método de campos potenciais para ser utilizado pela ITAndroids. Na última semana de outubro e na primeira de novembro, ele foi testado no robô real. O ITA ganhou quarto lugar na categoria. Apesar do sucesso, foram encontrados vários erros durante os testes e algumas constantes tiveram de ser alteradas para a aplicação no evento. Após a competição, os testes do RRT em cenário simplificado foram concluídos ao longo do mês de novembro.
-
-Durante o período de recesso (dezembro de 2015 a fevereiro de 2016), o método de otimização MILP foi reformulado com a divisão do campo na triangulação de Delaunay. Foi implementado em MATLAB, e nos dois meses seguintes (março e abril de 2016), foram realizados diversos testes em caso simplificado com o algoritmo afim de fazê-lo cumprir com os requisitos do problema. No entanto, os resultados não foram satisfatórios e, desta vez, o método foi definitivamente descartado.
-
-No restante do tempo até a redação do relatório no mês de julho, foram realizadas simulações em cenários realistas para os dois primeiros métodos, sendo medidos os tempos e averiguando se os resultados se enquadram nos requisitos. Mais otimizações foram feitas para o RRT.
-
-A seguir serão apresentados os resultados técnicos dos métodos de campos potenciais e de RRT para o seguinte cenário, com as simulações executadas em um computador com processador Intel Core i7 com \textit{clock} de $2,4 \, GHz$:
-
-\begin{itemize}
-\item Posição e direção iniciais, respectivamente: $(0;-0,6)$ e $\frac{1}{\sqrt[]{2}}(-1;1)$
-\item Posição e direção finais, respectivamente: $(0;0,6)$ e $\frac{1}{\sqrt[]{2}}(-1;1)$
-\item Obstáculos na posições: $(-0,3;0,3)$, $(-0,5;0)$, $(0,1;0)$ e $(0,5;-0,3)$
-\end{itemize}
-   
-   
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.8\textwidth]{figures/Goalier_BT.png}
-   	\caption{Behavior Tree para o goleiro.} \label{fig:text_config_delaunay}
+   	\caption{Behavior Tree para o goleiro.} \label{fig:goalier_bt}
 \end{figure}
-   
+
+Como visto, ela é composta por um nó do tipo Sequence Behavior, que irá executar os seus filhos em sequência. Esse papel, então, executa as seguintes ações prioritando as primeiras a aparecerem na seguinte lista:
+
+\begin{itemize}
+
+\item \textbf{Get Back to Goal Behavior} Volta para o gol, caso que, se por algum motivo ele esteja fora do próprio.
+
+\item \textbf{Goal Center} Fica centralizado no gol quando a bola estiver longe, de forma que o jogador possa rapidamente ir para qualquer um dos lados quando a bola se aproximar.
+
+\item \textbf{Goal Predict} Prediz para onde a bola irá quando ela estiver rápida e longe do gol.
+
+\item \textbf{Goal Spin} Gira quando está perto da bola e não tem oponente perto da bola para jogá-la para longe.
+
+\item \textbf{Goal Catch} Comportamento que o goleiro deverá fazer quando não fizer nenhum outro, por isso sua última posição na sequência. Ele acompanha o movimento da bola com o goleiro sobre a linha do gol.
+
+\end{itemize}
+
+
+
+\subsubsection{Principal}
+
+Já para o principal, a árvore \ref{fig:principal_bt} foi desenvolvida, sendo a árvore mais complexa dentre os papéis.
+
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.8\textwidth]{figures/Principal_BT.png}
-   	\caption{Behavior Tree para o principal.} \label{fig:text_config_delaunay}
+   	\caption{Behavior Tree para o principal.} \label{fig:principal_bt}
 \end{figure}   
-   
+
+Conforma a figura \ref{fig:principal_bt}, a raiz da árvore do principal é um Selector Behavior que escolhe uma das ações a ser realizada. Essa BT tem mais dois outros nós compostos, que são dois Sequence Behavior usados para o posicionamento atrás da bola, seguido pelo chute. Uma descrição dos nós folha utilizados se encontra abaixo:
+
+\begin{itemize}
+
+\item \textbf{Wait for Ball to leave Ally Goalie Area} Esse Behavior utiliza a Triangução de Delaunay, com a mesma interface desenvolvida na figura \ref{fig:delaunay_interface}. Esse comportamento deve evitar que o jogador entre na área do goleiro para não sofre penalty, conforme descrito na figura \ref{fig:penalty}. O jogador se pocionará de acordo com posições escolhidas pelo usuário, calibradas com o arquivo de configuração do mesmo modelo da figura \ref{fig:text_config_delaunay}.
+
+\item \textbf{RRT to Ball aiming to Enemy Goal} Irá usar o algoritmo de planejamento de trajetórias RRT para se deslocar atrás da bola com direção apontando para o gol oponente. Usado para se aproximar da bola e, em seguida, trocar para o próximo behavior, o Predictive RRT to Ball.
+
+\item \textbf{Predictive RRT to Ball} Usa uma predição linear considerando que a bola continuará na mesma velocidade. Usado para se chegar na bola com mais precisão quando próximo a ela. Chega atrás da bola mirando para o gol.
+
+\item \textbf{Shoot to Goal} Esse behavior só é chamado quando o jogador já está alinhado com a bola e o gol oponente. Esse comportamento acelera rapidamente o robô em linha reta para chegar no gol com uma velocidade alta.
+
+\item \textbf{Free Ball Foul Follow Line} Esse behavior é um específico para situações de falta do tipo Bola Livre, conforme descrito em \ref{fig:bola_livre}. Quando for detectado uma dessas posições, o jogador deve acelerar o mais rápio possível em direção à bola para ter o controle dela antes do oponente.
+
+\item \textbf{Spin Principal} Esse nó deve ser chamado quando a bola estiver em um dos quatros campos do campo. Caso seja um campo defensivo, o jogador irá girar para jogar a bola para frente; caso seja um na zona de ataque, o jogador girará para por a bola no centro do campo e continuar o ataque.
+
+\item \textbf{RRT to Ball aiming to far from Ally Goal} Irá usar o algoritmo de planejamento de trajetórias RRT para se deslocar atrás da bola com direção apontando para a zona de ataque (longe do gol aliado). Usado para se aproximar da bola e se posicionar para, em seguida, chamar o Behavior Shoot to Far from Ally Goal.
+
+\item \textbf{Shoot to Far from Ally Goal} Esse behavior só é chamado quando o jogador já está alinhado com a bola e o para frente (para longe do gol alidado). Esse comportamento acelera rapidamente o robô em linha reta para por a bola na zona de ataque.
+
+\end{itemize}
+
+
+\subsubsection{Auxiliar}
+
+O auxiliar, por sua vez, tem uma Behavior Tree muito simples, representada por apenas um nó que tem como função se posicionar em lugar ótimo com Triangulação de Delaunay\cite{delaunay34}. Sua árvore, é representada simplesmente por \ref{fig:auxiliar_bt}.
+
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.4\textwidth]{figures/Auxiliar_BT.png}
-   \caption{Behavior Tree para o auxiliar.} \label{fig:text_config_delaunay}
+   \caption{Behavior Tree para o auxiliar.} \label{fig:auxiliar_bt}
 \end{figure}
+
+\subsection{Técnicos}
+
+\subsubsection{Dois Principais}
+
+\subsubsection{Um principal e um auxiliar}
+
+\subsubsection{Troca de goleiro}
+
+
+   
+   
+
+   
+
+   
+
    
    
 
@@ -299,132 +346,11 @@ A seguir serão apresentados os resultados técnicos dos métodos de campos pote
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.8\textwidth]{figures/LastGoalierOutOfGoal.png}
-   	\caption{Behavior Tree usada para o goleiro quando este sai do gol.} \label{fig:text_config_delaunay}
+   	\caption{Behavior Tree usada para o goleiro quando este sai do gol.} \label{fig:OutOfGoal_BT}
 \end{figure}
 
    
    
-\subsection{Campos potenciais}
-
-\begin{figure}
-\subfigure[Campos potenciais em MATLAB, trajetória não suavizada.]{\includegraphics[width=0.47\textwidth]{figures/campospotML.jpg} \label{fig:sub:campospotML}}
-\subfigure[Campos potenciais em C++, trajetória suavizada.]{\includegraphics[width=0.47\textwidth]{figures/campospotC++.jpg} \label{fig:sub:campospotC++}}
-\caption{Resultados com campos potenciais.}
-\end{figure}
-    
-O algoritmo de campos potenciais foi testado primeiramente na plataforma MATLAB (Fig. \ref{fig:sub:campospotML}) para a configuração das linhas de campo. Em seguida houve o teste em C++ (Fig. \ref{fig:sub:campospotC++}). No primeiro, não foi utilizado o artifício de fazer o campo repulsivo do alvo decair para zero a partir de um limite. Foi observado que não há necessidade de se ter e efeito do dipolo elétrico em todo o espaço, pois o código em C++ gerou, neste teste e em outros, uma trajetória mais suave para o robô.
-
-O tempo de execução foi excelente, sendo de apenas 0,0043 segundos em MATLAB. Em C++ a medição foi de 0,00098 segundos. Isso dá uma boa margem para o requisito de tempo de 2 ms para o planejador de trajetórias, o que o torna um candidato qualificado no quesito tempo.
-    
-\subsection{RRT}
-
-O método foi testado em MATLAB (Fig. \ref{fig:rrtML}) e em C++ (Fig. \ref{fig:rrtC++}). No primeiro não foi implementada a suavização da trajetória. No segundo, sim.
-
-\begin{figure}
-\subfigure[RRT em MATLAB, trajetória não suavizada.]{\includegraphics[width=0.47\textwidth]{figures/rrtML.jpg} \label{fig:rrtML}}
-\subfigure[RRT em C++, trajetória suavizada.]{\includegraphics[width=0.47\textwidth]{figures/rrtC++.jpg} \label{fig:rrtC++}}
-\caption{Resultados com RRT.}
-\end{figure}
-
-Sobre usar ou não usar a Quadtree, o parâmetro $h$ usado foi de $7$ $cm$, fazendo com que a média $n$ de nós das árvores seja da ordem de $50$. A diferença entre o tempo $O(\log{n})$ e $O(n)$ para a inserção, considerando que com o método simples não há alocação de memória e tampouco constantes altas, é pequena. A inserção $O(\log{n})$ com constantes é mais lenta que $O(1)$. O tempo com a Quadtree é aproximadamente o dobro em todos os testes realizados, sendo a estrutura, portanto, descartada.
-
-Nesse caso, devido à característica aleatória do algoritmo, para evitar a variabilidade alta entre duas execuções consecutivas, buscando realmente se aproximar do ótimo, a trajetória é tomada como a melhor (menor comprimento) de um certo número de iterações do mesmo algoritmo. Para fazer a escolha do número de iterações para o algoritmo convergir para a solução ótima, da probabilidade $P$ e da $G$, foram realizados testes de forma a se obter as três tabelas de tempo, em milisegundos, nas tabelas da seção \ref{tab:Tempos_RRT_1}, respectivamente. Cada tempo é a média de $5000$ testes. Deve-se ter $P + G \leq 0,9$, pois deve haver pelo menos $0,1$ de probabilidade de se escolher um ponto aleatório no mapa.
-
-\begin{table}[H]
-\caption{Tempos de computação com 5 iterações - média de $5000$ ensaios.}
-\centering{
-  \begin{tabular}{|c|cccccccc|}
-    \hline
-    
-	$G \backslash P$ & 0.0 & 0.1 & 0.2 & 0.3 & 0.4 & 0.5 & 0.6 & 0.7 \\ \hline
-    0.0 & 0,723 & 0,610 & 0,586 & 0,578 & 0,601 & 0,621 & 0,672 & 0,760 \\
-    0.1 & 0,804 & 0,621 & 0,599 & 0,608 & 0,642 & 0,683 & 0,761 & 0,939 \\
-    0.2 & 0,878 & 0,641 & 0,633 & 0,647 & 0,697 & 0,786 & 0,986 & 1,488 \\
-    0.3 & 0,846 & 0,676 & 0,681 & 0,709 & 0,817 & 1,006 & 1,565 & - \\
-    0.4 & 1,046 & 0,758 & 0,788 & 0,854 & 1,030 & 1,697 & - & - \\
-    0.5 & 1,059 & 0,809 & 0,866 & 1,041 & 1,624 & - & - & - \\
-    
-	\hline
-  \end{tabular}
-}
-\label{tab:Tempos_RRT_1}
-\end{table}
-
-\begin{table}[H]
-\caption{Tempos de computação com 10 iterações - média de $5000$ ensaios.}
-\centering{
-  \begin{tabular}{|c|cccccccc|}
-    \hline
-    
-	$G \backslash P$ & 0.0 & 0.1 & 0.2 & 0.3 & 0.4 & 0.5 & 0.6 & 0.7 \\ \hline
-    0.0 & 1,605 & 1,128 & 1,098 & 1,106 & 1,144 & 1,207 & 1,329 & 1,526 \\
-    0.1 & 1,530 & 1,179 & 1,155 & 1,174 & 1,243 & 1,380 & 1,575 & 1,969 \\
-    0.2 & 1,740 & 1,206 & 1,235 & 1,283 & 1,389 & 1,553 & 1,935 & 3,049 \\
-    0.3 & 1,784 & 1,278 & 1,300 & 1,443 & 1,626 & 1,977 & 3,124 & - \\
-    0.4 & 2,612 & 1,404 & 1,455 & 1,644 & 2,042 & 3,228 & - & - \\
-    0.5 & 2,194 & 1,555 & 1,704 & 2,097 & 3,228 & - & - & - \\
-    
-	\hline
-  \end{tabular}
-}
-\label{tab:Tempos_RRT_2}
-\end{table}
-
-\begin{table}[H]
-\caption{Tempos de computação com 25 iterações - média de $5000$ ensaios.}
-\centering{
-  \begin{tabular}{|c|cccccccc|}
-    \hline
-	$G \backslash P$ & 0.0 & 0.1 & 0.2 & 0.3 & 0.4 & 0.5 & 0.6 & 0.7 \\ \hline
-    0.0 & 3,346 & 2,791 & 2,657 & 2,780 & 2,889 & 2,984 & 3,264 & 3,705 \\
-    0.1 & 3,858 & 2,795 & 2,858 & 2,881 & 3,025 & 3,273 & 3,755 & 4,612 \\
-    0.2 & 4,100 & 2,887 & 2,913 & 3,077 & 3,332 & 3,823 & 4,749 & 7,698 \\
-    0.3 & 4,735 & 3,237 & 3,316 & 3,581 & 4,085 & 5,062 & 8,006 & - \\
-    0.4 & 4,788 & 3,552 & 3,730 & 4,210 & 5,231 & 8,177 & - & - \\
-    0.5 & 5,405 & 3,985 & 4,400 & 5,395 & 8,326 & - & - & - \\
-    
-	\hline
-  \end{tabular}
-  }
-\label{tab:Tempos_RRT_3}
-\end{table}
-
-A partir dos resultados das tabelas acima, foi decidido usar-se o valor de 0,1 para $G$ e 0,2 para $P$. Em média, o tempo com esses valores é 30\% menor em relação ao algoritmo sem essa heurística (P = G = 0).
-
-Na figura acima, pode-se observar a variança nos caminhos. De esquerda para direita, cima pra baixo: 5, 10, 25 e 100 iterações. Um número menor de iterações é mais rápido, porém existe uma probabilidade maior de se encontrar uma trajetória não ótima e distante da anterior. Diante disso, foi escolhido o número máximo de iterações que respeita o limite de tempo de 2 ms com alguma folga: 15 iterações, que fazem uma média de 1,7 ms.
-
-\subsection{Otimização com MILP}
-\subsubsection{Navegação sobre todo o campo}
-
-O método de otimização aplicado sobre todo o campo se mostrou muito lento. O GLPK testa todas as possibilidades de combinações para as variáveis binárias, o que representa uma complexidade de $O(2^n)$. Nessa forma, para cada obstáculo e para cada passo, existem duas variáveis binárias. Por exemplo, para um vetor $b$ com 5 variáveis, existem 32 passos possíveis. Para 5 obstáculos (situação real), existem 10 variáveis binárias. O total de variáveis é de $5 + 32*10 = 325$, o que torna o algoritmo inaplicável para a complexidade dada. O método foi descartado na fase de testes em cenário simples.
-
-\begin{tabular}{p{5cm} p{7cm}}
-    \vspace{0pt} 
-    \label{fig: rrtsim}
-	\includegraphics[width=1\textwidth]{figures/allsim.png}
-    \vspace{0pt}\\
-\end{tabular}
-
-%\begin{figure}
-%    \label{fig: rrtsim}
-%	\includegraphics[width=1\textwidth]{figures/allsim.png}
-%   	\caption{De esquerda para direita, cima pra baixo: 5, 10, 25 e 100 iterações.}
-%\end{figure}
-
-% Na figura acima, pode-se observar a variança nos caminhos. De esquerda para direita, cima pra baixo: 5, 10, 25 e 100 iterações. Um número menor de iterações é mais rápido, porém existe uma probabilidade maior de se encontrar uma trajetória não ótima e distante da anterior. Diante disso, foi escolhido o número máximo de iterações que respeita o limite de tempo de 2 ms com alguma folga: 15 iterações, que fazem uma média de 1,7 ms.
-
-% \subsection{Otimização com MILP}
-% \subsubsection{Navegação sobre todo o campo}
-
-% O método de otimização aplicado sobre todo o campo se mostrou muito lento. O GLPK testa todas as possibilidades de combinações para as variáveis binárias, o que representa uma complexidade de $O(2^n)$. Nessa forma, para cada obstáculo e para cada passo, existem duas variáveis binárias. Por exemplo, para um vetor $b$ com 5 variáveis, existem 32 passos possíveis. Para 5 obstáculos (situação real), existem 10 variáveis binárias. O total de variáveis é de $5 + 32*10 = 325$, o que torna o algoritmo inaplicável para a complexidade dada. O método foi descartado na fase de testes em cenário simples.
-
-\subsubsection{Navegação por uma triangulação}
-
-O segundo método, por outro lado, permite o trabalho do GLPK sem levar os obstáculos em consideração, pois ao respeitar o limite dos triângulos, respeita-se ao mesmo tempo a restrição dos obstáculos. Tendo apenas 5 variáveis binárias, a complexidade $O(2^n)$ é admissível. No entando, ao se dividir o problema em triângulos e montar um algoritmo que resolve a transição por um triângulo, o algoritmo passou a não respeitar possíveis restrições do próximo triângulo enquanto soluciona o atual.
-
-Por exemplo, foi usado para testes um gerador de situações aleatórias, que posiciona 5 obstáculos (três adversários e dois aliados) no campo. O otimizador leva o robô ao próximo triângulo com sucesso, entrentanto ele chega com uma posição e direção desfavoráveis para a solução do próximo. Em mais da metade dos testes aleatórios, o otimizador GLPK acusou erro de equação sem solução para algum trecho.
-
-Tentar expandir as restrições do triângulo seguinte para o atual acabou por exigir uma quantidade maior de equações de restrição, o que desacelerou o algoritmo e acabou por não conseguir resolver inteiramente o problema. Diante dessa situação, este método também foi descartado ainda na fase de testes em cenário simples.
 
 \section{Conclusões}
 

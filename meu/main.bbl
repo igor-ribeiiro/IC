@@ -74,15 +74,20 @@
 \endentry
 
 \entry{tasinaffo_ic}{article}{}
-  \name{author}{1}{}{%
+  \name{author}{2}{}{%
     {{}%
      {Coelho}{C.}%
      {Mateus Menezes~Azevedo}{M.~M.~A.}%
      {}{}%
      {}{}}%
+    {{}%
+     {Tasinaffo}{T.}%
+     {Paulo~Marcelo}{P.~M.}%
+     {}{}%
+     {}{}}%
   }
-  \strng{namehash}{CMMA1}
-  \strng{fullhash}{CMMA1}
+  \strng{namehash}{CMMATPM1}
+  \strng{fullhash}{CMMATPM1}
   \field{title}{Desenvolvimento de Visão Computacional do Robô Humanoide}
   \field{year}{2016}
 \endentry
