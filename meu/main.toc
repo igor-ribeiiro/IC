@@ -10,36 +10,36 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3}Descri\IeC {\c c}\IeC {\~a}o do Problema}{6}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1}Behavior tree}{8}
+\contentsline {subsection}{\numberline {3.1}Behavior tree}{9}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.1.1}N\IeC {\'o} Folha}{8}
+\contentsline {subsubsection}{\numberline {3.1.1}N\IeC {\'o} Folha}{9}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.1.2}N\IeC {\'o} composto}{8}
+\contentsline {subsubsection}{\numberline {3.1.2}N\IeC {\'o} composto}{9}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2}T\IeC {\'e}cnico}{10}
+\contentsline {subsection}{\numberline {3.2}T\IeC {\'e}cnico}{11}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.2.1}Goleiro}{10}
+\contentsline {subsubsection}{\numberline {3.2.1}Goleiro}{11}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.2.2}Principal}{11}
+\contentsline {subsubsection}{\numberline {3.2.2}Principal}{12}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.2.3}Auxiliar}{13}
+\contentsline {subsubsection}{\numberline {3.2.3}Auxiliar}{14}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3}T\IeC {\'a}ticas de Jogo}{15}
+\contentsline {subsection}{\numberline {3.3}T\IeC {\'a}ticas de Jogo}{16}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4}Resultados Obtidos}{15}
+\contentsline {section}{\numberline {4}Resultados Obtidos}{16}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1}Campos potenciais}{19}
+\contentsline {subsection}{\numberline {4.1}Campos potenciais}{20}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2}RRT}{20}
+\contentsline {subsection}{\numberline {4.2}RRT}{21}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3}Otimiza\IeC {\c c}\IeC {\~a}o com MILP}{22}
+\contentsline {subsection}{\numberline {4.3}Otimiza\IeC {\c c}\IeC {\~a}o com MILP}{23}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.3.1}Navega\IeC {\c c}\IeC {\~a}o sobre todo o campo}{22}
+\contentsline {subsubsection}{\numberline {4.3.1}Navega\IeC {\c c}\IeC {\~a}o sobre todo o campo}{23}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.3.2}Navega\IeC {\c c}\IeC {\~a}o por uma triangula\IeC {\c c}\IeC {\~a}o}{23}
+\contentsline {subsubsection}{\numberline {4.3.2}Navega\IeC {\c c}\IeC {\~a}o por uma triangula\IeC {\c c}\IeC {\~a}o}{24}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5}Conclus\IeC {\~o}es}{24}
+\contentsline {section}{\numberline {5}Conclus\IeC {\~o}es}{25}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6}Agradecimentos}{24}
+\contentsline {section}{\numberline {6}Agradecimentos}{25}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7}Bibliografia}{25}
+\contentsline {section}{\numberline {7}Bibliografia}{26}
