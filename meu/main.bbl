@@ -73,6 +73,27 @@
   \field{year}{2016}
 \endentry
 
+\entry{cox1988c++}{inproceedings}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Cox}{C.}%
+     {Ingemar~J}{I.~J.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{organization}{1}{%
+    {IEEE}%
+  }
+  \strng{namehash}{CIJ1}
+  \strng{fullhash}{CIJ1}
+  \field{booktitle}{Robotics and Automation, 1988. Proceedings., 1988 IEEE
+  International Conference on}
+  \field{pages}{641\bibrangedash 643}
+  \field{title}{C++ language support for guaranteed initialization, safe
+  termination and error recovery in robotics}
+  \field{year}{1988}
+\endentry
+
 \entry{tasinaffo_ic}{article}{}
   \name{author}{2}{}{%
     {{}%

@@ -48,14 +48,14 @@
 \section{Resumo do Plano Inicial}
 \label{secao:plano_inicial}
 
-O objetivo deste trabalho é desenvolver e implementar um algoritmo para a estratégia de um time composto por três robôs diferenciais. O contexto é uma partida de futebol segundo a Competição Brasileira de Robótica (CBR), categoria IEEE Very Small Size Soccer (VSS). A partir da posição de cada robô, incluindo robôs oponentes, e da bola, deve-se obter a melhor ação que cada robô aliado deverá executar para que faça o maior número de gols no fim de uma partida considerando limitações mecânicas e de controle. Visa-se utilizar os algoritmos aqui implementados pela equipe da ITAndroids, que representa o ITA, na competição da Latin America Robotics Competition (LARC)/CBR de 2017 em diante.
+O objetivo deste trabalho é desenvolver e implementar um algoritmo para a estratégia de um time composto por três robôs diferenciais. O contexto é uma partida de futebol segundo a Competição Brasileira de Robótica (CBR), categoria IEEE Very Small Size Soccer (VSS). A partir da posição de cada robô, incluindo robôs oponentes, e da bola, deve-se obter a melhor ação que cada robô aliado deverá executar para que faça o maior número de gols no fim de uma partida considerando limitações mecânicas e de controle. Visa-se utilizar os algoritmos aqui implementados pela equipe da ITAndroids, que representa o ITA, em competições nacionais e internacionais, como na competição Latin America Robotics Competition (LARC)/CBR.
 
 Planejamento:
 \begin{itemize}
 
 \item 1o Bimestre (ago / set): Estudo da literatura e revisão bibliográfica sobre o tema de tomada de decisão para robôs jogadores de futebol.
 
-\item 2o Bimestre (out / nov): Seleção de métodos a serem implementados para planejamento e codificação da implementação.
+\item 2o Bimestre (out / nov): Seleção de métodos a serem implementados e codificação da implementação.
 
 \item 3o Bimestre (dez / jan): Codificação de testes automatizados para comprovação da correta implementação do algoritmo. Redação do relatório parcial.
 
@@ -70,9 +70,9 @@ Planejamento:
 \section{Resumo das Atividades Realizadas}
 \label{secao:atividades_realizadas}
 
-Ao longo dos dois primeiros meses, foram realizados estudos e foi decidido que será usado o algoritmo Behavior Tree (Árvore de Comportamentos) para tomada de decisão. Esse algoritmo foi escolhido dentre de opções como Máquina de Estados Finita e Árvore de Decisões. Uma introdução a esses assuntos pode ser encontrada em Orozco~\cite{orozcomaquinas}, para máquina de estados finita, e em Russel e Norvig~\cite{decision_tree}, para Árvore de Decisões. Para uma descrição sobre a eficácia do algoritmo Behavior Tree (BT) no contexto da robótica, pode-se encontrar na referência \cite{behavior_tree_robotics}.
+Ao longo dos dois primeiros meses, foram realizados estudos e foi decidido que será usado o algoritmo Behavior Tree (Árvore de Comportamentos) para a tomada de decisão. Esse algoritmo foi escolhido dentre de opções como Máquina de Estados Finita e Árvore de Decisões. Uma introdução a esses assuntos pode ser encontrada em \cite{orozcomaquinas} para máquina de estados finita e em \cite{decision_tree}, para Árvore de Decisões. Para uma descrição sobre a eficácia do algoritmo Behavior Tree (BT) no contexto da robótica, pode-se encontrar na referência \cite{behavior_tree_robotics}.
 
-Ao longo do segundo e terceiro bimestres, a base do algoritmo foi implementada utilizando C++, que é a linguagem utilizada pela equipe. Foi, em seguida, realizada a codificação dos testes de unidade para os componentes principais do algoritmo, os nós intermediários da árvore. A performance computacional da BT foi analisada e mostrou resultados satisfatórios e condizentes com o que foi previsto. A estrutura básica do algoritmo estava pronta.
+Ao longo do segundo e terceiro bimestres, a base do algoritmo foi implementada utilizando C++, que é a linguagem utilizada pela equipe, muito consagrada no contexto da robótica \cite{cox1988c++}. Foi, em seguida, realizada a codificação dos testes de unidade para os componentes principais do algoritmo, os nós intermediários da árvore. A performance computacional da BT foi analisada e mostrou resultados satisfatórios e condizentes com o que foi previsto. A estrutura básica do algoritmo estava pronta.
 
 A parte da BT que considera as limitações de um robô real foi implementada e testada no time. 
 O método  foi mostrado efetivo na LARC, ocorrida entre os dias 7 a 11 de novembro de 2017. O algoritmo mostrou que realiza troca de posições entre jogadores de forma fluida, de modo que a equipe tinha o posicionamento mais dinâmico da competição. A equipe da ITAndroids conquistou o sétimo lugar de 30.
@@ -80,7 +80,7 @@ O método  foi mostrado efetivo na LARC, ocorrida entre os dias 7 a 11 de novemb
 \section{Descrição do Problema}
 \label{secao:enunciado_problema}
 
-No contexto do futebol de robôs, a tomada de decisão traz muitos desafios. A estratégia consiste no fato de se implementar um algoritmo que consiga utilizar o planejamento de trajetórias do robô da melhor maneira possível. Isso nos traz a um desafio de nível mais alto: decidir qual a melhor decisão que cada robô pode tomar em um certo momento considerando limitações de trajetórias possíveis de serem seguidas. A figura \ref{fig:vss_ele} mostra a placa eletrônica do robô utilizado. 
+No contexto do futebol de robôs, a tomada de decisão traz muitos desafios. A estratégia consiste no fato de se implementar um algoritmo que consiga utilizar o planejamento de trajetórias do robô da melhor maneira possível. Isso nos traz a um desafio de nível de abstração mais alto: decidir qual a melhor decisão que cada robô pode tomar em um certo momento considerando limitações de trajetórias possíveis de serem seguidas. A figura \ref{fig:vss_ele} mostra a placa eletrônica do robô utilizado. 
 
 \begin{figure}[H]
 	\centering
@@ -88,7 +88,7 @@ No contexto do futebol de robôs, a tomada de decisão traz muitos desafios. A e
    \caption{Placa eletrônica de um robô Very Small Size.} \label{fig:vss_ele}
 \end{figure}
 
-Nesse projeto, trabalhou-se com os robôs da competição IEEE Very Small Size (VSS): uma competição de futebol de robôs completamente automatizada em que cada robô tem como tamanho máximo um cubo de 7,5 cm de aresta. O campo de futebol possuil 1,5 m de comprimento e 1,3 m de largura. Cada time tem 3 jogadores: que podem assumir posições dinâmicas, como goleiro e atacante, ao decorrer de uma partida. Uma câmera proporciona a visão aérea com as posições de todos os elementos da partida. A visão computacional utilizada pela equipe ITAndroids pode ser encontrada com mais detalhes em \cite{tasinaffo_ic}. As regras completas podem ser lidas em \cite{cbr2008}.
+Nesse projeto, trabalhou-se com os robôs da competição IEEE Very Small Size (VSS): uma competição de futebol de robôs completamente automatizada em que cada robô tem como tamanho máximo um cubo de 7,5 cm de aresta. O campo de futebol possuil 1,5 m de comprimento e 1,3 m de largura. Cada time tem 3 jogadores: que podem assumir posições dinâmicas, como goleiro e atacante, ao decorrer de uma partida. Uma câmera proporciona a visão aérea com as posições de todos os elementos da partida. As regras completas podem ser lidas em \cite{cbr2008}.
 
 \begin{figure}[H]
 	\centering
@@ -96,15 +96,24 @@ Nesse projeto, trabalhou-se com os robôs da competição IEEE Very Small Size (
    \caption{Robôs da ITAndroids da categoria IEEE VSSS.} \label{fig:vss}
 \end{figure}
 
-A figura \ref{fig:vss} mostra os robôs usados nas competições. Cada robô foi projetado com duas rodas laterais e duas esferas livres à frente e atrás para manter o equilíbrio. Essa característica o torna um robô diferencial. Ou seja, temos o controle sobre as velocidades linear e angular, mas não é possível mover o robô para os lados. A linguagem utilizada para o projeto foi C++, pois é uma linguagem que tem uma velocidade de execução alta e tem escalabilidade descente para um projeto grande. 
+A figura \ref{fig:vss} mostra os robôs usados nas competições. A visão computacional utilizada pela equipe ITAndroids pode ser encontrada com mais detalhes em \cite{tasinaffo_ic} e utiliza uma câmera no topo do campo que repassa informaçãoes para um computador processar, como visto na figura \ref{fig:funcioamento}.
+
+\begin{figure}[H]
+	\centering
+		\includegraphics[width=0.7\textwidth]{figures/overview.png}
+  \caption{Representação do funcionamento técnico de um jogo de VSS.}
+	\label{fig:funcioamento}
+\end{figure}
+
+Cada robô foi projetado com duas rodas laterais e duas esferas livres à frente e atrás para manter o equilíbrio. Essa característica o torna um robô diferencial. Ou seja, temos o controle sobre as velocidades linear e angular, mas não é possível mover o robô para os lados. A linguagem utilizada para o projeto foi C++, pois é uma linguagem que tem uma velocidade de execução alta e tem escalabilidade descente para um projeto grande. 
 
 Nesse contexto, surgem várias questões a serem resolvidas para se ter um time vencedor. Nesse projeto, será abordado o seguinte problema de estratégia: dada a posição e a velocidade de cada robô no campo, da bola e da direção que os nossos robores estão (não é possível descobrir a posição dos robôs oponentes, pois não sabemos a distribuição de cores que eles usam no seu topo), deve-se escolher qual posição o robô irá, com qual controlador  e qual planejamento de trajetórias utilizar. Deve-se também montar um plano para ações futuras, planejando uma sequência de posições que o robô deve ir para efetuar um gol.
 
 O algoritmo de estratégia deve executar em tempo de execução de, no máximo, 16 ms para todo o time, que é o tempo de amostragem da câmera. A maior parte desse tempo é gasto com o planejamento de trajetórias usado, que é o Rapidly-exploring Random Tree (RRT). O tempo para cada execução de um RRT é de 1 ms, de acordo com \cite{franzoni_rrt}, limitando a em torno de um limite de doze chamadas do algoritmo por execução completa da estratégia, com uma margem de erro trinta e três porcento. Ressalta-se a importância de não ultrapassar esse tempo máximo, já que se isso acontecer perde-se uma imagem da câmera e o funcionamento do jogo é realizado de forma atrasado.
 
-Deve-se, então, ser montado um esquema de posicionamento dinâmico em que não existam nem atacante, nem zagueiro, nem goleiro fixos, mas sim, uma ideia de que as posições dependam da posição de jogo, garantindo que os três jogadores possam estar mais bem posicionados e tenham liberdade para escolherem suas próximas ações.
+Deve-se, então, ser montado um esquema de posicionamento dinâmico em que não existam nem atacante, nem zagueiro, nem goleiro fixos, mas sim, que as posições dependam e se adaptem com a posição de jogo, garantindo que os três jogadores possam estar mais bem posicionados e tenham liberdade para escolherem suas próximas ações.
 
-Para resolver esse problema, foi escolhido como principal algoritmo para a tomada de decisão a Behavior Tree, embasado na decisão de um time referência no futebol de robô mundial na categoria Small Size League \cite{ssl}, the Near East University team: the NEUIslanders\cite{NEUIslanders_ssl}.
+Para resolver esse problema, foi escolhido como principal algoritmo para a tomada de decisão a Behavior Tree, embasado na decisão de um time referência no futebol de robô mundial na categoria Small Size League \cite{ssl}, o Near East University team: the NEUIslanders \cite{NEUIslanders_ssl}.
 
 
 \subsection{Behavior tree}
@@ -121,19 +130,19 @@ Os nós folha são os nós terminais da Árvore e eles que representam as açõe
 
 \textbf{Nó de Ação} São os nós que de fato realizam uma ação, como se movimentar até a bola.
 
-\textbf{Nó condicional} São nós que apenas retornam um estado sem realizar nenhuma ação concreta, como checar se o time está atacando.
+\textbf{Nó condicional} São nós que apenas retornam um estado sem realizar nenhuma ação concreta, como checar se o time está atacando. São usados para controlar quais nós serão executados em conjunto com os nós compostos.
 
 \subsubsection{Nó composto}
 
-Nós compostos são os nós intermediários da árvore, que  são resposáveis por escolher quais os nós que serão executados. São completamente reutilizáveis no sentido que apenas uma implementação de cada tipo de nó composto deve existir e ela poderá ser usada em diversas partes do código. Os principais tipos desses nós que foram usados para a estraegia estão listados a seguir:
+Nós compostos são os nós intermediários da árvore, que  são resposáveis por escolher quais os nós que serão executados. São completamente reutilizáveis no sentido que apenas uma implementação de cada tipo de nó composto deve existir e ela poderá ser usada em diversas partes do código. Os principais tipos desses nós que foram usados para a estratégia estão listados a seguir:
 
 \textbf{Selector Behavior} Nesse behavior, é selecionado um de seus filhos para ser acessado a seguir. Ele é usado quando tem-se várias maneiras de se realizar uma mesma ação e deve-se escolher a melhor delas em uma determinada situação. Ele funciona executando os filhos em uma determinada ordem e, assim que um dos filhos retorna TRUE ou RUNNING, esse nó retorna o mesmo valor. Se um filho retornar FALSE, o próximo filho será executado. Caso nenhum filho seja sucedido ou retorne que deve ser executado mais um vez, o nó retorna FALSE.
 
 \textbf{Sequence Behavior} Esse nó executa cada um dos seus filhos em uma sequência bem definida e fixa. Ele é usado para fazer ações sequenciadas para completar um objetivo maior, por exemplo: chutar a bola para o gol oponente requer que o robô aliado esteja atrás da bola, o que significa que chegar atrás da bola e, em seguida, chutar a bola representam ações sequenciadas. Ele funciona de forma que, quando um filho retorna RUNNING ou FALSE, o behavior retorna o mesmo valor e, quando um filho retorna TRUE, ele avança para o próximo filho. Se todos os filhos retornarem TRUE, o behavior é bem sucedido e também retorna TRUE.
 
-\textbf{Parallel Behavior} O objetivo desse nó é executar todos os seus filhos ao mesmo tempo, fato que pode ser obtido ao utilizar-se de processamento paralelo ou não. Se um filho retorna FALSE, o behavior retorna FALSE. Se todos os filhos retornarem TRUE, o behavior retorna TRUE. Em todas as outras situações, o behavior retorna RUNNING e continua sua execução por pelo menos outra iteração.
+\textbf{Parallel Behavior} O objetivo desse nó é executar todos os seus filhos ao mesmo tempo, fato que pode ser obtido ao utilizar-se de processamento paralelo ou não. Na implementação desse trabalho foi usado a versão não paralela do algoritmo. Se um filho retorna FALSE, o behavior retorna FALSE. Se todos os filhos retornarem TRUE, o behavior retorna TRUE. Em todas as outras situações, o behavior retorna RUNNING e continua sua execução por pelo menos outra iteração.
 
-\textbf{Decorator} O nome para esse behavior é inspirado no conceito de Decorator em Software Design Pattern, que pode ser explicado em \cite{hunt2013gang}. No contexto da Behavior Tree, esse nó tem apenas um filho e ele modifica o comportamento do filho de alguma maneira. Um decorador pode ser diversos tipos, mas os mais usados no projeto foram 
+\textbf{Decorator} O nome para esse behavior é inspirado no conceito de Decorator em Software Design Pattern, que pode ser explicado em \cite{hunt2013gang}. No contexto da Behavior Tree, esse nó tem apenas um filho e ele modifica o comportamento do filho de alguma maneira. Um decorador pode ser diversos tipos, mas os mais usados no projeto foram:
 
 \begin{enumerate}
 \item AlwaysFail e AlwaysSucceed: que fazem que o fiho sempre retorne FALSE ou sempre retorna TRUE respectivamente.
