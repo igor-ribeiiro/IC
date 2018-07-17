@@ -1,6 +1,6 @@
 \documentclass[a4paper,12pt]{article}
 
-\usepackage[english,brazil]{babel}
+\usepackage[english,brazilian]{babel}
 \usepackage[utf8]{inputenc}
 \usepackage{icomma}
 \usepackage{amsmath}
@@ -27,6 +27,7 @@
 \usepackage[backend=bibtex,style=ieee,sorting=none]{biblatex}
 \usepackage{algorithm}
 \usepackage[noend]{algpseudocode}
+\usepackage{float}
 \usepackage{pdfpages}
 \usepackage{enumerate}
 \bibliography{main}
@@ -36,7 +37,7 @@
 \newpage
 
 \begin{document}
-\selectlanguage{brazil}
+\selectlanguage{brazilian}
 
 \includepdf[pages={1-},scale=1]{Inicio.pdf}
 
@@ -70,12 +71,14 @@ Planejamento:
 \section{Resumo das Atividades Realizadas}
 \label{secao:atividades_realizadas}
 
-Ao longo dos dois primeiros meses, foram realizados estudos e foi decidido que será usado o algoritmo Behavior Tree (Árvore de Comportamentos) para a tomada de decisão. Esse algoritmo foi escolhido dentre de opções como Máquina de Estados Finita e Árvore de Decisões. Uma introdução a esses assuntos pode ser encontrada em \cite{orozcomaquinas} para máquina de estados finita e em \cite{decision_tree}, para Árvore de Decisões. Para uma descrição sobre a eficácia do algoritmo Behavior Tree (BT) no contexto da robótica, pode-se encontrar na referência \cite{behavior_tree_robotics}.
+Ao longo dos dois primeiros meses, foram realizados estudos e foi decidido que será usado o algoritmo Behavior Tree (Árvore de Comportamentos) para a tomada de decisão. Esse algoritmo foi escolhido dentre de opções como Máquina de Estados Finita e Árvore de Decisões. Uma introdução a esses assuntos pode ser encontrada em \cite{orozcomaquinas} para máquina de estados finita e em \cite{decision_tree} para Árvore de Decisões. Para uma descrição sobre a eficácia do algoritmo Behavior Tree (BT) no contexto da robótica, pode-se encontrar na referência \cite{behavior_tree_robotics}.
 
 Ao longo do segundo e terceiro bimestres, a base do algoritmo foi implementada utilizando C++, que é a linguagem utilizada pela equipe, muito consagrada no contexto da robótica \cite{cox1988c++}. Foi, em seguida, realizada a codificação dos testes de unidade para os componentes principais do algoritmo, os nós intermediários da árvore. A performance computacional da BT foi analisada e mostrou resultados satisfatórios e condizentes com o que foi previsto. A estrutura básica do algoritmo estava pronta.
 
-A parte da BT que considera as limitações de um robô real foi implementada e testada no time. 
-O método  foi mostrado efetivo na LARC, ocorrida entre os dias 7 a 11 de novembro de 2017. O algoritmo mostrou que realiza troca de posições entre jogadores de forma fluida, de modo que a equipe tinha o posicionamento mais dinâmico da competição. A equipe da ITAndroids conquistou o sétimo lugar de 30.
+No quarto e quinto bimestre, foi-se implementado testes unitários para fazer que a implementação seja mais à prova de falhas. Também foi medido o tempo de execução do código implementado, que se mostrou muito pequeno em relação com outras partes, principalmente com a de visão computacional, o que implica que a eficácia computacional da codificicação está satisfatória.
+
+Em seguida, a parte da BT que considera as limitações de um robô real foi implementada e testada no time. 
+O método  foi mostrado efetivo na LARC, ocorrida entre os dias 7 a 11 de novembro de 2017. O algoritmo mostrou que realiza troca de posições entre jogadores de forma fluida, de modo que a equipe tinha o posicionamento mais dinâmico da competição. A equipe da ITAndroids conquistou o sétimo lugar de 30 competidores.
 
 \section{Descrição do Problema}
 \label{secao:enunciado_problema}
