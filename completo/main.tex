@@ -242,15 +242,6 @@ Em seguida, uma interface foi desenvolvida para que fosse possível escolher as 
 
 \end{enumerate}
 
-\subsection{Táticas de Jogo}
-
-Táticas de Jogo, representado pela classe `Play', é a parte mais alto nível da estratégia. Essa classe é responsável por escolher qual técnico usar em um determinado momento da partida. O Play escolhe qual o melhor modo de se jogar em uma situação, como, por exemplo, ter uma postura mais agressiva ou mais defensiva envolvendo os três jogadores. Só pode existir um Play no jogo, que pode ser tratado como a raiz de uma Behavior Tree que tem os técnicos como filhos, tendo, cada um, três árvores relativas a cada jogador.
-
-O seu funcionamento é similar ao Selector Behavior, no sentido em que é preciso escolher apenas um técnico a cada momento. Para avaliar quando é necessário fazer uma troca, usa-se o mesmo modelo de retorno: TRUE, FALSE e RUNNING para os técnicos. 
-
-Dado essa troca, pode ser criados técnicos temporários para jogadas específicas de jogo, como o goleiro sair do gol e voltar outro jogador, que é uma ação de transição. Isso pode significar que um técnico principal pode chamar esse outro, voltando depois para o mesmo técnico novamente. Então, podemos ter um técnico principal e vários temporários para jogadas ensaidas e específicas que envolvam mais de um jogador.
-
-
 \section{Resultados Obtidos}
 	\label{secao: resultados_obtidos}
     
@@ -336,27 +327,6 @@ O auxiliar, por sua vez, tem uma Behavior Tree muito simples, representada por a
 	\centering
 	\includegraphics[width=0.4\textwidth]{figures/Auxiliar_BT.png}
    \caption{Behavior Tree para o auxiliar.} \label{fig:auxiliar_bt}
-\end{figure}
-
-
-\subsection{Técnicos}
-
-Finalmente, será mostrado quais técnicos foram usados na estratégia. A princípio, três técnicos foram desenvolvidos. Primeiramente, será descrito o comportamento de cada um deles e quando é esperado que cada um seja usado, seguido das condições de troca entre eles.
-
-
-
-\subsubsection{Dois principais} Esse técnicos usa uma formação de jogadores com 1 goleiro e dois jogadores principais. Isso significa que os dois principais irão para à bola ao mesmo tempo, o que pode ser caótico para uma situação de ataque, em que precisão para acertar a bola é necessária. Porém, para situações defensivas, esse técnico demonstra muita eficácia, porque os dois jogadores se tornam efetivamente zagueiros, indo para a bola e dificultando o avanço do atacante adversário.
-
-\subsubsection{Um principal e um auxiliar} Esse técnico, diferente do anterior, é usado para situações de ataque. Ao utilizar apenas um principal, essa formação é capaz de fornecer ataques muito mais precisos, em que os jogadores aliados não se colidem durante a movimentação. O auxiliar, nessa formação, não fica muito longe da bola, ficando esperando a bola escapar do principal, por uma defesa do oponente por exemplo. No momento que o auxiliar estiver em uma posição mais próxima da bola que o principal, ele se torna o principal, enquanto que o principal se torna o auxiliar, de modo que o ataque seja contínuo. Essa formação se mostrou muito eficaz na CBR, fazendo que a ITAndroids tivesse um dos ataques, em termos de estratégia, mais consistentes da competição.
-
-\subsubsection{Troca de Goleiro} Esse é um tipo de técnico temporário para realizar uma jogada específica de jogo, sendo feito para uma ação de transição. Esse técnico será chamado em situações em que o goleiro deverá sair do gol e se tornar um principal, enquanto que o outro jogador mais próximos do gol se torna o novo goleiro. A situação em que essa troca deve ocorrer é quando a bola está perto do goleiro e todos os jogadores inimigos estão bem longe, condição necessária por se tratar de uma jogada arriscada.
-
-Tecnicamente, esse técnico é usado em situações em que temos 2 principais e um goleiro, já que ele só ocorrer em situações defensivas. Ele funciona fazendo que o goleiro se torne o principal sem o Behavior de esperar a bola sair do gol, como mostrado na Figura \ref{fig:OutOfGoal_BT}. Em seguida, o jogador principal mais próximo do gol se torna um goleiro e, como ele está fora do gol, voltará para tal por meio do Behavior Get Back to Goal. Quando o novo goleiro chegar em sua posição, esse técnico é terminado e volta para o técnico que estava anteriormente.
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.8\textwidth]{figures/LastGoalierOutOfGoal.png}
-   	\caption{Behavior Tree usada para o goleiro quando este sai do gol.} \label{fig:OutOfGoal_BT}
 \end{figure}
 
 
