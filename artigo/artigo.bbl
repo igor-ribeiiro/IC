@@ -1,4 +1,4 @@
-\begin{thebibliography}{5}
+\begin{thebibliography}{9}
 \newcommand{\enquote}[1]{``#1''}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
@@ -8,11 +8,26 @@
   \providecommand{\doi}{doi:\discretionary{}{}{}\begingroup
   \urlstyle{rm}\Url}\fi
 
+\bibitem[{Abiyev \emph{et~al.}(2017)Abiyev, Şenol Bektas, Akkaya and
+  Aytac}]{NEUIslanders_ssl}
+Abiyev, R.H., Şenol Bektas, Akkaya, N. and Aytac, E., 2017.
+\newblock \enquote{Neuislanders 2017 team description paper}.
+\newblock Robocup.
+
 \bibitem[{Akiyama and Noda(2007)}]{akiyama2007multi}
 Akiyama, H. and Noda, I., 2007.
 \newblock \enquote{Multi-agent positioning mechanism in the dynamic
   environment}.
 \newblock In \emph{Robot Soccer World Cup}. Springer, pp. 377--384.
+
+\bibitem[{CBR(2008)}]{CBR2008}
+CBR, 2008.
+\newblock Http://www.cbrobotica.
+  org/wp-content/uploads/2014/03/VerySmall2008\_en.pdf.
+
+\bibitem[{Coelho and Tasinaffo(2016)}]{tasinaffo_ic}
+Coelho, M.M.A. and Tasinaffo, P.M., 2016.
+\newblock \enquote{Desenvolvimento de visão computacional do robô humanoide}.
 
 \bibitem[{Delaunay(1934)}]{delaunay34}
 Delaunay, B., 1934.
@@ -24,6 +39,13 @@ Delaunay, B., 1934.
 Hunt, J., 2013.
 \newblock \enquote{Gang of four design patterns}.
 \newblock In \emph{Scala Design Patterns}, Springer, pp. 135--136.
+
+\bibitem[{Okuyama(2017)}]{franzoni_rrt}
+Okuyama, I.F., 2017.
+\newblock \emph{TRAJECTORY PLANNING CONSIDERING ACCELERATION LIMITS FOR AN
+  AUTONOMOUS SOCCER PLAYER}.
+\newblock Trabalho de gradua\c{c}\~{a}o, Instituto Tecnol\'{o}gico de
+  Aeron\'{a}utica.
 
 \bibitem[{Voronoi(1908)}]{voronoi08}
 Voronoi, G., 1908.
