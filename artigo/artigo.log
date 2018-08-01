@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.7.29)  1 AUG 2018 08:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.7.29)  1 AUG 2018 09:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -468,22 +468,30 @@ Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
 )
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/times.sty
 Package: times 2005/04/12 PSNFSS-v9.2a (SPQR) 
-)) (./artigo.aux)
+))
+(/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count93
+\float@exts=\toks20
+\float@box=\box26
+\@float@everytoks=\toks21
+\@floatcapt=\box27
+) (./artigo.aux)
 \openout1 = `artigo.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 4.
-LaTeX Font Info:    ... okay on input line 4.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 4.
-LaTeX Font Info:    ... okay on input line 4.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 4.
-LaTeX Font Info:    ... okay on input line 4.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 4.
-LaTeX Font Info:    ... okay on input line 4.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 4.
-LaTeX Font Info:    ... okay on input line 4.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 4.
-LaTeX Font Info:    ... okay on input line 4.
-LaTeX Font Info:    Try loading font information for T1+ptm on input line 4.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Try loading font information for T1+ptm on input line 6.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1ptm.fd
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
@@ -524,17 +532,17 @@ File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count93
+\scratchcounter=\count94
 \scratchdimen=\dimen117
-\scratchbox=\box26
-\nofMPsegments=\count94
-\nofMParguments=\count95
-\everyMPshowfont=\toks20
-\MPscratchCnt=\count96
+\scratchbox=\box28
+\nofMPsegments=\count95
+\nofMParguments=\count96
+\everyMPshowfont=\toks22
+\MPscratchCnt=\count97
 \MPscratchDim=\dimen118
-\MPnumerator=\count97
-\makeMPintoPDFobject=\count98
-\everyMPtoPDFconversion=\toks21
+\MPnumerator=\count98
+\makeMPintoPDFobject=\count99
+\everyMPtoPDFconversion=\toks23
 ) (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
 )
@@ -580,22 +588,27 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 15.
+(Font)              <7> on input line 17.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 15.
+(Font)              <5> on input line 17.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 18.
-LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 20.
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 22.
 LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <10> not available
-(Font)              Font shape `T1/ptm/b/it' tried instead on input line 41.
+(Font)              Font shape `T1/ptm/b/it' tried instead on input line 43.
 
-Overfull \hbox (6.13774pt too wide) in paragraph at lines 14--44
+Overfull \hbox (6.13774pt too wide) in paragraph at lines 16--46
 []  [] 
  []
 
+<figures/SimulatorWithoutButtons.png, id=1, 355.3275pt x 277.035pt>
+File: figures/SimulatorWithoutButtons.png Graphic file (type png)
 
-LaTeX Font Warning: Command \small invalid in math mode on input line 48.
+<use figures/SimulatorWithoutButtons.png>
+Package pdftex.def Info: figures/SimulatorWithoutButtons.png used on input line
+ 65.
+(pdftex.def)             Requested size: 289.9963pt x 226.1049pt.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -606,75 +619,78 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 ]
+<figures/Goalier_BT.png, id=11, 536.0025pt x 244.66406pt>
+File: figures/Goalier_BT.png Graphic file (type png)
 
-Package natbib Warning: Citation `bellingham2002' on page 2 undefined on input 
-line 82.
+<use figures/Goalier_BT.png>
+Package pdftex.def Info: figures/Goalier_BT.png used on input line 76.
+(pdftex.def)             Requested size: 386.65929pt x 176.49397pt.
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 84.
 
-<figura.pdf, id=12, 291.3562pt x 198.7425pt>
-File: figura.pdf Graphic file (type pdf)
- <use figura.pdf>
-Package pdftex.def Info: figura.pdf used on input line 113.
-(pdftex.def)             Requested size: 291.35548pt x 198.742pt.
- [2 <./figura.pdf>]
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsptm.fd
+File: omsptm.fd 
+)
+LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 84.
 
-Package natbib Warning: Citation `bellingham2002' on page 3 undefined on input 
-line 120.
+<figures/Principal_BT.png, id=13, 636.12656pt x 346.29375pt>
+File: figures/Principal_BT.png Graphic file (type png)
 
+<use figures/Principal_BT.png>
+Package pdftex.def Info: figures/Principal_BT.png used on input line 104.
+(pdftex.def)             Requested size: 386.65929pt x 210.48854pt.
+ [2 <./figures/SimulatorWithoutButtons.png> <./figures/Goalier_BT.png>]
 
-Package natbib Warning: Citation `bellingham2002' on page 3 undefined on input 
-line 120.
-
-
-Package natbib Warning: Citation `bellingham2002' on page 3 undefined on input 
-line 120.
-
-
-Package natbib Warning: Citation `bellingham2002' on page 3 undefined on input 
-line 120.
-
-
-Package natbib Warning: Citation `bellingham2002' on page 3 undefined on input 
-line 120.
+LaTeX Warning: Reference `fig:delaunay_interface' on page 3 undefined on input 
+line 112.
 
 
-Package natbib Warning: Citation `bellingham2002' on page 3 undefined on input 
-line 120.
+LaTeX Warning: Reference `fig:penalty' on page 3 undefined on input line 112.
 
 
-Package natbib Warning: Citation `bellingham2002' on page 3 undefined on input 
-line 120.
+LaTeX Warning: Reference `fig:text_config_delaunay' on page 3 undefined on inpu
+t line 112.
 
-(./artigo.bbl)
+
+LaTeX Warning: Reference `fig:bola_livre' on page 3 undefined on input line 120
+.
+
+
+Package natbib Warning: Citation `delaunay34' on page 3 undefined on input line
+ 133.
+
+<figures/Auxiliar_BT.png, id=19, 147.55125pt x 129.48375pt>
+File: figures/Auxiliar_BT.png Graphic file (type png)
+
+<use figures/Auxiliar_BT.png>
+Package pdftex.def Info: figures/Auxiliar_BT.png used on input line 137.
+(pdftex.def)             Requested size: 193.32594pt x 169.65654pt.
+ [3 <./figures/Principal_BT.png>] (./artigo.bbl)
 
 Package natbib Warning: There were undefined citations.
 
-[3] (./artigo.aux
+[4 <./figures/Auxiliar_BT.png>] (./artigo.aux)
 
-Package natbib Warning: Citation(s) may have changed.
-(natbib)                Rerun to get citations correct.
+LaTeX Warning: There were undefined references.
 
-) ) 
+ ) 
 Here is how much of TeX's memory you used:
- 3590 strings out of 493029
- 46207 string characters out of 6136234
- 126794 words of memory out of 5000000
- 7053 multiletter control sequences out of 15000+600000
- 25435 words of font info for 30 fonts, out of 8000000 for 9000
+ 3670 strings out of 493029
+ 47630 string characters out of 6136234
+ 127108 words of memory out of 5000000
+ 7122 multiletter control sequences out of 15000+600000
+ 22713 words of font info for 28 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,11n,45p,769b,283s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texli
-ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/time
-s/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb><
-/usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texl
-ive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on artigo.pdf (3 pages, 126977 bytes).
+ 41i,11n,45p,1229b,240s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/ty
+pe1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/
+utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on artigo.pdf (4 pages, 125454 bytes).
 PDF statistics:
- 79 PDF objects out of 1000 (max. 8388607)
- 56 compressed objects within 1 object stream
+ 45 PDF objects out of 1000 (max. 8388607)
+ 27 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 21 words of extra memory for PDF output out of 10000 (max. 10000000)
 

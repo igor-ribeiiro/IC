@@ -1,6 +1,8 @@
 % MODELO CONEM 2016
 \documentclass[10pt,fleqn,a4paper]{article}
 \usepackage{abcm}
+\usepackage{float}
+
 \begin{document}
     
     % CABEÇALHO
@@ -38,112 +40,117 @@
     \small{12.229-900 – São José dos Campos / SP}\\
     \small{maximo.marcos@gmail.com}\\
     \\
-    \abstract{\textbf{Resumo:} O propósito destas instruções é servir de modelo para a formatação de trabalhos a serem publicados nos Anais do CONEM 2016. O resumo deve descrever os objetivos, a metodologia e as principais conclusões em não mais de 4000 caracteres. Ele {\bf não deve conter} nem fórmulas ou deduções matemáticas e nem citações bibliográficas. O trabalho completo será publicado nos anais do envento.}\\
+    \abstract{\textbf{Resumo:} Devido à alta complexidade existente nos algoritmos de funcionamento de um robô humanoide, é fundamental possuir ferramentas de interface com o usuário para o desenvolvimento do sistema. Estas ferramentas possuem a finalidade de fornecer uma visualização dos algoritmos envolvidos de forma clara para o usuário. Após uma fase de pesquisa, foi decidido utilizar o framework rqt, uma plataforma baseada em Qt que permite o desenvolvimento de interfaces gráficas para ROS (Robot Operational System), assim possibilitando criar um sistema de telemetria para o robô. Com este intuito, foram desenvolvidas três ferramentas iniciais. A primeira, feita antes da pesquisa sobre o framework rqt, foi escrita utilizando apenas a plataforma Qt. Ela é uma interface que permite anotar imagens e gerar tabelas de cores utilizando as funções de treinamento de redes neurais presentes no software MATLAB. A segunda utiliza o framework rqt e é uma ferramenta de teste e calibração do algoritmo de visão computacional do robô humanoide. A última ferramenta é um controle remoto do robô que permite variar a sua velocidade para facilitar a depuração do código.}\\
     \keywords{\textbf{Palavras-chave:} robótica, estratégia, tomada de decisão}\\
     \end{tabular}
     
-
+no max 4000 caracteres no resumo
+artigo de no máx 10 páginas
+tamanho máximo do pdf: 2,5 MB
     \section{INTRODUÇÃO}
         
-        Os Anais do CONEM 2016 serão publicados online,  com os artigos no formato Adobe$^{\small{TM}}$ PDF.
+	A ITAndroids é uma equipe de alunos do ITA, supervisionada por um professor, que participa de diversas competições de robótica nacionais e internacionais. Uma das categorias em que a ITAndroids participa é a do robô humanoide, que consiste em desenvolver um time de robôs capazes de jogar futebol. Esta tarefa envolve uma série de desafios complexos que variam desde a construção do robô até a sua tomada de decisões.  
+	
+	Neste contexto, é fundamental a presença de algoritmos robustos para a realização das diversas ações do robô, tornando essenciais as ferramentas de testes, calibração e depuração. Equipes reconhecidas no cenário internacional, como a B-Human e a Nimbro-OP, possuem várias ferramentas com este intuito, como são apresentadas em Roffer et al. (2013) e em Allgeuer et al. (2013).
 
-        Os artigos devem ser rigorosamente formatados de acordo com estas instruções e este arquivo texto pode ser usado como um template por usuários do \LaTeX\ e, em qualquer caso, como um modelo para os usuários de outros processadores de texto.
-
-        Os artigos estão limitados a um máximo de 10 páginas, incluindo tabelas e figuras. O arquivo final em formato pdf não deve exceder 2,5 MB.
-
-        A língua oficial do congresso é o português; entretanto serão aceitos manuscritos em espanhol ou em inglês. Se o trabalho não for escrito em inglês, o autor deverá incluir o título, os nomes dos autores e afiliações, o resumo e as palavras-chave, traduzidos para o inglês, após a lista de referências, no fim do artigo.
+	Essas ferramentas devem possibilitar o teste dos algoritmos em tempo real, criando um sistema de telemetria com o robô. Além disso, é interessante que elas também possibilitem testes sem a presença do robô, assim facilitando a depuração e calibração do código.
 
 
-    \section{FORMATO DO TEXTO}
+    \section{RESULTADOS OBTIDOS}
         
-        O artigo deve ser digitado em papel tamanho A4, usando fonte Times New Roman, tamanho 10, exceto para o título, nomes dos autores, instituição, endereço, resumo e palavras-chave, que têm formatações específicas indicadas acima. Espaço simples entre linhas deve ser usado ao longo do texto.
+	Os resultados a seguir foram obtidos estudando o comportamentos de equipes adversárias na competição, além de diversos testes com o time de robôs da ITAndroids contra si mesmo em simulações computacionais em um simulador feito pela própria equipe, como mostrado na Figura \ref{fig:simulator}.
 
-        O corpo de texto que contém o título deve ser centralizado, em parágrafo com recuo esquerdo de 0,1 cm e marcado com borda esquerda de largura 2$\frac{1}{4}$ pontos.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.6\textwidth]{figures/SimulatorWithoutButtons.png}
+	\caption{Simulador da ITAndroids.}
+	\label{fig:simulator}
+\end{figure}
 
-        O corpo de texto que contém os nomes de autores e de instituições devem ser alinhados à esquerda, em parágrafo com recuo esquerdo de 0,1 cm e marcados com borda esquerda de largura 2 $\frac{1}{4}$ pontos.
+\subsection{Goleiro}
 
-        A primeira página deve ter margem superior igual a 5 cm, e todas as outras margens (esquerda, direita e inferior) iguais a 2 cm. Todas as demais páginas do trabalho devem ter todas as suas margens iguais a 2 cm.
+A BT criada para o goleiro está representada na Figura \ref{fig:goalier_bt}.
 
-        \textbf{\textcolor[rgb]{0.98,0.00,0.00}{NÃO NUMERAR AS PÁGINAS.}}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\textwidth]{figures/Goalier_BT.png}
+   	\caption{Behavior Tree para o goleiro.} \label{fig:goalier_bt}
+\end{figure}
 
-        \textbf{\textcolor[rgb]{1.00,0.00,0.00}{QUANDO SUBMETER O TRABALHO PELA PRIMEIRA VEZ EM PDF, OS NOMES DOS AUTORES E AFILIAÇÕES DEVEM SER SUPRIMIDOS. INCLUA APENAS O CÓDIGO DO RESUMO, O QUAL FOI FORNECIDO NO E-MAIL DE ACEITAÇÃO DO SEU RESUMO, MANTENDO O ESPAÇO ORIGINAL DESTINADO AOS NOMES DOS AUTORES E AFILIAÇÃO.}}
+Como visto, ela é composta por um nó do tipo Sequence Behavior, que irá executar os seus filhos em sequência. Esse papel, então, executa as seguintes ações prioritando as primeiras a aparecerem na seguinte lista:
+
+\begin{itemize}
+
+\item \textbf{Get Back to Goal Behavior} Volta para o gol, caso que, se por algum motivo ele esteja fora do próprio.
+
+\item \textbf{Goal Center} Fica centralizado no gol quando a bola estiver longe, de forma que o jogador possa rapidamente ir para qualquer um dos lados quando a bola se aproximar.
+
+\item \textbf{Goal Predict} Prediz para onde a bola irá quando ela estiver rápida e longe do gol.
+
+\item \textbf{Goal Spin} Gira quando está perto da bola e não tem oponente perto da bola para jogá-la para longe.
+
+\item \textbf{Goal Catch} Comportamento que o goleiro deverá fazer quando não fizer nenhum outro, por isso sua última posição na sequência. Ele acompanha o movimento da bola com o goleiro sobre a linha do gol.
+
+\end{itemize}
 
 
-    \subsection{Títulos e Subtítulos das Seções }
 
-        Os títulos e subtítulos das seções devem ser digitados em fonte Times New Roman, tamanho 10, estilo negrito, e alinhados à esquerda. Os títulos das seções são com letras maiúsculas (Exemplo: \textbf{MODELO MATEMÁTICO}), enquanto os subtítulos só têm as primeiras letras maiúsculas (Exemplo: \textbf{Modelo Matemático}). Eles devem ser numerados, usando numerais arábicos separados por pontos, até o máximo de 3 subníveis. Uma linha em branco de espaçamento simples deve ser incluída acima e abaixo de cada título ou subtítulo.
+\subsection{Principal}
 
-    \subsection{Corpo do Texto}
+Já para o principal, a árvore \ref{fig:principal_bt} foi desenvolvida, sendo a árvore mais complexa dentre os papéis.
 
-        O corpo do texto é justificado e com espaçamento simples. A primeira linha de cada parágrafo tem recuo de 0,6 cm a partir da margem esquerda.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\textwidth]{figures/Principal_BT.png}
+   	\caption{Behavior Tree para o principal.} \label{fig:principal_bt}
+\end{figure}   
 
-        As equações matemáticas são alinhadas à esquerda com recuo de 0,6 cm.  Elas são referidas como "Eq. (1)" no meio de uma frase, ou "Equação (1)" quando usada no início de uma sentença. Os números das equações são numerais arábicos colocados entre parênteses, e alinhados à direita, como mostrado na Eq. (1).
+Conforme a Figura \ref{fig:principal_bt}, a raiz da árvore do principal é um Selector Behavior que escolhe uma das ações a ser realizada. Essa BT tem mais dois outros nós compostos, que são dois Sequence Behavior usados para o posicionamento atrás da bola, seguido pelo chute. Uma descrição dos nós folha utilizados se encontra abaixo:
 
-        Os símbolos usados nas equações devem ser definidos imediatamente antes ou depois de sua primeira ocorrência no texto. \citep{bellingham2002}
+\begin{itemize}
 
-        O tamanho da fonte usado nas equações deve ser compatível com o utilizado no texto. Todos as grandezas físicas devem ter suas unidades expressas no sistema S.I. (métrico).
+\item \textbf{Wait for Ball to leave Ally Goalie Area} Esse Behavior utiliza a Triangução de Delaunay, com a mesma interface desenvolvida na Figura \ref{fig:delaunay_interface}. Esse comportamento deve evitar que o jogador entre na área do goleiro para não sofrer penâlti, conforme descrito na Figura \ref{fig:penalty}. O jogador se pocionará de acordo com posições escolhidas pelo usuário, calibradas com o arquivo de configuração do mesmo modelo da Figura \ref{fig:text_config_delaunay}.
 
-        \begin{equation}
-        \frac{\partial^2 T}{\partial x^2} + \frac{\partial^2 T}{\partial y^2} = 0 \label{equation1}
-        \end{equation}
+\item \textbf{RRT to Ball aiming to Enemy Goal} Irá usar o algoritmo de planejamento de trajetórias RRT para se deslocar atrás da bola com direção apontando para o gol oponente. Usado para se aproximar da bola e, em seguida, trocar para o próximo behavior, o Predictive RRT to Ball.
 
-        As tabelas devem ser centralizadas. Elas são referidas por "Tab. 1" no meio de uma frase, ou por "Tabela 1" quando usada no início de uma sentença. A legenda deve ser centralizada e localizada imediatamente acima da tabela. Anotações e valores numéricos nela incluídos devem ter tamanhos compatíveis com o da fonte usada no texto do trabalho, e todas as unidades devem ser expressas no sistema S.I. (métrico). As unidades são incluídas apenas na primeira linha ou primeira coluna de cada tabela, conforme for apropriado. As tabelas devem ser colocadas tão perto quanto possível de sua primeira citação no texto. Uma linha em branco, em espaço simples, deve ser introduzida entre a tabela, seu título e o texto.
+\item \textbf{Predictive RRT to Ball} Usa uma predição linear considerando que a bola continuará na mesma velocidade. Usado para se chegar na bola com mais precisão quando próximo a ela. Chega atrás da bola mirando para o gol.
 
-        O estilo de borda da tabela é livre. As legendas das Figuras e das Tabelas não devem exceder 3 linhas.
+\item \textbf{Shoot to Goal} Esse behavior só é chamado quando o jogador já está alinhado com a bola e o gol oponente. Esse comportamento acelera rapidamente o robô em linha reta para chegar no gol com uma velocidade alta.
 
-        \begin{table}[ht]
-            \begin{center}
-                \caption{\textbf{Resultados experimentais para as propriedades de flexão dos materiais MAT1 e MAT2. Valores médios obtidos em 20 ensaios.}}
-                    \begin{tabular}{|c|c|c|}
-                    \hline
-                    Propriedades do compósito       & CFRC-TWILL        & CFRC-4HS         \\
-                    \hline
-                    Resistência à Flexão  (MPa)     & 209$\pm$ 10       & 180 $\pm$  15    \\
-                    \hline
-                    Módulo de Flexão  (GPa)         & 57.0 $\pm$ 2.8    & 18.0 $\pm$  1.3  \\
-                    \hline
-                    \end{tabular}
-            \end{center}
-        \end{table}
+\item \textbf{Free Ball Foul Follow Line} Esse behavior é um específico para situações de falta do tipo Bola Livre, conforme descrito em \ref{fig:bola_livre}. Quando for detectado uma dessas posições, o jogador deve acelerar o mais rápio possível em direção à bola para ter o controle dela antes do oponente.
 
-        As figuras deve ser centralizadas. Elas são referenciadas por "Fig. 1" no meio de uma frase ou por "Figura 1" quando usada no início de uma sentença. Sua legenda deve ser centralizada e localizada imediatamente abaixo da figura. As anotações e numerações devem tem tamanhos compatíveis com o da fonte usada no texto, e todas as unidades devem ser expressas no sistema S.I. (métrico). As figuras devem ser colocadas o mais próximo possível de sua primeira citação no texto. Deve ser deixada uma linha em branco, de espaçamento simples, entre as figuras e o texto.
-    
-        \begin{figure}[h]
-            \begin{center}
-                \includegraphics[angle=0, scale=.8]{figura.pdf}
-            \end{center}
-            \caption{\textbf{Comparação entre os resultados do presente modelo com os resultados experimentais de Wirtz e Stutzman (1982).}}
-        \end{figure}
+\item \textbf{Spin Principal} Esse nó deve ser chamado quando a bola estiver em um dos quatros campos do campo. Caso seja um campo defensivo, o jogador irá girar para jogar a bola para frente; caso seja um na zona de ataque, o jogador girará para por a bola no centro do campo e continuar o ataque.
 
-        Figuras coloridas e fotografias de alta qualidade podem ser incluídas no trabalho. Para reduzir o tamanho do arquivo e preservar a resolução gráfica, os arquivos das imagens devem ser convertidos para o  formato GIFF (para figuras com até 16 cores) ou para o formato JPEG (alta densidade de cores), antes de serem inseridos no trabalho.
+\item \textbf{RRT to Ball aiming to far from Ally Goal} Irá usar o algoritmo de planejamento de trajetórias RRT para se deslocar atrás da bola com direção apontando para a zona de ataque (longe do gol aliado). Usado para se aproximar da bola e se posicionar para, em seguida, chamar o Behavior Shoot to Far from Ally Goal.
 
-        A citação das referências no corpo do texto pode ser feita nos formatos: "\citet{bellingham2002} mostra que o corpo...", ou: "Vários trabalhos (\citeauthor{bellingham2002}, \citeyear{bellingham2002}; \citeauthor{bellingham2002}, \citeyear{bellingham2002} e \citeauthor{bellingham2002},  \citeyear{bellingham2002}) mostram que a rigidez...".
+\item \textbf{Shoot to Far from Ally Goal} Esse behavior só é chamado quando o jogador já está alinhado com a bola e o para frente (para longe do gol alidado). Esse comportamento acelera rapidamente o robô em linha reta para por a bola na zona de ataque.
 
-        
-         %   \citet{key} ==>>                Jones et al. (1990)
-         %   \citet*{key} ==>>               Jones, Baker, and Smith (1990)
-         %   \citep{key} ==>>                (Jones et al., 1990)
-         %   \citep*{key} ==>>               (Jones, Baker, and Smith, 1990)
-         %   \citep[chap. 2]{key} ==>>       (Jones et al., 1990, chap. 2)
-         %   \citep[e.g.][]{key} ==>>        (e.g. Jones et al., 1990)
-         %   \citep[e.g.][p. 32]{key} ==>>   (e.g. Jones et al., p. 32)
-         %   \citeauthor{key} ==>>           Jones et al.
-         %   \citeauthor*{key} ==>>          Jones, Baker, and Smith
-         %   \citeyear{key} ==>>             1990
-        
-        Referências aceitas incluem: artigos de periódicos, dissertações, teses, artigos publicados em anais de congressos, livros, comunicações privadas e artigos submetidos e aceitos (com fonte identificada) e citações a páginas da internet.
+\end{itemize}
 
-        A lista de referências deve ser uma seção específica denominada Referências, localizada no fim do artigo.
 
-        A primeira linha de cada referência deve ser alinhada à esquerda; todas as outras linhas têm recuo de 0,6 cm da margem esquerda. Todas as referências incluídas na lista devem aparecer como citações no texto do trabalho.
+\subsection{Auxiliar}
 
-        As referências devem ser postas em ordem alfabética, usando o último nome do primeiro autor, seguida do ano da publicação. Exemplo da lista de referências é apresentado abaixo.
+O auxiliar, por sua vez, tem uma Behavior Tree muito simples, representada por apenas um nó que tem como função se posicionar em lugar ótimo com Triangulação de Delaunay\cite{delaunay34}. Sua árvore, é representada simplesmente pela Figura \ref{fig:auxiliar_bt}.
 
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.4\textwidth]{figures/Auxiliar_BT.png}
+   \caption{Behavior Tree para o auxiliar.} \label{fig:auxiliar_bt}
+\end{figure}
+
+	\section{CONCLUSÕES}
+	
+	O projeto de Iniciação Científica apresentou bons resultados, especialmente quanto à vitória da equipe do ITA até às quartas de final da CBR 2017, rendendo o sétimo lugar à equipe dentre mais de 25 equipes participantes. Além do fato de que a ITAndroids conquistou o primeiro lugar na competição nacional de VSSS Copa Turing 2017, que ocorreu no final de setembro de 2017.
+
+	Do ponto de vista técnico, o uso do algoritmo da Behavior Tree, já consagrado e usado por times de nível mundial, se mostrou factível e funcional em partidas reais de competições. Contudo, problemas como pouca escalabilidade e pouca reutilizabilidade se mostraram presentes na estratégia desenvolvida. Isso significa que mudanças ainda deverão ser feitas nas BT, principalmente a respeito do uso de mais nós do tipo paralelo para remover esses problemas citados.
 
     \section{AGRADECIMENTOS}
     
-        Se houver, esta seção deve ser colocada antes da lista de referências.
+	Agradeço ao CNPq, pelo apoio financeiro e motivacional.
+	
+	Agradeço à ITAndroids, equipe que representa o ITA na competição da LARC/CBR, pela ideia do projeto, pela disponibilidade do robô real para implementação e oportunidade de aplicação dos métodos estudados.
 
+	Agradeço ao professor doutor Paulo Marcelo Tasinaffo, meu orientador, e ao professor doutor Marcos Ricardo de Omena Máximo, co-orientador, ambos da Divisão da Ciência da Computação do ITA, pelo apoio nos estudos e no desenvolvimento do projeto.
 
     % REFERÊNCIAS
     \section{REFERÊNCIAS}
