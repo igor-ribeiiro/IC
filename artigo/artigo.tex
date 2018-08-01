@@ -55,6 +55,44 @@ tamanho máximo do pdf: 2,5 MB
 
 	Essas ferramentas devem possibilitar o teste dos algoritmos em tempo real, criando um sistema de telemetria com o robô. Além disso, é interessante que elas também possibilitem testes sem a presença do robô, assim facilitando a depuração e calibração do código.
 
+\subsection{Behavior Tree}
+
+Para se construir uma BT, é preciso primeiro entender o básico de sua estrutura. Uma BT é uma Árvore no sentido dado pela teoria dos grafos, como explicado em \cite{west2001introduction}. Por definição, cada nó dessa árvore será chamado de behavior.
+
+Os nós de uma Behavior Tree são diferenciados em dois tipos: os nós folhas, que são os nós da árvore que não tem filhos e os nós compostos, que podem ter um ou mais filhos.
+
+Todos os nós retornam, no final de sua execução, um dos três estados a seguir: TRUE, FALSE ou RUNNING, para indicar, respectivamente, que o nó foi terminado com sucesso, que foi terminado sem sucesso ou que o algoritmo deve executar esse nó por pelo menos mais uma iteração.
+
+\subsubsection{Nó Folha}
+
+Os nós folha são os nós terminais da Árvore e eles que representam as ações mais baixo níveis e concretas da estratégia. São divididas em dois tipos: nós de ação e nós condicionais.
+
+\textbf{Nó de Ação} São os nós que de fato realizam uma ação, como se movimentar até a bola.
+
+\textbf{Nó condicional} São nós que apenas retornam um estado sem realizar nenhuma ação concreta, como checar se o time está atacando. São usados para controlar quais nós serão executados em conjunto com os nós compostos.
+
+\subsubsection{Nó composto}
+
+Nós compostos são os nós intermediários da árvore, que  são responsáveis por escolher quais os nós que serão executados. São completamente reutilizáveis no sentido que apenas uma implementação de cada tipo de nó composto deve existir e ela poderá ser usada em diversas partes do código. Os principais tipos desses nós que foram usados para a estratégia estão listados a seguir:
+
+\textbf{Selector Behavior} Nesse behavior, é selecionado um de seus filhos para ser acessado a seguir. Ele é usado quando tem-se várias maneiras de se realizar uma mesma ação e deve-se escolher a melhor delas em uma determinada situação. Ele funciona executando os filhos em uma determinada ordem e, assim que um dos filhos retorna TRUE ou RUNNING, esse nó retorna o mesmo valor. Se um filho retornar FALSE, o próximo filho será executado. Caso nenhum filho seja sucedido ou retorne que deve ser executado mais um vez, o nó retorna FALSE.
+
+\textbf{Sequence Behavior} Esse nó executa cada um dos seus filhos em uma sequência bem definida e fixa. Ele é usado para fazer ações sequenciadas para completar um objetivo maior, por exemplo: chutar a bola para o gol oponente requer que o robô aliado esteja atrás da bola, o que significa que chegar atrás da bola e, em seguida, chutar a bola representam ações sequenciadas. Ele funciona de forma que, quando um filho retorna RUNNING ou FALSE, o behavior retorna o mesmo valor e, quando um filho retorna TRUE, ele avança para o próximo filho. Se todos os filhos retornarem TRUE, o behavior é bem sucedido e também retorna TRUE.
+
+\textbf{Parallel Behavior} O objetivo desse nó é executar todos os seus filhos ao mesmo tempo, fato que pode ser obtido ao utilizar-se de processamento paralelo ou não. Na implementação desse trabalho foi usado a versão não paralela do algoritmo. Se um filho retorna FALSE, o behavior retorna FALSE. Se todos os filhos retornarem TRUE, o behavior retorna TRUE. Em todas as outras situações, o behavior retorna RUNNING e continua sua execução por pelo menos outra iteração.
+
+\textbf{Decorator} O nome para esse behavior é inspirado no conceito de Decorator em Software Design Pattern, que pode ser explicado em \cite{hunt2013gang}. No contexto da Behavior Tree, esse nó tem apenas um filho e ele modifica o comportamento do filho de alguma maneira. Um decorador pode ser diversos tipos, mas os mais usados no projeto foram:
+
+\begin{enumerate}
+\item AlwaysFail e AlwaysSucceed: que fazem que o fiho sempre retorne FALSE ou sempre retorna TRUE respectivamente.
+\item UntilFail e UntilSucceed: fazem que o fiho sempre retorne RUNNING a não ser que ele retorna FALSE ou TRUE, respectivamente.
+\item Invert: muda o retorno do filho de FALSE para TRUE e TRUE para FALSE.
+\end{enumerate}
+
+\subsection{Técnico}
+
+Uma Behavior Tree, que embora consegue modelar comportamentos complexos com facilidade, nem sempre é a melhor escolha para determinadas situações. Por isso, a estratégia foi dividida em níveis de abstrações diferentes, em que a um Técnico, representado pela classe Coach, seria responsável por escolher e administrar quais árvore cada um dos três jogadores deveria usar no momento.
+Com essa implementação, tem-se um agente externo controlando a função dos jogadores por meio da escolha de uma BT, que pode ser uma árvore para um goleiro, para um principal e para um auxiliar. Isso significa que, em um determinado momento, o técnico pode escolher que o time tenha 1 goleiro, 1 principal e 1 auxiliar a até mesmo 3 principais ao mesmo tempo. Os requisitos esperados para cada um desses papéis será abordado a seguir. Além disso, também é função do técnico escolher o papel de cada jogador a cada iteração do código, de modo que as posições dos jogadores não sejam fixas ao decorrer do jogo.
 
     \section{RESULTADOS OBTIDOS}
         
@@ -69,6 +107,7 @@ tamanho máximo do pdf: 2,5 MB
 
 \subsection{Goleiro}
 
+O goleiro é o jogador que deve ficar próximo ao gol aliado com o objetivo de proteger o gol de ataques oponentes. 
 A BT criada para o goleiro está representada na Figura \ref{fig:goalier_bt}.
 
 \begin{figure}[H]
@@ -97,7 +136,7 @@ Como visto, ela é composta por um nó do tipo Sequence Behavior, que irá execu
 
 \subsection{Principal}
 
-Já para o principal, a árvore \ref{fig:principal_bt} foi desenvolvida, sendo a árvore mais complexa dentre os papéis.
+O jogador com o papel de Principal é o jogador mais ativo do time, que deve estar constantemente avançando em direção a bola. Esse papel e o goleiro são as únicas posições que efetivamente deverão tocar na bola. A árvore \ref{fig:principal_bt} foi desenvolvida para o principal, sendo a árvore mais complexa dentre os papéis.
 
 \begin{figure}[H]
 	\centering
@@ -130,7 +169,9 @@ Conforme a Figura \ref{fig:principal_bt}, a raiz da árvore do principal é um S
 
 \subsection{Auxiliar}
 
-O auxiliar, por sua vez, tem uma Behavior Tree muito simples, representada por apenas um nó que tem como função se posicionar em lugar ótimo com Triangulação de Delaunay\cite{delaunay34}. Sua árvore, é representada simplesmente pela Figura \ref{fig:auxiliar_bt}.
+	O auxiliar é um papel que tem apenas uma função: posicionar-se da melhor forma possível para manter um ataque consistente. A ideia é que, caso a situação seja oportuna, o auxiliar se torne o principal e comece a atacar a bola. Para escolher a posição que o auxiliar deverá ficar em uma determinada situação de jogo, foi utilizado a Triangulação de \cite{delaunay34} sobre o grafo de \cite{voronoi08}. Esse algoritmo foi aplicado similarmente a \cite{akiyama2007multi}, relativo também à futebol de robôs.
+
+	A Behavior Tree do auxiliar, por sua vez, é muito simples, representada por apenas um nó que tem como função se posicionar em lugar ótimo. Sua árvore, é representada simplesmente pela Figura \ref{fig:auxiliar_bt}.
 
 \begin{figure}[H]
 	\centering
@@ -158,10 +199,8 @@ O auxiliar, por sua vez, tem uma Behavior Tree muito simples, representada por a
         \bibliography{bibliografia}
 
     \section{RESPONSABILIDADE AUTORAIS}
-
-        Os trabalhos escritos em português ou espanhol devem incluir (após direitos autorais) título, os nomes dos autores e afiliações, o resumo e as palavras chave, traduzidos para o inglês e a declaração a seguir, devidamente adaptada para o número de autores.
     
-        O(s) autor(es) é(são) o(s) único(s) responsável(is) pelo conteúdo deste trabalho.
+        Os autores são os únicos responsáveis pelo conteúdo deste trabalho.
 
 % % RESUMO EM INGLES
 %

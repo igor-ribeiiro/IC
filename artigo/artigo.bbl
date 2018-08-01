@@ -1,4 +1,4 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{5}
 \newcommand{\enquote}[1]{``#1''}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
@@ -8,11 +8,33 @@
   \providecommand{\doi}{doi:\discretionary{}{}{}\begingroup
   \urlstyle{rm}\Url}\fi
 
-\bibitem[{Bellingham \emph{et~al.}(2002)Bellingham, Richards and
-  How}]{bellingham2002}
-Bellingham, J., Richards, A. and How, J.P., 2002.
-\newblock \enquote{Receding horizon control of autonomous aerial vehicles}.
-\newblock In \emph{Proceedings of the American Control Conference, Anchorage,
-  AK, USA}. pp. 3741 -- 3746.
+\bibitem[{Akiyama and Noda(2007)}]{akiyama2007multi}
+Akiyama, H. and Noda, I., 2007.
+\newblock \enquote{Multi-agent positioning mechanism in the dynamic
+  environment}.
+\newblock In \emph{Robot Soccer World Cup}. Springer, pp. 377--384.
+
+\bibitem[{Delaunay(1934)}]{delaunay34}
+Delaunay, B., 1934.
+\newblock \enquote{Sur la sph\'{e}re vide}.
+\newblock \emph{Bulletin de l'Académie des Sciences de l'URSS}, Vol.~6, pp.
+  793--800.
+
+\bibitem[{Hunt(2013)}]{hunt2013gang}
+Hunt, J., 2013.
+\newblock \enquote{Gang of four design patterns}.
+\newblock In \emph{Scala Design Patterns}, Springer, pp. 135--136.
+
+\bibitem[{Voronoi(1908)}]{voronoi08}
+Voronoi, G., 1908.
+\newblock \enquote{Nouvelles applications des paramètres continus à la
+  théorie des formes quadratiques}.
+\newblock \emph{Journal für die Reine und Angewandte Mathematik}, Vol. 133,
+  pp. 97--178.
+
+\bibitem[{West \emph{et~al.}(2001)}]{west2001introduction}
+West, D.B. \emph{et~al.}, 2001.
+\newblock \emph{Introduction to graph theory}, Vol.~2.
+\newblock Prentice hall Upper Saddle River.
 
 \end{thebibliography}
