@@ -1,4 +1,4 @@
-\begin{thebibliography}{9}
+\begin{thebibliography}{11}
 \newcommand{\enquote}[1]{``#1''}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
@@ -25,9 +25,9 @@ CBR, 2008.
 \newblock Http://www.cbrobotica.
   org/wp-content/uploads/2014/03/VerySmall2008\_en.pdf.
 
-\bibitem[{Coelho and Tasinaffo(2016)}]{tasinaffo_ic}
-Coelho, M.M.A. and Tasinaffo, P.M., 2016.
-\newblock \enquote{Desenvolvimento de visão computacional do robô humanoide}.
+\bibitem[{Coelho(2016)}]{orozcomaquinas}
+Coelho, M.M.A., 2016.
+\newblock \enquote{M{\'a}quinas de estados finitos}.
 
 \bibitem[{Delaunay(1934)}]{delaunay34}
 Delaunay, B., 1934.
@@ -47,6 +47,12 @@ Okuyama, I.F., 2017.
 \newblock Trabalho de gradua\c{c}\~{a}o, Instituto Tecnol\'{o}gico de
   Aeron\'{a}utica.
 
+\bibitem[{Russel and Norvig(2009)}]{decision_tree}
+Russel, S. and Norvig, P., 2009.
+\newblock \emph{Artificial Intelligence: A Modern Approach}, Prentice Hall,
+  Vol.~3, pp. 697--707.
+\newblock 3rd edition.
+
 \bibitem[{Voronoi(1908)}]{voronoi08}
 Voronoi, G., 1908.
 \newblock \enquote{Nouvelles applications des paramètres continus à la
@@ -58,5 +64,12 @@ Voronoi, G., 1908.
 West, D.B. \emph{et~al.}, 2001.
 \newblock \emph{Introduction to graph theory}, Vol.~2.
 \newblock Prentice hall Upper Saddle River.
+
+\bibitem[{Zickler \emph{et~al.}(2009)Zickler, Laue, Birbach, Wongphati and
+  Veloso}]{zickler2009ssl}
+Zickler, S., Laue, T., Birbach, O., Wongphati, M. and Veloso, M., 2009.
+\newblock \enquote{Ssl-vision: The shared vision system for the robocup small
+  size league}.
+\newblock In \emph{Robot Soccer World Cup}. Springer, pp. 425--436.
 
 \end{thebibliography}
