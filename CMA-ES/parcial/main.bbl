@@ -91,6 +91,35 @@
     \field{year}{2001}
   \endentry
 
+  \entry{matlab}{misc}{}
+    \name{author}{3}{}{%
+      {{hash=GM}{%
+         family={Grant},
+         familyi={G\bibinitperiod},
+         given={Michael},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=BS}{%
+         family={Boyd},
+         familyi={B\bibinitperiod},
+         given={Stephen},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=YY}{%
+         family={Ye},
+         familyi={Y\bibinitperiod},
+         given={Yinyu},
+         giveni={Y\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{GMBSYY1}
+    \strng{fullhash}{GMBSYY1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{CVX: Matlab software for disciplined convex programming}
+    \field{year}{2008}
+  \endentry
+
   \entry{cox1988c++}{inproceedings}{}
     \name{author}{1}{}{%
       {{hash=CIJ}{%

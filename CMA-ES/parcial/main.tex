@@ -48,7 +48,7 @@
 \section{Resumo do Plano Inicial}
 \label{secao:plano_inicial}
 
-O objetivo deste trabalho é desenvolver e implementar um algoritmo para a otimização de parâmetros de um time composto por três robôs diferenciais. O contexto é uma partida de futebol segundo a Competição Brasileira de Robótica (CBR), categoria IEEE Very Small Size Soccer (VSS). Por meio da criação de métricas e testes automatizados para medir o desempenho do time de robôs em diversas situações de jogo, pode-se utilizar algoritmos evolutivos para fazer a otimização de parâmetros relevantes, como os relativos ao planejamento de trajetória. Visa-se utilizar os algoritmos aqui implementados pela equipe da ITAndroids, que representa o ITA, em competições nacionais e internacionais, como na competição Latin America Robotics Competition (LARC)/CBR.
+O objetivo deste trabalho é desenvolver e implementar um algoritmo para a otimização de parâmetros de um time composto por três robôs diferenciais. O contexto é uma partida de futebol segundo a Competição Brasileira de Robótica (CBR), categoria IEEE Very Small Size Soccer (VSSS). Por meio da criação de métricas e testes automatizados para medir o desempenho do time de robôs em diversas situações de jogo, pode-se utilizar algoritmos evolutivos para fazer a otimização de parâmetros relevantes, como os relativos ao planejamento de trajetória. Visa-se utilizar os algoritmos aqui implementados pela equipe da ITAndroids, que representa o ITA, em competições nacionais e internacionais, como na competição Latin America Robotics Competition (LARC)/CBR.
 
 Planejamento:
 \begin{itemize}
@@ -70,12 +70,13 @@ Planejamento:
 \section{Resumo das Atividades Realizadas}
 \label{secao:atividades_realizadas}
 
-Ao longo dos dois primeiros meses, foram realizados estudos e foi decidido que será usado o algoritmo Covariance Matrix Adaptation Evolution Strategy (CMA-ES) para a otimização de parâmetros. Esse algoritmo foi escolhido dentre de opções como NEWUOA e o algoritmo de Broyden–Fletcher–Goldfarb–Shanno (BFGS). Mais detalhes sobre esses dois últimos métodos pode ser encontrada respectivamente em \cite{NEWUOA} e em \cite{BFGS}. Para uma descrição sobre a eficácia do algoritmo CMA-ES no contexto de futebol de robôs, pode-se encontrar na referência \cite{CMA-ES}.
+Ao longo dos dois primeiros meses, foram realizados estudos e foi decidido que será usado o algoritmo Covariance Matrix Adaptation Evolution Strategy (CMA-ES) para a otimização de parâmetros. Esse algoritmo foi escolhido dentre de opções como NEWUOA e o algoritmo de Broyden–Fletcher–Goldfarb–Shanno (BFGS). Mais detalhes sobre esses dois últimos métodos pode ser encontrada, respectivamente, em \cite{NEWUOA} e em \cite{BFGS}. Para uma descrição sobre a eficácia do algoritmo CMA-ES no contexto de futebol de robôs, pode-se encontrar na referência \cite{CMA-ES}.
 
-Ao longo do segundo e terceiro bimestres, a base do algoritmo foi implementada utilizando C++, que é a linguagem utilizada pela equipe, muito consagrada no contexto da robótica \cite{cox1988c++}. Foi, em seguida, realizada a codificação dos testes de unidade para os componentes principais do algoritmo, os nós intermediários da árvore. A performance computacional da BT foi analisada e mostrou resultados satisfatórios e condizentes com o que foi previsto. A estrutura básica do algoritmo estava pronta.
+Ao longo do segundo e terceiro bimestres, a base do algoritmo foi implementada utilizando Matlab \cite{matlab}, que é uma linguagem especializa em algébra linear utilizada pela equipe. Foi, em seguida, realizada a escolha e codificação das métricas a serem utilizadas para medir o desempenho de uma determinada situação de jogo.
 
-A parte da BT que considera as limitações de um robô real foi implementada e testada no time. 
-O método  foi mostrado efetivo na LARC, ocorrida entre os dias 7 a 11 de novembro de 2017. O algoritmo mostrou que realiza troca de posições entre jogadores de forma fluida, de modo que a equipe tinha o posicionamento mais dinâmico da competição. A equipe da ITAndroids conquistou o sétimo lugar de 30.
+O algoritmo foi, em seguida, implementado e integrado com o restante do código da equipe. Após algumas iterações, os parâmetros relativos ao planejamento de trajetória do robô foram otimizados e testados em simulações. Os resultados se mostraram satisfatórios e condizentes com o previsto.
+
+Os resultados obtidos foram efetivos como mostrado na LARC, ocorrida entre os dias 6 a 10 de novembro de 2018. O algoritmo mostrou que o planejamento de trajetórias da equipe, em conjunto com o controle do robô, estavam muito precisos, fato que concedeu à equipe uma vantagem decisiva na competição. A equipe da ITAndroids conquistou o primeiro lugar da competição, sendo a sua classificação mais alta na categoria Very Small Size Soccer da história.
 
 \section{Descrição do Problema}
 \label{secao:enunciado_problema}
