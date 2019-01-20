@@ -1,0 +1,360 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.9 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\datalist[entry]{none/global//global/global}
+  \entry{NEWUOA}{incollection}{}
+    \name{author}{1}{}{%
+      {{hash=PMJ}{%
+         family={Powell},
+         familyi={P\bibinitperiod},
+         given={Michael\bibnamedelima JD},
+         giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer}%
+    }
+    \strng{namehash}{PMJ1}
+    \strng{fullhash}{PMJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Large-scale nonlinear optimization}
+    \field{pages}{255\bibrangedash 297}
+    \field{title}{The NEWUOA software for unconstrained optimization without
+  derivatives}
+    \field{year}{2006}
+  \endentry
+
+  \entry{BFGS}{book}{}
+    \name{author}{1}{}{%
+      {{hash=FR}{%
+         family={Fletcher},
+         familyi={F\bibinitperiod},
+         given={Roger},
+         giveni={R\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {John Wiley \& Sons}%
+    }
+    \strng{namehash}{FR1}
+    \strng{fullhash}{FR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Practical methods of optimization}
+    \field{year}{2013}
+  \endentry
+
+  \entry{CMA-ES}{article}{}
+    \name{author}{2}{}{%
+      {{hash=HN}{%
+         family={Hansen},
+         familyi={H\bibinitperiod},
+         given={Nikolaus},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=OA}{%
+         family={Ostermeier},
+         familyi={O\bibinitperiod},
+         given={Andreas},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {MIT Press}%
+    }
+    \strng{namehash}{HNOA1}
+    \strng{fullhash}{HNOA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{2}
+    \field{pages}{159\bibrangedash 195}
+    \field{title}{Completely derandomized self-adaptation in evolution
+  strategies}
+    \field{volume}{9}
+    \field{journaltitle}{Evolutionary computation}
+    \field{year}{2001}
+  \endentry
+
+  \entry{cox1988c++}{inproceedings}{}
+    \name{author}{1}{}{%
+      {{hash=CIJ}{%
+         family={Cox},
+         familyi={C\bibinitperiod},
+         given={Ingemar\bibnamedelima J},
+         giveni={I\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{CIJ1}
+    \strng{fullhash}{CIJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Robotics and Automation, 1988. Proceedings., 1988 IEEE
+  International Conference on}
+    \field{pages}{641\bibrangedash 643}
+    \field{title}{C++ language support for guaranteed initialization, safe
+  termination and error recovery in robotics}
+    \field{year}{1988}
+  \endentry
+
+  \entry{cbr2008}{misc}{}
+    \field{note}{http://www.cbrobotica.
+  org/wp-content/uploads/2014/03/VerySmall2008\_en.pdf}
+  \endentry
+
+  \entry{tasinaffo_ic}{article}{}
+    \name{author}{2}{}{%
+      {{hash=CMMA}{%
+         family={Coelho},
+         familyi={C\bibinitperiod},
+         given={Mateus Menezes\bibnamedelima Azevedo},
+         giveni={M\bibinitperiod\bibinitdelim M\bibinitperiod\bibinitdelim
+  A\bibinitperiod},
+      }}%
+      {{hash=TPM}{%
+         family={Tasinaffo},
+         familyi={T\bibinitperiod},
+         given={Paulo\bibnamedelima Marcelo},
+         giveni={P\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{CMMATPM1}
+    \strng{fullhash}{CMMATPM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Desenvolvimento de Visão Computacional do Robô Humanoide}
+    \field{year}{2016}
+  \endentry
+
+  \entry{franzoni_rrt}{thesis}{}
+    \name{author}{1}{}{%
+      {{hash=OIF}{%
+         family={Okuyama},
+         familyi={O\bibinitperiod},
+         given={Igor\bibnamedelima Franzoni},
+         giveni={I\bibinitperiod\bibinitdelim F\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{OIF1}
+    \strng{fullhash}{OIF1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{TRAJECTORY PLANNING CONSIDERING ACCELERATION LIMITS FOR AN
+  AUTONOMOUS SOCCER PLAYER}
+    \list{institution}{1}{%
+      {Instituto Tecnol\'{o}gico de Aeron\'{a}utica}%
+    }
+    \field{type}{Trabalho de Gradua\c{c}\~{a}o}
+    \field{year}{2017}
+  \endentry
+
+  \entry{ssl}{misc}{}
+    \field{note}{http://www.cbrobotica.
+  org/wp-content/uploads/2014/03/VerySmall2008\_en.pdf}
+  \endentry
+
+  \entry{NEUIslanders_ssl}{misc}{}
+    \name{author}{4}{}{%
+      {{hash=ARH}{%
+         family={Abiyev},
+         familyi={A\bibinitperiod},
+         given={Rahib\bibnamedelima H.},
+         giveni={R\bibinitperiod\bibinitdelim H\bibinitperiod},
+      }}%
+      {{hash=�B}{%
+         prefix={Şenol},
+         prefixi={�\bibinitperiod},
+         family={Bektas},
+         familyi={B\bibinitperiod},
+      }}%
+      {{hash=AN}{%
+         family={Akkaya},
+         familyi={A\bibinitperiod},
+         given={Nurullah},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=AE}{%
+         family={Aytac},
+         familyi={A\bibinitperiod},
+         given={Ersin},
+         giveni={E\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{ARHB�AN+1}
+    \strng{fullhash}{ARHB�ANAE1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{howpublished}{Robocup}
+    \field{title}{NEUIslanders 2017 Team Description Paper}
+    \field{year}{2017}
+  \endentry
+
+  \entry{west2001introduction}{book}{}
+    \true{moreauthor}
+    \name{author}{1}{}{%
+      {{hash=WDB}{%
+         family={West},
+         familyi={W\bibinitperiod},
+         given={Douglas\bibnamedelima Brent},
+         giveni={D\bibinitperiod\bibinitdelim B\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Prentice hall Upper Saddle River}%
+    }
+    \strng{namehash}{WDB+1}
+    \strng{fullhash}{WDB+1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{chapter}{2}
+    \field{title}{Introduction to graph theory}
+    \field{volume}{2}
+    \field{year}{2001}
+  \endentry
+
+  \entry{hunt2013gang}{incollection}{}
+    \name{author}{1}{}{%
+      {{hash=HJ}{%
+         family={Hunt},
+         familyi={H\bibinitperiod},
+         given={John},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer}%
+    }
+    \strng{namehash}{HJ1}
+    \strng{fullhash}{HJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Scala Design Patterns}
+    \field{pages}{135\bibrangedash 136}
+    \field{title}{Gang of four design patterns}
+    \field{year}{2013}
+  \endentry
+
+  \entry{egly2005decision}{book}{}
+    \name{author}{3}{}{%
+      {{hash=EU}{%
+         family={Egly},
+         familyi={E\bibinitperiod},
+         given={Uwe},
+         giveni={U\bibinitperiod},
+      }}%
+      {{hash=NG}{%
+         family={Novak},
+         familyi={N\bibinitperiod},
+         given={Gregor},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=WD}{%
+         family={Weber},
+         familyi={W\bibinitperiod},
+         given={Daniel},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {na}%
+    }
+    \strng{namehash}{EUNGWD1}
+    \strng{fullhash}{EUNGWD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Decision making for MiroSOT soccer playing robots}
+    \field{year}{2005}
+  \endentry
+
+  \entry{delaunay34}{article}{}
+    \name{author}{1}{}{%
+      {{hash=DB}{%
+         family={Delaunay},
+         familyi={D\bibinitperiod},
+         given={Boris},
+         giveni={B\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{DB1}
+    \strng{fullhash}{DB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{pages}{793\bibrangedash 800}
+    \field{title}{Sur la sph\'{e}re vide}
+    \field{volume}{6}
+    \field{journaltitle}{Bulletin de l'Académie des Sciences de l'URSS}
+    \field{year}{1934}
+  \endentry
+
+  \entry{voronoi08}{article}{}
+    \name{author}{1}{}{%
+      {{hash=VG}{%
+         family={Voronoi},
+         familyi={V\bibinitperiod},
+         given={Georgy},
+         giveni={G\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{VG1}
+    \strng{fullhash}{VG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{pages}{97\bibrangedash 178}
+    \field{title}{Nouvelles applications des paramètres continus à la
+  théorie des formes quadratiques}
+    \field{volume}{133}
+    \field{journaltitle}{Journal für die Reine und Angewandte Mathematik}
+    \field{year}{1908}
+  \endentry
+
+  \entry{akiyama2007multi}{inproceedings}{}
+    \name{author}{2}{}{%
+      {{hash=AH}{%
+         family={Akiyama},
+         familyi={A\bibinitperiod},
+         given={Hidehisa},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=NI}{%
+         family={Noda},
+         familyi={N\bibinitperiod},
+         given={Itsuki},
+         giveni={I\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {Springer}%
+    }
+    \strng{namehash}{AHNI1}
+    \strng{fullhash}{AHNI1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Robot Soccer World Cup}
+    \field{pages}{377\bibrangedash 384}
+    \field{title}{Multi-agent positioning mechanism in the dynamic environment}
+    \field{year}{2007}
+  \endentry
+
+  \entry{Qt}{misc}{}
+    \field{note}{https://www.qt.io/}
+  \endentry
+\enddatalist
+\endinput
