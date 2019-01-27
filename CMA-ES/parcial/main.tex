@@ -81,7 +81,7 @@ Os resultados obtidos foram efetivos como mostrado na LARC, ocorrida entre os di
 \section{Descrição do Problema}
 \label{secao:enunciado_problema}
 
-No contexto do futebol de robôs, a otimização de parâmetros traz muitos desafios. Tal problema consiste no fato de se implementar um algoritmo que consiga encontrar as melhores constantes a serem usadas no código para melhorar o desempenho do robô em uma partida real. Entretando, para conseguir-se encontrar esses parâmetros de forma automatizada, é necessário, além do algoritmo evolutivo em si, a existência de simulações fiéis o suficiente à realidade. A figura \ref{fig:vss_ele} mostra a placa eletrônica do robô utilizado.
+No contexto do futebol de robôs, a otimização de parâmetros traz muitos desafios. Tal problema consiste no fato de se implementar um algoritmo que consiga encontrar as melhores constantes a serem usadas no código para melhorar o desempenho do robô em uma partida real. Entretando, para encontrar esses parâmetros de forma automatizada, é necessário, além do algoritmo evolutivo em si, a existência de simulações fiéis à realidade. A figura \ref{fig:vss_ele} mostra a placa eletrônica do robô utilizado.
 
 \begin{figure}[H]
 	\centering
@@ -110,7 +110,7 @@ Cada robô foi projetado com duas rodas laterais e duas esferas livres à frente
 
 Nesse contexto, surgem várias questões a serem resolvidas para se ter um time vencedor. Nesse projeto, será abordado o seguinte problema de otimização: dado um simulador feito pela equipe que simula a física e a lógica de uma partida oficial, deve-se encontrar os melhores valores possíveis para as constantes do planejamento de trajetórias, de modo a maximizar o desempenho do time em uma partida com os robôs reais.
 
-Sobre o assunto de planejamento de trajetórias, o utilizado pela equipe é o Univector Field REFERÊNCIA SOBRE UNIVECTOR, que é muito eficiente e demonstra bons resultados na competição com as melhores equipes usando-o. Uma das suas desvantagens, é a existência de até dez parâmetros diferentes para serem otimizados e de que essas constantes não são intuitivas para uma pessoa tuná-las sem ajuda de um computador, já que o comportamento do algoritmo é relativamente complexo quando comparado com outras alternativas com o Campos Potenciais REFERÊNCIA SOBRE CAMPOS POTENCIAIS.
+Sobre o assunto de planejamento de trajetórias, o utilizado pela equipe é o Univector Field, que é muito eficiente e já demonstrou bons resultados em competições oficiais com algumas das melhores equipes utilizando-o REFERÊNCIA SOBRE UNIVECTOR. Uma das suas desvantagens, é a existência de até dez parâmetros diferentes para serem otimizados e de que essas constantes não são intuitivas para uma pessoa tuná-las sem ajuda de um computador. Isso acontece devido ao comportamento do algoritmo ser relativamente complexo quando comparado com outras alternativas como o algoritmo Campos Potenciais REFERÊNCIA SOBRE CAMPOS POTENCIAIS.
 
 Além disso, é importante ressaltar que o tempo de execução do algoritmo deve ser o mínimo possível. Nota-se que não é possível simular uma partida completa de futebol já que cada partida demora dez minutos e o algoritmo pode precisar de até 1000000 iterações para convergir, totalizando 100000 TEMPO, o que é inviável. Para isso, técnicas para executar simulações aceleradas e executar situações específicas de jogo foram desenvolvidas, com o objetivo de reduzir o tempo total da otimização.
 
