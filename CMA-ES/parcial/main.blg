@@ -18,47 +18,50 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: main-blx.bib
 Database file #2: main.bib
+Warning--I didn't find a database entry for "ssl"
+Warning--I didn't find a database entry for "NEUIslanders_ssl"
 Biblatex version: 3.8
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-You've used 18 entries,
+You've used 15 entries,
             6268 wiz_defined-function locations,
-            1265 strings with 10578 characters,
-and the built_in function-call counts, 70523 in all, are:
-= -- 4458
-> -- 1439
-< -- 415
-+ -- 1457
-- -- 488
-* -- 4448
-:= -- 6296
+            1255 strings with 10241 characters,
+and the built_in function-call counts, 58402 in all, are:
+= -- 3684
+> -- 1228
+< -- 363
++ -- 1189
+- -- 407
+* -- 3628
+:= -- 5168
 add.period$ -- 0
-call.type$ -- 18
-change.case$ -- 230
+call.type$ -- 15
+change.case$ -- 211
 chr.to.int$ -- 30
-cite$ -- 34
-duplicate$ -- 7673
-empty$ -- 7145
-format.name$ -- 807
-if$ -- 15135
+cite$ -- 28
+duplicate$ -- 6327
+empty$ -- 5898
+format.name$ -- 669
+if$ -- 12588
 int.to.chr$ -- 0
-int.to.str$ -- 40
+int.to.str$ -- 34
 missing$ -- 0
-newline$ -- 380
-num.names$ -- 682
-pop$ -- 5730
+newline$ -- 318
+num.names$ -- 599
+pop$ -- 4705
 preamble$ -- 1
-purify$ -- 301
+purify$ -- 268
 quote$ -- 0
-skip$ -- 2684
+skip$ -- 2303
 stack$ -- 0
-substring$ -- 6730
-swap$ -- 1865
-text.length$ -- 331
+substring$ -- 5482
+swap$ -- 1568
+text.length$ -- 278
 text.prefix$ -- 0
 top$ -- 1
-type$ -- 595
+type$ -- 493
 warning$ -- 0
-while$ -- 747
+while$ -- 615
 width$ -- 0
-write$ -- 363
+write$ -- 304
+(There were 2 warnings)

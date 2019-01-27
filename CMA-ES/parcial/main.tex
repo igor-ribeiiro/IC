@@ -81,7 +81,7 @@ Os resultados obtidos foram efetivos como mostrado na LARC, ocorrida entre os di
 \section{Descrição do Problema}
 \label{secao:enunciado_problema}
 
-No contexto do futebol de robôs, a tomada de decisão traz muitos desafios. A estratégia consiste no fato de se implementar um algoritmo que consiga utilizar o planejamento de trajetórias do robô da melhor maneira possível. Isso nos traz a um desafio de nível de abstração mais alto: decidir qual a melhor decisão que cada robô pode tomar em um certo momento considerando limitações de trajetórias possíveis de serem seguidas. A figura \ref{fig:vss_ele} mostra a placa eletrônica do robô utilizado. 
+No contexto do futebol de robôs, a otimização de parâmetros traz muitos desafios. Tal problema consiste no fato de se implementar um algoritmo que consiga encontrar as melhores constantes a serem usadas no código para melhorar o desempenho do robô em uma partida real. Entretando, para conseguir-se encontrar esses parâmetros de forma automatizada, é necessário, além do algoritmo evolutivo em si, a existência de simulações fiéis o suficiente à realidade. A figura \ref{fig:vss_ele} mostra a placa eletrônica do robô utilizado.
 
 \begin{figure}[H]
 	\centering
@@ -97,7 +97,7 @@ Nesse projeto, trabalhou-se com os robôs da competição IEEE Very Small Size (
    \caption{Robôs da ITAndroids da categoria IEEE VSSS.} \label{fig:vss}
 \end{figure}
 
-A figura \ref{fig:vss} mostra os robôs usados nas competições. A visão computacional utilizada pela equipe ITAndroids pode ser encontrada com mais detalhes em \cite{tasinaffo_ic} e utiliza uma câmera no topo do campo que repassa informaçãoes para um computador processar, como visto na figura \ref{fig:funcioamento}.
+A figura \ref{fig:vss} mostra os robôs usados nas competições. A visão computacional utilizada pela equipe ITAndroids pode ser encontrada com mais detalhes em \cite{tasinaffo_ic} MUDAR REFERENCIA PARA UMA DE VISÃO COMPUTACIONAL DE SMALL OU VSS e utiliza uma câmera no topo do campo que repassa informaçãoes para um computador processar, como visto na figura \ref{fig:funcioamento}.
 
 \begin{figure}[H]
 	\centering
@@ -106,16 +106,17 @@ A figura \ref{fig:vss} mostra os robôs usados nas competições. A visão compu
 	\label{fig:funcioamento}
 \end{figure}
 
-Cada robô foi projetado com duas rodas laterais e duas esferas livres à frente e atrás para manter o equilíbrio. Essa característica o torna um robô diferencial. Ou seja, temos o controle sobre as velocidades linear e angular, mas não é possível mover o robô para os lados. A linguagem utilizada para o projeto foi C++, pois é uma linguagem que tem uma velocidade de execução alta e tem escalabilidade descente para um projeto grande. 
+Cada robô foi projetado com duas rodas laterais e duas esferas livres à frente e atrás para manter o equilíbrio. Essa característica o torna um robô diferencial. Ou seja, temos o controle sobre as velocidades linear e angular, mas não é possível mover o robô para os lados. A linguagem utilizada para o projeto foi C++; diferente da utilizada nesse trabalho, que é Matlab; pois é uma linguagem que tem uma velocidade de execução alta e tem escalabilidade descente para um projeto grande. 
 
-Nesse contexto, surgem várias questões a serem resolvidas para se ter um time vencedor. Nesse projeto, será abordado o seguinte problema de estratégia: dada a posição e a velocidade de cada robô no campo, da bola e da direção que os nossos robores estão (não é possível descobrir a posição dos robôs oponentes, pois não sabemos a distribuição de cores que eles usam no seu topo), deve-se escolher qual posição o robô irá, com qual controlador  e qual planejamento de trajetórias utilizar. Deve-se também montar um plano para ações futuras, planejando uma sequência de posições que o robô deve ir para efetuar um gol.
+Nesse contexto, surgem várias questões a serem resolvidas para se ter um time vencedor. Nesse projeto, será abordado o seguinte problema de otimização: dado um simulador feito pela equipe que simula a física e a lógica de uma partida oficial, deve-se encontrar os melhores valores possíveis para as constantes do planejamento de trajetórias, de modo a maximizar o desempenho do time em uma partida com os robôs reais.
 
-O algoritmo de estratégia deve executar em tempo de execução de, no máximo, 16 ms para todo o time, que é o tempo de amostragem da câmera. A maior parte desse tempo é gasto com o planejamento de trajetórias usado, que é o Rapidly-exploring Random Tree (RRT). O tempo para cada execução de um RRT é de 1 ms, de acordo com \cite{franzoni_rrt}, limitando a em torno de um limite de doze chamadas do algoritmo por execução completa da estratégia, com uma margem de erro trinta e três porcento. Ressalta-se a importância de não ultrapassar esse tempo máximo, já que se isso acontecer perde-se uma imagem da câmera e o funcionamento do jogo é realizado de forma atrasado.
+Sobre o assunto de planejamento de trajetórias, o utilizado pela equipe é o Univector Field REFERÊNCIA SOBRE UNIVECTOR, que é muito eficiente e demonstra bons resultados na competição com as melhores equipes usando-o. Uma das suas desvantagens, é a existência de até dez parâmetros diferentes para serem otimizados e de que essas constantes não são intuitivas para uma pessoa tuná-las sem ajuda de um computador, já que o comportamento do algoritmo é relativamente complexo quando comparado com outras alternativas com o Campos Potenciais REFERÊNCIA SOBRE CAMPOS POTENCIAIS.
 
-Deve-se, então, ser montado um esquema de posicionamento dinâmico em que não existam nem atacante, nem zagueiro, nem goleiro fixos, mas sim, que as posições dependam e se adaptem com a posição de jogo, garantindo que os três jogadores possam estar mais bem posicionados e tenham liberdade para escolherem suas próximas ações.
+Além disso, é importante ressaltar que o tempo de execução do algoritmo deve ser o mínimo possível. Nota-se que não é possível simular uma partida completa de futebol já que cada partida demora dez minutos e o algoritmo pode precisar de até 1000000 iterações para convergir, totalizando 100000 TEMPO, o que é inviável. Para isso, técnicas para executar simulações aceleradas e executar situações específicas de jogo foram desenvolvidas, com o objetivo de reduzir o tempo total da otimização.
 
-Para resolver esse problema, foi escolhido como principal algoritmo para a tomada de decisão a Behavior Tree, embasado na decisão de um time referência no futebol de robô mundial na categoria Small Size League \cite{ssl}, o Near East University team: the NEUIslanders \cite{NEUIslanders_ssl}.
+Ademais, outro problema que será enfrentado no desenvolvimento desse projeto é a criação de interfaces de comunicação entre o algoritmo de otimização, a ser codificado em Matlab, com o código do projeto e das simulações, ambos codificados na linguagem de programação C++.
 
+Para resolver esse problema, foi escolhido como algoritmo para a otimização de parâmetros o Covariance Matrix Adaptation Evolution Strategy, já que ele consegue otimizar constantes VER NA WIKIPEDIA O QUE ESSE ALGORITMO PODE FAZER E COLOCAR AQUI.
 
 \subsection{Behavior tree}
 
