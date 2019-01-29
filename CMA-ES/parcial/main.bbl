@@ -125,50 +125,119 @@
   org/wp-content/uploads/2014/03/VerySmall2008\_en.pdf}
   \endentry
 
-  \entry{tasinaffo_ic}{article}{}
-    \name{author}{2}{}{%
-      {{hash=CMMA}{%
-         family={Coelho},
-         familyi={C\bibinitperiod},
-         given={Mateus Menezes\bibnamedelima Azevedo},
-         giveni={M\bibinitperiod\bibinitdelim M\bibinitperiod\bibinitdelim
-  A\bibinitperiod},
+  \entry{small_vision}{inproceedings}{}
+    \name{author}{5}{}{%
+      {{hash=ZS}{%
+         family={Zickler},
+         familyi={Z\bibinitperiod},
+         given={Stefan},
+         giveni={S\bibinitperiod},
       }}%
-      {{hash=TPM}{%
-         family={Tasinaffo},
-         familyi={T\bibinitperiod},
-         given={Paulo\bibnamedelima Marcelo},
-         giveni={P\bibinitperiod\bibinitdelim M\bibinitperiod},
+      {{hash=LT}{%
+         family={Laue},
+         familyi={L\bibinitperiod},
+         given={Tim},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=BO}{%
+         family={Birbach},
+         familyi={B\bibinitperiod},
+         given={Oliver},
+         giveni={O\bibinitperiod},
+      }}%
+      {{hash=WM}{%
+         family={Wongphati},
+         familyi={W\bibinitperiod},
+         given={Mahisorn},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=VM}{%
+         family={Veloso},
+         familyi={V\bibinitperiod},
+         given={Manuela},
+         giveni={M\bibinitperiod},
       }}%
     }
-    \strng{namehash}{CMMATPM1}
-    \strng{fullhash}{CMMATPM1}
+    \list{organization}{1}{%
+      {Springer}%
+    }
+    \strng{namehash}{ZSLTBO+1}
+    \strng{fullhash}{ZSLTBOWMVM1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{title}{Desenvolvimento de Visão Computacional do Robô Humanoide}
-    \field{year}{2016}
+    \field{booktitle}{Robot Soccer World Cup}
+    \field{pages}{425\bibrangedash 436}
+    \field{title}{SSL-vision: The shared vision system for the RoboCup Small
+  Size League}
+    \field{year}{2009}
   \endentry
 
-  \entry{franzoni_rrt}{thesis}{}
-    \name{author}{1}{}{%
-      {{hash=OIF}{%
-         family={Okuyama},
-         familyi={O\bibinitperiod},
-         given={Igor\bibnamedelima Franzoni},
-         giveni={I\bibinitperiod\bibinitdelim F\bibinitperiod},
+  \entry{univector}{inproceedings}{}
+    \name{author}{4}{}{%
+      {{hash=LY}{%
+         family={Lim},
+         familyi={L\bibinitperiod},
+         given={YS},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=CSH}{%
+         family={Choi},
+         familyi={C\bibinitperiod},
+         given={Seung-Hwan},
+         giveni={S\bibinitperiod-H\bibinitperiod},
+      }}%
+      {{hash=KJH}{%
+         family={Kim},
+         familyi={K\bibinitperiod},
+         given={Jong-Hwan},
+         giveni={J\bibinitperiod-H\bibinitperiod},
+      }}%
+      {{hash=KDH}{%
+         family={Kim},
+         familyi={K\bibinitperiod},
+         given={Dong-Han},
+         giveni={D\bibinitperiod-H\bibinitperiod},
       }}%
     }
-    \strng{namehash}{OIF1}
-    \strng{fullhash}{OIF1}
+    \strng{namehash}{LYCSHKJH+1}
+    \strng{fullhash}{LYCSHKJHKDH1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{title}{TRAJECTORY PLANNING CONSIDERING ACCELERATION LIMITS FOR AN
-  AUTONOMOUS SOCCER PLAYER}
-    \list{institution}{1}{%
-      {Instituto Tecnol\'{o}gico de Aeron\'{a}utica}%
+    \field{booktitle}{Proc. 17th World Congress The International Federation of
+  Automatic Control, Seoul, Korea (July 2008)}
+    \field{title}{Evolutionary univector field-based navigation with collision
+  avoidance for mobile Robot}
+    \field{year}{2008}
+  \endentry
+
+  \entry{potential_fields}{inproceedings}{}
+    \name{author}{2}{}{%
+      {{hash=KY}{%
+         family={Koren},
+         familyi={K\bibinitperiod},
+         given={Yoram},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=BJ}{%
+         family={Borenstein},
+         familyi={B\bibinitperiod},
+         given={Johann},
+         giveni={J\bibinitperiod},
+      }}%
     }
-    \field{type}{Trabalho de Gradua\c{c}\~{a}o}
-    \field{year}{2017}
+    \list{organization}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{KYBJ1}
+    \strng{fullhash}{KYBJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Robotics and Automation, 1991. Proceedings., 1991 IEEE
+  International Conference on}
+    \field{pages}{1398\bibrangedash 1404}
+    \field{title}{Potential field methods and their inherent limitations for
+  mobile robot navigation}
+    \field{year}{1991}
   \endentry
 
   \entry{west2001introduction}{book}{}
