@@ -120,13 +120,13 @@ Para resolver esse problema, foi escolhido como algoritmo para a otimização de
 
 \subsection{Covariance Matrix Adaptation Evolution Strategy}
 
-O algoritmo CMA-ES é uma estratégia evolutiva. Um algoritmo evolutivo é baseado no princípio da evolução biológica, em que conceitos de recombinação e mutação de genes são aplicados para selecionar melhores indivíduos. Mais formalmente: em cada geração novos indivíduos são criados a partir de seus pais, com o objetivo de gerar melhores indivíduos segundo alguma função objetivo.
+O algoritmo CMA-ES é uma estratégia evolutiva. Um algoritmo evolutivo é baseado no princípio da evolução biológica, em que conceitos de recombinação e mutação de genes são aplicados para selecionar melhores indivíduos. Mais formalmente: em cada geração novos indivíduos são criados a partir de seus pais, com o objetivo de gerar melhores indivíduos segundo algum critério.
 
 No contexto da computação, cada geração será considerada uma iteração. Em cada iteração existirá uma população composta de indivíduos (ou candidatos) que deverá ser alterada segundo um algoritmo para diminuir uma determinada função de custo. 
 
 Para o caso do CMA-ES, os novos indivíduos são escolhidos com base em uma distribuição gaussiana de múltiplas dimensões. A nova população será gerada a partir da média dos melhores indíviduos da população anterior, em combinação com uma pertubação gaussiana estocástica. Dependência entre diferentes parâmetros seram representadas por uma matriz de covariâncias.
 
-Nota-se que o algoritmo brevemente descrito não usa derivadas nem dos valores das funções de custo, apenas importa a comparação entre os desempenhos dos indíviduos de uma população.
+Nota-se que o algoritmo, brevemente descrito, não usa derivadas nem valores das funções de custo, apenas importa a comparação entre os desempenhos dos indíviduos de uma população.
 
 \subsubsection{Nó Folha}
 
