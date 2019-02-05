@@ -60,35 +60,53 @@
     \field{year}{2013}
   \endentry
 
-  \entry{CMA-ES}{article}{}
-    \name{author}{2}{}{%
-      {{hash=HN}{%
-         family={Hansen},
-         familyi={H\bibinitperiod},
-         given={Nikolaus},
-         giveni={N\bibinitperiod},
+  \entry{CMA-ES-Soccer}{inproceedings}{}
+    \name{author}{5}{}{%
+      {{hash=UD}{%
+         family={Urieli},
+         familyi={U\bibinitperiod},
+         given={Daniel},
+         giveni={D\bibinitperiod},
       }}%
-      {{hash=OA}{%
-         family={Ostermeier},
-         familyi={O\bibinitperiod},
-         given={Andreas},
-         giveni={A\bibinitperiod},
+      {{hash=MP}{%
+         family={MacAlpine},
+         familyi={M\bibinitperiod},
+         given={Patrick},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=KS}{%
+         family={Kalyanakrishnan},
+         familyi={K\bibinitperiod},
+         given={Shivaram},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=BY}{%
+         family={Bentor},
+         familyi={B\bibinitperiod},
+         given={Yinon},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=SP}{%
+         family={Stone},
+         familyi={S\bibinitperiod},
+         given={Peter},
+         giveni={P\bibinitperiod},
       }}%
     }
-    \list{publisher}{1}{%
-      {MIT Press}%
+    \list{organization}{2}{%
+      {International Foundation for Autonomous Agents}%
+      {Multiagent Systems}%
     }
-    \strng{namehash}{HNOA1}
-    \strng{fullhash}{HNOA1}
+    \strng{namehash}{UDMPKS+1}
+    \strng{fullhash}{UDMPKSBYSP1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{number}{2}
-    \field{pages}{159\bibrangedash 195}
-    \field{title}{Completely derandomized self-adaptation in evolution
-  strategies}
-    \field{volume}{9}
-    \field{journaltitle}{Evolutionary computation}
-    \field{year}{2001}
+    \field{booktitle}{The 10th International Conference on Autonomous Agents
+  and Multiagent Systems-Volume 2}
+    \field{pages}{769\bibrangedash 776}
+    \field{title}{On optimizing interdependent skills: A case study in
+  simulated 3D humanoid robot soccer}
+    \field{year}{2011}
   \endentry
 
   \entry{matlab}{misc}{}
@@ -240,26 +258,34 @@
     \field{year}{1991}
   \endentry
 
-  \entry{west2001introduction}{book}{}
-    \true{moreauthor}
-    \name{author}{1}{}{%
-      {{hash=WDB}{%
-         family={West},
-         familyi={W\bibinitperiod},
-         given={Douglas\bibnamedelima Brent},
-         giveni={D\bibinitperiod\bibinitdelim B\bibinitperiod},
+  \entry{CMA-ES}{article}{}
+    \name{author}{2}{}{%
+      {{hash=HN}{%
+         family={Hansen},
+         familyi={H\bibinitperiod},
+         given={Nikolaus},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=OA}{%
+         family={Ostermeier},
+         familyi={O\bibinitperiod},
+         given={Andreas},
+         giveni={A\bibinitperiod},
       }}%
     }
     \list{publisher}{1}{%
-      {Prentice hall Upper Saddle River}%
+      {MIT Press}%
     }
-    \strng{namehash}{WDB+1}
-    \strng{fullhash}{WDB+1}
+    \strng{namehash}{HNOA1}
+    \strng{fullhash}{HNOA1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{chapter}{2}
-    \field{title}{Introduction to graph theory}
-    \field{volume}{2}
+    \field{number}{2}
+    \field{pages}{159\bibrangedash 195}
+    \field{title}{Completely derandomized self-adaptation in evolution
+  strategies}
+    \field{volume}{9}
+    \field{journaltitle}{Evolutionary computation}
     \field{year}{2001}
   \endentry
 
