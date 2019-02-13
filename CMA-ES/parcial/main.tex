@@ -169,115 +169,25 @@ O Univector Field é o planejamento de trajetórias usado pela equipe. O problem
 
 Entretando, será descrito o que cada constante que o algoritmo espera receber faz, de modo a ajudar a visualizar os resultados que as otimizações trarão. Tem-se as seguinte constantes a serem otimizadas:
 \begin{enumerate}
-\item de: 
-\item kr: 
+\item de: É o dobro de distância entre os centros de rotação do Univector Field. Na prática, quanto maior o seu valor, menos preciso o robô é em chegar em seu alvo. Porém, se o seu valor for muito pequeno, o agente pode ficar preso em um mínimo local e nunca chegar em seu objetivo.
+\item Kr: Define o quanto de rotação o campo gerado terá apontando para o seu alvo. Valores muito altos nessa constantes podem exigir que o robô faça curvas mais abruptas do que é possível e valores muito baixo farão que o robô faça curvas com raio muito grande, demorando mais a chegar no ponto desejado.
 \item sigma: Parâmetro que define o tamanho do campo de repulsão gaussiano que o robô sofre de um obstáculo. Quanto maior o valor dessa constante, mais a repulsão do obstáculo.
-\item dmin: 
-\item K0: 
-\item sigmaLine: 
-\item dminLine: 
+\item dmin: A distância que o robô deve estar do obstáculo para o seu campo ser considerado infinito. Esse valor serve para garantir que o agente não colida com um obstáculo e deve ser otimizado para garantir que, se o robô se aproximar mais de um obstáculo, que ele seja repelido imediatamente e com muita intensidade.
+\item K0: O parâmetro de predição de velocidade de obstáculos. É basicamente uma constante que é multiplicada pela velocidade do obstáculo para se calcular qual posição ele estará quando o agente chegar no objetivo. Único parâmetro que trata de obstáculos em movimento.
+\item sigmaLine: Mesmo que o parâmetro sigma só que para as paredes do campo. As paredes são tratadas como um obstáculo especial já que, enquanto um obstáculo normal é um ponto, uma parede é uma reta.
+\item dminLine:  O mesmo que a constante dmin só que para as paredes.
 \end{enumerate}
 
-O Univector Field é integrado com a interface de depuração da equipe, o que ajuda, qualitativamente, a verificar o quão otimizado é uma determinada trajetória gerada pelo algoritmo. Isso faz com que seja simples e rápido fazer uma checagem manual para saber se as constantes que o algoritmo convergiu não são absurdas. Uma visualização da interface pode ser vista em \ref{fig:univector}.
+O Univector Field é integrado com a interface de depuração da equipe, o que ajuda, qualitativamente, a verificar o quão otimizado é uma determinada trajetória gerada pelo algoritmo. Isso faz com que seja simples e rápido fazer uma checagem manual para saber se as constantes que o algoritmo convergiu não são absurdas. Uma visualização da interface pode ser vista na figura \ref{fig:univector}.
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.6\textwidth]{figures/SimulatorWithoutButtons.png}
-	\caption{Interface gráfica do Univector Field}
+	\includegraphics[width=0.9\textwidth]{figures/UnivectorFieldSimulatorDebugger.png}
+	\caption{Interface gráfica para depuração da equipe}
 	\label{fig:univector}
 \end{figure}
 
-\subsection{Papéis}
-
-Dentre os papéis que o técnico pode escolher, os escolhidos foram Goleiro, Principal e Auxiliar, conforme  proposto por \cite{egly2005decision} como papéis de alta performance.
-
-\subsubsection{Goleiro} 
-
-O goleiro é o jogador que deve ficar próximo ao gol aliado com o objetivo de proteger o gol de ataques oponentes. 
-\begin{enumerate}
-\item Ele deve ser capaz de defender bolas com velocidade lenta em direção ao gol, ao acompanham o movimento da bola seguindo a linha do gol. 
-\item Essa posição deve conseguir proteger o gol de bolas rápidas, usando para isso um modelo de predição que supõe que a bola continuará em linha reta. Essa predição é necessária, pois, a altas velocidades, a taxa de amostragem da câmera não é alta o suficiente para conseguir comandar o robô apenas para seguir o movimento da bola, sendo necessário antecipar onde ela irá. A figura \ref{fig:goal_predict} mostra como essa predição linear funciona, indicando a direção da bola e o movimento que o goleiro deverá fazer para proteger o gol.
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.8\textwidth]{figures/GoalierPredict.png}
-   	\caption{Predição usada pelo goleiro para bolas rápidas.} \label{fig:goal_predict}
-\end{figure}
-
-
-\item Deve jogar a bola para longe do gol, por meio de rotações em torno do próprio eixo quando chegar próximo da bola para diminuir o risco de gol.
-\item Deve sair do gol quando a situação não é de risco e ele chegará na bola antes de qualquer oponente. Nesse caso, outro jogador deverá se tornar um goleiro.
-\end{enumerate}
-
-\subsubsection{Principal} 
-
-O jogador com o papel de Principal é o jogador mais ativo do time, que deve star constatemente avançando em direção a bola. Essa e o goleiro são as únicas posições que efetivamente deverao tocar na bola. Esse papel deve atender os seguintes requisitos:
-
-\begin{enumerate}
-\item deve atacar em direção ao gol oponente sempre que a bola não esteja muito próxima da parede. Isso será feito usando o planejamento de trajetórias RRT para se posicionar atrás da bola, seguido de uma rápida aceleração com a bola em linha reta em direção ao gol, de forma que o jogador leve a bola com a maior velocidade possível ao gol.
-\item deve atacar pelas laterais do campo quando a bola estiver nos lados do campo de forma que ele jogue a bola para frente, sem necessariamente ter como objetivo fazer o gol, mas garantindo que o time agora esteja atacando. Para isso acontecer, será usado o RRT para se posicionar atrás da bola, seguida de uma rápida aceleração para frente.
-\item deve girar em torno do próprio eixo quando estiver em um dos quatro cantos do campo. Caso esteja no ataque, esse giro fará que a bola se desloque para o meio do campo, o que pode significar que outro jogador possa pegar essa bola e levar para o gol, qualificando essa jogada com um passe entre jogadores. Caso a bola esteja em um dos cantos da defesa, o giro, além de tirar a bola da zona defensiva e a por numa posição de ataque, impedirá que a bola fique presa, fato que caracteriza em falta tiro livre segundo \cite{cbr2008}. A descrição da penalidade bola livre pode ser vista na imagem \ref{fig:bola_livre}.
-
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.8\textwidth]{figures/bola_livre.png}
-   \caption{Descrição da penalidade bola livre.} \label{fig:bola_livre}
-\end{figure}
-
- 
-\item deve ter comportamentos fixos e especiais para cada situações de falta, como por exemplo em um penalty, que ele deve levar a bola o mais rápido possível para um dos lados do gol para o goleiro não ter tempo de reagir e simplesmente atingir ou em um tiro livre, em que ele deve acelerar o máximo possível para chegar na bola antes do oponente. A descrição da falta do tipo penalty se encontra na figura \ref{fig:penalty}.
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.8\textwidth]{figures/campo_penalty.png}
-   \caption{Descrição da penalidade penalty.} \label{fig:penalty}
-\end{figure}
-
-\end{enumerate}
-
-
-
-
-\subsubsection{Auxiliar} 
-
-O auxiliar é um papél que tem apenas uma função: posicionar-se da melhor forma possível para manter um ataque consistente. A ideia é que, caso a situação seja oportuna, o auxiliar se torne o principal e comece a atacar a bola. Para escolher a posição que o auxiliar deverá ficar em uma determiada situação de jogo, foi utilizado a triangulação de Delaunay \cite{delaunay34} sobre o grafo de Voronoi \cite{voronoi08}. Esse algoritmo foi aplicado similarmente a \cite{akiyama2007multi}, relativo também à futebol de robôs.
-
-Em seguida, uma interface foi desenvolvida para que fosse possível escolher as melhores posições dos jogadores aliados para cada posição da bola. A implementação para escolher a posição do auxiliar, no contexto da ITAndroids, funcionará seguindo os passos a seguir:
-
-\begin{enumerate}
-
-\item Escolhe-se uma posição estratégica para a bola no campo.
-
-\item É escohido a melhor posição para um ou mais auxiliares quando a bola estiver nessa posição. A interface desenvolvida em C++, com a biblioteca Qt\cite{Qt}, foi usada para esses dois passos. A visualização pode ser vista na figura \ref{fig:delaunay_interface}.
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=1.05\textwidth]{figures/delaunay_interface.png}
-   \caption{Interface para posicionamento com triangulação de Delaunay.} \label{fig:delaunay_interface}
-\end{figure}
-
-\item Os valores dessas posições são guardadas em um arquivos de texto para posterior uso no código da estratégia. Um exemplo desse arquivo de configuração se encontrar na figura \ref{fig:text_config_delaunay}, em que temos 2 jogadores em três posições, como escrito na linha 1 do arquivo; seguido pela localização da bola, com apenas as coordenadas x e y, e as posições dos jogadores, com as coordenadas x,y e ângulo. Essas localizações são repetidas três vezes conforme escolhido (linha 1).
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.8\textwidth]{figures/text_config_delaunay.png}
-   \caption{Arquivo de configuração para posicionamento dcom triangulação de Delaunay.} \label{fig:text_config_delaunay}
-\end{figure}
-
-\item A estratégia do auxiliar utiliza a triangulação de Delaunay para a posição atual da bola, em conjunto com o arquivo de configuração feito, para interpolar as posições discretas escolhidas e fazer que o algoritmo retorna uma posição ótima independente da localização da bola.
-
-\item Com a posição obtida pela triangulação, é usado o algoritmo de planejamento de trajetórias RRT, em conjunto com o seu controlador, para chegar nessa posição interpolada.
-
-\end{enumerate}
-
-\subsection{Táticas de Jogo}
-
-Táticas de Jogo, representado pela classe 'Play', é a parte mais alto nível da estratégia. Essa classe é responsável por escolher qual técnico usar em um determinado momento da partida. O Play escolhe qual o melhor modo de se jogar em uma situação, como, por exemplo, ter uma postura mais agressiva ou mais defensiva envolvendo os três jogadores. Só pode existir um Play no jogo, que pode ser tratado como a raiz de uma Behavior Tree que tem os técnicos como filhos, tendo, cada um, três árvores relativas a cada jogador.
-
-O seu funcionamento é similar ao Selector Behavior, no sentido em que é preciso escolher apenas um técnico a cada momento. Para avaliar quando é necessário fazer uma troca, usa-se o mesmo modelo de retorno: TRUE, FALSE e RUNNING para os técnicos. 
-
-Dado essa troca, pode ser criados técnicos temporários para jogadas específicas de jogo, como o goleiro sair do gol e voltar outro jogador, que é uma ação de transição. Isso pode significar que um técnico principal pode chamar esse outro, voltando depois para o mesmo técnico novamente. Então, podemos ter um técnico principal e vários temporários para jogadas ensaidas e específicas que envolvam mais de um jogador.
+Na figura \ref{fig:univector}, é possível observar, em um determinado instante, as trajetórias calculadas para cada jogador e os vetores do campo do Univector Field para o jogador verde.
 
 
 \section{Resultados Obtidos}
