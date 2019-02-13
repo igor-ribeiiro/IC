@@ -289,26 +289,58 @@
     \field{year}{2001}
   \endentry
 
-  \entry{hunt2013gang}{incollection}{}
+  \entry{protobuf}{misc}{}
+  \field{note}{https://developers.google.com/protocol-buffers/docs/cpptutorial}
+  \endentry
+
+  \entry{ODE}{inproceedings}{}
+    \name{author}{2}{}{%
+      {{hash=AK}{%
+         family={Ahnert},
+         familyi={A\bibinitperiod},
+         given={Karsten},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=MM}{%
+         family={Mulansky},
+         familyi={M\bibinitperiod},
+         given={Mario},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {AIP}%
+    }
+    \strng{namehash}{AKMM1}
+    \strng{fullhash}{AKMM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{AIP Conference Proceedings}
+    \field{number}{1}
+    \field{pages}{1586\bibrangedash 1589}
+    \field{title}{Odeint--solving ordinary differential equations in C++}
+    \field{volume}{1389}
+    \field{year}{2011}
+  \endentry
+
+  \entry{Ogre}{book}{}
     \name{author}{1}{}{%
-      {{hash=HJ}{%
-         family={Hunt},
-         familyi={H\bibinitperiod},
-         given={John},
-         giveni={J\bibinitperiod},
+      {{hash=KF}{%
+         family={Kerger},
+         familyi={K\bibinitperiod},
+         given={Felix},
+         giveni={F\bibinitperiod},
       }}%
     }
     \list{publisher}{1}{%
-      {Springer}%
+      {Packt Publishing Ltd}%
     }
-    \strng{namehash}{HJ1}
-    \strng{fullhash}{HJ1}
+    \strng{namehash}{KF1}
+    \strng{fullhash}{KF1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{booktitle}{Scala Design Patterns}
-    \field{pages}{135\bibrangedash 136}
-    \field{title}{Gang of four design patterns}
-    \field{year}{2013}
+    \field{title}{OGRE 3D 1.7 Beginner's Guide}
+    \field{year}{2010}
   \endentry
 
   \entry{egly2005decision}{book}{}

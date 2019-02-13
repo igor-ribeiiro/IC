@@ -147,7 +147,9 @@ Não será abordado os detalhes técnicos do item 2d, pois a implementação des
 
 \subsection{O simulador}
 
-O simulador é uma aplicação separada do código principal do time, desenvolvida e idealizada pela própria equipe, que cria um ambiente com física que simula um jogo0
+O simulador é uma aplicação separada do código principal do time, desenvolvida e idealizada pela própria equipe, que cria um ambiente com física que simula um jogo. Tal aplicação se comunica com o código principal por meio de uma biblioteca de comunicação \cite{protobuf}, em que se transfere informações sobre as posições do robôs para o código principal, enquanto que esse último transmite informações de velocidade das rodas de cada robô para o simulador.
+
+A simulação foi desenvolvida em C++ com o auxílio da biblioteca Odeint \cite{ODE}, para fazer as computações das equações diferenciais da física e das colisões dos movimentos, e da biblioteca Ogre3D \cite{Ogre}, responsável por renderizar os objetos na tela em três dimensões. A figura \ref{fig:simulator} mostra a interface visual do simulador logo antes de se começar uma partida.
 
 \begin{figure}[H]
 	\centering
@@ -156,8 +158,26 @@ O simulador é uma aplicação separada do código principal do time, desenvolvi
 	\label{fig:simulator}
 \end{figure}
 
-Uma Behavior Tree, que embora consegue modelar comportamentos complexos com facilidade, nem sempre é a melhor escolha para determinadas situações. Por isso, a estratégia foi dividida em níveis de abstrações diferentes, em que a um Técnico, representado pela classe Coach, seria responsável por escolher e administrar quais árvore cada um dos três jogadores deveria usar no momento.
-Com essa implementação, tem-se um agente externo controlando a função dos jogadores por meio da escolha de uma BT, que pode ser uma árvore para um goleiro, para um principal e para um auxiliar. Isso significa que, em um dterminado momento, o técnico pode escolher que o time tenha 1 goleiro, 1 principal e 1 auxiliar a até mesmo 3 principais ao mesmo tempo. Os requisitos esperados para cada um desses papéis será abortado a seguir. Além disso, também é função do técnico escolher o papel de cada jogador a cada iteração do código, de modo que as posições dos jogadores não sejam fixas ao decorrer do jogo.
+
+Com isso, é possivel ter uma aproximação do comportamento do time em um jogo real. Dado que o simulador é desenvolvido pela própria equipe, é possível adicionar situações especiais de jogo, além de se adicionar condições de paradas específicas para o que se deseja testar. Essas funcionalidades são muito importantes para a criação de situações específicas de jogo e, consequentemente, de funções de custo mais rápidas e otimizadas, o que garante uma convergência mais rápida de determinados parâmetros.
+
+Além disso, o simulador também tem um modo de funcionar que é o chamado: modo acelerado. Normalmente, o código tem algumas funções para esperar um determinado tempo, com o objetivo de fazer que ele se pareça mais com a realidade (se ele não tivesse, a física seria muito rápida). Porém, no modo acelerado, esses tempos ociosos são removidos e a comunicação com o código principal funciona de forma assíncrona, o que garante uma velocidade de executação e simulação muito mais rápida, chegando a ser até dez vezes mais rápida que o modo de execução normal. Logo, o modo acelerado é fundamental para garantir que a função de custo a ser desenvolvida seja mais eficiente e veloz.
+
+\subsection{Univector Field}
+
+O Univector Field é o planejamento de trajetórias usado pela equipe. O problema a ser resolvido é: como chegar de um ponto à ponto dentro do campo, desviando de obstáculos e considerando as limitações de controle e físicas do robô. Não será detalhado o funcionamento completo do algoritmo do Univector Field, já que isso pode ser encontrado em \cite{univector}.
+
+Entretando, será descrito o que cada constante que o algoritmo espera receber faz, de modo a ajudar a visualizar os resultados que as otimizações trarão. Tem-se as seguinte constantes:
+
+
+O Univector Field é integrado com a interface de depuração da equipe, o que ajuda, qualitativamente, a verificar o quão otimizado é uma determinada trajetória gerada pelo algoritmo. Isso faz com que seja simples e rápido fazer uma checagem manual para saber se as constantes que o algoritmo convergiu não são absurdas. Uma visualização da interface pode ser vista em \ref{fig:univector}.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.6\textwidth]{figures/SimulatorWithoutButtons.png}
+	\caption{Interface gráfica do Univector Field}
+	\label{fig:simulator}
+\end{figure}
 
 \subsection{Papéis}
 
@@ -256,13 +276,6 @@ Dado essa troca, pode ser criados técnicos temporários para jogadas específic
 	\label{secao: resultados_obtidos}
     
 Nessa seção, são apresentados os resultados obtidos na resolução do problema da tomada de decisão para robôs jogadores de futebol IEEE Very Small Size Soccer. Os resultados a seguir foram obtidos estudando o comportamentos de equipes adversárias na competição, além de diversos testes com o time de robôs da ITAndroids contra si mesmo em simulações computacionais em um simulador feito pela própria equipe, como mostrado na figura \ref{fig:simulator}.
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.6\textwidth]{figures/SimulatorWithoutButtons.png}
-	\caption{Simulador da ITAndroids.}
-	\label{fig:simulator}
-\end{figure}
 
 \subsection{Papéis}
 
