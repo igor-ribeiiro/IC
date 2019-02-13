@@ -165,10 +165,18 @@ Além disso, o simulador também tem um modo de funcionar que é o chamado: modo
 
 \subsection{Univector Field}
 
-O Univector Field é o planejamento de trajetórias usado pela equipe. O problema a ser resolvido é: como chegar de um ponto à ponto dentro do campo, desviando de obstáculos e considerando as limitações de controle e físicas do robô. Não será detalhado o funcionamento completo do algoritmo do Univector Field, já que isso pode ser encontrado em \cite{univector}.
+O Univector Field é o planejamento de trajetórias usado pela equipe. O problema a ser resolvido é: como chegar de um ponto à ponto dentro do campo, desviando de obstáculos e considerando as limitações de controle e físicas do robô. Não será detalhado o funcionamento completo do algoritmo do Univector Field, já que isso pode ser visto em \cite{univector}.
 
-Entretando, será descrito o que cada constante que o algoritmo espera receber faz, de modo a ajudar a visualizar os resultados que as otimizações trarão. Tem-se as seguinte constantes:
-
+Entretando, será descrito o que cada constante que o algoritmo espera receber faz, de modo a ajudar a visualizar os resultados que as otimizações trarão. Tem-se as seguinte constantes a serem otimizadas:
+\begin{enumerate}
+\item de: 
+\item kr: 
+\item sigma: Parâmetro que define o tamanho do campo de repulsão gaussiano que o robô sofre de um obstáculo. Quanto maior o valor dessa constante, mais a repulsão do obstáculo.
+\item dmin: 
+\item K0: 
+\item sigmaLine: 
+\item dminLine: 
+\end{enumerate}
 
 O Univector Field é integrado com a interface de depuração da equipe, o que ajuda, qualitativamente, a verificar o quão otimizado é uma determinada trajetória gerada pelo algoritmo. Isso faz com que seja simples e rápido fazer uma checagem manual para saber se as constantes que o algoritmo convergiu não são absurdas. Uma visualização da interface pode ser vista em \ref{fig:univector}.
 
@@ -176,7 +184,7 @@ O Univector Field é integrado com a interface de depuração da equipe, o que a
 	\centering
 	\includegraphics[width=0.6\textwidth]{figures/SimulatorWithoutButtons.png}
 	\caption{Interface gráfica do Univector Field}
-	\label{fig:simulator}
+	\label{fig:univector}
 \end{figure}
 
 \subsection{Papéis}

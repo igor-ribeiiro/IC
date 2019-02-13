@@ -14,36 +14,38 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.2}O simulador}{11}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3}Pap\IeC {\'e}is}{12}
+\contentsline {subsection}{\numberline {3.3}Univector Field}{12}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.3.1}Goleiro}{12}
+\contentsline {subsection}{\numberline {3.4}Pap\IeC {\'e}is}{13}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.3.2}Principal}{13}
+\contentsline {subsubsection}{\numberline {3.4.1}Goleiro}{13}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.3.3}Auxiliar}{15}
+\contentsline {subsubsection}{\numberline {3.4.2}Principal}{14}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.4}T\IeC {\'a}ticas de Jogo}{17}
+\contentsline {subsubsection}{\numberline {3.4.3}Auxiliar}{16}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4}Resultados Obtidos}{17}
+\contentsline {subsection}{\numberline {3.5}T\IeC {\'a}ticas de Jogo}{18}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1}Pap\IeC {\'e}is}{18}
+\contentsline {section}{\numberline {4}Resultados Obtidos}{18}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.1.1}Goleiro}{18}
+\contentsline {subsection}{\numberline {4.1}Pap\IeC {\'e}is}{19}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.1.2}Principal}{19}
+\contentsline {subsubsection}{\numberline {4.1.1}Goleiro}{19}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.1.3}Auxiliar}{20}
+\contentsline {subsubsection}{\numberline {4.1.2}Principal}{20}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2}T\IeC {\'e}cnicos}{21}
+\contentsline {subsubsection}{\numberline {4.1.3}Auxiliar}{21}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.2.1}Dois principais}{21}
+\contentsline {subsection}{\numberline {4.2}T\IeC {\'e}cnicos}{22}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.2.2}Um principal e um auxiliar}{21}
+\contentsline {subsubsection}{\numberline {4.2.1}Dois principais}{22}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.2.3}Troca de Goleiro}{22}
+\contentsline {subsubsection}{\numberline {4.2.2}Um principal e um auxiliar}{22}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5}Conclus\IeC {\~o}es}{23}
+\contentsline {subsubsection}{\numberline {4.2.3}Troca de Goleiro}{23}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6}Agradecimentos}{23}
+\contentsline {section}{\numberline {5}Conclus\IeC {\~o}es}{24}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7}Bibliografia}{23}
+\contentsline {section}{\numberline {6}Agradecimentos}{24}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7}Bibliografia}{24}
