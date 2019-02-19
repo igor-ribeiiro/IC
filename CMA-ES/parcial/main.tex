@@ -224,11 +224,11 @@ A figura \ref{fig:sem_obstaculo_simulacao} mostra uma posição do jogador e da 
 
 \subsubsection{Desvio de Obstáculos}
 
-Esse caso é bastante similar à situação anterior no sentido que usará a mesma função de custo. A diferença consiste no fato de que, nessa situação, será posto um obstáculo (um jogador aliado) na frente da bola, de modo a obrigar que o agente principal desvie do obstáculo e rapidamente retorna à trajetória original para conseguir chegar na bola.
+Esse caso é bastante similar à situação anterior no sentido que usará a mesma função de custo. A diferença consiste no fato de que, nessa situação, será posto um obstáculo (um jogador aliado) na frente da bola, de modo a obrigar que o agente principal desvie do obstáculo e rapidamente retorne à trajetória original para conseguir chegar na bola.
 
-Nessa situação de desvio de obstáculos, será otimizado apenas as variáveis relativas ao desvio de obstáculos. Está sendo assumido que os parâmetros relativos à repulsão de paredes e os de planejamento de trajetória básicos já estão otimizados e funcionais.
+Nessa situação, será otimizado apenas as variáveis relativas ao desvio de obstáculos. Está sendo assumido que os parâmetros relativos à repulsão de paredes e os de planejamento de trajetória básicos já estão otimizados e funcionais.
 
-A figura \ref{fig:com_obstaculo_simulacao} mostra uma posição do jogador e da bola para essa situação de jogo.
+A figura \ref{fig:com_obstaculo_simulacao} mostra uma posição do jogador, do obstáculo e da bola para essa situação de jogo. Percebe-se que o obstáculo está posicionado bem perto da bola, o que obriga o agente principal a fazer o desvio em sua trajetória.
 
 \begin{figure}[H]
 	\centering
@@ -240,6 +240,12 @@ A figura \ref{fig:com_obstaculo_simulacao} mostra uma posição do jogador e da 
 
 \subsection{Otimização}
 
+Nessa secção, será apresentado os resultados obtidos ao executar o algoritmo de otimização o CMA-ES, com as funções de custo apresentadas anteriormente. Será mostrado e comentado como foi a convergência de cada parâmetro em questão e a convergência total de parâmetros.
+
+\subsubsection{Trajetórias Básicas}
+
+
+\subsubsection{Desvio de Obstáculos}
 
 
 \section{Conclusões}
