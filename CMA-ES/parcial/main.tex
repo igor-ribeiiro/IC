@@ -240,23 +240,26 @@ A figura \ref{fig:com_obstaculo_simulacao} mostra uma posição do jogador, do o
 
 \subsection{Otimização}
 
-Nessa secção, será apresentado os resultados obtidos ao executar o algoritmo de otimização CMA-ES com as funções de custo apresentadas anteriormente. Será mostrado e comentado como foi a convergência geral do algoritmo e de cada parâmetro em cada caso.
+Nessa secção, será apresentado os resultados obtidos ao executar o algoritmo de otimização CMA-ES com as funções de custo apresentadas anteriormente. Será mostrado e comentado como foi a convergência geral do algoritmo e dos parâmetros em cada caso.
 
 \subsubsection{Trajetórias Básicas}
 
+A figura \ref{fig:fitness_trajetoria_basica} mostra a evolução do custo da população com o passar das iterações. Foi realizado uma interpolação polinomial de terceira ordem, apenas para melhores efeitos de visualização da convergência.
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.8\textwidth]{figures/CMA-ES_Fitness_Results.png}
+	\includegraphics[width=1.0\textwidth]{figures/CMA-ES_Fitness_Results.png}
 	\caption{Fitness Cost em função do número de iterações}
 	\label{fig:fitness_trajetoria_basica}
 \end{figure}
+
+De acordo com a figura \ref{fig:fitness_trajetoria_basica}, nota-se que, de fato, o algoritmo de otimização tende a reduzir o valor do Fitness Cost à medida que o número de iterações aumenta. Em torno de 60 iterações porém, o algoritmo já converge para um valor e não tem melhoras significativas a partir desse momento.
 
 Na figura \ref{fig:convergencia_total_trajetoria_basica} temos a convergência total dos parâmetros normalizada. A normalização foi feita em cada parâmetro separadamente e depois foi calculado a média desses resultados para cada iteração.
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.8\textwidth]{figures/CMA-ES_Total_parameter_convergence.png}
+	\includegraphics[width=1.0\textwidth]{figures/CMA-ES_Total_parameter_convergence.png}
 	\caption{Convergência total dos parâmetros em função do número de iterações}
 	\label{fig:convergencia_total_trajetoria_basica}
 \end{figure}
@@ -267,7 +270,7 @@ Tanto a figura \ref{fig:convergencia_total_trajetoria_basica}, quanto a figura \
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.8\textwidth]{figures/CMA-ES_Fitness_Results_ally.png}
+	\includegraphics[width=1.0\textwidth]{figures/CMA-ES_Fitness_Results_ally.png}
 	\caption{Fitness Cost em função do número de iterações}
 	\label{fig:fitness_trajetoria_basica_ally}
 \end{figure}
@@ -276,7 +279,7 @@ Na figura \ref{fig:convergencia_total_trajetoria_basica_ally} temos a convergên
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.8\textwidth]{figures/CMA-ES_Total_parameter_convergence_ally.png}
+	\includegraphics[width=1.0\textwidth]{figures/CMA-ES_Total_parameter_convergence_ally.png}
 	\caption{Convergência total dos parâmetros em função do número de iterações}
 	\label{fig:convergencia_total_trajetoria_basica_ally}
 \end{figure}
