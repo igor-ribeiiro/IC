@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.1.6)  13 FEB 2019 00:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.1.6)  19 FEB 2019 10:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1172,75 +1172,50 @@ Package pdftex.def Info: figures/UnivectorFieldSimulatorDebugger.png  used on i
 nput line 185.
 (pdftex.def)             Requested size: 377.85344pt x 330.24065pt.
  [13 <./figures/UnivectorFieldSimulatorDebugger.png>]
-<figures/Goalier_BT.png, id=106, 536.0025pt x 244.66406pt>
-File: figures/Goalier_BT.png Graphic file (type png)
-<use figures/Goalier_BT.png>
-Package pdftex.def Info: figures/Goalier_BT.png  used on input line 208.
-(pdftex.def)             Requested size: 364.19667pt x 166.23868pt.
- [14 <./figures/Goalier_BT.png>]
-<figures/Principal_BT.png, id=112, 636.12656pt x 346.29375pt>
-File: figures/Principal_BT.png Graphic file (type png)
-<use figures/Principal_BT.png>
-Package pdftex.def Info: figures/Principal_BT.png  used on input line 236.
-(pdftex.def)             Requested size: 364.19667pt x 198.25606pt.
-
-
-LaTeX Warning: Reference `fig:delaunay_interface' on page 15 undefined on input
- line 244.
-
-
-LaTeX Warning: Reference `fig:penalty' on page 15 undefined on input line 244.
-
-
-LaTeX Warning: Reference `fig:text_config_delaunay' on page 15 undefined on inp
-ut line 244.
-
-[15 <./figures/Principal_BT.png>]
-
-LaTeX Warning: Reference `fig:bola_livre' on page 16 undefined on input line 25
-2.
-
-[16]
-<figures/Auxiliar_BT.png, id=119, 147.55125pt x 129.48375pt>
-File: figures/Auxiliar_BT.png Graphic file (type png)
-<use figures/Auxiliar_BT.png>
-Package pdftex.def Info: figures/Auxiliar_BT.png  used on input line 269.
-(pdftex.def)             Requested size: 182.09486pt x 159.80144pt.
- [17 <./figures/Auxiliar_BT.png>]
-<figures/LastGoalierOutOfGoal.png, id=124, 513.41812pt x 323.70938pt>
+<figures/OtimizacaoSemObstaculoSimulacao.png, id=106, 803.0pt x 146.5475pt>
+File: figures/OtimizacaoSemObstaculoSimulacao.png Graphic file (type png)
+<use figures/OtimizacaoSemObstaculoSimulacao.png>
+Package pdftex.def Info: figures/OtimizacaoSemObstaculoSimulacao.png  used on i
+nput line 219.
+(pdftex.def)             Requested size: 273.14923pt x 49.85007pt.
+ [14]
+<figures/OtimizacaoComObstaculoSimulacao.png, id=111, 861.2175pt x 182.6825pt>
+File: figures/OtimizacaoComObstaculoSimulacao.png Graphic file (type png)
+<use figures/OtimizacaoComObstaculoSimulacao.png>
+Package pdftex.def Info: figures/OtimizacaoComObstaculoSimulacao.png  used on i
+nput line 233.
+(pdftex.def)             Requested size: 273.14923pt x 57.9411pt.
+ [15 <./figures/OtimizacaoSemObstaculoSimulacao.png> <./figures/OtimizacaoComOb
+staculoSimulacao.png>]
+<figures/LastGoalierOutOfGoal.png, id=115, 513.41812pt x 323.70938pt>
 File: figures/LastGoalierOutOfGoal.png Graphic file (type png)
 <use figures/LastGoalierOutOfGoal.png>
 Package pdftex.def Info: figures/LastGoalierOutOfGoal.png  used on input line 2
-90.
+55.
 (pdftex.def)             Requested size: 364.19667pt x 229.6278pt.
- [18] [19 <./figures/LastGoalierOutOfGoal.png>] [20] [21] (./main.aux)
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
+ [16] [17 <./figures/LastGoalierOutOfGoal.png>] [18] [19] (./main.aux)
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 12990 strings out of 492982
- 209852 string characters out of 6134897
+ 12980 strings out of 492982
+ 209854 string characters out of 6134897
  496719 words of memory out of 5000000
- 16304 multiletter control sequences out of 15000+600000
+ 16295 multiletter control sequences out of 15000+600000
  10150 words of font info for 38 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  45i,19n,49p,874b,1759s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share
-/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf
--dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on main.pdf (21 pages, 2991413 bytes).
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on main.pdf (19 pages, 3049448 bytes).
 PDF statistics:
- 159 PDF objects out of 1000 (max. 8388607)
- 94 compressed objects within 1 object stream
+ 154 PDF objects out of 1000 (max. 8388607)
+ 93 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 76 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 71 words of extra memory for PDF output out of 10000 (max. 10000000)
 

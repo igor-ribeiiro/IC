@@ -193,81 +193,46 @@ Na figura \ref{fig:univector}, é possível observar, em um determinado instante
 \section{Resultados Obtidos}
 	\label{secao: resultados_obtidos}
     
-Nessa seção, são apresentados os resultados obtidos na resolução do problema da tomada de decisão para robôs jogadores de futebol IEEE Very Small Size Soccer. Os resultados a seguir foram obtidos estudando o comportamentos de equipes adversárias na competição, além de diversos testes com o time de robôs da ITAndroids contra si mesmo em simulações computacionais em um simulador feito pela própria equipe, como mostrado na figura \ref{fig:simulator}.
+Nessa seção, são apresentados os resultados obtidos na resolução do problema de otimização de parâmetros para robôs jogadores de futebol IEEE Very Small Size Soccer. Os resultados a seguir foram obtidos usando o simulador desenvolvido pela equipe.
 
-\subsection{Papéis}
+\subsection{Função de Custo}
 
-Aqui, será apresentado os papéis criados para a competição e as árvores de comportamento criadas para cada um deles.
+Aqui, será apresentado as situações de jogo escolhidas para serem simuladas para a otimização de parâmetros. É importante fixar que tais jogadas devem ser rápidas de serem executadas e realmente oferecerem resultados significantes para os parâmetros a serem otimizados. Cada situação escolhida deve ter uma função de custo associada que deve ser minimizada.
 
-\subsubsection{Goleiro}
 
-A BT criada para o goleiro está representada na figura \ref{fig:goalier_bt}.
+\subsubsection{Trajetórias Básicas}
+
+Nesse primeiro caso, será tratado o problema de um só jogador no campo com o objetivo de apenas jogar a bola para frente. Nessa situação, o foco será otimizar os parâmetros do planejamento de trajetória mais simples, que são todos não relacionados ao desvio de oponentes, mas incluindo os parâmetros relativos à repulsão das paredes.
+
+O jogador e a bola são postos em diversas posições fixas no campo. Em seguida o jogador deve se mover até a bola e chutá-la ou conduzi-la até o final do campo do oponente. Quando a bola chega no final do campo, marca-se o tempo que demorou para esse objetivo ser atingido e começa o teste novamente para a próxima posição predeterminada. Caso o objetivo não seja alcançado em 3 minutos no tempo de jogo (a simulação é executada no modo acelerado), termina-se a simulação imediatamente.
+
+Dessa forma, a função de custo é calculada de acordo com a seguinte equação:
+
+$ F = tempoTotalDeTodasAsPosicoesRealizadas - numeroDePosicoesCompletadas. $
+ 
+Nota-se que, de acordo com essa função fitness que deve ser minimizada, quando menos tempo o agente completar todas a posições e quanto mais posições ele completar menor, logo melhor, será o fitness calculado.
+
+A figura \ref{fig:sem_obstaculo_simulacao} mostra uma posição do jogador e da bola para essa situação de jogo.
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.8\textwidth]{figures/Goalier_BT.png}
-   	\caption{Behavior Tree para o goleiro.} \label{fig:goalier_bt}
+	\includegraphics[width=0.6\textwidth]{figures/OtimizacaoSemObstaculoSimulacao.png}
+	\caption{Situação de jogo para otimização de trajetória simples}
+	\label{fig:sem_obstaculo_simulacao}
 \end{figure}
 
-Como visto, ela é composta por um nó do tipo Sequence Behavior, que irá executar os seus filhos em sequência. Esse papel, então, executa as seguintes ações prioritando as primeiras a aparecerem na seguinte lista:
 
-\begin{itemize}
-
-\item \textbf{Get Back to Goal Behavior} Volta para o gol, caso que, se por algum motivo ele esteja fora do próprio.
-
-\item \textbf{Goal Center} Fica centralizado no gol quando a bola estiver longe, de forma que o jogador possa rapidamente ir para qualquer um dos lados quando a bola se aproximar.
-
-\item \textbf{Goal Predict} Prediz para onde a bola irá quando ela estiver rápida e longe do gol.
-
-\item \textbf{Goal Spin} Gira quando está perto da bola e não tem oponente perto da bola para jogá-la para longe.
-
-\item \textbf{Goal Catch} Comportamento que o goleiro deverá fazer quando não fizer nenhum outro, por isso sua última posição na sequência. Ele acompanha o movimento da bola com o goleiro sobre a linha do gol.
-
-\end{itemize}
+\subsubsection{Desvio de Obstáculos}
 
 
 
-\subsubsection{Principal}
-
-Já para o principal, a árvore \ref{fig:principal_bt} foi desenvolvida, sendo a árvore mais complexa dentre os papéis.
+A figura \ref{fig:com_obstaculo_simulacao} mostra uma posição do jogador e da bola para essa situação de jogo.
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.8\textwidth]{figures/Principal_BT.png}
-   	\caption{Behavior Tree para o principal.} \label{fig:principal_bt}
-\end{figure}   
-
-Conforma a figura \ref{fig:principal_bt}, a raiz da árvore do principal é um Selector Behavior que escolhe uma das ações a ser realizada. Essa BT tem mais dois outros nós compostos, que são dois Sequence Behavior usados para o posicionamento atrás da bola, seguido pelo chute. Uma descrição dos nós folha utilizados se encontra abaixo:
-
-\begin{itemize}
-
-\item \textbf{Wait for Ball to leave Ally Goalie Area} Esse Behavior utiliza a Triangução de Delaunay, com a mesma interface desenvolvida na figura \ref{fig:delaunay_interface}. Esse comportamento deve evitar que o jogador entre na área do goleiro para não sofre penalty, conforme descrito na figura \ref{fig:penalty}. O jogador se pocionará de acordo com posições escolhidas pelo usuário, calibradas com o arquivo de configuração do mesmo modelo da figura \ref{fig:text_config_delaunay}.
-
-\item \textbf{RRT to Ball aiming to Enemy Goal} Irá usar o algoritmo de planejamento de trajetórias RRT para se deslocar atrás da bola com direção apontando para o gol oponente. Usado para se aproximar da bola e, em seguida, trocar para o próximo behavior, o Predictive RRT to Ball.
-
-\item \textbf{Predictive RRT to Ball} Usa uma predição linear considerando que a bola continuará na mesma velocidade. Usado para se chegar na bola com mais precisão quando próximo a ela. Chega atrás da bola mirando para o gol.
-
-\item \textbf{Shoot to Goal} Esse behavior só é chamado quando o jogador já está alinhado com a bola e o gol oponente. Esse comportamento acelera rapidamente o robô em linha reta para chegar no gol com uma velocidade alta.
-
-\item \textbf{Free Ball Foul Follow Line} Esse behavior é um específico para situações de falta do tipo Bola Livre, conforme descrito em \ref{fig:bola_livre}. Quando for detectado uma dessas posições, o jogador deve acelerar o mais rápio possível em direção à bola para ter o controle dela antes do oponente.
-
-\item \textbf{Spin Principal} Esse nó deve ser chamado quando a bola estiver em um dos quatros campos do campo. Caso seja um campo defensivo, o jogador irá girar para jogar a bola para frente; caso seja um na zona de ataque, o jogador girará para por a bola no centro do campo e continuar o ataque.
-
-\item \textbf{RRT to Ball aiming to far from Ally Goal} Irá usar o algoritmo de planejamento de trajetórias RRT para se deslocar atrás da bola com direção apontando para a zona de ataque (longe do gol aliado). Usado para se aproximar da bola e se posicionar para, em seguida, chamar o Behavior Shoot to Far from Ally Goal.
-
-\item \textbf{Shoot to Far from Ally Goal} Esse behavior só é chamado quando o jogador já está alinhado com a bola e o para frente (para longe do gol alidado). Esse comportamento acelera rapidamente o robô em linha reta para por a bola na zona de ataque.
-
-\end{itemize}
-
-
-\subsubsection{Auxiliar}
-
-O auxiliar, por sua vez, tem uma Behavior Tree muito simples, representada por apenas um nó que tem como função se posicionar em lugar ótimo com Triangulação de Delaunay\cite{delaunay34}. Sua árvore, é representada simplesmente pela figura \ref{fig:auxiliar_bt}.
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.4\textwidth]{figures/Auxiliar_BT.png}
-   \caption{Behavior Tree para o auxiliar.} \label{fig:auxiliar_bt}
+	\includegraphics[width=0.6\textwidth]{figures/OtimizacaoComObstaculoSimulacao.png}
+	\caption{Situação de jogo para otimização de desvio de obstáculos}
+	\label{fig:com_obstaculo_simulacao}
 \end{figure}
 
 
