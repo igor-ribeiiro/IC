@@ -202,15 +202,15 @@ Aqui, será apresentado as situações de jogo escolhidas para serem simuladas p
 
 \subsubsection{Trajetórias Básicas}
 
-Nesse primeiro caso, será tratado o problema de um só jogador no campo com o objetivo de apenas jogar a bola para frente. Nessa situação, o foco será otimizar os parâmetros do planejamento de trajetória mais simples, que são todos não relacionados ao desvio de oponentes, mas incluindo os parâmetros relativos à repulsão das paredes.
+Nesse primeiro caso, será tratado o problema de um só jogador no campo com o objetivo de apenas jogar a bola para frente. Nessa situação, o foco será otimizar os parâmetros mais simples do planejamento de trajetória, que são todos não relacionados ao desvio de oponentes, mas incluindo os parâmetros relativos à repulsão de paredes.
 
 O jogador e a bola são postos em diversas posições fixas no campo. Em seguida o jogador deve se mover até a bola e chutá-la ou conduzi-la até o final do campo do oponente. Quando a bola chega no final do campo, marca-se o tempo que demorou para esse objetivo ser atingido e começa o teste novamente para a próxima posição predeterminada. Caso o objetivo não seja alcançado em 3 minutos no tempo de jogo (a simulação é executada no modo acelerado), termina-se a simulação imediatamente.
 
-Dessa forma, a função de custo é calculada de acordo com a seguinte equação:
+Dessa forma, calcula-se a função de custo de acordo com a seguinte equação:
 
 $ F = tempoTotalDeTodasAsPosicoesRealizadas - numeroDePosicoesCompletadas. $
  
-Nota-se que, de acordo com essa função fitness que deve ser minimizada, quando menos tempo o agente completar todas a posições e quanto mais posições ele completar menor, logo melhor, será o fitness calculado.
+Nota-se que, de acordo com essa função fitness que deve ser minimizada, quando menos tempo o agente completar todas a posições e quanto mais posições ele completar, melhor será o fitness calculado.
 
 A figura \ref{fig:sem_obstaculo_simulacao} mostra uma posição do jogador e da bola para essa situação de jogo.
 
