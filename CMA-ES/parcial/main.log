@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.1.6)  19 FEB 2019 13:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.1.6)  19 FEB 2019 15:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1184,18 +1184,49 @@ File: figures/OtimizacaoComObstaculoSimulacao.png Graphic file (type png)
 Package pdftex.def Info: figures/OtimizacaoComObstaculoSimulacao.png  used on i
 nput line 235.
 (pdftex.def)             Requested size: 273.14923pt x 57.9411pt.
+<figures/CMA-ES_Fitness_Results.png, id=112, 1086.0575pt x 628.3475pt>
+File: figures/CMA-ES_Fitness_Results.png Graphic file (type png)
+<use figures/CMA-ES_Fitness_Results.png>
+Package pdftex.def Info: figures/CMA-ES_Fitness_Results.png  used on input line
+ 250.
+(pdftex.def)             Requested size: 364.19667pt x 210.71104pt.
  [15 <./figures/OtimizacaoSemObstaculoSimulacao.png> <./figures/OtimizacaoComOb
-staculoSimulacao.png>] [16] [17]
-(./main.aux)
+staculoSimulacao.png>]
+<figures/CMA-ES_Total_parameter_convergence.png, id=116, 1086.0575pt x 630.355p
+t>
+File: figures/CMA-ES_Total_parameter_convergence.png Graphic file (type png)
+<use figures/CMA-ES_Total_parameter_convergence.png>
+Package pdftex.def Info: figures/CMA-ES_Total_parameter_convergence.png  used o
+n input line 259.
+(pdftex.def)             Requested size: 364.19667pt x 211.38423pt.
+<figures/CMA-ES_Fitness_Results_ally.png, id=117, 1108.14pt x 628.3475pt>
+File: figures/CMA-ES_Fitness_Results_ally.png Graphic file (type png)
+<use figures/CMA-ES_Fitness_Results_ally.png>
+Package pdftex.def Info: figures/CMA-ES_Fitness_Results_ally.png  used on input
+ line 270.
+(pdftex.def)             Requested size: 364.19667pt x 206.51158pt.
+ [16 <./figures/CMA-ES_Fitness_Results.png> <./figures/CMA-ES_Total_parameter_c
+onvergence.png>]
+<figures/CMA-ES_Total_parameter_convergence_ally.png, id=121, 1092.08pt x 630.3
+55pt>
+File: figures/CMA-ES_Total_parameter_convergence_ally.png Graphic file (type pn
+g)
+<use figures/CMA-ES_Total_parameter_convergence_ally.png>
+Package pdftex.def Info: figures/CMA-ES_Total_parameter_convergence_ally.png  u
+sed on input line 279.
+(pdftex.def)             Requested size: 364.19667pt x 210.21078pt.
+
+[17 <./figures/CMA-ES_Fitness_Results_ally.png> <./figures/CMA-ES_Total_paramet
+er_convergence_ally.png>] [18] [19] (./main.aux)
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 12963 strings out of 492982
- 209221 string characters out of 6134897
+ 12987 strings out of 492982
+ 210271 string characters out of 6134897
  496719 words of memory out of 5000000
- 16279 multiletter control sequences out of 15000+600000
+ 16299 multiletter control sequences out of 15000+600000
  10150 words of font info for 38 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  45i,19n,49p,874b,1759s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1205,10 +1236,10 @@ e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texli
 ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf
 -dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/
 fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on main.pdf (17 pages, 3036928 bytes).
+Output written on main.pdf (19 pages, 3118263 bytes).
 PDF statistics:
- 144 PDF objects out of 1000 (max. 8388607)
- 87 compressed objects within 1 object stream
+ 155 PDF objects out of 1000 (max. 8388607)
+ 92 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 66 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 86 words of extra memory for PDF output out of 10000 (max. 10000000)
 

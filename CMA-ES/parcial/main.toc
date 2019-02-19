@@ -28,10 +28,10 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {4.2.1}Trajet\IeC {\'o}rias B\IeC {\'a}sicas}{16}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.2.2}Desvio de Obst\IeC {\'a}culos}{16}
+\contentsline {subsubsection}{\numberline {4.2.2}Desvio de Obst\IeC {\'a}culos}{17}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5}Conclus\IeC {\~o}es}{16}
+\contentsline {section}{\numberline {5}Conclus\IeC {\~o}es}{18}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6}Agradecimentos}{16}
+\contentsline {section}{\numberline {6}Agradecimentos}{18}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7}Bibliografia}{16}
+\contentsline {section}{\numberline {7}Bibliografia}{18}
