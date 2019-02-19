@@ -198,7 +198,7 @@ Nessa seção, são apresentados os resultados obtidos na resolução do problem
 \subsection{Função de Custo}
 
 Aqui, será apresentado as situações de jogo escolhidas para serem simuladas para a otimização de parâmetros. É importante fixar que tais jogadas devem ser rápidas de serem executadas e realmente oferecerem resultados significantes para os parâmetros a serem otimizados. Cada situação escolhida deve ter uma função de custo associada que deve ser minimizada.
-
+Para a otimização em questão, foi desenvolvido duas situações de jogo com objetivo de otimizar variáveis diferentes. Elas seram executadas sequencialmente, ou seja, a segunda situação de jogo usará os resultados obtidos da primeira situação.
 
 \subsubsection{Trajetórias Básicas}
 
@@ -224,7 +224,9 @@ A figura \ref{fig:sem_obstaculo_simulacao} mostra uma posição do jogador e da 
 
 \subsubsection{Desvio de Obstáculos}
 
+Esse caso é bastante similar à situação anterior no sentido que usará a mesma função de custo. A diferença consiste no fato de que, nessa situação, será posto um obstáculo (um jogador aliado) na frente da bola, de modo a obrigar que o agente principal desvie do obstáculo e rapidamente retorna à trajetória original para conseguir chegar na bola.
 
+Nessa situação de desvio de obstáculos, será otimizado apenas as variáveis relativas ao desvio de obstáculos. Está sendo assumido que os parâmetros relativos à repulsão de paredes e os de planejamento de trajetória básicos já estão otimizados e funcionais.
 
 A figura \ref{fig:com_obstaculo_simulacao} mostra uma posição do jogador e da bola para essa situação de jogo.
 
@@ -236,25 +238,8 @@ A figura \ref{fig:com_obstaculo_simulacao} mostra uma posição do jogador e da 
 \end{figure}
 
 
-\subsection{Técnicos}
+\subsection{Otimização}
 
-Finalmente, será mostrado quais técnicos foram usados na estratégia. A princípio, três técnicos foram desenvolvidos. Primeiramente, será descrito o comportamento de cada um deles e quando é esperado que cada um seja usado, seguido das condições de troca entre eles.
-
-
-
-\subsubsection{Dois principais} Esse técnicos usa uma formação de jogadores com 1 goleiro e dois jogadores principais. Isso significa que os dois principais irão para à bola ao mesmo tempo, o que pode ser caótico para uma situação de ataque, em que precisão para acertar a bola é necessária. Porém, para situaçõe defensivas, esse técnico demonstra muita eficácia, porque os dois jogadores se tornam efetivamente zagueiros, indo para a bola e dificultando o avanço do atacante adversário.
-
-\subsubsection{Um principal e um auxiliar} Esse técnico, diferente do anterior, é usado para situações de ataque. Ao utilizar apenas um principal, essa formação é capaz de fornecer ataques muito mais precisos, em que os jogadores aliados não se colidem durante a movimentação. O auxiliar, nessa formação, não fica muito longe da bola, ficando esperando a bola escapar do principal, por uma defesa do oponente por exemplo. No momento que o auxiliar estiver em uma posição mais próxima da bola que o principal, ele se torna o principal, enquanto que o principal se torna o auxiliar, de modo que o ataque seja contínuo. Essa formação se mostrou muito eficaz na CBR, fazendo que a ITAndroids tivesse um dos ataques, em termos de estratégia, mais consistentes da competição.
-
-\subsubsection{Troca de Goleiro} Esse é um tipo de técnico temporário para realizar uma jogada específica de jogo, sendo feito para uma ação de transição. Esse técnico será chamado em situações em que o goleiro deverá sair do gol e se tornar um principal, enquanto que o outro jogador mais próximos do gol se torna o novo goleiro. A situação em que essa troca deve ocorrer é quando a bola está perto do goleiro e todos os jogadores inimigos estão bem longe, condição necessária por se tratar de uma jogada arriscada.
-
-Tecnicamente, esse técnico é usado em situações em que temos 2 principais e um goleiro, já que ele só ocorrer em situações defensivas. Ele funciona fazendo que o goleiro se torne o principal sem o Behavior de esperar a bola sair do gol, como mostrado na figura \ref{fig:OutOfGoal_BT}. Em seguida, o jogador principal mais próximo do gol se torna um goleiro e, como ele está fora do gol, voltará para tal por meio do Behavior Get Back to Goal. Quando o novo goleiro chegar em sua posição, esse técnico é terminado e volta para o técnico que estava anteriormente.
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.8\textwidth]{figures/LastGoalierOutOfGoal.png}
-   	\caption{Behavior Tree usada para o goleiro quando este sai do gol.} \label{fig:OutOfGoal_BT}
-\end{figure}
 
 
 \section{Conclusões}
