@@ -228,7 +228,7 @@ Esse caso é bastante similar à situação anterior no sentido que usará a mes
 
 Nessa situação, será otimizado apenas as variáveis relativas ao desvio de obstáculos. Está sendo assumido que os parâmetros relativos à repulsão de paredes e os de planejamento de trajetória básicos já estão otimizados e funcionais.
 
-A figura \ref{fig:com_obstaculo_simulacao} mostra uma posição do jogador, do obstáculo e da bola para essa situação de jogo. Percebe-se que o obstáculo está posicionado bem perto da bola, o que obriga o agente principal a fazer o desvio em sua trajetória.
+A figura \ref{fig:com_obstaculo_simulacao} mostra uma posição do jogador, do obstáculo e da bola para essa situação de jogo. Percebe-se que o obstáculo está posicionado bem perto da bola, o que obriga o agente principal a fazer o desvio em sua trajetória. Nesse caso, o agente que vai tentar chegar na bola é o jogador rosa-azul, enquanto que os outros jogadores são obstáculos.
 
 \begin{figure}[H]
 	\centering
@@ -244,7 +244,7 @@ Nessa secção, será apresentado os resultados obtidos ao executar o algoritmo 
 
 \subsubsection{Trajetórias Básicas}
 
-A figura \ref{fig:fitness_trajetoria_basica} mostra a evolução do custo da população com o passar das iterações. Foi realizado uma interpolação polinomial de terceira ordem para os resultados obtidos, de modo a melhor visualizar os efeitos da convergência.
+A figura \ref{fig:fitness_trajetoria_basica} mostra a evolução do custo da população com o passar das iterações. Foi realizado uma interpolação polinomial de terceira ordem para os resultados obtidos, de modo a melhor visualizar os efeitos da convergência. A interpolação pode ser visualizada pela linha vermelha, enquanto que os ponto 'X' representam o resultado de cada iteração em específico.
 
 \begin{figure}[H]
 	\centering
