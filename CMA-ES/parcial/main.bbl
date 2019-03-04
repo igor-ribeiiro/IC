@@ -17,47 +17,46 @@
 \endgroup
 
 \datalist[entry]{none/global//global/global}
-  \entry{NEWUOA}{incollection}{}
+  \entry{PSO}{article}{}
     \name{author}{1}{}{%
-      {{hash=PMJ}{%
-         family={Powell},
-         familyi={P\bibinitperiod},
-         given={Michael\bibnamedelima JD},
-         giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod},
+      {{hash=KJ}{%
+         family={Kennedy},
+         familyi={K\bibinitperiod},
+         given={James},
+         giveni={J\bibinitperiod},
       }}%
     }
     \list{publisher}{1}{%
       {Springer}%
     }
-    \strng{namehash}{PMJ1}
-    \strng{fullhash}{PMJ1}
+    \strng{namehash}{KJ1}
+    \strng{fullhash}{KJ1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{booktitle}{Large-scale nonlinear optimization}
-    \field{pages}{255\bibrangedash 297}
-    \field{title}{The NEWUOA software for unconstrained optimization without
-  derivatives}
-    \field{year}{2006}
+    \field{pages}{760\bibrangedash 766}
+    \field{title}{Particle swarm optimization}
+    \field{journaltitle}{Encyclopedia of machine learning}
+    \field{year}{2010}
   \endentry
 
-  \entry{BFGS}{book}{}
+  \entry{genetico}{article}{}
     \name{author}{1}{}{%
-      {{hash=FR}{%
-         family={Fletcher},
-         familyi={F\bibinitperiod},
-         given={Roger},
-         giveni={R\bibinitperiod},
+      {{hash=DL}{%
+         family={Davis},
+         familyi={D\bibinitperiod},
+         given={Lawrence},
+         giveni={L\bibinitperiod},
       }}%
     }
     \list{publisher}{1}{%
-      {John Wiley \& Sons}%
+      {CUMINCAD}%
     }
-    \strng{namehash}{FR1}
-    \strng{fullhash}{FR1}
+    \strng{namehash}{DL1}
+    \strng{fullhash}{DL1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{title}{Practical methods of optimization}
-    \field{year}{2013}
+    \field{title}{Handbook of genetic algorithms}
+    \field{year}{1991}
   \endentry
 
   \entry{CMA-ES-Soccer}{inproceedings}{}

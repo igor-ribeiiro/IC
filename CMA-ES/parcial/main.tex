@@ -70,18 +70,17 @@ Planejamento:
 \section{Resumo das Atividades Realizadas}
 \label{secao:atividades_realizadas}
 
-Ao longo dos dois primeiros meses, foram realizados estudos e foi decidido que será usado o algoritmo Covariance Matrix Adaptation Evolution Strategy (CMA-ES) para a otimização de parâmetros. Esse algoritmo foi escolhido dentre de opções como NEWUOA e o algoritmo de Broyden–Fletcher–Goldfarb–Shanno (BFGS). Mais detalhes sobre esses dois últimos métodos pode ser encontrada, respectivamente, em \cite{NEWUOA} e em \cite{BFGS}. Para uma descrição sobre a eficácia do algoritmo CMA-ES no contexto de futebol de robôs, pode-se encontrar na referência \cite{CMA-ES-Soccer}.
+Ao longo dos dois primeiros meses, foram realizados estudos e foi decidido que será usado o algoritmo Covariance Matrix Adaptation Evolution Strategy (CMA-ES) para a otimização de parâmetros. Esse algoritmo foi escolhido dentre de opções como Particle Swarm Optimization (PSO) e o Algoritmo Genético. Mais detalhes sobre esses dois últimos métodos pode ser encontrada, respectivamente, em \cite{PSO} e em \cite{genetico}. Para uma descrição sobre a eficácia do algoritmo CMA-ES no contexto de futebol de robôs, pode-se encontrar na referência \cite{CMA-ES-Soccer}.
 
 Ao longo do segundo e terceiro bimestres, a base do algoritmo foi implementada utilizando Matlab \cite{matlab}, que é uma linguagem especializada em algébra linear utilizada pela equipe. Foi, em seguida, realizada a escolha e codificação das métricas a serem utilizadas para medir o desempenho de uma determinada situação de jogo.
 
-O algoritmo foi, em seguida, implementado e integrado com o restante do código da equipe. Após algumas iterações, os parâmetros relativos ao planejamento de trajetória do robô foram otimizados e testados em simulações. Os resultados se mostraram satisfatórios e condizentes com o previsto.
+O algoritmo foi, em seguida, implementado e integrado com o restante do código da equipe. Após algumas iterações, os parâmetros relativos ao planejamento de trajetória do robô foram otimizados e testados em simulações. Os resultados se mostraram satisfatórios e condizentes com o previsto. Ressalta-se que apenas alguns parâmetros precisaram de algum ajuste ao serem implementados no robô real, de forma que grande parte do trabalho de otimizar parâmetros manualmente foi poupada.
 
 Os resultados obtidos foram efetivos como mostrado na LARC, ocorrida entre os dias 6 a 10 de novembro de 2018. O algoritmo mostrou que o planejamento de trajetórias da equipe, em conjunto com o controle do robô, estavam muito precisos, fato que concedeu à equipe uma vantagem decisiva na competição. A equipe da ITAndroids conquistou o primeiro lugar da competição, sendo a sua classificação a mais alta  na categoria Very Small Size Soccer na história.
-
 \section{Descrição do Problema}
 \label{secao:enunciado_problema}
 
-No contexto do futebol de robôs, a otimização de parâmetros traz muitos desafios. Tal problema consiste no fato de se implementar um algoritmo que consiga encontrar as melhores constantes a serem usadas no código para melhorar o desempenho do robô em uma partida real. Entretando, para encontrar esses parâmetros de forma automatizada, é necessário, além do algoritmo evolutivo em si, a existência de simulações fiéis à realidade. A figura \ref{fig:vss_ele} mostra a placa eletrônica do robô utilizado.
+No contexto do futebol de robôs, a otimização de parâmetros traz muitos desafios. Tal problema consiste no fato de se implementar um algoritmo que consiga encontrar as melhores constantes a serem usadas no código para melhorar o desempenho do robô em uma partida real. Entretando, para encontrar esses parâmetros de forma automatizada, é necessário, além do algoritmo evolutivo em si, a existência de simulações fiéis à realidade. A Figura \ref{fig:vss_ele} mostra a placa eletrônica do robô utilizado.
 
 \begin{figure}[H]
 	\centering
@@ -89,7 +88,7 @@ No contexto do futebol de robôs, a otimização de parâmetros traz muitos desa
    \caption{Placa eletrônica de um robô Very Small Size.} \label{fig:vss_ele}
 \end{figure}
 
-Nesse projeto, trabalhou-se com os robôs da competição IEEE Very Small Size (VSS): uma competição de futebol de robôs completamente automatizada em que cada robô tem como tamanho máximo um cubo de 7,5 cm de aresta. O campo de futebol possuil 1,5 m de comprimento e 1,3 m de largura. Cada time tem 3 jogadores: que podem assumir posições dinâmicas, como goleiro e atacante, ao decorrer de uma partida. Uma câmera proporciona a visão aérea com as posições de todos os elementos da partida. As regras completas podem ser lidas em \cite{cbr2008}.
+Nesse projeto, trabalhou-se com os robôs da competição IEEE Very Small Size (VSS): uma competição de futebol de robôs completamente automatizada em que cada robô tem como tamanho máximo um cubo de 7,5 cm de aresta. O campo de futebol possui 1,5 m de comprimento e 1,3 m de largura. Cada time tem 3 jogadores: que podem assumir posições dinâmicas, como goleiro e atacante, ao decorrer de uma partida. Uma câmera proporciona a visão aérea com as posições de todos os elementos da partida. As regras completas podem ser lidas em \cite{cbr2008}.
 
 \begin{figure}[H]
 	\centering
@@ -97,7 +96,7 @@ Nesse projeto, trabalhou-se com os robôs da competição IEEE Very Small Size (
    \caption{Robôs da ITAndroids da categoria IEEE VSSS.} \label{fig:vss}
 \end{figure}
 
-A figura \ref{fig:vss} mostra os robôs usados nas competições. A visão computacional utilizada pela equipe ITAndroids pode ser encontrada com mais detalhes em \cite{small_vision} e utiliza uma câmera no topo do campo que repassa informaçãoes para um computador processar, como visto na figura \ref{fig:funcioamento}.
+A Figura \ref{fig:vss} mostra os robôs usados nas competições. A visão computacional utilizada pela equipe ITAndroids pode ser encontrada com mais detalhes em \cite{small_vision} e utiliza uma câmera no topo do campo que repassa informações para um computador processar, como visto na Figura \ref{fig:funcioamento}.
 
 \begin{figure}[H]
 	\centering
@@ -106,11 +105,11 @@ A figura \ref{fig:vss} mostra os robôs usados nas competições. A visão compu
 	\label{fig:funcioamento}
 \end{figure}
 
-Cada robô foi projetado com duas rodas laterais e duas esferas livres à frente e atrás para manter o equilíbrio. Essa característica o torna um robô diferencial. Ou seja, temos o controle sobre as velocidades linear e angular, mas não é possível mover o robô para os lados. A linguagem utilizada para o projeto foi C++; diferente da utilizada nesse trabalho, que é Matlab; pois é uma linguagem que tem uma velocidade de execução alta e tem escalabilidade descente para um projeto grande. 
+Cada robô foi projetado com duas rodas laterais e material teflon para diminuir atrito no deslizamento de seu chassis. Essa característica o torna um robô diferencial. Ou seja, temos o controle sobre as velocidades linear e angular, mas não é possível mover o robô para os lados. A linguagem utilizada para o projeto foi C++; diferente da utilizada nesse trabalho, que é Matlab; pois é uma linguagem que tem uma velocidade de execução alta e tem boa escalabilidade para um projeto grande. 
 
 Nesse contexto, surgem várias questões a serem resolvidas para se ter um time vencedor. Nesse projeto, será abordado o seguinte problema de otimização: dado um simulador feito pela equipe que simula a física e a lógica de uma partida oficial, deve-se encontrar os melhores valores possíveis para as constantes do planejamento de trajetórias, de modo a maximizar o desempenho do time em uma partida com os robôs reais.
 
-Sobre o assunto de planejamento de trajetórias, o utilizado pela equipe é o Univector Field \cite{univector}, que é muito eficiente e já demonstrou bons resultados em competições oficiais com algumas das melhores equipes utilizando-o. Uma das suas desvantagens, é a existência de até dez parâmetros diferentes para serem otimizados e de que essas constantes não são intuitivas para uma pessoa tuná-las sem ajuda de um computador. Isso acontece devido ao comportamento do algoritmo ser relativamente complexo quando comparado com outras alternativas como o algoritmo Campos Potenciais \cite{potential_fields}.
+Sobre o assunto de planejamento de trajetórias, o utilizado pela equipe é o Univector Field \cite{univector}, que é muito eficiente e já demonstrou bons resultados em competições oficiais com algumas das melhores equipes utilizando-o. Uma das suas desvantagens, é a existência de sete parâmetros diferentes para serem otimizados e de que essas constantes não são intuitivas para uma pessoa ajustá-las sem ajuda de um computador. Isso acontece devido ao comportamento do algoritmo ser relativamente complexo quando comparado com outras alternativas como o algoritmo Campos Potenciais \cite{potential_fields}.
 
 Além disso, é importante ressaltar que o tempo de execução do algoritmo deve ser o mínimo possível. Nota-se que não é possível simular uma partida completa de futebol já que isso demoraria bastante e o algoritmo precisa de em torno de 100 iterações para convergir. Para isso, técnicas para executar simulações aceleradas e executar situações específicas de jogo foram desenvolvidas, com o objetivo de reduzir o tempo total da otimização.
 
@@ -124,7 +123,7 @@ O algoritmo CMA-ES é uma estratégia evolutiva. Um algoritmo evolutivo é basea
 
 No contexto da computação, cada geração será considerada uma iteração. Em cada iteração existirá uma população composta de indivíduos (ou candidatos) que deverá ser alterada segundo um algoritmo para diminuir uma determinada função de custo. 
 
-Para o caso do CMA-ES, os novos indivíduos são escolhidos com base em uma distribuição gaussiana de múltiplas dimensões. A nova população será gerada a partir da média dos melhores indíviduos da população anterior, em combinação com uma pertubação gaussiana estocástica. Dependência entre diferentes parâmetros seram representadas por uma matriz de covariâncias.
+Para o caso do CMA-ES, os novos indivíduos são escolhidos com base em uma distribuição gaussiana de múltiplas dimensões. A nova população será gerada a partir da média dos melhores indíviduos da população anterior, em combinação com uma perturbação gaussiana estocástica. Dependência entre diferentes parâmetros são representadas por uma matriz de covariâncias.
 
 Nota-se que o algoritmo, brevemente descrito, não usa derivadas nem valores das funções de custo, apenas importa a comparação entre os desempenhos dos indíviduos de uma população.
 
@@ -147,9 +146,11 @@ Não será abordado os detalhes técnicos do item 2d, pois a implementação des
 
 \subsection{O simulador}
 
+Testes no robô real precisam de trabalho adicional devido a problemas que podem surgir como: bateria dos robôs acaba e precisa ser trocada, problemas no hardware ou mecânica do robô, campo sujo e necessidade de reposicionamento manual dos robôs. Por isso, a equipe ITAndroids desenvolveu um simulador próprio com o objetivo de resolver essas dificuldades.
+
 O simulador é uma aplicação separada do código principal do time, desenvolvida e idealizada pela própria equipe, que cria um ambiente com física que simula um jogo. Tal aplicação se comunica com o código principal por meio de uma biblioteca de comunicação chamada Protocol Buffers \cite{protobuf}. Para isso, o simulador transmite informações como as posições e velocidades do robôs para o código principal, enquanto que esse último transmite informações de velocidade das rodas de cada robô para o simulador.
 
-A simulação foi desenvolvida em C++ com o auxílio da biblioteca Odeint \cite{ODE}, para fazer as computações das equações diferenciais da física e das colisões dos movimentos, e da biblioteca Ogre3D \cite{Ogre}, responsável por renderizar os objetos na tela em três dimensões. A figura \ref{fig:simulator} mostra a interface visual do simulador logo antes de se começar uma partida.
+A simulação foi desenvolvida em C++ com o auxílio da biblioteca Odeint \cite{ODE}, para fazer as computações das equações diferenciais da física e das colisões dos movimentos, e da biblioteca Ogre3D \cite{Ogre}, responsável por renderizar os objetos na tela em três dimensões. A Figura \ref{fig:simulator} mostra a interface visual do simulador logo antes de se começar uma partida.
 
 \begin{figure}[H]
 	\centering
@@ -187,7 +188,7 @@ O Univector Field é integrado com a interface de depuração da equipe, o que a
 	\label{fig:univector}
 \end{figure}
 
-Na figura \ref{fig:univector}, é possível observar, em um determinado instante, as trajetórias calculadas para cada jogador e os vetores do campo do Univector Field para o jogador verde.
+Na Figura \ref{fig:univector}, é possível observar, em um determinado instante, as trajetórias calculadas para cada jogador e os vetores do campo do Univector Field para o jogador verde.
 
 
 \section{Resultados Obtidos}
@@ -212,7 +213,7 @@ $ F = tempoTotalDeTodasAsPosicoesRealizadas - numeroDePosicoesCompletadas. $
  
 Nota-se que, de acordo com essa função fitness que deve ser minimizada, quando menos tempo o agente completar todas a posições e quanto mais posições ele completar, melhor será o fitness calculado.
 
-A figura \ref{fig:sem_obstaculo_simulacao} mostra uma posição do jogador e da bola para essa situação de jogo.
+A Figura \ref{fig:sem_obstaculo_simulacao} mostra uma posição do jogador e da bola para essa situação de jogo.
 
 \begin{figure}[H]
 	\centering
@@ -228,7 +229,7 @@ Esse caso é bastante similar à situação anterior no sentido que usará a mes
 
 Nessa situação, será otimizado apenas as variáveis relativas ao desvio de obstáculos. Está sendo assumido que os parâmetros relativos à repulsão de paredes e os de planejamento de trajetória básicos já estão otimizados e funcionais.
 
-A figura \ref{fig:com_obstaculo_simulacao} mostra uma posição do jogador, do obstáculo e da bola para essa situação de jogo. Percebe-se que o obstáculo está posicionado bem perto da bola, o que obriga o agente principal a fazer o desvio em sua trajetória. Nesse caso, o agente que vai tentar chegar na bola é o jogador rosa-azul, enquanto que os outros jogadores são obstáculos.
+A Figura \ref{fig:com_obstaculo_simulacao} mostra uma posição do jogador, do obstáculo e da bola para essa situação de jogo. Percebe-se que o obstáculo está posicionado bem perto da bola, o que obriga o agente principal a fazer o desvio em sua trajetória. Nesse caso, o agente que vai tentar chegar na bola é o jogador rosa-azul, enquanto que os outros jogadores são obstáculos.
 
 \begin{figure}[H]
 	\centering
@@ -244,7 +245,7 @@ Nessa secção, será apresentado os resultados obtidos ao executar o algoritmo 
 
 \subsubsection{Trajetórias Básicas}
 
-A figura \ref{fig:fitness_trajetoria_basica} mostra a evolução do custo da população com o passar das iterações. Foi realizado uma interpolação polinomial de terceira ordem para os resultados obtidos, de modo a melhor visualizar os efeitos da convergência. A interpolação pode ser visualizada pela linha vermelha, enquanto que os ponto 'X' representam o resultado de cada iteração em específico.
+A Figura \ref{fig:fitness_trajetoria_basica} mostra a evolução do custo da população com o passar das iterações. Foi realizado uma interpolação polinomial de terceira ordem para os resultados obtidos, de modo a melhor visualizar os efeitos da convergência. A interpolação pode ser visualizada pela linha vermelha, enquanto que os ponto 'X' representam o resultado de cada iteração em específico.
 
 \begin{figure}[H]
 	\centering
@@ -253,9 +254,9 @@ A figura \ref{fig:fitness_trajetoria_basica} mostra a evolução do custo da pop
 	\label{fig:fitness_trajetoria_basica}
 \end{figure}
 
-De acordo com a figura \ref{fig:fitness_trajetoria_basica}, nota-se que, de fato, o algoritmo de otimização tende a reduzir o valor do Fitness Cost à medida que o número de iterações aumenta. Em torno de 60 iterações porém, o algoritmo já converge para um valor e não tem melhoras significativas a partir desse momento.
+De acordo com a Figura \ref{fig:fitness_trajetoria_basica}, nota-se que, de fato, o algoritmo de otimização tende a reduzir o valor do Fitness Cost à medida que o número de iterações aumenta. Em torno de 60 iterações porém, o algoritmo já converge para um valor e não tem melhoras significativas a partir desse momento.
 
-Na figura \ref{fig:convergencia_total_trajetoria_basica} temos a convergência total dos parâmetros normalizada. A normalização foi feita em cada parâmetro separadamente e depois foi calculado a média desses resultados para cada iteração.
+Na Figura \ref{fig:convergencia_total_trajetoria_basica} temos a convergência total dos parâmetros normalizada. A normalização foi feita em cada parâmetro separadamente e depois foi calculado a média desses resultados para cada iteração.
 
 \begin{figure}[H]
 	\centering
@@ -264,7 +265,7 @@ Na figura \ref{fig:convergencia_total_trajetoria_basica} temos a convergência t
 	\label{fig:convergencia_total_trajetoria_basica}
 \end{figure}
 
-Tanto a figura \ref{fig:convergencia_total_trajetoria_basica}, quanto a figura \ref{fig:fitness_trajetoria_basica} confirmam uma correta convergência do algoritmo, que converge em torno de 100 iterações.
+Tanto a Figura \ref{fig:convergencia_total_trajetoria_basica}, quanto a Figura \ref{fig:fitness_trajetoria_basica} confirmam uma correta convergência do algoritmo, que converge em torno de 100 iterações.
 
 \subsubsection{Desvio de Obstáculos}
 
@@ -275,7 +276,7 @@ Tanto a figura \ref{fig:convergencia_total_trajetoria_basica}, quanto a figura \
 	\label{fig:fitness_trajetoria_basica_ally}
 \end{figure}
 
-Na figura \ref{fig:convergencia_total_trajetoria_basica_ally} temos a convergência total dos parâmetros normalizada. A normalização foi feita em cada parâmetro separadamente e depois foi calculado a média desses resultados para cada iteração.
+Na Figura \ref{fig:convergencia_total_trajetoria_basica_ally} temos a convergência total dos parâmetros normalizada. A normalização foi feita em cada parâmetro separadamente e depois foi calculado a média desses resultados para cada iteração.
 
 \begin{figure}[H]
 	\centering
@@ -284,7 +285,7 @@ Na figura \ref{fig:convergencia_total_trajetoria_basica_ally} temos a convergên
 	\label{fig:convergencia_total_trajetoria_basica_ally}
 \end{figure}
 
-Tanto a figura \ref{fig:convergencia_total_trajetoria_basica_ally}, quanto a figura \ref{fig:fitness_trajetoria_basica_ally} confirmam uma correta convergência do algoritmo, que converge em torno de 100 iterações.
+Tanto a Figura \ref{fig:convergencia_total_trajetoria_basica_ally}, quanto a Figura \ref{fig:fitness_trajetoria_basica_ally} confirmam uma correta convergência do algoritmo, que converge em torno de 100 iterações.
 
 \section{Conclusões}
 

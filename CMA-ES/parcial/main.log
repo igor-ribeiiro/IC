@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.1.6)  20 FEB 2019 09:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.1.6)  3 MAR 2019 21:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1137,22 +1137,22 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 <figures/vss_ele.jpg, id=75, 578.16pt x 1027.84pt>
 File: figures/vss_ele.jpg Graphic file (type jpg)
 <use figures/vss_ele.jpg>
-Package pdftex.def Info: figures/vss_ele.jpg  used on input line 88.
+Package pdftex.def Info: figures/vss_ele.jpg  used on input line 87.
 (pdftex.def)             Requested size: 227.62206pt x 404.65141pt.
  [6]
 <figures/vss.JPG, id=79, 3276.24pt x 2457.18pt>
 File: figures/vss.JPG Graphic file (type jpg)
 <use figures/vss.JPG>
-Package pdftex.def Info: figures/vss.JPG  used on input line 96.
+Package pdftex.def Info: figures/vss.JPG  used on input line 95.
 (pdftex.def)             Requested size: 227.62206pt x 170.7079pt.
  [7 <./figures/vss_ele.jpg>]
 <figures/overview.png, id=84, 447.17062pt x 188.95593pt>
 File: figures/overview.png Graphic file (type png)
 <use figures/overview.png>
-Package pdftex.def Info: figures/overview.png  used on input line 104.
+Package pdftex.def Info: figures/overview.png  used on input line 103.
 (pdftex.def)             Requested size: 318.66948pt x 134.65843pt.
  [8 <./figures/vss.JPG> <./figures/overview.png>]
-Overfull \hbox (15.49962pt too wide) in paragraph at lines 119--120
+Overfull \hbox (15.49962pt too wide) in paragraph at lines 118--119
 []\OT1/cmr/m/n/12 Para re-sol-ver esse pro-blema, foi es-co-lhido como al-go-ri
 tmo para a oti-miza^^Xc~ao de par^ametros
  []
@@ -1162,71 +1162,80 @@ tmo para a oti-miza^^Xc~ao de par^ametros
 File: figures/SimulatorWithoutButtons.png Graphic file (type png)
 <use figures/SimulatorWithoutButtons.png>
 Package pdftex.def Info: figures/SimulatorWithoutButtons.png  used on input lin
-e 156.
+e 157.
 (pdftex.def)             Requested size: 273.14923pt x 212.97096pt.
  [11 <./figures/SimulatorWithoutButtons.png>] [12]
 <figures/UnivectorFieldSimulatorDebugger.png, id=101, 732.7375pt x 640.3925pt>
 File: figures/UnivectorFieldSimulatorDebugger.png Graphic file (type png)
 <use figures/UnivectorFieldSimulatorDebugger.png>
 Package pdftex.def Info: figures/UnivectorFieldSimulatorDebugger.png  used on i
-nput line 185.
+nput line 186.
 (pdftex.def)             Requested size: 377.85344pt x 330.24065pt.
- [13 <./figures/UnivectorFieldSimulatorDebugger.png>] [14]
-<figures/OtimizacaoSemObstaculoSimulacao.png, id=110, 634.37pt x 504.88625pt>
+ [13] [14 <./figures/UnivectorFieldSimulatorDebugger.png>]
+<figures/OtimizacaoSemObstaculoSimulacao.png, id=109, 634.37pt x 504.88625pt>
 File: figures/OtimizacaoSemObstaculoSimulacao.png Graphic file (type png)
 <use figures/OtimizacaoSemObstaculoSimulacao.png>
 Package pdftex.def Info: figures/OtimizacaoSemObstaculoSimulacao.png  used on i
-nput line 219.
+nput line 220.
 (pdftex.def)             Requested size: 273.14923pt x 217.3973pt.
-<figures/OtimizacaoComObstaculoSimulacao.png, id=111, 626.34pt x 503.8825pt>
+ [15]
+<figures/OtimizacaoComObstaculoSimulacao.png, id=114, 626.34pt x 503.8825pt>
 File: figures/OtimizacaoComObstaculoSimulacao.png Graphic file (type png)
 <use figures/OtimizacaoComObstaculoSimulacao.png>
 Package pdftex.def Info: figures/OtimizacaoComObstaculoSimulacao.png  used on i
-nput line 235.
+nput line 236.
 (pdftex.def)             Requested size: 273.14923pt x 219.74838pt.
- [15 <./figures/OtimizacaoSemObstaculoSimulacao.png>]
-<figures/CMA-ES_Fitness_Results.png, id=115, 1086.0575pt x 628.3475pt>
+ [16 <./figures/OtimizacaoSemObstaculoSimulacao.png>]
+<figures/CMA-ES_Fitness_Results.png, id=118, 1086.0575pt x 628.3475pt>
 File: figures/CMA-ES_Fitness_Results.png Graphic file (type png)
 <use figures/CMA-ES_Fitness_Results.png>
 Package pdftex.def Info: figures/CMA-ES_Fitness_Results.png  used on input line
- 251.
+ 252.
 (pdftex.def)             Requested size: 455.24411pt x 263.3864pt.
- [16 <./figures/OtimizacaoComObstaculoSimulacao.png>]
-<figures/CMA-ES_Total_parameter_convergence.png, id=119, 1086.0575pt x 630.355p
+ [17 <./figures/OtimizacaoComObstaculoSimulacao.png>]
+<figures/CMA-ES_Total_parameter_convergence.png, id=122, 1086.0575pt x 630.355p
 t>
 File: figures/CMA-ES_Total_parameter_convergence.png Graphic file (type png)
 <use figures/CMA-ES_Total_parameter_convergence.png>
 Package pdftex.def Info: figures/CMA-ES_Total_parameter_convergence.png  used o
-n input line 262.
+n input line 263.
 (pdftex.def)             Requested size: 455.24411pt x 264.22789pt.
- [17 <./figures/CMA-ES_Fitness_Results.png>]
-<figures/CMA-ES_Fitness_Results_ally.png, id=123, 1108.14pt x 628.3475pt>
+ [18 <./figures/CMA-ES_Fitness_Results.png>]
+<figures/CMA-ES_Fitness_Results_ally.png, id=126, 1108.14pt x 628.3475pt>
 File: figures/CMA-ES_Fitness_Results_ally.png Graphic file (type png)
 <use figures/CMA-ES_Fitness_Results_ally.png>
 Package pdftex.def Info: figures/CMA-ES_Fitness_Results_ally.png  used on input
- line 273.
+ line 274.
 (pdftex.def)             Requested size: 455.24411pt x 258.1323pt.
- [18 <./figures/CMA-ES_Total_parameter_convergence.png> <./figures/CMA-ES_Fitne
+ [19 <./figures/CMA-ES_Total_parameter_convergence.png> <./figures/CMA-ES_Fitne
 ss_Results_ally.png>]
-<figures/CMA-ES_Total_parameter_convergence_ally.png, id=127, 1092.08pt x 630.3
+<figures/CMA-ES_Total_parameter_convergence_ally.png, id=131, 1092.08pt x 630.3
 55pt>
 File: figures/CMA-ES_Total_parameter_convergence_ally.png Graphic file (type pn
 g)
 <use figures/CMA-ES_Total_parameter_convergence_ally.png>
 Package pdftex.def Info: figures/CMA-ES_Total_parameter_convergence_ally.png  u
-sed on input line 282.
+sed on input line 283.
 (pdftex.def)             Requested size: 455.24411pt x 262.7659pt.
- [19 <./figures/CMA-ES_Total_parameter_convergence_ally.png>] [20] [21] (./main
-.aux)
+ [20 <./figures/CMA-ES_Total_parameter_convergence_ally.png>]
+Overfull \hbox (13.44348pt too wide) in paragraph at lines 310--310
+[]\OT1/cmr/m/n/12 J. Ken-nedy, ``Par-ti-cle swarm op-ti-mi-za-tion'', \OT1/cmr/
+m/it/12 Ency-clo-pe-dia of ma-chine le-ar-ning\OT1/cmr/m/n/12 , pp. 760{
+ []
+
+[21] [22] (./main.aux)
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 12987 strings out of 492982
- 210271 string characters out of 6134897
- 496719 words of memory out of 5000000
- 16299 multiletter control sequences out of 15000+600000
+ 12986 strings out of 492982
+ 210250 string characters out of 6134897
+ 495719 words of memory out of 5000000
+ 16298 multiletter control sequences out of 15000+600000
  10150 words of font info for 38 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  45i,19n,49p,874b,1759s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1236,10 +1245,10 @@ e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texli
 ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf
 -dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/
 fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on main.pdf (21 pages, 3083688 bytes).
+Output written on main.pdf (22 pages, 3083673 bytes).
 PDF statistics:
- 161 PDF objects out of 1000 (max. 8388607)
- 96 compressed objects within 1 object stream
+ 164 PDF objects out of 1000 (max. 8388607)
+ 98 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  86 words of extra memory for PDF output out of 10000 (max. 10000000)
 
