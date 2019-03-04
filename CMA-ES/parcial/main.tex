@@ -148,9 +148,9 @@ Não será abordado os detalhes técnicos do item 2d, pois a implementação des
 
 Testes no robô real precisam de trabalho adicional devido a problemas que podem surgir como: bateria dos robôs acaba e precisa ser trocada, problemas no hardware ou mecânica do robô, campo sujo e necessidade de reposicionamento manual dos robôs. Por isso, a equipe ITAndroids desenvolveu um simulador próprio com o objetivo de resolver essas dificuldades.
 
-O simulador é uma aplicação separada do código principal do time, desenvolvida e idealizada pela própria equipe, que cria um ambiente com física que simula um jogo. Tal aplicação se comunica com o código principal por meio de uma biblioteca de comunicação chamada Protocol Buffers \cite{protobuf}. Para isso, o simulador transmite informações como as posições e velocidades do robôs para o código principal, enquanto que esse último transmite informações de velocidade das rodas de cada robô para o simulador.
+O simulador é uma aplicação separada do código principal do time, desenvolvida e idealizada pela própria equipe, que cria um ambiente com física que simula um jogo. Tal aplicação se comunica com o código principal por meio de uma biblioteca de comunicação chamada Protocol Buffers \cite{protobuf}. Para isso, o simulador transmite informações como as posições e velocidades dos robôs para o código principal, enquanto que esse último transmite informações de velocidade das rodas de cada robô para o simulador.
 
-A simulação foi desenvolvida em C++ com o auxílio da biblioteca Odeint \cite{ODE}, para fazer as computações das equações diferenciais da física e das colisões dos movimentos, e da biblioteca Ogre3D \cite{Ogre}, responsável por renderizar os objetos na tela em três dimensões. A Figura \ref{fig:simulator} mostra a interface visual do simulador logo antes de se começar uma partida.
+A simulação foi desenvolvida em C++ com o auxílio da biblioteca Open Dynamics Engine \cite{ODE}, para fazer as computações das equações diferenciais da física e das colisões dos movimentos, e da biblioteca Ogre3D \cite{Ogre}, responsável por renderizar os objetos na tela em três dimensões. A Figura \ref{fig:simulator} mostra a interface visual do simulador logo antes de se começar uma partida.
 
 \begin{figure}[H]
 	\centering
@@ -162,7 +162,7 @@ A simulação foi desenvolvida em C++ com o auxílio da biblioteca Odeint \cite{
 
 Com isso, é possivel ter uma aproximação do comportamento do time em um jogo real. Dado que o simulador é desenvolvido pela própria equipe, é possível adicionar situações especiais de jogo, além de se adicionar condições de paradas específicas para o que se deseja testar. Essas funcionalidades são muito importantes para a criação de situações específicas de jogo e, consequentemente, de funções de custo mais rápidas e otimizadas, o que garante uma convergência mais rápida de determinados parâmetros.
 
-Além disso, o simulador também tem um modo de funcionar que é o chamado: modo acelerado. Normalmente, o código tem algumas funções para esperar um determinado tempo, com o objetivo de fazer que ele se pareça mais com a realidade (se ele não tivesse, a física seria muito rápida). Porém, no modo acelerado, esses tempos ociosos são removidos e a comunicação com o código principal funciona de forma assíncrona, o que garante uma velocidade de executação e simulação muito mais rápida, chegando a ser até dez vezes mais rápida que o modo de execução normal. Por essas razões, o modo acelerado é fundamental para garantir que a função de custo a ser desenvolvida seja mais eficiente e veloz.
+Além disso, o simulador também tem um modo de funcionar que é o chamado: modo acelerado. Normalmente, o código tem algumas funções para esperar um determinado tempo, com o objetivo de fazer que ele execute em tempo real (se ele não tivesse, a física seria muito rápida). Porém, no modo acelerado, esses tempos ociosos são removidos e a comunicação com o código principal funciona de forma assíncrona, o que garante uma velocidade de executação e simulação muito mais rápida, chegando a ser até dez vezes mais rápida que o modo de execução normal. Por essas razões, o modo acelerado é fundamental para garantir que a função de custo a ser desenvolvida seja mais eficiente e veloz.
 
 \subsection{Univector Field}
 
@@ -199,7 +199,7 @@ Nessa seção, são apresentados os resultados obtidos na resolução do problem
 \subsection{Função de Custo}
 
 Aqui, será apresentado as situações de jogo escolhidas para serem simuladas para a otimização de parâmetros. É importante fixar que tais jogadas devem ser rápidas de serem executadas e realmente oferecerem resultados significantes para os parâmetros a serem otimizados. Cada situação escolhida deve ter uma função de custo associada que deve ser minimizada.
-Para a otimização em questão, foi desenvolvido duas situações de jogo com objetivo de otimizar variáveis diferentes. Elas seram executadas sequencialmente, ou seja, a segunda situação de jogo usará os resultados obtidos da primeira situação.
+Para a otimização em questão, foi desenvolvido duas situações de jogo com objetivo de otimizar variáveis diferentes. Elas são executadas sequencialmente, ou seja, a segunda situação de jogo usará os resultados obtidos da primeira situação.
 
 \subsubsection{Trajetórias Básicas}
 
@@ -211,7 +211,7 @@ Dessa forma, calcula-se a função de custo de acordo com a seguinte equação:
 
 $ F = tempoTotalDeTodasAsPosicoesRealizadas - numeroDePosicoesCompletadas. $
  
-Nota-se que, de acordo com essa função fitness que deve ser minimizada, quando menos tempo o agente completar todas a posições e quanto mais posições ele completar, melhor será o fitness calculado.
+Nota-se que, de acordo com essa função fitness que deve ser minimizada, quanto menos tempo o agente completar todas a posições e quanto mais posições ele completar, melhor será o fitness calculado.
 
 A Figura \ref{fig:sem_obstaculo_simulacao} mostra uma posição do jogador e da bola para essa situação de jogo.
 
@@ -245,22 +245,22 @@ Nessa secção, será apresentado os resultados obtidos ao executar o algoritmo 
 
 \subsubsection{Trajetórias Básicas}
 
-A Figura \ref{fig:fitness_trajetoria_basica} mostra a evolução do custo da população com o passar das iterações. Foi realizado uma interpolação polinomial de terceira ordem para os resultados obtidos, de modo a melhor visualizar os efeitos da convergência. A interpolação pode ser visualizada pela linha vermelha, enquanto que os ponto 'X' representam o resultado de cada iteração em específico.
+A Figura \ref{fig:fitness_trajetoria_basica} mostra a evolução do custo da população com o passar das iterações. Foi realizado uma interpolação polinomial de terceira ordem para os resultados obtidos, de modo a melhor visualizar os efeitos da convergência. A interpolação pode ser visualizada pela linha vermelha, enquanto que os pontos `X’ representam o resultado de cada iteração em específico.
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=1.0\textwidth]{figures/CMA-ES_Fitness_Results.png}
+	\includegraphics[width=1.0\textwidth]{figures/CMA-ES_Fitness_Results.eps}
 	\caption{Fitness Cost em função do número de iterações}
 	\label{fig:fitness_trajetoria_basica}
 \end{figure}
 
-De acordo com a Figura \ref{fig:fitness_trajetoria_basica}, nota-se que, de fato, o algoritmo de otimização tende a reduzir o valor do Fitness Cost à medida que o número de iterações aumenta. Em torno de 60 iterações porém, o algoritmo já converge para um valor e não tem melhoras significativas a partir desse momento.
+De acordo com a Figura \ref{fig:fitness_trajetoria_basica}, nota-se que, de fato, o algoritmo de otimização tende a reduzir o valor do Fitness Cost à medida que o número de iterações aumenta. Em torno de 60 iterações porém, o algoritmo já converge para um valor e não acontece melhoras significativas a partir desse momento.
 
 Na Figura \ref{fig:convergencia_total_trajetoria_basica} temos a convergência total dos parâmetros normalizada. A normalização foi feita em cada parâmetro separadamente e depois foi calculado a média desses resultados para cada iteração.
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=1.0\textwidth]{figures/CMA-ES_Total_parameter_convergence.png}
+	\includegraphics[width=1.0\textwidth]{figures/CMA-ES_Total_parameter_convergence.eps}
 	\caption{Convergência total dos parâmetros em função do número de iterações}
 	\label{fig:convergencia_total_trajetoria_basica}
 \end{figure}
@@ -269,9 +269,11 @@ Tanto a Figura \ref{fig:convergencia_total_trajetoria_basica}, quanto a Figura \
 
 \subsubsection{Desvio de Obstáculos}
 
+A Figura \ref{fig:fitness_trajetoria_basica_ally} mostra a evolução do custo em função de uma determinada iteração do algoritmo para a otimização de desvio de obstáculos. Nota-se que os pontos nessa figura são mais esparsos que o da Figura \ref{fig:fitness_trajetoria_basica}, o que é esperado, já que a otimização de desvio de obstáculos é mais complexa que a de trajetórias básicas.
+
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=1.0\textwidth]{figures/CMA-ES_Fitness_Results_ally.png}
+	\includegraphics[width=1.0\textwidth]{figures/CMA-ES_Fitness_Results_ally.eps}
 	\caption{Fitness Cost em função do número de iterações}
 	\label{fig:fitness_trajetoria_basica_ally}
 \end{figure}
@@ -280,7 +282,7 @@ Na Figura \ref{fig:convergencia_total_trajetoria_basica_ally} temos a convergên
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=1.0\textwidth]{figures/CMA-ES_Total_parameter_convergence_ally.png}
+	\includegraphics[width=1.0\textwidth]{figures/CMA-ES_Total_parameter_convergence_ally.eps}
 	\caption{Convergência total dos parâmetros em função do número de iterações}
 	\label{fig:convergencia_total_trajetoria_basica_ally}
 \end{figure}
