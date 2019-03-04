@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.1.6)  3 MAR 2019 23:13
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.1.6)  4 MAR 2019 16:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1191,16 +1191,12 @@ Package epstopdf Info: Source file: <figures/CMA-ES_Fitness_Results.eps>
 (epstopdf)                    size: 253834 bytes
 (epstopdf)             Output file: <figures/CMA-ES_Fitness_Results-eps-convert
 ed-to.pdf>
+(epstopdf)                    date: 2019-03-03 23:13:53
+(epstopdf)                    size: 83630 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/CMA-ES_Fitness_Res
 ults-eps-converted-to.pdf figures/CMA-ES_Fitness_Results.eps>
 (epstopdf)             \includegraphics on input line 252.
-runsystem(repstopdf --outfile=figures/CMA-ES_Fitness_Results-eps-converted-to.p
-df figures/CMA-ES_Fitness_Results.eps)...executed safely (allowed).
-
-Package epstopdf Info: Result file: <figures/CMA-ES_Fitness_Results-eps-convert
-ed-to.pdf>
-(epstopdf)                    date: 2019-03-03 23:13:53
-(epstopdf)                    size: 83630 bytes.
+Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file ./figures/CMA-ES_Fitness_Results-eps-converted-t
@@ -1221,18 +1217,13 @@ Package epstopdf Info: Source file: <figures/CMA-ES_Total_parameter_convergence
 (epstopdf)                    size: 253066 bytes
 (epstopdf)             Output file: <figures/CMA-ES_Total_parameter_convergence
 -eps-converted-to.pdf>
+(epstopdf)                    date: 2019-03-03 23:13:54
+(epstopdf)                    size: 84910 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/CMA-ES_Total_param
 eter_convergence-eps-converted-to.pdf figures/CMA-ES_Total_parameter_convergenc
 e.eps>
-(epstopdf)             \includegraphics on input line 263.
-runsystem(repstopdf --outfile=figures/CMA-ES_Total_parameter_convergence-eps-co
-nverted-to.pdf figures/CMA-ES_Total_parameter_convergence.eps)...executed safel
-y (allowed).
-
-Package epstopdf Info: Result file: <figures/CMA-ES_Total_parameter_convergence
--eps-converted-to.pdf>
-(epstopdf)                    date: 2019-03-03 23:13:54
-(epstopdf)                    size: 84910 bytes.
+(epstopdf)             \includegraphics on input line 265.
+Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file ./figures/CMA-ES_Total_parameter_convergence-eps
@@ -1244,7 +1235,7 @@ File: figures/CMA-ES_Total_parameter_convergence-eps-converted-to.pdf Graphic f
 ile (type pdf)
 <use figures/CMA-ES_Total_parameter_convergence-eps-converted-to.pdf>
 Package pdftex.def Info: figures/CMA-ES_Total_parameter_convergence-eps-convert
-ed-to.pdf  used on input line 263.
+ed-to.pdf  used on input line 265.
 (pdftex.def)             Requested size: 455.24411pt x 241.14566pt.
 [18 <./figures/CMA-ES_Fitness_Results-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <figures/CMA-ES_Fitness_Results_ally.eps>
@@ -1252,16 +1243,12 @@ Package epstopdf Info: Source file: <figures/CMA-ES_Fitness_Results_ally.eps>
 (epstopdf)                    size: 215190 bytes
 (epstopdf)             Output file: <figures/CMA-ES_Fitness_Results_ally-eps-co
 nverted-to.pdf>
+(epstopdf)                    date: 2019-03-03 23:13:54
+(epstopdf)                    size: 71584 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/CMA-ES_Fitness_Res
 ults_ally-eps-converted-to.pdf figures/CMA-ES_Fitness_Results_ally.eps>
-(epstopdf)             \includegraphics on input line 276.
-runsystem(repstopdf --outfile=figures/CMA-ES_Fitness_Results_ally-eps-converted
--to.pdf figures/CMA-ES_Fitness_Results_ally.eps)...executed safely (allowed).
-
-Package epstopdf Info: Result file: <figures/CMA-ES_Fitness_Results_ally-eps-co
-nverted-to.pdf>
-(epstopdf)                    date: 2019-03-03 23:13:54
-(epstopdf)                    size: 71584 bytes.
+(epstopdf)             \includegraphics on input line 278.
+Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file ./figures/CMA-ES_Fitness_Results_ally-eps-conver
@@ -1273,7 +1260,7 @@ File: figures/CMA-ES_Fitness_Results_ally-eps-converted-to.pdf Graphic file (ty
 pe pdf)
 <use figures/CMA-ES_Fitness_Results_ally-eps-converted-to.pdf>
 Package pdftex.def Info: figures/CMA-ES_Fitness_Results_ally-eps-converted-to.p
-df  used on input line 276.
+df  used on input line 278.
 (pdftex.def)             Requested size: 455.24411pt x 241.14566pt.
 [19 <./figures/CMA-ES_Total_parameter_convergence-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <figures/CMA-ES_Total_parameter_convergence
@@ -1282,18 +1269,13 @@ _ally.eps>
 (epstopdf)                    size: 215697 bytes
 (epstopdf)             Output file: <figures/CMA-ES_Total_parameter_convergence
 _ally-eps-converted-to.pdf>
+(epstopdf)                    date: 2019-03-03 23:13:54
+(epstopdf)                    size: 72339 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/CMA-ES_Total_param
 eter_convergence_ally-eps-converted-to.pdf figures/CMA-ES_Total_parameter_conve
 rgence_ally.eps>
-(epstopdf)             \includegraphics on input line 285.
-runsystem(repstopdf --outfile=figures/CMA-ES_Total_parameter_convergence_ally-e
-ps-converted-to.pdf figures/CMA-ES_Total_parameter_convergence_ally.eps)...exec
-uted safely (allowed).
-
-Package epstopdf Info: Result file: <figures/CMA-ES_Total_parameter_convergence
-_ally-eps-converted-to.pdf>
-(epstopdf)                    date: 2019-03-03 23:13:54
-(epstopdf)                    size: 72339 bytes.
+(epstopdf)             \includegraphics on input line 287.
+Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file ./figures/CMA-ES_Total_parameter_convergence_all
@@ -1305,11 +1287,11 @@ File: figures/CMA-ES_Total_parameter_convergence_ally-eps-converted-to.pdf Grap
 hic file (type pdf)
 <use figures/CMA-ES_Total_parameter_convergence_ally-eps-converted-to.pdf>
 Package pdftex.def Info: figures/CMA-ES_Total_parameter_convergence_ally-eps-co
-nverted-to.pdf  used on input line 285.
+nverted-to.pdf  used on input line 287.
 (pdftex.def)             Requested size: 455.24411pt x 241.14566pt.
 [20 <./figures/CMA-ES_Fitness_Results_ally-eps-converted-to.pdf> <./figures/CMA
 -ES_Total_parameter_convergence_ally-eps-converted-to.pdf>]
-Overfull \hbox (13.44348pt too wide) in paragraph at lines 312--312
+Overfull \hbox (13.44348pt too wide) in paragraph at lines 314--314
 []\OT1/cmr/m/n/12 J. Ken-nedy, ``Par-ti-cle swarm op-ti-mi-za-tion'', \OT1/cmr/
 m/it/12 Ency-clo-pe-dia of ma-chine le-ar-ning\OT1/cmr/m/n/12 , pp. 760{
  []
@@ -1333,7 +1315,7 @@ e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texli
 ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf
 -dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/
 fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on main.pdf (22 pages, 3302714 bytes).
+Output written on main.pdf (22 pages, 3302980 bytes).
 PDF statistics:
  197 PDF objects out of 1000 (max. 8388607)
  122 compressed objects within 2 object streams

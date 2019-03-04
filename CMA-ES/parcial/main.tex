@@ -256,7 +256,9 @@ A Figura \ref{fig:fitness_trajetoria_basica} mostra a evolução do custo da pop
 
 De acordo com a Figura \ref{fig:fitness_trajetoria_basica}, nota-se que, de fato, o algoritmo de otimização tende a reduzir o valor do Fitness Cost à medida que o número de iterações aumenta. Em torno de 60 iterações porém, o algoritmo já converge para um valor e não acontece melhoras significativas a partir desse momento.
 
-Na Figura \ref{fig:convergencia_total_trajetoria_basica} temos a convergência total dos parâmetros normalizada. A normalização foi feita em cada parâmetro separadamente e depois foi calculado a média desses resultados para cada iteração.
+Uma normalização de dimensões foi feita em cada parâmetro separadamente e depois foi calculado a média desses resultados para cada iteração. Para a normalização, foi subtraído de cada valor a sua média e, em seguida, foi dividido o resultado obtido pela mesma média. Dessa forma, os valores dos parâmetros ficam com suas medidas mais próximas.
+
+Na Figura \ref{fig:convergencia_total_trajetoria_basica} temos a convergência total dos parâmetros normalizada. 
 
 \begin{figure}[H]
 	\centering
@@ -278,7 +280,7 @@ A Figura \ref{fig:fitness_trajetoria_basica_ally} mostra a evolução do custo e
 	\label{fig:fitness_trajetoria_basica_ally}
 \end{figure}
 
-Na Figura \ref{fig:convergencia_total_trajetoria_basica_ally} temos a convergência total dos parâmetros normalizada. A normalização foi feita em cada parâmetro separadamente e depois foi calculado a média desses resultados para cada iteração.
+Na Figura \ref{fig:convergencia_total_trajetoria_basica_ally} temos a convergência total dos parâmetros normalizada. A normalização foi feita em cada parâmetro separadamente e depois foi calculado a média desses resultados para cada iteração. Tal normalização foi realizada com o mesmo procedimento da seção Trajetória Básicas.
 
 \begin{figure}[H]
 	\centering
