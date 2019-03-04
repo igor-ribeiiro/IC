@@ -12,7 +12,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {3.1.1}O algoritmo}{10}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2}O simulador}{11}
+\contentsline {subsection}{\numberline {3.2}O simulador}{10}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.3}Univector Field}{12}
 \defcounter {refsection}{0}\relax 
@@ -20,18 +20,18 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.1}Fun\IeC {\c c}\IeC {\~a}o de Custo}{14}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.1.1}Trajet\IeC {\'o}rias B\IeC {\'a}sicas}{15}
+\contentsline {subsubsection}{\numberline {4.1.1}Trajet\IeC {\'o}rias B\IeC {\'a}sicas}{14}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.1.2}Desvio de Obst\IeC {\'a}culos}{16}
+\contentsline {subsubsection}{\numberline {4.1.2}Desvio de Obst\IeC {\'a}culos}{15}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2}Otimiza\IeC {\c c}\IeC {\~a}o}{17}
+\contentsline {subsection}{\numberline {4.2}Otimiza\IeC {\c c}\IeC {\~a}o}{16}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.2.1}Trajet\IeC {\'o}rias B\IeC {\'a}sicas}{17}
+\contentsline {subsubsection}{\numberline {4.2.1}Trajet\IeC {\'o}rias B\IeC {\'a}sicas}{16}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.2.2}Desvio de Obst\IeC {\'a}culos}{19}
+\contentsline {subsubsection}{\numberline {4.2.2}Desvio de Obst\IeC {\'a}culos}{18}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5}Conclus\IeC {\~o}es}{21}
+\contentsline {section}{\numberline {5}Conclus\IeC {\~o}es}{20}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6}Agradecimentos}{21}
+\contentsline {section}{\numberline {6}Agradecimentos}{20}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7}Bibliografia}{21}
+\contentsline {section}{\numberline {7}Bibliografia}{20}
