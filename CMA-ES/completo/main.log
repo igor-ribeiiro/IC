@@ -1,11 +1,11 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.1.6)  4 MAR 2019 16:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2019.6.18)  8 JUL 2019 15:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **main.tex
 (./main.tex
-LaTeX2e <2017-04-15>
-Babel <3.18> and hyphenation patterns for 84 language(s) loaded.
+LaTeX2e <2016/02/01>
+Babel <3.9q> and hyphenation patterns for 81 language(s) loaded.
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
 (/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo
@@ -24,21 +24,15 @@ File: size12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 \bibindent=\dimen102
 )
 (/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
-Package: babel 2018/02/14 3.18 The Babel package
+Package: babel 2016/02/24 3.9q The Babel package
 
-(/usr/share/texlive/texmf-dist/tex/generic/babel/switch.def
-File: switch.def 2018/02/14 3.18 Babel switching mechanism
-)
 (/usr/share/texlive/texmf-dist/tex/generic/babel-english/english.ldf
-Language: english 2017/06/06 v3.3r English support from the babel system
+Language: english 2012/08/20 v3.3p English support from the babel system
 
 (/usr/share/texlive/texmf-dist/tex/generic/babel/babel.def
-File: babel.def 2018/02/14 3.18 Babel common definitions
+File: babel.def 2016/02/24 3.9q Babel common definitions
 \babel@savecnt=\count87
 \U@D=\dimen103
-
-(/usr/share/texlive/texmf-dist/tex/generic/babel/txtbabel.def)
-\bbl@dirlevel=\count88
 )
 \l@canadian = a dialect from \language\l@american 
 \l@australian = a dialect from \language\l@british 
@@ -55,14 +49,14 @@ Package: inputenc 2015/03/17 v1.2c Input encoding file
 \inpenc@posthook=\toks15
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/utf8.def
-File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
+File: utf8.def 2015/12/03 v1.1r UTF-8 support for inputenc
 Now handling font encoding OML ...
 ... no UTF-8 mapping file for font encoding OML
 Now handling font encoding T1 ...
 ... processing UTF-8 mapping file for font encoding T1
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/t1enc.dfu
-File: t1enc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
+File: t1enc.dfu 2015/12/03 v1.1r UTF-8 support for inputenc
    defining Unicode char U+00A0 (decimal 160)
    defining Unicode char U+00A1 (decimal 161)
    defining Unicode char U+00A3 (decimal 163)
@@ -274,17 +268,11 @@ File: t1enc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
    defining Unicode char U+0219 (decimal 537)
    defining Unicode char U+021A (decimal 538)
    defining Unicode char U+021B (decimal 539)
-   defining Unicode char U+0232 (decimal 562)
-   defining Unicode char U+0233 (decimal 563)
-   defining Unicode char U+1E02 (decimal 7682)
-   defining Unicode char U+1E03 (decimal 7683)
+   defining Unicode char U+01E02 (decimal 7682)
+   defining Unicode char U+01E03 (decimal 7683)
    defining Unicode char U+200C (decimal 8204)
-   defining Unicode char U+2010 (decimal 8208)
-   defining Unicode char U+2011 (decimal 8209)
-   defining Unicode char U+2012 (decimal 8210)
    defining Unicode char U+2013 (decimal 8211)
    defining Unicode char U+2014 (decimal 8212)
-   defining Unicode char U+2015 (decimal 8213)
    defining Unicode char U+2018 (decimal 8216)
    defining Unicode char U+2019 (decimal 8217)
    defining Unicode char U+201A (decimal 8218)
@@ -296,14 +284,12 @@ File: t1enc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
    defining Unicode char U+2039 (decimal 8249)
    defining Unicode char U+203A (decimal 8250)
    defining Unicode char U+2423 (decimal 9251)
-   defining Unicode char U+1E20 (decimal 7712)
-   defining Unicode char U+1E21 (decimal 7713)
 )
 Now handling font encoding OT1 ...
 ... processing UTF-8 mapping file for font encoding OT1
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/ot1enc.dfu
-File: ot1enc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
+File: ot1enc.dfu 2015/12/03 v1.1r UTF-8 support for inputenc
    defining Unicode char U+00A0 (decimal 160)
    defining Unicode char U+00A1 (decimal 161)
    defining Unicode char U+00A3 (decimal 163)
@@ -344,7 +330,7 @@ Now handling font encoding OMS ...
 ... processing UTF-8 mapping file for font encoding OMS
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/omsenc.dfu
-File: omsenc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
+File: omsenc.dfu 2015/12/03 v1.1r UTF-8 support for inputenc
    defining Unicode char U+00A7 (decimal 167)
    defining Unicode char U+00B6 (decimal 182)
    defining Unicode char U+00B7 (decimal 183)
@@ -371,7 +357,7 @@ Now handling font encoding U ...
 Package: icomma 2002/03/10 v2.0 (WaS)
 )
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
-Package: amsmath 2017/09/02 v2.17a AMS math features
+Package: amsmath 2016/03/03 v2.15a AMS math features
 \@mathmargin=\skip43
 
 For additional information on amsmath, use the `?' option.
@@ -388,32 +374,32 @@ Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen105
 )
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
-Package: amsopn 2016/03/08 v2.02 operator names
+Package: amsopn 1999/12/14 v2.01 operator names
 )
-\inf@bad=\count89
-LaTeX Info: Redefining \frac on input line 213.
-\uproot@=\count90
-\leftroot@=\count91
-LaTeX Info: Redefining \overline on input line 375.
-\classnum@=\count92
-\DOTSCASE@=\count93
-LaTeX Info: Redefining \ldots on input line 472.
-LaTeX Info: Redefining \dots on input line 475.
-LaTeX Info: Redefining \cdots on input line 596.
+\inf@bad=\count88
+LaTeX Info: Redefining \frac on input line 199.
+\uproot@=\count89
+\leftroot@=\count90
+LaTeX Info: Redefining \overline on input line 297.
+\classnum@=\count91
+\DOTSCASE@=\count92
+LaTeX Info: Redefining \ldots on input line 394.
+LaTeX Info: Redefining \dots on input line 397.
+LaTeX Info: Redefining \cdots on input line 518.
 \Mathstrutbox@=\box26
 \strutbox@=\box27
 \big@size=\dimen106
-LaTeX Font Info:    Redeclaring font encoding OML on input line 712.
-LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
-\macc@depth=\count94
-\c@MaxMatrixCols=\count95
+LaTeX Font Info:    Redeclaring font encoding OML on input line 630.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 631.
+\macc@depth=\count93
+\c@MaxMatrixCols=\count94
 \dotsspace@=\muskip10
-\c@parentequation=\count96
-\dspbrk@lvl=\count97
+\c@parentequation=\count95
+\dspbrk@lvl=\count96
 \tag@help=\toks17
-\row@=\count98
-\column@=\count99
-\maxfields@=\count100
+\row@=\count97
+\column@=\count98
+\maxfields@=\count99
 \andhelp@=\toks18
 \eqnshift@=\dimen107
 \alignsep@=\dimen108
@@ -425,14 +411,14 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
 \multlinegap=\skip44
 \multlinetaggap=\skip45
 \mathdisplay@stack=\toks20
-LaTeX Info: Redefining \[ on input line 2817.
-LaTeX Info: Redefining \] on input line 2818.
+LaTeX Info: Redefining \[ on input line 2735.
+LaTeX Info: Redefining \] on input line 2736.
 )
 (/usr/share/texlive/texmf-dist/tex/latex/makecell/makecell.sty
 Package: makecell 2009/08/03 V0.1e Managing of Tab Column Heads and Cells
 
 (/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
-Package: array 2016/10/06 v2.4d Tabular extension package (FMi)
+Package: array 2014/10/28 v2.4c Tabular extension package (FMi)
 \col@sep=\dimen113
 \extrarowheight=\dimen114
 \NC@list=\toks21
@@ -440,45 +426,51 @@ Package: array 2016/10/06 v2.4d Tabular extension package (FMi)
 \backup@length=\skip47
 )
 \rotheadsize=\dimen115
-\c@nlinenum=\count101
+\c@nlinenum=\count100
 \TeXr@lab=\toks22
 )
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
-Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
+Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
 
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks23
 )
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
-Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
+Package: graphics 2016/01/03 v1.0q Standard LaTeX Graphics (DPC,SPQR)
 
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 )
-(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
-File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
 )
-Package graphics Info: Driver file: pdftex.def on input line 99.
+Package graphics Info: Driver file: pdftex.def on input line 95.
 
-(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
-File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+(/usr/share/texlive/texmf-dist/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count101
 ))
 \Gin@req@height=\dimen116
 \Gin@req@width=\dimen117
 )
 (/usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
-Package: fancyhdr 2017/06/30 v3.9a Extensive control of page headers and footer
-s
-\f@nch@headwidth=\skip48
-\f@nch@O@elh=\skip49
-\f@nch@O@erh=\skip50
-\f@nch@O@olh=\skip51
-\f@nch@O@orh=\skip52
-\f@nch@O@elf=\skip53
-\f@nch@O@erf=\skip54
-\f@nch@O@olf=\skip55
-\f@nch@O@orf=\skip56
+\fancy@headwidth=\skip48
+\f@ncyO@elh=\skip49
+\f@ncyO@erh=\skip50
+\f@ncyO@olh=\skip51
+\f@ncyO@orh=\skip52
+\f@ncyO@elf=\skip53
+\f@ncyO@erf=\skip54
+\f@ncyO@olf=\skip55
+\f@ncyO@orf=\skip56
 )
 (/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip11
@@ -494,10 +486,11 @@ Package: titling 2009/09/04 v2.1d maketitle typesetting
 Package: geometry 2010/09/12 v5.6 Page Geometry
 
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
-Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
 )
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifvtex.sty
-Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
+Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
 Package ifvtex Info: VTeX not detected.
 )
 (/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty
@@ -547,78 +540,46 @@ LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
-Package: multirow 2016/11/25 v2.2 Span multiple rows of a table
-\multirow@colwidth=\skip66
-\multirow@cntb=\count109
-\multirow@dima=\skip67
 \bigstrutjot=\dimen128
 )
 (/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
-Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
 
-(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
-File: color.cfg 2016/01/02 v1.6 sample color configuration
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
 Package xcolor Info: Driver file: pdftex.def on input line 225.
 
 (/usr/share/texlive/texmf-dist/tex/latex/colortbl/colortbl.sty
 Package: colortbl 2012/02/13 v1.0a Color table columns (DPC)
 \everycr=\toks25
-\minrowclearance=\skip68
+\minrowclearance=\skip66
 )
-\rownum=\count110
-Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
-Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
-Package xcolor Info: Model `RGB' extended on input line 1364.
-Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
-Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
-Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
-Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
-Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
-Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+\rownum=\count109
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1341.
+Package xcolor Info: Model `RGB' extended on input line 1353.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1355.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1356.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1357.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
 )
 (/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.sty
-Package: biblatex 2017/12/19 v3.10 programmable bibliographies (PK/JW/AB)
+Package: biblatex 2016/03/03 v3.3 programmable bibliographies (PK/JW/AB)
 
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
-Package: pdftexcmds 2018/01/21 v0.26 Utility functions of pdfTeX for LuaTeX (HO
-)
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex_legacy.sty
+Package: biblatex_legacy 2016/03/03 v3.3 programmable bibliographies (bibtex) (
+PK/JW/AB)
 
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
-Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
-)
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifluatex.sty
-Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
-Package ifluatex Info: LuaTeX not detected.
-)
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
-Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
-)
-Package pdftexcmds Info: LuaTeX not detected.
-Package pdftexcmds Info: \pdf@primitive is available.
-Package pdftexcmds Info: \pdf@ifprimitive is available.
-Package pdftexcmds Info: \pdfdraftmode found.
-)
 (/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
-Package: etoolbox 2018/02/11 v2.5e e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count111
+Package: etoolbox 2015/08/02 v2.2a e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count110
 )
-(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
-Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
-
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
-Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
-
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/etexcmds.sty
-Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
-Package etexcmds Info: Could not find \expanded.
-(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
-(etexcmds)             that some package has redefined \expanded.
-(etexcmds)             In the latter case, load this package earlier.
-)))
 (/usr/share/texlive/texmf-dist/tex/latex/logreq/logreq.sty
 Package: logreq 2010/08/04 v1.0 xml request logger
-\lrq@indent=\count112
+\lrq@indent=\count111
 
 (/usr/share/texlive/texmf-dist/tex/latex/logreq/logreq.def
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
@@ -626,211 +587,179 @@ File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 (/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
-(/usr/share/texlive/texmf-dist/tex/generic/xstring/xstring.sty
-(/usr/share/texlive/texmf-dist/tex/generic/xstring/xstring.tex
-\@xs@message=\write3
-\integerpart=\count113
-\decimalpart=\count114
-)
-Package: xstring 2013/10/13  v1.7c  String manipulations (C Tellechea)
-)
-\c@tabx@nest=\count115
-\c@listtotal=\count116
-\c@listcount=\count117
-\c@liststart=\count118
-\c@liststop=\count119
-\c@citecount=\count120
-\c@citetotal=\count121
-\c@multicitecount=\count122
-\c@multicitetotal=\count123
-\c@instcount=\count124
-\c@maxnames=\count125
-\c@minnames=\count126
-\c@maxitems=\count127
-\c@minitems=\count128
-\c@citecounter=\count129
-\c@savedcitecounter=\count130
-\c@uniquelist=\count131
-\c@uniquename=\count132
-\c@refsection=\count133
-\c@refsegment=\count134
-\c@maxextratitle=\count135
-\c@maxextratitleyear=\count136
-\c@maxextradate=\count137
-\c@maxextraalpha=\count138
-\c@abbrvpenalty=\count139
-\c@highnamepenalty=\count140
-\c@lownamepenalty=\count141
-\c@maxparens=\count142
-\c@parenlevel=\count143
-\blx@tempcnta=\count144
-\blx@tempcntb=\count145
-\blx@tempcntc=\count146
-\blx@maxsection=\count147
-\blx@maxsegment@0=\count148
-\blx@notetype=\count149
-\blx@parenlevel@text=\count150
-\blx@parenlevel@foot=\count151
-\blx@sectionciteorder@0=\count152
-\labelnumberwidth=\skip69
-\labelalphawidth=\skip70
-\biblabelsep=\skip71
-\bibitemsep=\skip72
-\bibnamesep=\skip73
-\bibinitsep=\skip74
-\bibparsep=\skip75
-\bibhang=\skip76
-\blx@bcfin=\read1
-\blx@bcfout=\write4
-\c@mincomprange=\count153
-\c@maxcomprange=\count154
-\c@mincompwidth=\count155
-Package biblatex Info: Trying to load biblatex default data model...
-Package biblatex Info: ... file 'blx-dm.def' found.
-
-(/usr/share/texlive/texmf-dist/tex/latex/biblatex/blx-dm.def)
-Package biblatex Info: Trying to load biblatex style data model...
-Package biblatex Info: ... file 'ieee.dbx' not found.
-Package biblatex Info: Trying to load biblatex custom data model...
-Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
-\c@afterword=\count156
-\c@savedafterword=\count157
-\c@annotator=\count158
-\c@savedannotator=\count159
-\c@author=\count160
-\c@savedauthor=\count161
-\c@bookauthor=\count162
-\c@savedbookauthor=\count163
-\c@commentator=\count164
-\c@savedcommentator=\count165
-\c@editor=\count166
-\c@savededitor=\count167
-\c@editora=\count168
-\c@savededitora=\count169
-\c@editorb=\count170
-\c@savededitorb=\count171
-\c@editorc=\count172
-\c@savededitorc=\count173
-\c@foreword=\count174
-\c@savedforeword=\count175
-\c@holder=\count176
-\c@savedholder=\count177
-\c@introduction=\count178
-\c@savedintroduction=\count179
-\c@namea=\count180
-\c@savednamea=\count181
-\c@nameb=\count182
-\c@savednameb=\count183
-\c@namec=\count184
-\c@savednamec=\count185
-\c@translator=\count186
-\c@savedtranslator=\count187
-\c@shortauthor=\count188
-\c@savedshortauthor=\count189
-\c@shorteditor=\count190
-\c@savedshorteditor=\count191
-\c@labelname=\count192
-\c@savedlabelname=\count193
-\c@institution=\count194
-\c@savedinstitution=\count195
-\c@lista=\count196
-\c@savedlista=\count197
-\c@listb=\count198
-\c@savedlistb=\count199
-\c@listc=\count266
-\c@savedlistc=\count267
-\c@listd=\count268
-\c@savedlistd=\count269
-\c@liste=\count270
-\c@savedliste=\count271
-\c@listf=\count272
-\c@savedlistf=\count273
-\c@location=\count274
-\c@savedlocation=\count275
-\c@organization=\count276
-\c@savedorganization=\count277
-\c@origlocation=\count278
-\c@savedoriglocation=\count279
-\c@origpublisher=\count280
-\c@savedorigpublisher=\count281
-\c@publisher=\count282
-\c@savedpublisher=\count283
-\c@language=\count284
-\c@savedlanguage=\count285
-\c@origlanguage=\count286
-\c@savedoriglanguage=\count287
-\c@pageref=\count288
-\c@savedpageref=\count289
-\shorthandwidth=\skip77
-\shortjournalwidth=\skip78
-\shortserieswidth=\skip79
-\shorttitlewidth=\skip80
-\shortauthorwidth=\skip81
-\shorteditorwidth=\skip82
+\c@tabx@nest=\count112
+\c@listtotal=\count113
+\c@listcount=\count114
+\c@liststart=\count115
+\c@liststop=\count116
+\c@citecount=\count117
+\c@citetotal=\count118
+\c@multicitecount=\count119
+\c@multicitetotal=\count120
+\c@instcount=\count121
+\c@maxnames=\count122
+\c@minnames=\count123
+\c@maxitems=\count124
+\c@minitems=\count125
+\c@citecounter=\count126
+\c@savedcitecounter=\count127
+\c@uniquelist=\count128
+\c@uniquename=\count129
+\c@refsection=\count130
+\c@refsegment=\count131
+\c@maxextrayear=\count132
+\c@maxextraalpha=\count133
+\c@abbrvpenalty=\count134
+\c@highnamepenalty=\count135
+\c@lownamepenalty=\count136
+\c@maxparens=\count137
+\c@parenlevel=\count138
+\blx@tempcnta=\count139
+\blx@tempcntb=\count140
+\blx@tempcntc=\count141
+\blx@maxsection=\count142
+\blx@maxsegment=\count143
+\blx@notetype=\count144
+\blx@parenlevel@text=\count145
+\blx@parenlevel@foot=\count146
+\labelnumberwidth=\skip67
+\labelalphawidth=\skip68
+\shorthandwidth=\skip69
+\biblabelsep=\skip70
+\bibitemsep=\skip71
+\bibnamesep=\skip72
+\bibinitsep=\skip73
+\bibparsep=\skip74
+\bibhang=\skip75
+\blx@auxin=\read1
+\blx@auxout=\write3
+\c@mincomprange=\count147
+\c@maxcomprange=\count148
+\c@mincompwidth=\count149
+\c@labelname=\count150
+\c@savedlabelname=\count151
+\c@author=\count152
+\c@savedauthor=\count153
+\c@shortauthor=\count154
+\c@savedshortauthor=\count155
+\c@editor=\count156
+\c@savededitor=\count157
+\c@editora=\count158
+\c@savededitora=\count159
+\c@editorb=\count160
+\c@savededitorb=\count161
+\c@editorc=\count162
+\c@savededitorc=\count163
+\c@shorteditor=\count164
+\c@savedshorteditor=\count165
+\c@bookauthor=\count166
+\c@savedbookauthor=\count167
+\c@translator=\count168
+\c@savedtranslator=\count169
+\c@annotator=\count170
+\c@savedannotator=\count171
+\c@commentator=\count172
+\c@savedcommentator=\count173
+\c@introduction=\count174
+\c@savedintroduction=\count175
+\c@foreword=\count176
+\c@savedforeword=\count177
+\c@afterword=\count178
+\c@savedafterword=\count179
+\c@holder=\count180
+\c@savedholder=\count181
+\c@namea=\count182
+\c@savednamea=\count183
+\c@nameb=\count184
+\c@savednameb=\count185
+\c@namec=\count186
+\c@savednamec=\count187
+\c@institution=\count188
+\c@savedinstitution=\count189
+\c@language=\count190
+\c@savedlanguage=\count191
+\c@location=\count192
+\c@savedlocation=\count193
+\c@organization=\count194
+\c@savedorganization=\count195
+\c@origlocation=\count196
+\c@savedoriglocation=\count197
+\c@origpublisher=\count198
+\c@savedorigpublisher=\count199
+\c@pageref=\count266
+\c@savedpageref=\count267
+\c@publisher=\count268
+\c@savedpublisher=\count269
+\c@lista=\count270
+\c@savedlista=\count271
+\c@listb=\count272
+\c@savedlistb=\count273
+\c@listc=\count274
+\c@savedlistc=\count275
+\c@listd=\count276
+\c@savedlistd=\count277
+\c@liste=\count278
+\c@savedliste=\count279
+\c@listf=\count280
+\c@savedlistf=\count281
 Package biblatex Info: Trying to load compatibility code...
 Package biblatex Info: ... file 'blx-compat.def' found.
 
 (/usr/share/texlive/texmf-dist/tex/latex/biblatex/blx-compat.def
-File: blx-compat.def 2017/12/19 v3.10 biblatex compatibility (PK/JW/AB)
-)
-Package biblatex Info: Trying to load BibTeX backend compatibility...
-Package biblatex Info: ... file 'blx-bibtex.def' found.
-
-(/usr/share/texlive/texmf-dist/tex/latex/biblatex/blx-bibtex.def
-File: blx-bibtex.def 2017/12/19 v3.10 biblatex compatibility (PK/JW/AB)
-
-
-Package biblatex Warning: Using fall-back BibTeX(8) backend:
-(biblatex)                functionality may be reduced/unavailable.
-
+File: blx-compat.def 2016/03/03 v3.3 biblatex compatibility (PK/JW/AB)
 )
 Package biblatex Info: Trying to load generic definitions...
-Package biblatex Info: ... file 'biblatex.def' found.
- (/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.def
-File: biblatex.def 2017/12/19 v3.10 biblatex compatibility (PK/JW/AB)
-\c@textcitecount=\count290
-\c@textcitetotal=\count291
-\c@textcitemaxnames=\count292
-\c@biburlnumpenalty=\count293
-\c@biburlucpenalty=\count294
-\c@biburllcpenalty=\count295
-\c@smartand=\count296
+Package biblatex Info: ... file 'biblatex_legacy.def' found.
+
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex_legacy.def
+File: biblatex_legacy.def 
+\c@textcitecount=\count282
+\c@textcitetotal=\count283
+\c@textcitemaxnames=\count284
+\c@biburlnumpenalty=\count285
+\c@biburlucpenalty=\count286
+\c@biburllcpenalty=\count287
+\c@smartand=\count288
 )
 Package biblatex Info: Trying to load bibliography style 'ieee'...
 Package biblatex Info: ... file 'ieee.bbx' found.
 
 (/usr/share/texlive/texmf-dist/tex/latex/biblatex-ieee/ieee.bbx
-File: ieee.bbx 2017/03/27 v1.2d biblatex bibliography style
+File: ieee.bbx 2015/03/12 v1.1k biblatex bibliography style
 Package biblatex Info: Trying to load bibliography style 'numeric-comp'...
 Package biblatex Info: ... file 'numeric-comp.bbx' found.
 
 (/usr/share/texlive/texmf-dist/tex/latex/biblatex/bbx/numeric-comp.bbx
-File: numeric-comp.bbx 2017/12/19 v3.10 biblatex bibliography style (PK/JW/AB)
+File: numeric-comp.bbx 2016/03/03 v3.3 biblatex bibliography style (PK/JW/AB)
 Package biblatex Info: Trying to load bibliography style 'numeric'...
 Package biblatex Info: ... file 'numeric.bbx' found.
 
 (/usr/share/texlive/texmf-dist/tex/latex/biblatex/bbx/numeric.bbx
-File: numeric.bbx 2017/12/19 v3.10 biblatex bibliography style (PK/JW/AB)
+File: numeric.bbx 2016/03/03 v3.3 biblatex bibliography style (PK/JW/AB)
 Package biblatex Info: Trying to load bibliography style 'standard'...
 Package biblatex Info: ... file 'standard.bbx' found.
 
 (/usr/share/texlive/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
-File: standard.bbx 2017/12/19 v3.10 biblatex bibliography style (PK/JW/AB)
-\c@bbx:relatedcount=\count297
-\c@bbx:relatedtotal=\count298
-))))
+File: standard.bbx 2016/03/03 v3.3 biblatex bibliography style (PK/JW/AB)
+\c@bbx:relatedcount=\count289
+\c@bbx:relatedtotal=\count290
+)))
+
+Package biblatex Warning: 'firstinits' option is deprecated, use 'giveninits' i
+nstead.
+
+)
 Package biblatex Info: Trying to load citation style 'ieee'...
 Package biblatex Info: ... file 'ieee.cbx' found.
-
-(/usr/share/texlive/texmf-dist/tex/latex/biblatex-ieee/ieee.cbx
-File: ieee.cbx 2017/03/27 v1.2d biblatex citation style
+ (/usr/share/texlive/texmf-dist/tex/latex/biblatex-ieee/ieee.cbx
+File: ieee.cbx 2015/03/12 v1.1k biblatex citation style
 Package biblatex Info: Trying to load citation style 'numeric-comp'...
 Package biblatex Info: ... file 'numeric-comp.cbx' found.
 
 (/usr/share/texlive/texmf-dist/tex/latex/biblatex/cbx/numeric-comp.cbx
-File: numeric-comp.cbx 2017/12/19 v3.10 biblatex citation style (PK/JW/AB)
-\c@cbx@tempcnta=\count299
-\c@cbx@tempcntb=\count300
+File: numeric-comp.cbx 2016/03/03 v3.3 biblatex citation style (PK/JW/AB)
+\c@cbx@tempcnta=\count291
+\c@cbx@tempcntb=\count292
 Package biblatex Info: Redefining '\cite'.
 Package biblatex Info: Redefining '\parencite'.
 Package biblatex Info: Redefining '\footcite'.
@@ -851,21 +780,21 @@ Package biblatex Info: ... file 'biblatex.cfg' found.
 
 (/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.cfg
 File: biblatex.cfg 
-))
+)))
 (/usr/share/texlive/texmf-dist/tex/latex/algorithms/algorithm.sty
 Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating enviro
 nment
 
 (/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count301
+\c@float@type=\count293
 \float@exts=\toks26
 \float@box=\box28
 \@float@everytoks=\toks27
 \@floatcapt=\box29
 )
 \@float@every@algorithm=\toks28
-\c@algorithm=\count302
+\c@algorithm=\count294
 )
 (/usr/share/texlive/texmf-dist/tex/latex/algorithmicx/algpseudocode.sty
 Package: algpseudocode 
@@ -874,79 +803,72 @@ Package: algpseudocode
 Package: algorithmicx 2005/04/27 v1.2 Algorithmicx
 
 Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
-\c@ALG@line=\count303
-\c@ALG@rem=\count304
-\c@ALG@nested=\count305
-\ALG@tlm=\skip83
-\ALG@thistlm=\skip84
-\c@ALG@Lnr=\count306
-\c@ALG@blocknr=\count307
-\c@ALG@storecount=\count308
-\c@ALG@tmpcounter=\count309
-\ALG@tmplength=\skip85
+\c@ALG@line=\count295
+\c@ALG@rem=\count296
+\c@ALG@nested=\count297
+\ALG@tlm=\skip76
+\ALG@thistlm=\skip77
+\c@ALG@Lnr=\count298
+\c@ALG@blocknr=\count299
+\c@ALG@storecount=\count300
+\c@ALG@tmpcounter=\count301
+\ALG@tmplength=\skip78
 )
 Document Style - pseudocode environments for use with the `algorithmicx' style
 ) (/usr/share/texlive/texmf-dist/tex/latex/pdfpages/pdfpages.sty
-Package: pdfpages 2017/10/31 v0.5l Insert pages of external PDF documents (AM)
+Package: pdfpages 2015/09/18 v0.5d Insert pages of external PDF documents (AM)
 
 (/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count310
-\calc@Bcount=\count311
+\calc@Acount=\count302
+\calc@Bcount=\count303
 \calc@Adimen=\dimen129
 \calc@Bdimen=\dimen130
-\calc@Askip=\skip86
-\calc@Bskip=\skip87
+\calc@Askip=\skip79
+\calc@Bskip=\skip80
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count312
-\calc@Cskip=\skip88
+\calc@Ccount=\count304
+\calc@Cskip=\skip81
 )
 (/usr/share/texlive/texmf-dist/tex/latex/eso-pic/eso-pic.sty
 Package: eso-pic 2015/07/21 v2.0g eso-pic (RN)
 
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/atbegshi.sty
-Package: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)
+Package: atbegshi 2011/10/05 v1.16 At begin shipout hook (HO)
 ))
 \AM@pagewidth=\dimen131
 \AM@pageheight=\dimen132
 
 (/usr/share/texlive/texmf-dist/tex/latex/pdfpages/pppdftex.def
-File: pppdftex.def 2017/10/31 v0.5l Pdfpages driver for pdfTeX (AM)
+File: pppdftex.def 2015/09/18 v0.5d Pdfpages driver for pdfTeX (AM)
 )
 \AM@pagebox=\box30
-\AM@global@opts=\toks29
-\AM@toc@title=\toks30
-\c@AM@survey=\count313
+\AM@toc@title=\toks29
+\c@AM@survey=\count305
 \AM@templatesizebox=\box31
 )
 (/usr/share/texlive/texmf-dist/tex/latex/tools/enumerate.sty
 Package: enumerate 2015/07/23 v3.00 enumerate extensions (DPC)
-\@enLab=\toks31
+\@enLab=\toks30
 )
 Package biblatex Info: Trying to load language 'brazil'...
 Package biblatex Info: ... file 'brazil.lbx' found.
 
 (/usr/share/texlive/texmf-dist/tex/latex/biblatex/lbx/brazil.lbx
-File: brazil.lbx 2017/12/19 v3.10 biblatex localization (PK/JW/AB)
+File: brazil.lbx 2016/03/03 v3.3 biblatex localization (PK/JW/AB)
 Package biblatex Info: Trying to load language 'brazilian'...
 Package biblatex Info: ... file 'brazilian.lbx' found.
 
 (/usr/share/texlive/texmf-dist/tex/latex/biblatex/lbx/brazilian.lbx
-File: brazilian.lbx 2017/12/19 v3.10 biblatex localization (PK/JW/AB)
+File: brazilian.lbx 2016/03/03 v3.3 biblatex localization (PK/JW/AB)
 ))
-Package biblatex Info: Trying to load language 'english'...
-Package biblatex Info: ... file 'english.lbx' found.
-
-(/usr/share/texlive/texmf-dist/tex/latex/biblatex/lbx/english.lbx
-File: english.lbx 2017/12/19 v3.10 biblatex localization (PK/JW/AB)
-)
 
 Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
 (biblatex)                Loading 'csquotes' recommended.
 
-\@quotelevel=\count314
-\@quotereset=\count315
+\@quotelevel=\count306
+\@quotereset=\count307
 (./main.aux)
 \openout1 = `main.aux'.
 
@@ -962,34 +884,58 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 38.
 LaTeX Font Info:    ... okay on input line 38.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 38.
 LaTeX Font Info:    ... okay on input line 38.
- (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+ (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count316
+\scratchcounter=\count308
 \scratchdimen=\dimen133
 \scratchbox=\box32
-\nofMPsegments=\count317
-\nofMParguments=\count318
-\everyMPshowfont=\toks32
-\MPscratchCnt=\count319
+\nofMPsegments=\count309
+\nofMParguments=\count310
+\everyMPshowfont=\toks31
+\MPscratchCnt=\count311
 \MPscratchDim=\dimen134
-\MPnumerator=\count320
-\makeMPintoPDFobject=\count321
-\everyMPtoPDFconversion=\toks33
-) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
-Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+\MPnumerator=\count312
+\makeMPintoPDFobject=\count313
+\everyMPtoPDFconversion=\toks32
+) (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
 
 (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
-Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
 
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
-Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
 ))
-Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
-38.
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
 Package grfext Info: Graphics extension search list:
-(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
 G,.JBIG2,.JB2,.eps]
-(grfext)             \AppendGraphicsExtensions on input line 456.
+(grfext)             \AppendGraphicsExtensions on input line 452.
 
 (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
@@ -1032,10 +978,11 @@ e
 Package biblatex Info: Input encoding 'utf8' detected.
 Package biblatex Info: Automatic encoding selection.
 (biblatex)             Assuming data encoding 'utf8'.
-Package biblatex Info: Input encoding 'utf8' specified.
-Package biblatex Info: Data encoding 'utf8' specified.
-(biblatex)             No need to reencode data.
-\openout4 = `main-blx.bib'.
+
+Package biblatex Warning: Data encoding is 'utf8'.
+(biblatex)                Use backend=biber.
+
+\openout3 = `main-blx.bib'.
 
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'main.bbl' found.
@@ -1044,86 +991,91 @@ Package biblatex Info: Reference section=0 on input line 38.
 Package biblatex Info: Reference segment=0 on input line 38.
 \AtBeginShipoutBox=\box33
  (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/pdflscape.sty
-Package: pdflscape 2016/05/14 v0.11 Display of landscape pages in PDF (HO)
+Package: pdflscape 2008/08/11 v0.10 Display of landscape pages in PDF (HO)
 
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/lscape.sty
 Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
 )
-Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
+Package pdflscape Info: Auto-detected driver: pdftex on input line 80.
 )
-<Inicio.pdf, id=1, 597.50786pt x 845.01837pt>
+<Inicio.pdf, id=1, 597.23125pt x 845.1575pt>
 File: Inicio.pdf Graphic file (type pdf)
-<use Inicio.pdf>
-Package pdftex.def Info: Inicio.pdf  used on input line 41.
-(pdftex.def)             Requested size: 597.5064pt x 845.01631pt.
+ <use Inicio.pdf>
+Package pdftex.def Info: Inicio.pdf used on input line 41.
+(pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
 File: Inicio.pdf Graphic file (type pdf)
-<use Inicio.pdf>
-Package pdftex.def Info: Inicio.pdf  used on input line 41.
-(pdftex.def)             Requested size: 597.5064pt x 845.01631pt.
-<Inicio.pdf, id=4, page=1, 597.50786pt x 845.01837pt>
+ <use Inicio.pdf>
+Package pdftex.def Info: Inicio.pdf used on input line 41.
+(pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
+
+<Inicio.pdf, id=4, page=1, 597.23125pt x 845.1575pt>
 File: Inicio.pdf Graphic file (type pdf)
+ <use Inicio.pdf, page 1>
+Package pdftex.def Info: Inicio.pdf, page1 used on input line 41.
+(pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
+File: Inicio.pdf Graphic file (type pdf)
+
 <use Inicio.pdf, page 1>
-Package pdftex.def Info: Inicio.pdf , page1 used on input line 41.
-(pdftex.def)             Requested size: 597.5064pt x 845.01631pt.
+Package pdftex.def Info: Inicio.pdf, page1 used on input line 41.
+(pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
 File: Inicio.pdf Graphic file (type pdf)
-<use Inicio.pdf, page 1>
-Package pdftex.def Info: Inicio.pdf , page1 used on input line 41.
-(pdftex.def)             Requested size: 597.5064pt x 845.01631pt.
+ <use Inicio.pdf, page 1>
+Package pdftex.def Info: Inicio.pdf, page1 used on input line 41.
+(pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
 File: Inicio.pdf Graphic file (type pdf)
-<use Inicio.pdf, page 1>
-Package pdftex.def Info: Inicio.pdf , page1 used on input line 41.
-(pdftex.def)             Requested size: 597.5064pt x 845.01631pt.
+ <use Inicio.pdf, page 1>
+Package pdftex.def Info: Inicio.pdf, page1 used on input line 41.
+(pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
 File: Inicio.pdf Graphic file (type pdf)
+
 <use Inicio.pdf, page 1>
-Package pdftex.def Info: Inicio.pdf , page1 used on input line 41.
-(pdftex.def)             Requested size: 597.5064pt x 845.01631pt.
-File: Inicio.pdf Graphic file (type pdf)
-<use Inicio.pdf, page 1>
-Package pdftex.def Info: Inicio.pdf , page1 used on input line 41.
-(pdftex.def)             Requested size: 597.5064pt x 845.01631pt.
+Package pdftex.def Info: Inicio.pdf, page1 used on input line 41.
+(pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
  [1
 
  <./Inicio.pdf>]
-<Inicio.pdf, id=56, page=2, 597.50786pt x 845.01837pt>
+<Inicio.pdf, id=58, page=2, 597.23125pt x 845.1575pt>
 File: Inicio.pdf Graphic file (type pdf)
-<use Inicio.pdf, page 2>
-Package pdftex.def Info: Inicio.pdf , page2 used on input line 41.
-(pdftex.def)             Requested size: 597.5064pt x 845.01631pt.
+ <use Inicio.pdf, page 2>
+Package pdftex.def Info: Inicio.pdf, page2 used on input line 41.
+(pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
 File: Inicio.pdf Graphic file (type pdf)
-<use Inicio.pdf, page 2>
-Package pdftex.def Info: Inicio.pdf , page2 used on input line 41.
-(pdftex.def)             Requested size: 597.5064pt x 845.01631pt.
-File: Inicio.pdf Graphic file (type pdf)
-<use Inicio.pdf, page 2>
-Package pdftex.def Info: Inicio.pdf , page2 used on input line 41.
-(pdftex.def)             Requested size: 597.5064pt x 845.01631pt.
- [2 <./Inicio.pdf>]
-<Inicio.pdf, id=61, page=3, 597.50786pt x 845.01837pt>
-File: Inicio.pdf Graphic file (type pdf)
-<use Inicio.pdf, page 3>
-Package pdftex.def Info: Inicio.pdf , page3 used on input line 41.
-(pdftex.def)             Requested size: 597.5064pt x 845.01631pt.
-File: Inicio.pdf Graphic file (type pdf)
-<use Inicio.pdf, page 3>
-Package pdftex.def Info: Inicio.pdf , page3 used on input line 41.
-(pdftex.def)             Requested size: 597.5064pt x 845.01631pt.
-File: Inicio.pdf Graphic file (type pdf)
-<use Inicio.pdf, page 3>
-Package pdftex.def Info: Inicio.pdf , page3 used on input line 41.
-(pdftex.def)             Requested size: 597.5064pt x 845.01631pt.
- [3 <./Inicio.pdf>] (./main.toc
-LaTeX Font Info:    Try loading font information for U+msa on input line 11.
 
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+<use Inicio.pdf, page 2>
+Package pdftex.def Info: Inicio.pdf, page2 used on input line 41.
+(pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
+File: Inicio.pdf Graphic file (type pdf)
+ <use Inicio.pdf, page 2>
+Package pdftex.def Info: Inicio.pdf, page2 used on input line 41.
+(pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
+ [2 <./Inicio.pdf>]
+<Inicio.pdf, id=63, page=3, 597.23125pt x 845.1575pt>
+File: Inicio.pdf Graphic file (type pdf)
+ <use Inicio.pdf, page 3>
+Package pdftex.def Info: Inicio.pdf, page3 used on input line 41.
+(pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
+File: Inicio.pdf Graphic file (type pdf)
+
+<use Inicio.pdf, page 3>
+Package pdftex.def Info: Inicio.pdf, page3 used on input line 41.
+(pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
+File: Inicio.pdf Graphic file (type pdf)
+ <use Inicio.pdf, page 3>
+Package pdftex.def Info: Inicio.pdf, page3 used on input line 41.
+(pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
+ [3 <./Inicio.pdf>]
+(./main.toc
+LaTeX Font Info:    Try loading font information for U+msa on input line 13.
+ (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 11.
+LaTeX Font Info:    Try loading font information for U+msb on input line 13.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ))
-\tf@toc=\write5
-\openout5 = `main.toc'.
+\tf@toc=\write4
+\openout4 = `main.toc'.
 
  [4{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 56.
@@ -1134,22 +1086,24 @@ File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 56.
  [5]
-<figures/vss_ele.jpeg, id=75, 769.87625pt x 796.9775pt>
+<figures/vss_ele.jpeg, id=77, 769.87625pt x 796.9775pt>
 File: figures/vss_ele.jpeg Graphic file (type jpg)
+
 <use figures/vss_ele.jpeg>
-Package pdftex.def Info: figures/vss_ele.jpeg  used on input line 87.
+Package pdftex.def Info: figures/vss_ele.jpeg used on input line 87.
 (pdftex.def)             Requested size: 227.62206pt x 235.62924pt.
- [6]
-<figures/vss.JPG, id=79, 3276.24pt x 2457.18pt>
+ [6] <figures/vss.JPG, id=81, 3276.24pt x 2457.18pt>
 File: figures/vss.JPG Graphic file (type jpg)
+
 <use figures/vss.JPG>
-Package pdftex.def Info: figures/vss.JPG  used on input line 95.
+Package pdftex.def Info: figures/vss.JPG used on input line 95.
 (pdftex.def)             Requested size: 227.62206pt x 170.7079pt.
  [7 <./figures/vss_ele.jpeg> <./figures/vss.JPG>]
-<figures/overview.png, id=84, 447.17062pt x 188.95593pt>
+<figures/overview.png, id=86, 447.17062pt x 188.95593pt>
 File: figures/overview.png Graphic file (type png)
+
 <use figures/overview.png>
-Package pdftex.def Info: figures/overview.png  used on input line 103.
+Package pdftex.def Info: figures/overview.png used on input line 103.
 (pdftex.def)             Requested size: 318.66948pt x 134.65843pt.
  [8 <./figures/overview.png>]
 Overfull \hbox (15.49962pt too wide) in paragraph at lines 118--119
@@ -1157,41 +1111,44 @@ Overfull \hbox (15.49962pt too wide) in paragraph at lines 118--119
 tmo para a oti-miza^^Xc~ao de par^ametros
  []
 
-[9] [10]
-<figures/SimulatorWithoutButtons.png, id=94, 355.3275pt x 277.035pt>
+[9] [10] <figures/SimulatorWithoutButtons.png, id=96, 355.3275pt x 277.035pt>
 File: figures/SimulatorWithoutButtons.png Graphic file (type png)
+
 <use figures/SimulatorWithoutButtons.png>
-Package pdftex.def Info: figures/SimulatorWithoutButtons.png  used on input lin
-e 157.
+Package pdftex.def Info: figures/SimulatorWithoutButtons.png used on input line
+ 157.
 (pdftex.def)             Requested size: 273.14923pt x 212.97096pt.
  [11 <./figures/SimulatorWithoutButtons.png>] [12]
-<figures/UnivectorFieldSimulatorDebugger.png, id=101, 732.7375pt x 640.3925pt>
+<figures/UnivectorFieldSimulatorDebugger.png, id=103, 732.7375pt x 640.3925pt>
 File: figures/UnivectorFieldSimulatorDebugger.png Graphic file (type png)
+
 <use figures/UnivectorFieldSimulatorDebugger.png>
-Package pdftex.def Info: figures/UnivectorFieldSimulatorDebugger.png  used on i
-nput line 186.
+Package pdftex.def Info: figures/UnivectorFieldSimulatorDebugger.png used on in
+put line 186.
 (pdftex.def)             Requested size: 377.85344pt x 330.24065pt.
  [13 <./figures/UnivectorFieldSimulatorDebugger.png>]
-<figures/OtimizacaoSemObstaculoSimulacao.png, id=106, 634.37pt x 504.88625pt>
+<figures/OtimizacaoSemObstaculoSimulacao.png, id=108, 634.37pt x 504.88625pt>
 File: figures/OtimizacaoSemObstaculoSimulacao.png Graphic file (type png)
+
 <use figures/OtimizacaoSemObstaculoSimulacao.png>
-Package pdftex.def Info: figures/OtimizacaoSemObstaculoSimulacao.png  used on i
-nput line 220.
+Package pdftex.def Info: figures/OtimizacaoSemObstaculoSimulacao.png used on in
+put line 220.
 (pdftex.def)             Requested size: 273.14923pt x 217.3973pt.
  [14]
-<figures/OtimizacaoComObstaculoSimulacao.png, id=111, 626.34pt x 503.8825pt>
+<figures/OtimizacaoComObstaculoSimulacao.png, id=113, 626.34pt x 503.8825pt>
 File: figures/OtimizacaoComObstaculoSimulacao.png Graphic file (type png)
+
 <use figures/OtimizacaoComObstaculoSimulacao.png>
-Package pdftex.def Info: figures/OtimizacaoComObstaculoSimulacao.png  used on i
-nput line 236.
+Package pdftex.def Info: figures/OtimizacaoComObstaculoSimulacao.png used on in
+put line 236.
 (pdftex.def)             Requested size: 273.14923pt x 219.74838pt.
  [15 <./figures/OtimizacaoSemObstaculoSimulacao.png>]
 Package epstopdf Info: Source file: <figures/CMA-ES_Fitness_Results.eps>
-(epstopdf)                    date: 2019-03-03 22:16:46
+(epstopdf)                    date: 2019-07-08 15:38:42
 (epstopdf)                    size: 253834 bytes
 (epstopdf)             Output file: <figures/CMA-ES_Fitness_Results-eps-convert
 ed-to.pdf>
-(epstopdf)                    date: 2019-03-03 23:13:53
+(epstopdf)                    date: 2019-07-08 15:38:42
 (epstopdf)                    size: 83630 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/CMA-ES_Fitness_Res
 ults-eps-converted-to.pdf figures/CMA-ES_Fitness_Results.eps>
@@ -1202,22 +1159,23 @@ Package epstopdf Info: Output file is already uptodate.
 pdfTeX warning: pdflatex (file ./figures/CMA-ES_Fitness_Results-eps-converted-t
 o.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allow
 ed
-<figures/CMA-ES_Fitness_Results-eps-converted-to.pdf, id=115, 979.66pt x 518.93
+
+<figures/CMA-ES_Fitness_Results-eps-converted-to.pdf, id=117, 979.66pt x 518.93
 875pt>
 File: figures/CMA-ES_Fitness_Results-eps-converted-to.pdf Graphic file (type pd
 f)
-<use figures/CMA-ES_Fitness_Results-eps-converted-to.pdf>
-Package pdftex.def Info: figures/CMA-ES_Fitness_Results-eps-converted-to.pdf  u
-sed on input line 252.
+ <use figures/CMA-ES_Fitness_Results-eps-converted-to.pdf>
+Package pdftex.def Info: figures/CMA-ES_Fitness_Results-eps-converted-to.pdf us
+ed on input line 252.
 (pdftex.def)             Requested size: 455.24411pt x 241.14566pt.
-[16 <./figures/OtimizacaoComObstaculoSimulacao.png>]
+ [16 <./figures/OtimizacaoComObstaculoSimulacao.png>]
 Package epstopdf Info: Source file: <figures/CMA-ES_Total_parameter_convergence
 .eps>
-(epstopdf)                    date: 2019-03-03 22:14:34
+(epstopdf)                    date: 2019-07-08 15:38:42
 (epstopdf)                    size: 253066 bytes
 (epstopdf)             Output file: <figures/CMA-ES_Total_parameter_convergence
 -eps-converted-to.pdf>
-(epstopdf)                    date: 2019-03-03 23:13:54
+(epstopdf)                    date: 2019-07-08 15:38:42
 (epstopdf)                    size: 84910 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/CMA-ES_Total_param
 eter_convergence-eps-converted-to.pdf figures/CMA-ES_Total_parameter_convergenc
@@ -1229,21 +1187,23 @@ Package epstopdf Info: Output file is already uptodate.
 pdfTeX warning: pdflatex (file ./figures/CMA-ES_Total_parameter_convergence-eps
 -converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version
  <1.5> allowed
-<figures/CMA-ES_Total_parameter_convergence-eps-converted-to.pdf, id=119, 979.6
+
+<figures/CMA-ES_Total_parameter_convergence-eps-converted-to.pdf, id=121, 979.6
 6pt x 518.93875pt>
 File: figures/CMA-ES_Total_parameter_convergence-eps-converted-to.pdf Graphic f
 ile (type pdf)
+
 <use figures/CMA-ES_Total_parameter_convergence-eps-converted-to.pdf>
 Package pdftex.def Info: figures/CMA-ES_Total_parameter_convergence-eps-convert
-ed-to.pdf  used on input line 265.
+ed-to.pdf used on input line 265.
 (pdftex.def)             Requested size: 455.24411pt x 241.14566pt.
-[17 <./figures/CMA-ES_Fitness_Results-eps-converted-to.pdf>]
+ [17 <./figures/CMA-ES_Fitness_Results-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <figures/CMA-ES_Fitness_Results_ally.eps>
-(epstopdf)                    date: 2019-03-03 23:10:17
+(epstopdf)                    date: 2019-07-08 15:38:42
 (epstopdf)                    size: 215190 bytes
 (epstopdf)             Output file: <figures/CMA-ES_Fitness_Results_ally-eps-co
 nverted-to.pdf>
-(epstopdf)                    date: 2019-03-03 23:13:54
+(epstopdf)                    date: 2019-07-08 15:38:42
 (epstopdf)                    size: 71584 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/CMA-ES_Fitness_Res
 ults_ally-eps-converted-to.pdf figures/CMA-ES_Fitness_Results_ally.eps>
@@ -1254,22 +1214,24 @@ Package epstopdf Info: Output file is already uptodate.
 pdfTeX warning: pdflatex (file ./figures/CMA-ES_Fitness_Results_ally-eps-conver
 ted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> 
 allowed
-<figures/CMA-ES_Fitness_Results_ally-eps-converted-to.pdf, id=131, 979.66pt x 5
+
+<figures/CMA-ES_Fitness_Results_ally-eps-converted-to.pdf, id=133, 979.66pt x 5
 18.93875pt>
 File: figures/CMA-ES_Fitness_Results_ally-eps-converted-to.pdf Graphic file (ty
 pe pdf)
-<use figures/CMA-ES_Fitness_Results_ally-eps-converted-to.pdf>
+ <use figures/CMA-ES_Fitness_Results_ally-eps-converted-to.pdf>
 Package pdftex.def Info: figures/CMA-ES_Fitness_Results_ally-eps-converted-to.p
-df  used on input line 278.
+df used on input line 278.
 (pdftex.def)             Requested size: 455.24411pt x 241.14566pt.
+
 [18 <./figures/CMA-ES_Total_parameter_convergence-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <figures/CMA-ES_Total_parameter_convergence
 _ally.eps>
-(epstopdf)                    date: 2019-03-03 23:09:38
+(epstopdf)                    date: 2019-07-08 15:38:42
 (epstopdf)                    size: 215697 bytes
 (epstopdf)             Output file: <figures/CMA-ES_Total_parameter_convergence
 _ally-eps-converted-to.pdf>
-(epstopdf)                    date: 2019-03-03 23:13:54
+(epstopdf)                    date: 2019-07-08 15:38:42
 (epstopdf)                    size: 72339 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/CMA-ES_Total_param
 eter_convergence_ally-eps-converted-to.pdf figures/CMA-ES_Total_parameter_conve
@@ -1281,14 +1243,17 @@ Package epstopdf Info: Output file is already uptodate.
 pdfTeX warning: pdflatex (file ./figures/CMA-ES_Total_parameter_convergence_all
 y-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most ve
 rsion <1.5> allowed
-<figures/CMA-ES_Total_parameter_convergence_ally-eps-converted-to.pdf, id=143, 
+
+<figures/CMA-ES_Total_parameter_convergence_ally-eps-converted-to.pdf, id=145, 
 979.66pt x 518.93875pt>
 File: figures/CMA-ES_Total_parameter_convergence_ally-eps-converted-to.pdf Grap
 hic file (type pdf)
+
 <use figures/CMA-ES_Total_parameter_convergence_ally-eps-converted-to.pdf>
 Package pdftex.def Info: figures/CMA-ES_Total_parameter_convergence_ally-eps-co
-nverted-to.pdf  used on input line 287.
+nverted-to.pdf used on input line 287.
 (pdftex.def)             Requested size: 455.24411pt x 241.14566pt.
+
 [19 <./figures/CMA-ES_Fitness_Results_ally-eps-converted-to.pdf> <./figures/CMA
 -ES_Total_parameter_convergence_ally-eps-converted-to.pdf>]
 Overfull \hbox (13.44348pt too wide) in paragraph at lines 314--314
@@ -1297,28 +1262,33 @@ m/it/12 Ency-clo-pe-dia of ma-chine le-ar-ning\OT1/cmr/m/n/12 , pp. 760{
  []
 
 [20] [21] (./main.aux)
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
- ) 
+ )
+(\end occurred when \iftrue on line 38 was incomplete) 
 Here is how much of TeX's memory you used:
- 12987 strings out of 492982
- 210627 string characters out of 6134897
- 495719 words of memory out of 5000000
- 16298 multiletter control sequences out of 15000+600000
+ 11051 strings out of 493029
+ 168179 string characters out of 6136234
+ 330773 words of memory out of 5000000
+ 14351 multiletter control sequences out of 15000+600000
  10150 words of font info for 38 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 45i,19n,49p,874b,1759s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texli
-ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf
--dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on main.pdf (21 pages, 3357362 bytes).
+ 41i,19n,49p,816b,1555s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmti12.pfb>
+Output written on main.pdf (21 pages, 3365329 bytes).
 PDF statistics:
- 194 PDF objects out of 1000 (max. 8388607)
- 120 compressed objects within 2 object streams
+ 196 PDF objects out of 1000 (max. 8388607)
+ 121 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  86 words of extra memory for PDF output out of 10000 (max. 10000000)
 
