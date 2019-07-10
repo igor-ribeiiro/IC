@@ -7,45 +7,45 @@ Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Warning--to sort, need author or key in protobuf
 Warning--empty year in protobuf; set to ????
 Warning--can't use both volume and number fields in ODE
-You've used 8 entries,
+You've used 10 entries,
             3271 wiz_defined-function locations,
-            704 strings with 6383 characters,
-and the built_in function-call counts, 5100 in all, are:
-= -- 426
-> -- 150
-< -- 12
-+ -- 59
-- -- 51
-* -- 327
-:= -- 709
-add.period$ -- 25
-call.type$ -- 8
-change.case$ -- 64
-chr.to.int$ -- 8
-cite$ -- 13
-duplicate$ -- 420
-empty$ -- 423
-format.name$ -- 74
-if$ -- 1059
+            714 strings with 6868 characters,
+and the built_in function-call counts, 6515 in all, are:
+= -- 539
+> -- 218
+< -- 13
++ -- 85
+- -- 75
+* -- 432
+:= -- 919
+add.period$ -- 31
+call.type$ -- 10
+change.case$ -- 84
+chr.to.int$ -- 10
+cite$ -- 15
+duplicate$ -- 527
+empty$ -- 525
+format.name$ -- 104
+if$ -- 1343
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 80
-newline$ -- 48
-num.names$ -- 28
-pop$ -- 213
+missing$ -- 101
+newline$ -- 57
+num.names$ -- 36
+pop$ -- 268
 preamble$ -- 1
-purify$ -- 49
+purify$ -- 65
 quote$ -- 0
-skip$ -- 180
+skip$ -- 221
 stack$ -- 0
-substring$ -- 238
-swap$ -- 213
-text.length$ -- 7
+substring$ -- 292
+swap$ -- 270
+text.length$ -- 8
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 69
+type$ -- 87
 warning$ -- 3
-while$ -- 33
+while$ -- 42
 width$ -- 0
-write$ -- 108
+write$ -- 132
 (There were 3 warnings)
