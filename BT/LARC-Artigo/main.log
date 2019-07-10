@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2019.6.18)  10 JUL 2019 16:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2019.6.18)  10 JUL 2019 16:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -918,10 +918,6 @@ Overfull \hbox (57.60315pt too wide) in paragraph at lines 132--133
  [][] 
  []
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
 <figures/Goalier_BT.png, id=16, 536.0025pt x 244.66406pt>
 File: figures/Goalier_BT.png Graphic file (type png)
 
@@ -933,8 +929,7 @@ Overfull \hbox (160.80157pt too wide) in paragraph at lines 144--145
  [][] 
  []
 
-[3 <./figures/SimulatorWithoutButtons.png> <./figures/Goalier_BT.png>]
-<figures/Principal_BT.png, id=23, 636.12656pt x 346.29375pt>
+<figures/Principal_BT.png, id=18, 636.12656pt x 346.29375pt>
 File: figures/Principal_BT.png Graphic file (type png)
 
 <use figures/Principal_BT.png>
@@ -945,6 +940,10 @@ Overfull \hbox (160.80157pt too wide) in paragraph at lines 172--173
  [][] 
  []
 
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [3 <./figures/SimulatorWithoutButtons.png> <./figures/Goalier_BT.png>]
 <figures/campo_penalty.png, id=24, 466.74374pt x 401.5pt>
 File: figures/campo_penalty.png Graphic file (type png)
 
@@ -957,7 +956,7 @@ Overfull \hbox (109.19843pt too wide) in paragraph at lines 184--185
  []
 
 
-Underfull \vbox (badness 2452) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 <figures/bola_livre.png, id=25, 477.785pt x 387.4475pt>
@@ -1010,18 +1009,18 @@ Before submitting the final camera ready copy, remember to:
 Here is how much of TeX's memory you used:
  5696 strings out of 493029
  81466 string characters out of 6136234
- 155269 words of memory out of 5000000
+ 153269 words of memory out of 5000000
  9095 multiletter control sequences out of 15000+600000
  43840 words of font info for 98 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,11n,35p,697b,356s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,11n,35p,697b,357s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share
 /texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-
 dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/typ
 e1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/ut
 mri8a.pfb>
-Output written on main.pdf (6 pages, 1196119 bytes).
+Output written on main.pdf (6 pages, 1195257 bytes).
 PDF statistics:
  55 PDF objects out of 1000 (max. 8388607)
  31 compressed objects within 1 object stream

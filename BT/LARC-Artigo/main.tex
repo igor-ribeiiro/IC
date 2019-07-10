@@ -91,8 +91,7 @@ The nodes of a Behavior Tree are differentiated into two types: the leaf nodes, 
 
 All nodes return, at the end of their execution, one of the following three states: TRUE, FALSE, or RUNNING, to indicate, respectively, that the node was successfully terminated, that it was terminated without success, or that the algorithm should execute that node for at least one more iteration.
 
-\subsubsection{Nós Folha}
-
+\subsubsection{Leaf Nodes}
 
 The leaf nodes are the terminal nodes of the Tree and they represent the lowest and most concrete actions of the strategy. They are divided into two types: action nodes and conditional nodes.
 
@@ -100,28 +99,29 @@ The leaf nodes are the terminal nodes of the Tree and they represent the lowest 
 
 \textbf{Conditional nodes:} These are nodes that only return a state without performing any concrete action, such as checking if the team is attacking. They are used to control which nodes will be run in conjunction with the compound nodes.
 
-\subsubsection{Nó composto}
+\subsubsection{Composite Nodes}
 
-Nós compostos são os nós intermediários da árvore, que  são responsáveis por escolher quais os nós que serão executados. São completamente reutilizáveis no sentido que apenas uma implementação de cada tipo de nó composto deve existir e ela poderá ser usada em diversas partes do código. Os principais tipos desses nós que foram usados para a estratégia estão listados a seguir:
+Compound nodes are tree nodes, which are responsible for choosing which nodes to run. They are completely reusable in the sense that only one implementation of each type of compound node must exist and it can be used in several parts of the code. The main types of these nodes that were used for the strategy are listed below:
 
-\textbf{Selector Behavior} Nesse behavior, é selecionado um de seus filhos para ser acessado a seguir. Ele é usado quando tem-se várias maneiras de se realizar uma mesma ação e deve-se escolher a melhor delas em uma determinada situação. Ele funciona executando os filhos em uma determinada ordem e, assim que um dos filhos retorna TRUE ou RUNNING, esse nó retorna o mesmo valor. Se um filho retornar FALSE, o próximo filho será executado. Caso nenhum filho seja sucedido ou retorne que deve ser executado mais um vez, o nó retorna FALSE.
+\textbf{Selector Behavior:} In this behavior, one of your children is selected to be accessed next. It is used when you have several ways to perform the same action and one should choose the best one in a given situation. It works by running the children in a certain order, and as soon as one of the children returns TRUE or RUNNING, that node returns the same value. If a child returns FALSE, the next child will be executed. If no child succeeds or returns to be executed again, the node returns FALSE.
 
-\textbf{Sequence Behavior} Esse nó executa cada um dos seus filhos em uma sequência bem definida e fixa. Ele é usado para fazer ações sequenciadas para completar um objetivo maior, por exemplo: chutar a bola para o gol oponente requer que o robô aliado esteja atrás da bola, o que significa que chegar atrás da bola e, em seguida, chutar a bola representam ações sequenciadas. Ele funciona de forma que, quando um filho retorna RUNNING ou FALSE, o behavior retorna o mesmo valor e, quando um filho retorna TRUE, ele avança para o próximo filho. Se todos os filhos retornarem TRUE, o behavior é bem sucedido e também retorna TRUE.
+\textbf{Sequence Behavior:} This node executes each of its children in a well-defined and fixed sequence. It is used to do sequenced actions to complete a larger goal, for example: kicking the ball to the opponent's goal requires that the allied robot is behind the ball, which means that getting behind the ball and then kicking the ball represent sequenced actions. It works so that when a child returns RUNNING or FALSE, the behavior returns the same value, and when a child returns TRUE, it advances to the next child. If all children return TRUE, the behavior succeeds and also returns TRUE.
 
-\textbf{Parallel Behavior} O objetivo desse nó é executar todos os seus filhos ao mesmo tempo, fato que pode ser obtido ao utilizar-se de processamento paralelo ou não. Na implementação desse trabalho foi usado a versão não paralela do algoritmo. Se um filho retorna FALSE, o behavior retorna FALSE. Se todos os filhos retornarem TRUE, o behavior retorna TRUE. Em todas as outras situações, o behavior retorna RUNNING e continua sua execução por pelo menos outra iteração.
 
-\textbf{Decorator} O nome para esse behavior é inspirado no conceito de Decorator em Software Design Pattern, que pode ser estudado em \cite{hunt2013gang}. No contexto da Behavior Tree, esse nó tem apenas um filho e ele modifica o comportamento do filho de alguma maneira. Um decorador pode ser diversos tipos, mas os mais usados no projeto foram:
+\textbf{Parallel Behavior} The purpose of this node is to execute all its children at the same time, a fact that can be obtained when using parallel processing or not. In the implementation of this work the non-parallel version of the algorithm was used. If a child returns FALSE, the behavior returns FALSE. If all children return TRUE, the behavior returns TRUE. In all other situations, the behavior returns RUNNING and continues its execution by at least one other iteration.
+
+\textbf{Decorator:} The name for this behavior is inspired by the Decorator concept in Software Design Pattern, which can be studied in \ cite {hunt2013gang}. In the Behavior Tree context, this node has only one child and it modifies the behavior of the child in some way. A decorator can be several types, but the most used in the project were:
 
 \begin{enumerate}
-\item AlwaysFail e AlwaysSucceed: que fazem que o filho sempre retorne FALSE ou sempre retorna TRUE respectivamente.
-\item UntilFail e UntilSucceed: fazem que o fiho sempre retorne RUNNING a não ser que ele retorna FALSE ou TRUE, respectivamente.
-\item Invert: muda o retorno do filho de FALSE para TRUE e TRUE para FALSE.
-\end{enumerate}
+\item AlwaysFail and AlwaysSucceed: which cause the child to always return FALSE or always return TRUE respectively.
+\item UntilFail and UntilSucceed: cause the fiho to always return RUNNING unless it returns FALSE or TRUE, respectively.
+\item Invert: Changes the child's return from FALSE to TRUE and TRUE to FALSE.
+\end {enumerate}
 
-\subsection{Técnico}
+\subsection{Technician}
 
-Uma Behavior Tree, que embora consegue modelar comportamentos complexos com facilidade, nem sempre é a melhor escolha para determinadas situações. Por isso, a estratégia foi dividida em níveis de abstrações diferentes, em que um Técnico, representado pela classe Coach, seria responsável por escolher e administrar quais árvore cada um dos três jogadores deveria usar no momento.
-Com essa implementação, tem-se um agente externo controlando a função dos jogadores por meio da escolha de uma BT, que pode ser uma árvore para um goleiro, para um principal e para um auxiliar. Isso significa que, em um determinado momento, o técnico pode escolher que o time tenha 1 goleiro, 1 principal e 1 auxiliar a até mesmo 3 principais ao mesmo tempo. Os requisitos esperados para cada um desses papéis será abordado a seguir. Além disso, também é função do técnico escolher o papel de cada jogador a cada iteração do código, de modo que as posições dos jogadores não sejam fixas ao decorrer do jogo.
+A Behavior Tree, although it can easily model complex behaviors, is not always the best choice for certain situations. Therefore, the strategy was divided into levels of different abstractions, in which a Technician, represented by the Coach class, would be responsible for choosing and administering which tree each of the three players should use at the moment.
+With this implementation, we have an external agent controlling the players' function by choosing a BT, which can be a tree for a goalkeeper, a principal and an assistant. This means that at any given time, the coach can choose to have the team have 1 goalkeeper, 1 main and 1 assistant to even 3 main ones at the same time. The expected requirements for each of these roles will be discussed below. In addition, it is also the role of the coach to choose the role of each player at each iteration of the code, so that the positions of the players are not fixed during the course of the game.
 
 \section{Results and Discussion}
 
