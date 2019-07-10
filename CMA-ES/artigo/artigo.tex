@@ -17,7 +17,7 @@
     \begin{tabular}{p{\textwidth}}
     \begin{center}
     \vspace{-.6cm}
-    \title{Otimização de parâmetros por meio de Algoritmos Evolutivos em Futebol de Robôs}
+    \title{Otimização de parâmetros por meio de Algoritmos Evolutivos em \\Futebol de Robôs}
     \end{center}
     \textbf{Igor Mourão Ribeiro}\\
     \small{Instituto Tecnológico de Aeronáutica}\\
@@ -40,7 +40,7 @@
     \small{12.229-900 – São José dos Campos / SP}\\
     \small{maximo.marcos@gmail.com}\\
     \\
-    \abstract{\textbf{Resumo:} A otimização de parâmetros é fundamental para deixar algoritmos e comportamentos melhores e mais robustos, como o caso do planejamento de trajetórias na categoria "Very Small Size Soccer". Após uma fase de pesquisa, foi decidido usar o método Covariance Matrix Adaptation Evolution Strategy (CMA-ES) para a otimização de parâmetros do Univector Field. Em seguida, foi escolhido e codificado as métricas a serem utilizadas para medir o desempenho de uma determinada situação de jogo. Depois, os parâmetros relativos ao planejamento de trajetória do robô foram otimizados e  testados e simulações. Por fim, o critério final usado para avaliação do algoritmo foi o seu desempenho em partidas simuladas e em competições nacionais.}\\
+    \abstract{\textbf{Resumo:} A otimização de parâmetros é fundamental para deixar algoritmos e comportamentos melhores e mais robustos, como o caso do planejamento de trajetórias na categoria "Very Small Size Soccer". Após uma fase de pesquisa, foi decidido usar o método Covariance Matrix Adaptation Evolution Strategy (CMA-ES) para a otimização de parâmetros do Univector Field. Em seguida, foi escolhido e codificado as métricas a serem utilizadas para medir o desempenho de uma determinada situação de jogo. Depois, os parâmetros relativos ao planejamento de trajetória do robô foram otimizados e  testados em simulações. Por fim, o critério final usado para avaliação do algoritmo foi o seu desempenho em partidas simuladas e em competições nacionais.}\\
     \keywords{\textbf{Palavras-chave:} robótica, otimização, planejamento de trajetória}\\
     \end{tabular}
 
@@ -51,7 +51,7 @@ Nesse projeto, trabalhou-se com os robôs da competição IEEE Very Small Size (
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.5\textwidth]{figures/vss.JPG}
+	\includegraphics[width=0.44\textwidth]{figures/vss.JPG}
    \caption{Robôs da ITAndroids da categoria IEEE VSSS.} \label{fig:vss}
 \end{figure}
 
@@ -64,11 +64,11 @@ A Figura \ref{fig:vss} mostra os robôs usados nas competições. A visão compu
 	\label{fig:funcioamento}
 \end{figure}
 
-Cada robô foi projetado com duas rodas laterais e material teflon para diminuir atrito no deslizamento de seu chassis. Essa característica o torna um robô diferencial. Ou seja, temos o controle sobre as velocidades linear e angular, mas não é possível mover o robô para os lados. A linguagem utilizada para o projeto foi C++; diferente da utilizada nesse trabalho, que é Matlab; pois é uma linguagem que tem uma velocidade de execução alta e tem boa escalabilidade para um projeto grande. 
+Cada robô foi projetado com duas rodas laterais e material teflon para diminuir atrito no deslizamento de seu chassis. Essa característica o torna um robô diferencial. Ou seja, tem-se o controle sobre as velocidades linear e angular, mas não é possível mover o robô para os lados. A linguagem utilizada para o projeto foi C++, pois é uma linguagem que tem uma velocidade de execução alta e tem boa escalabilidade para um projeto grande. Enquanto que a linguagem utilizada para esse trabalho é o Matlab, visto em \cite{matlab}, que é uma linguagem especializada em algébra linear utilizada pela equipe. 
 
 Nesse contexto, surgem várias questões a serem resolvidas para se ter um time vencedor. Nesse projeto, será abordado o seguinte problema de otimização: dado um simulador feito pela equipe que simula a física e a lógica de uma partida oficial, deve-se encontrar os melhores valores possíveis para as constantes do planejamento de trajetórias, de modo a maximizar o desempenho do time em uma partida com os robôs reais.
 
-Sobre o assunto de planejamento de trajetórias, o utilizado pela equipe é o Univector Field \cite{univector}, que é muito eficiente e já demonstrou bons resultados em competições oficiais com algumas das melhores equipes utilizando-o. Uma das suas desvantagens, é a existência de sete parâmetros diferentes para serem otimizados e de que essas constantes não são intuitivas para uma pessoa ajustá-las sem ajuda de um computador. Isso acontece devido ao comportamento do algoritmo ser relativamente complexo quando comparado com outras alternativas como o algoritmo Campos Potenciais \cite{potential_fields}.
+Sobre o assunto de planejamento de trajetórias, o utilizado pela equipe é o Univector Field, que pode ser estudado em \cite{univector}, que é muito eficiente e já demonstrou bons resultados em competições oficiais com algumas das melhores equipes utilizando-o. Uma das suas desvantagens, é a existência de sete parâmetros diferentes para serem otimizados e de que essas constantes não são intuitivas para uma pessoa ajustá-las sem ajuda de um computador. Isso acontece devido ao comportamento do algoritmo ser relativamente complexo quando comparado com outras alternativas como o algoritmo Campos Potenciais, visto em \cite{potential_fields}.
 
 Além disso, é importante ressaltar que o tempo de execução do algoritmo deve ser o mínimo possível. Nota-se que não é possível simular uma partida completa de futebol já que isso demoraria bastante e o algoritmo precisa de em torno de 100 iterações para convergir. Para isso, técnicas para executar simulações aceleradas e executar situações específicas de jogo foram desenvolvidas, com o objetivo de reduzir o tempo total da otimização.
 

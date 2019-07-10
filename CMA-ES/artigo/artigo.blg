@@ -5,45 +5,45 @@ The style file: abcm.bst
 Database file #1: bibliografia.bib
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Warning--can't use both volume and number fields in ODE
-You've used 9 entries,
+You've used 10 entries,
             3271 wiz_defined-function locations,
-            712 strings with 6765 characters,
-and the built_in function-call counts, 6084 in all, are:
-= -- 503
-> -- 202
+            715 strings with 6872 characters,
+and the built_in function-call counts, 6576 in all, are:
+= -- 542
+> -- 228
 < -- 14
-+ -- 78
-- -- 69
-* -- 392
-:= -- 863
-add.period$ -- 29
-call.type$ -- 9
-change.case$ -- 77
-chr.to.int$ -- 9
-cite$ -- 10
-duplicate$ -- 494
-empty$ -- 492
-format.name$ -- 96
-if$ -- 1259
++ -- 88
+- -- 78
+* -- 430
+:= -- 946
+add.period$ -- 31
+call.type$ -- 10
+change.case$ -- 85
+chr.to.int$ -- 10
+cite$ -- 11
+duplicate$ -- 530
+empty$ -- 523
+format.name$ -- 108
+if$ -- 1350
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 95
-newline$ -- 53
-num.names$ -- 36
-pop$ -- 243
+missing$ -- 102
+newline$ -- 57
+num.names$ -- 40
+pop$ -- 263
 preamble$ -- 1
-purify$ -- 59
+purify$ -- 66
 quote$ -- 0
-skip$ -- 212
+skip$ -- 224
 stack$ -- 0
-substring$ -- 279
-swap$ -- 256
+substring$ -- 290
+swap$ -- 273
 text.length$ -- 8
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 78
+type$ -- 87
 warning$ -- 1
-while$ -- 42
+while$ -- 45
 width$ -- 0
-write$ -- 123
+write$ -- 133
 (There was 1 warning)
