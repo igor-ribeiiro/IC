@@ -4,48 +4,46 @@ The top-level auxiliary file: artigo.aux
 The style file: abcm.bst
 Database file #1: bibliografia.bib
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
-Warning--to sort, need author or key in protobuf
-Warning--empty year in protobuf; set to ????
 Warning--can't use both volume and number fields in ODE
-You've used 10 entries,
+You've used 9 entries,
             3271 wiz_defined-function locations,
-            714 strings with 6868 characters,
-and the built_in function-call counts, 6515 in all, are:
-= -- 539
-> -- 218
-< -- 13
-+ -- 85
-- -- 75
-* -- 432
-:= -- 919
-add.period$ -- 31
-call.type$ -- 10
-change.case$ -- 84
-chr.to.int$ -- 10
-cite$ -- 15
-duplicate$ -- 527
-empty$ -- 525
-format.name$ -- 104
-if$ -- 1343
+            712 strings with 6765 characters,
+and the built_in function-call counts, 6084 in all, are:
+= -- 503
+> -- 202
+< -- 14
++ -- 78
+- -- 69
+* -- 392
+:= -- 863
+add.period$ -- 29
+call.type$ -- 9
+change.case$ -- 77
+chr.to.int$ -- 9
+cite$ -- 10
+duplicate$ -- 494
+empty$ -- 492
+format.name$ -- 96
+if$ -- 1259
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 101
-newline$ -- 57
+missing$ -- 95
+newline$ -- 53
 num.names$ -- 36
-pop$ -- 268
+pop$ -- 243
 preamble$ -- 1
-purify$ -- 65
+purify$ -- 59
 quote$ -- 0
-skip$ -- 221
+skip$ -- 212
 stack$ -- 0
-substring$ -- 292
-swap$ -- 270
+substring$ -- 279
+swap$ -- 256
 text.length$ -- 8
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 87
-warning$ -- 3
+type$ -- 78
+warning$ -- 1
 while$ -- 42
 width$ -- 0
-write$ -- 132
-(There were 3 warnings)
+write$ -- 123
+(There was 1 warning)

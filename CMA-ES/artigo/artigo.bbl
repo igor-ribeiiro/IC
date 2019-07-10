@@ -1,4 +1,4 @@
-\begin{thebibliography}{10}
+\begin{thebibliography}{9}
 \newcommand{\enquote}[1]{``#1''}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
@@ -7,10 +7,6 @@
   \providecommand{\doi}[1]{doi:\discretionary{}{}{}#1}\else
   \providecommand{\doi}{doi:\discretionary{}{}{}\begingroup
   \urlstyle{rm}\Url}\fi
-
-\bibitem[{pro()}]{protobuf}
-, ????
-\newblock Https://developers.google.com/protocol-buffers/docs/cpptutorial.
 
 \bibitem[{Ahnert and Mulansky(2011)}]{ODE}
 Ahnert, K. and Mulansky, M., 2011.
@@ -21,10 +17,6 @@ Ahnert, K. and Mulansky, M., 2011.
 CBR, 2008.
 \newblock Http://www.cbrobotica.
   org/wp-content/uploads/2014/03/VerySmall2008\_en.pdf.
-
-\bibitem[{Grant \emph{et~al.}(2008)Grant, Boyd and Ye}]{matlab}
-Grant, M., Boyd, S. and Ye, Y., 2008.
-\newblock \enquote{Cvx: Matlab software for disciplined convex programming}.
 
 \bibitem[{Hansen and Ostermeier(2001)}]{CMA-ES}
 Hansen, N. and Ostermeier, A., 2001.
@@ -50,6 +42,10 @@ Lim, Y., Choi, S.H., Kim, J.H. and Kim, D.H., 2008.
   avoidance for mobile robot}.
 \newblock In \emph{Proc. 17th World Congress The International Federation of
   Automatic Control, Seoul, Korea (July 2008)}.
+
+\bibitem[{protobuf(2018)}]{protobuf}
+protobuf, 2018.
+\newblock Https://developers.google.com/protocol-buffers/docs/cpptutorial.
 
 \bibitem[{Urieli \emph{et~al.}(2011)Urieli, MacAlpine, Kalyanakrishnan, Bentor
   and Stone}]{CMA-ES-Soccer}
