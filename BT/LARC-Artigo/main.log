@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2019.6.18)  10 JUL 2019 16:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2019.6.18)  10 JUL 2019 16:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -724,6 +724,14 @@ File: ts1enc.dfu 2015/12/03 v1.1r UTF-8 support for inputenc
 \Urlmuskip=\muskip11
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
+(/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count111
+\float@exts=\toks23
+\float@box=\box30
+\@float@everytoks=\toks24
+\@floatcapt=\box31
+)
 (/usr/share/texlive/texmf-dist/tex/latex/adjustbox/adjustbox.sty
 Package: adjustbox 2012/05/21 v1.0 Adjusting TeX boxes (trim, clip, ...)
 
@@ -732,10 +740,10 @@ Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
 
 (/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkeyval.tex
 (/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkvutils.tex
-\XKV@toks=\toks23
-\XKV@tempa@toks=\toks24
+\XKV@toks=\toks25
+\XKV@tempa@toks=\toks26
 )
-\XKV@depth=\count111
+\XKV@depth=\count112
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/adjustbox/adjcalc.sty
@@ -747,7 +755,7 @@ Package: trimclip 2012/05/16 v1.0 Trim and clip general TeX material
 
 (/usr/share/texlive/texmf-dist/tex/latex/collectbox/collectbox.sty
 Package: collectbox 2012/05/17 v0.4b Collect macro arguments as boxes
-\collectedbox=\box30
+\collectedbox=\box32
 )
 \tc@llx=\dimen137
 \tc@lly=\dimen138
@@ -765,51 +773,51 @@ File: tc-pdftex.def 2012/05/13 v1.0 Clipping driver for pdftex
 
 (/usr/share/texlive/texmf-dist/tex/latex/ifoddpage/ifoddpage.sty
 Package: ifoddpage 2011/09/13 v1.0 Conditionals for odd/even page detection
-\c@checkoddpage=\count112
+\c@checkoddpage=\count113
 )
 (/usr/share/texlive/texmf-dist/tex/latex/varwidth/varwidth.sty
 Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
-\@vwid@box=\box31
-\sift@deathcycles=\count113
+\@vwid@box=\box33
+\sift@deathcycles=\count114
 \@vwid@loff=\dimen145
 \@vwid@roff=\dimen146
 )) (./main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 16.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 16.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 17.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 17.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    ... okay on input line 17.
 
 -- Lines per column: 56 (exact).
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count114
+\scratchcounter=\count115
 \scratchdimen=\dimen147
-\scratchbox=\box32
-\nofMPsegments=\count115
-\nofMParguments=\count116
-\everyMPshowfont=\toks25
-\MPscratchCnt=\count117
+\scratchbox=\box34
+\nofMPsegments=\count116
+\nofMParguments=\count117
+\everyMPshowfont=\toks27
+\MPscratchCnt=\count118
 \MPscratchDim=\dimen148
-\MPnumerator=\count118
-\makeMPintoPDFobject=\count119
-\everyMPtoPDFconversion=\toks26
+\MPnumerator=\count119
+\makeMPintoPDFobject=\count120
+\everyMPtoPDFconversion=\toks28
 ) (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
 )
@@ -858,55 +866,175 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-LaTeX Font Info:    Calculating math sizes for size <11> on input line 40.
-LaTeX Font Info:    Try loading font information for U+msa on input line 40.
+LaTeX Font Info:    Calculating math sizes for size <11> on input line 41.
+LaTeX Font Info:    Try loading font information for U+msa on input line 41.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 40.
+LaTeX Font Info:    Try loading font information for U+msb on input line 41.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Underfull \hbox (badness 1960) in paragraph at lines 56--57
-[]\OT1/ptm/m/n/10 A an[]alise de sen-ti-men-tos ser apli-cada na gest[]ao de
+
+LaTeX Warning: Citation `CBR2008' on page 1 undefined on input line 57.
+
+<figures/vss-min.JPG, id=1, 3276.24pt x 2457.18pt>
+File: figures/vss-min.JPG Graphic file (type jpg)
+ <use figures/vss-min.JPG>
+Package pdftex.def Info: figures/vss-min.JPG used on input line 61.
+(pdftex.def)             Requested size: 258.0pt x 193.46645pt.
+
+Overfull \hbox (6.0pt too wide) in paragraph at lines 61--62
+ [][] 
  []
 
-<imgs/tweet_positivo.png, id=1, 415.5525pt x 170.6375pt>
-File: imgs/tweet_positivo.png Graphic file (type png)
 
-<use imgs/tweet_positivo.png>
-Package pdftex.def Info: imgs/tweet_positivo.png used on input line 61.
-(pdftex.def)             Requested size: 258.0pt x 105.94516pt.
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-<imgs/tweet_negativo.png, id=2, 358.33875pt x 109.40875pt>
-File: imgs/tweet_negativo.png Graphic file (type png)
 
-<use imgs/tweet_negativo.png>
-Package pdftex.def Info: imgs/tweet_negativo.png used on input line 68.
-(pdftex.def)             Requested size: 258.0pt x 78.77756pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 85--86
-[]\OT1/ptm/m/n/8 Dataset de Sen-ti-men-tos, $https : / / www . kaggle . com / k
-azanova /
+LaTeX Warning: Citation `zickler2009ssl' on page 1 undefined on input line 65.
+
+<figures/overview.png, id=2, 447.17062pt x 188.95593pt>
+File: figures/overview.png Graphic file (type png)
+
+<use figures/overview.png>
+Package pdftex.def Info: figures/overview.png used on input line 69.
+(pdftex.def)             Requested size: 361.19843pt x 152.62962pt.
+
+Overfull \hbox (109.19843pt too wide) in paragraph at lines 69--70
+ [][] 
  []
 
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 
- <./imgs/tweet_positivo.png> <./imgs/tweet_negativo.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 90--91
+ <./figures/vss-min.JPG> <./figures/overview.png>]
+
+LaTeX Warning: Citation `franzoni_rrt' on page 2 undefined on input line 78.
+
+
+LaTeX Warning: Citation `orozcomaquinas' on page 2 undefined on input line 82.
+
+
+LaTeX Warning: Citation `decision_tree' on page 2 undefined on input line 82.
+
+
+LaTeX Warning: Citation `NEUIslanders_ssl' on page 2 undefined on input line 82
+.
+
+
+LaTeX Warning: Citation `west2001introduction' on page 2 undefined on input lin
+e 88.
+
+
+LaTeX Warning: Citation `hunt2013gang' on page 2 undefined on input line 112.
+
+[2] <figures/SimulatorWithoutButtons.png, id=15, 355.3275pt x 277.035pt>
+File: figures/SimulatorWithoutButtons.png Graphic file (type png)
+
+<use figures/SimulatorWithoutButtons.png>
+Package pdftex.def Info: figures/SimulatorWithoutButtons.png used on input line
+ 131.
+(pdftex.def)             Requested size: 309.60315pt x 241.39471pt.
+
+Overfull \hbox (57.60315pt too wide) in paragraph at lines 131--132
+ [][] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+<figures/Goalier_BT.png, id=16, 536.0025pt x 244.66406pt>
+File: figures/Goalier_BT.png Graphic file (type png)
+
+<use figures/Goalier_BT.png>
+Package pdftex.def Info: figures/Goalier_BT.png used on input line 143.
+(pdftex.def)             Requested size: 412.80157pt x 188.42549pt.
+
+Overfull \hbox (160.80157pt too wide) in paragraph at lines 143--144
+ [][] 
+ []
+
+[3 <./figures/SimulatorWithoutButtons.png> <./figures/Goalier_BT.png>]
+<figures/Principal_BT.png, id=23, 636.12656pt x 346.29375pt>
+File: figures/Principal_BT.png Graphic file (type png)
+
+<use figures/Principal_BT.png>
+Package pdftex.def Info: figures/Principal_BT.png used on input line 171.
+(pdftex.def)             Requested size: 412.80157pt x 224.71838pt.
+
+Overfull \hbox (160.80157pt too wide) in paragraph at lines 171--172
+ [][] 
+ []
+
+<figures/campo_penalty.png, id=24, 466.74374pt x 401.5pt>
+File: figures/campo_penalty.png Graphic file (type png)
+
+<use figures/campo_penalty.png>
+Package pdftex.def Info: figures/campo_penalty.png used on input line 183.
+(pdftex.def)             Requested size: 361.19843pt x 310.71817pt.
+
+Overfull \hbox (109.19843pt too wide) in paragraph at lines 183--184
+ [][] 
+ []
+
+
+Underfull \vbox (badness 2452) has occurred while \output is active []
+
+
+<figures/bola_livre.png, id=25, 477.785pt x 387.4475pt>
+File: figures/bola_livre.png Graphic file (type png)
+
+<use figures/bola_livre.png>
+Package pdftex.def Info: figures/bola_livre.png used on input line 197.
+(pdftex.def)             Requested size: 361.19843pt x 292.90239pt.
+
+Overfull \hbox (109.19843pt too wide) in paragraph at lines 197--198
+ [][] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [4 <./figures/Principal_BT.png> <./figures/campo_penalty.png>]
+
+LaTeX Warning: Citation `delaunay34' on page 5 undefined on input line 212.
+
+
+LaTeX Warning: Citation `voronoi08' on page 5 undefined on input line 212.
+
+
+LaTeX Warning: Citation `akiyama2007multi' on page 5 undefined on input line 21
+2.
+
+<figures/Auxiliar_BT.png, id=29, 147.55125pt x 129.48375pt>
+File: figures/Auxiliar_BT.png Graphic file (type png)
+
+<use figures/Auxiliar_BT.png>
+Package pdftex.def Info: figures/Auxiliar_BT.png used on input line 218.
+(pdftex.def)             Requested size: 154.80157pt x 135.8493pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 231--232
+[]\OT1/ptm/m/n/8 Dataset de Sen-ti-men-tos, $https : / / www . kaggle . com / k
+azanova /
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 236--237
 []\OT1/ptm/m/n/8 Implementing SVM and Ker-nel SVM with
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 90--91
+Underfull \hbox (badness 10000) in paragraph at lines 236--237
 \OT1/ptm/m/n/8 Python's Scikit-Learn $https : / / stackabuse . com /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 91--92
+Underfull \hbox (badness 10000) in paragraph at lines 237--238
 []\OT1/ptm/m/n/8 sklearn.metrics.cohen[]kappa[]score $https : / / scikit-[]lear
 n . org / stable /
  []
@@ -922,26 +1050,31 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[2
+[5 <./figures/bola_livre.png> <./figures/Auxiliar_BT.png>] (./main.aux)
 
-] (./main.aux) ) 
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
 Here is how much of TeX's memory you used:
- 5586 strings out of 493029
- 79664 string characters out of 6136234
- 155838 words of memory out of 5000000
- 8996 multiletter control sequences out of 15000+600000
- 42815 words of font info for 93 fonts, out of 8000000 for 9000
+ 5703 strings out of 493029
+ 81561 string characters out of 6136234
+ 159263 words of memory out of 5000000
+ 9102 multiletter control sequences out of 15000+600000
+ 43840 words of font info for 98 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,11n,35p,769b,336s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</us
-r/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive
-/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/fo
-nts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/t
-imes/utmri8a.pfb>
-Output written on main.pdf (2 pages, 101265 bytes).
+ 38i,11n,35p,778b,354s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf
+-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/typ
+e1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/u
+tmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on main.pdf (5 pages, 1197770 bytes).
 PDF statistics:
- 30 PDF objects out of 1000 (max. 8388607)
- 19 compressed objects within 1 object stream
+ 52 PDF objects out of 1000 (max. 8388607)
+ 29 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 11 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 41 words of extra memory for PDF output out of 10000 (max. 10000000)
 
