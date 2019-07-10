@@ -1,4 +1,4 @@
-\begin{thebibliography}{11}
+\begin{thebibliography}{8}
 \newcommand{\enquote}[1]{``#1''}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
@@ -8,65 +8,47 @@
   \providecommand{\doi}{doi:\discretionary{}{}{}\begingroup
   \urlstyle{rm}\Url}\fi
 
-\bibitem[{Abiyev \emph{et~al.}(2017)Abiyev, Şenol Bektas, Akkaya and
-  Aytac}]{NEUIslanders_ssl}
-Abiyev, R.H., Şenol Bektas, Akkaya, N. and Aytac, E., 2017.
-\newblock \enquote{Neuislanders 2017 team description paper}.
-\newblock Robocup.
+\bibitem[{pro()}]{protobuf}
+, ????
+\newblock Https://developers.google.com/protocol-buffers/docs/cpptutorial.
 
-\bibitem[{Akiyama and Noda(2007)}]{akiyama2007multi}
-Akiyama, H. and Noda, I., 2007.
-\newblock \enquote{Multi-agent positioning mechanism in the dynamic
-  environment}.
-\newblock In \emph{Robot Soccer World Cup}. Springer, pp. 377--384.
+\bibitem[{Ahnert and Mulansky(2011)}]{ODE}
+Ahnert, K. and Mulansky, M., 2011.
+\newblock \enquote{Odeint--solving ordinary differential equations in c++}.
+\newblock In \emph{AIP Conference Proceedings}. AIP, Vol. 1389, pp. 1586--1589.
 
-\bibitem[{CBR(2008)}]{CBR2008}
+\bibitem[{CBR(2008)}]{cbr2008}
 CBR, 2008.
 \newblock Http://www.cbrobotica.
   org/wp-content/uploads/2014/03/VerySmall2008\_en.pdf.
 
-\bibitem[{Coelho(2016)}]{orozcomaquinas}
-Coelho, M.M.A., 2016.
-\newblock \enquote{M{\'a}quinas de estados finitos}.
+\bibitem[{Hansen and Ostermeier(2001)}]{CMA-ES}
+Hansen, N. and Ostermeier, A., 2001.
+\newblock \enquote{Completely derandomized self-adaptation in evolution
+  strategies}.
+\newblock \emph{Evolutionary computation}, Vol.~9, No.~2, pp. 159--195.
 
-\bibitem[{Delaunay(1934)}]{delaunay34}
-Delaunay, B., 1934.
-\newblock \enquote{Sur la sph\'{e}re vide}.
-\newblock \emph{Bulletin de l'Académie des Sciences de l'URSS}, Vol.~6, pp.
-  793--800.
+\bibitem[{Kerger(2010)}]{Ogre}
+Kerger, F., 2010.
+\newblock \emph{OGRE 3D 1.7 Beginner's Guide}.
+\newblock Packt Publishing Ltd.
 
-\bibitem[{Hunt(2013)}]{hunt2013gang}
-Hunt, J., 2013.
-\newblock \enquote{Gang of four design patterns}.
-\newblock In \emph{Scala Design Patterns}, Springer, pp. 135--136.
+\bibitem[{Koren and Borenstein(1991)}]{potential_fields}
+Koren, Y. and Borenstein, J., 1991.
+\newblock \enquote{Potential field methods and their inherent limitations for
+  mobile robot navigation}.
+\newblock In \emph{Robotics and Automation, 1991. Proceedings., 1991 IEEE
+  International Conference on}. IEEE, pp. 1398--1404.
 
-\bibitem[{Okuyama(2017)}]{franzoni_rrt}
-Okuyama, I.F., 2017.
-\newblock \emph{TRAJECTORY PLANNING CONSIDERING ACCELERATION LIMITS FOR AN
-  AUTONOMOUS SOCCER PLAYER}.
-\newblock Trabalho de gradua\c{c}\~{a}o, Instituto Tecnol\'{o}gico de
-  Aeron\'{a}utica.
-
-\bibitem[{Russel and Norvig(2009)}]{decision_tree}
-Russel, S. and Norvig, P., 2009.
-\newblock \emph{Artificial Intelligence: A Modern Approach}, Prentice Hall,
-  Vol.~3, pp. 697--707.
-\newblock 3rd edition.
-
-\bibitem[{Voronoi(1908)}]{voronoi08}
-Voronoi, G., 1908.
-\newblock \enquote{Nouvelles applications des paramètres continus à la
-  théorie des formes quadratiques}.
-\newblock \emph{Journal für die Reine und Angewandte Mathematik}, Vol. 133,
-  pp. 97--178.
-
-\bibitem[{West \emph{et~al.}(2001)}]{west2001introduction}
-West, D.B. \emph{et~al.}, 2001.
-\newblock \emph{Introduction to graph theory}, Vol.~2.
-\newblock Prentice hall Upper Saddle River.
+\bibitem[{Lim \emph{et~al.}(2008)Lim, Choi, Kim and Kim}]{univector}
+Lim, Y., Choi, S.H., Kim, J.H. and Kim, D.H., 2008.
+\newblock \enquote{Evolutionary univector field-based navigation with collision
+  avoidance for mobile robot}.
+\newblock In \emph{Proc. 17th World Congress The International Federation of
+  Automatic Control, Seoul, Korea (July 2008)}.
 
 \bibitem[{Zickler \emph{et~al.}(2009)Zickler, Laue, Birbach, Wongphati and
-  Veloso}]{zickler2009ssl}
+  Veloso}]{small_vision}
 Zickler, S., Laue, T., Birbach, O., Wongphati, M. and Veloso, M., 2009.
 \newblock \enquote{Ssl-vision: The shared vision system for the robocup small
   size league}.
