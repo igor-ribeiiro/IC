@@ -17,7 +17,7 @@
     \begin{tabular}{p{\textwidth}}
     \begin{center}
     \vspace{-.6cm}
-    \title{Otimização de parâmetros por meio de Algoritmos  Evolutivos  em Futebol de Robôs}
+    \title{Otimização de parâmetros por meio de Algoritmos Evolutivos em Futebol de Robôs}
     \end{center}
     \textbf{Igor Mourão Ribeiro}\\
     \small{Instituto Tecnológico de Aeronáutica}\\
@@ -40,9 +40,17 @@
     \small{12.229-900 – São José dos Campos / SP}\\
     \small{maximo.marcos@gmail.com}\\
     \\
-    \abstract{\textbf{Resumo:} O desenvolvimento de uma estratégia robusta e consistente para um time completo de robôs jogadores de futebol da categoria "Very Small Size" é fundamental para ganhar as partidas. Após uma fase de pesquisa, foi decidido usar o método da Behavior Tree (árvore de comportamentos) para realizar a tomada de decisões do time. Em seguida, foi escolhido três papeis para os jogadores: goleiro, principal e auxiliar. Depois, foi desenvolvido uma árvore de comportamentos para cada um deles, além de um técnico responsável por garantir troca dinâmica de papeis. O critério usado para avaliação do algoritmo foi o seu desempenho em partidas simuladas e em competições nacionais.}\\
-    \keywords{\textbf{Palavras-chave:} robótica, estratégia, tomada de decisão}\\
+    \abstract{\textbf{Resumo:} A otimização de parâmetros é fundamental para deixar algoritmos e comportamentos melhores e mais robustos, como o caso do planejamento de trajetórias na categoria "Very Small Size Soccer". Após uma fase de pesquisa, foi decidido usar o método da Covariance Matrix Adaptation Evolution Strategy (CMA-ES) para a otimização de parâmetros. Em seguida, foi escolhido três papeis para os jogadores: goleiro, principal e auxiliar. Depois, foi desenvolvido uma árvore de comportamentos para cada um deles, além de um técnico responsável por garantir troca dinâmica de papeis. O critério final usado para avaliação do algoritmo foi o seu desempenho em partidas simuladas e em competições nacionais.}\\
+    \keywords{\textbf{Palavras-chave:} robótica, otimização, planejamento de trajetória}\\
     \end{tabular}
+
+O objetivo deste trabalho é desenvolver e implementar um algoritmo para a otimização de parâmetros de um time composto por três robôs diferenciais. O contexto é uma partida de futebol segundo a Competição Brasileira de Robótica (CBR), categoria IEEE Very Small Size Soccer (VSSS). Por meio da criação de métricas e testes automatizados para medir o desempenho do time de robôs em diversas situações de jogo, pode-se utilizar algoritmos evolutivos para fazer a otimização de parâmetros relevantes, como os relativos ao planejamento de trajetória. Visa-se utilizar os algoritmos aqui implementados pela equipe da ITAndroids, que representa o ITA em competições nacionais e internacionais, como na competição Latin America Robotics Competition (LARC)/CBR.
+
+Ao longo do segundo e terceiro bimestres, a base do algoritmo foi implementada utilizando Matlab \cite{matlab}, que é uma linguagem especializada em algébra linear utilizada pela equipe. Foi, em seguida, realizada a escolha e codificação das métricas a serem utilizadas para medir o desempenho de uma determinada situação de jogo.
+
+O algoritmo foi, em seguida, implementado e integrado com o restante do código da equipe. Após algumas iterações, os parâmetros relativos ao planejamento de trajetória do robô foram otimizados e testados em simulações. Os resultados se mostraram satisfatórios e condizentes com o previsto. Ressalta-se que apenas alguns parâmetros precisaram de algum ajuste ao serem implementados no robô real, de forma que grande parte do trabalho de otimizar parâmetros manualmente foi poupada.
+
+Os resultados obtidos foram efetivos como mostrado na LARC, ocorrida entre os dias 6 a 10 de novembro de 2018. O algoritmo mostrou que o planejamento de trajetórias da equipe, em conjunto com o controle do robô, estavam muito precisos, fato que concedeu à equipe uma vantagem decisiva na competição. A equipe da ITAndroids conquistou o primeiro lugar da competição, sendo a sua classificação a mais alta  na categoria Very Small Size Soccer na história.
 
     \section{INTRODUÇÃO}
     No contexto do futebol de robôs, a otimização de parâmetros traz muitos desafios. Tal problema consiste no fato de se implementar um algoritmo que consiga encontrar as melhores constantes a serem usadas no código para melhorar o desempenho do robô em uma partida real. Entretando, para encontrar esses parâmetros de forma automatizada, é necessário, além do algoritmo evolutivo em si, a existência de simulações fiéis à realidade.
