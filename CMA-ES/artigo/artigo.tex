@@ -45,7 +45,7 @@
     \end{tabular}
 
     \section{INTRODUÇÃO}
-    No contexto do futebol de robôs, a otimização de parâmetros traz muitos desafios. Tal problema consiste no fato de se implementar um algoritmo que consiga encontrar as melhores constantes a serem usadas no código para melhorar o desempenho do robô em uma partida real. Entretando, para encontrar esses parâmetros de forma automatizada, é necessário, além do algoritmo evolutivo em si, a existência de simulações fiéis à realidade.
+    No contexto do futebol de robôs, a otimização de parâmetros traz muitos desafios. Tal problema consiste no fato de se implementar um algoritmo que consiga encontrar as melhores constantes a serem usadas no código para melhorar o desempenho do robô em uma partida real. Entretanto, para encontrar esses parâmetros de forma automatizada, é necessário, além do algoritmo evolutivo em si, a existência de simulações fiéis à realidade.
 
 Nesse projeto, trabalhou-se com os robôs da competição IEEE Very Small Size (VSS): uma competição de futebol de robôs completamente automatizada em que cada robô tem como tamanho máximo um cubo de 7,5 cm de aresta. O campo de futebol possui 1,5 m de comprimento e 1,3 m de largura. Cada time tem 3 jogadores: que podem assumir posições dinâmicas, como goleiro e atacante, ao decorrer de uma partida. Uma câmera proporciona a visão aérea com as posições de todos os elementos da partida. As regras completas podem ser lidas em \cite{cbr2008}.
 
@@ -202,7 +202,7 @@ Nessa secção, será apresentado os resultados obtidos ao executar o algoritmo 
 
 \subsubsection{Trajetórias Básicas}
 
-A Figura \ref{fig:fitness_trajetoria_basica} mostra a evolução do custo da população com o passar das iterações. Foi realizado uma interpolação polinomial de terceira ordem para os resultados obtidos, de modo a melhor visualizar os efeitos da convergência. A interpolação pode ser visualizada pela linha vermelha, enquanto que os pontos `X’ representam o resultado de cada iteração em específico.
+A Figura \ref{fig:fitness_trajetoria_basica} mostra a evolução do custo da população com o passar das iterações. Foi realizado um ajuste de curva, com um polinômio de terceira ordem, para os resultados obtidos de modo a melhor visualizar os efeitos da convergência. A interpolação pode ser visualizada pela linha vermelha, enquanto que os pontos `X’ representam o resultado de cada iteração em específico.
 
 \begin{figure}[H]
 	\centering
