@@ -198,11 +198,12 @@ A Figura \ref{fig:com_obstaculo_simulacao} mostra uma posição do jogador, do o
 
 \subsection{Otimização}
 
-Nessa secção, será apresentado os resultados obtidos ao executar o algoritmo de otimização CMA-ES com as funções de custo apresentadas anteriormente. Será mostrado e comentado como foi a convergência geral do algoritmo e dos parâmetros em cada caso.
+Nessa secção, será apresentado os resultados obtidos ao executar o algoritmo de otimização CMA-ES com as funções de custo apresentadas anteriormente. Será mostrado e comentado como foi a convergência do algoritmo em cada caso.
+
 
 \subsubsection{Trajetórias Básicas}
 
-A Figura \ref{fig:fitness_trajetoria_basica} mostra a evolução do custo da população com o passar das iterações. Foi realizado um ajuste de curva, com um polinômio de terceira ordem, para os resultados obtidos de modo a melhor visualizar os efeitos da convergência. A interpolação pode ser visualizada pela linha vermelha, enquanto que os pontos `X’ representam o resultado de cada iteração em específico.
+A Figura \ref{fig:fitness_trajetoria_basica} mostra a evolução do custo da população com o passar das iterações. Foi realizado um ajuste de curva para os resultados obtidos de modo a melhor visualizar os efeitos da convergência. A interpolação pode ser visualizada pela linha vermelha, enquanto que os pontos `X’ representam o resultado de cada iteração em específico.
 
 \begin{figure}[H]
 	\centering
@@ -212,19 +213,6 @@ A Figura \ref{fig:fitness_trajetoria_basica} mostra a evolução do custo da pop
 \end{figure}
 
 De acordo com a Figura \ref{fig:fitness_trajetoria_basica}, nota-se que, de fato, o algoritmo de otimização tende a reduzir o valor do Fitness Cost à medida que o número de iterações aumenta. Em torno de 60 iterações porém, o algoritmo já converge para um valor e não acontece melhoras significativas a partir desse momento.
-
-Uma normalização de dimensões foi feita em cada parâmetro separadamente e depois foi calculado a média desses resultados para cada iteração. Para a normalização, foi subtraído de cada valor a sua média e, em seguida, foi dividido o resultado obtido pela mesma média. Dessa forma, os valores dos parâmetros ficam com suas medidas mais próximas.
-
-Na Figura \ref{fig:convergencia_total_trajetoria_basica} temos a convergência total dos parâmetros normalizada. 
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=1.0\textwidth]{figures/CMA-ES_Total_parameter_convergence.eps}
-	\caption{Convergência total dos parâmetros em função do número de iterações}
-	\label{fig:convergencia_total_trajetoria_basica}
-\end{figure}
-
-Tanto a Figura \ref{fig:convergencia_total_trajetoria_basica}, quanto a Figura \ref{fig:fitness_trajetoria_basica} confirmam uma correta convergência do algoritmo, que converge em torno de 100 iterações.
 
 \subsubsection{Desvio de Obstáculos}
 
@@ -237,16 +225,36 @@ A Figura \ref{fig:fitness_trajetoria_basica_ally} mostra a evolução do custo e
 	\label{fig:fitness_trajetoria_basica_ally}
 \end{figure}
 
-Na Figura \ref{fig:convergencia_total_trajetoria_basica_ally} temos a convergência total dos parâmetros normalizada. A normalização foi feita em cada parâmetro separadamente e depois foi calculado a média desses resultados para cada iteração. Tal normalização foi realizada com o mesmo procedimento da seção Trajetória Básicas.
+A Figura \ref{fig:fitness_trajetoria_basica_ally} confirma uma correta convergência do algoritmo, que converge em torno de 50 iterações.
+
+\subsection{Comparação}
+
+Nessa secção será apresentado os resultados obtidos para as trajetória antes e depois da otimização realizada. As Figuras foram obtidas usando a ferramenta de depuração da equipe, conforme a Figura \ref{fig:univector}.
+
+Na Figura \ref{fig:ruim_trajetoria}, tem-se a trajetória realizada por um robô quando próximo do canto superior direito do campo, com a bola atrás dele. Nota-se que o robô é representado pelo círculo vermelho, a bola é representada pelo pequeno círculo azul claro e a trajetória é representada em verde.
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=1.0\textwidth]{figures/CMA-ES_Total_parameter_convergence_ally.eps}
-	\caption{Convergência total dos parâmetros em função do número de iterações}
-	\label{fig:convergencia_total_trajetoria_basica_ally}
+	\includegraphics[width=0.75\textwidth]{figures/ruim_trajetoria.png}
+	\caption{Trajetória antes da otimização}
+	\label{fig:ruim_trajetoria}
 \end{figure}
 
-Tanto a Figura \ref{fig:convergencia_total_trajetoria_basica_ally}, quanto a Figura \ref{fig:fitness_trajetoria_basica_ally} confirmam uma correta convergência do algoritmo, que converge em torno de 100 iterações.
+Na Figura \ref{fig:bom_trajetoria} tem-se um exemplo de trajetória gerada depois da otimização para a mesma situação da Figura \ref{fig:ruim_trajetoria}.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.75\textwidth]{figures/bom_trajetoria.png}
+	\caption{Trajetória otimizada}
+	\label{fig:bom_trajetoria}
+\end{figure}
+
+Finalmente, pode-se analisar os resultados obtidos nas Figuras \ref{fig:ruim_trajetoria} e \ref{fig:bom_trajetoria}. Nota-se que as trajetórias são bem similares entre si, com algumas notáveis diferenças:
+
+\begin{itemize}
+\item a trajetória otimizada passa mais próxima da parede que a inicial e isso ajuda muito o robô acertar a bola. Com a trajetória inicial, ele erra muito o impacto quando a bola está muito perto da parede.
+\item a trajetória otimizada é mais suave que a inicial. Isso ajuda muito no movimento real do robô, já que o controle do robô consegue realizar essa nova trajetória mais facilmente, o que implica que o robô consegue chegar na bola mais rápido.
+\end{itemize}
 
 	\section{CONCLUSÕES}
 O projeto de Iniciação Científica apresentou bons resultados, especialmente quanto à vitória da equipe do ITA na competição CBR 2018, rendendo o primeiro lugar à equipe, na primeira vez da história, dentre mais de 25 equipes participantes de toda América Latina.
