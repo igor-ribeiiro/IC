@@ -188,7 +188,7 @@ O Univector Field é integrado com a interface de depuração da equipe, o que a
 	\label{fig:univector}
 \end{figure}
 
-Na Figura \ref{fig:univector}, é possível observar, em um determinado instante, as trajetórias calculadas para cada jogador e os vetores do campo do Univector Field para o jogador verde.
+Na Figura \ref{fig:univector}, é possível observar, em um determinado instante, as trajetórias calculadas para cada jogador, representado pelos círculos grandes coloridos, e os vetores do campo do Univector Field para o jogador verde. As trajetórias do Univector para cada jogador podem ser vistas em verde e saem do jogador até o seu ponto de destino.
 
 
 \section{Resultados Obtidos}
@@ -268,6 +268,30 @@ A Figura \ref{fig:fitness_trajetoria_basica_ally} mostra a evolução do custo e
 \end{figure}
 
 A Figura \ref{fig:fitness_trajetoria_basica_ally} confirma uma correta convergência do algoritmo, que converge em torno de 50 iterações.
+
+\subsection{Comparação}
+
+Nessa secção será apresentado os resultados obtidos para as trajetória antes e depois da otimização realizada. As Figuras foram obtidas usando a ferramenta de depuração da equipe, conforme a Figura \ref{fig:univector}.
+
+Na Figura \ref{fig:ruim_trajetoria}, tem-se a trajetória realizada por um robô quando próximo do canto superior direito do campo, com a bola atrás dele. Nota-se que o robô é representado pelo círculo vermelho, a bola é representada pelo pequeno círculo azul claro e a trajetória é representada em verde.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.75\textwidth]{figures/ruim_trajetoria.png}
+	\caption{Trajetória antes da otimização}
+	\label{fig:ruim_trajetoria}
+\end{figure}
+
+Na Figura \ref{fig:bom_trajetoria} tem-se um exemplo de trajetória gerada depois da otimização para a mesma situação da Figura \ref{fig:ruim_trajetoria}.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.75\textwidth]{figures/bom_trajetoria.png}
+	\caption{Trajetória otimizada}
+	\label{fig:bom_trajetoria}
+\end{figure}
+
+
 
 \section{Conclusões}
 
