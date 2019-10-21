@@ -82,9 +82,9 @@ O algoritmo CMA-ES é uma estratégia evolutiva. Um algoritmo evolutivo é basea
 
 No contexto da computação, cada geração será considerada uma iteração. Em cada iteração existirá uma população composta de indivíduos (ou candidatos) que deverá ser alterada segundo um algoritmo para diminuir uma determinada função de custo. 
 
-Para o caso do CMA-ES, os novos indivíduos são escolhidos com base em uma distribuição gaussiana de múltiplas dimensões. A nova população será gerada a partir da média dos melhores indíviduos da população anterior, em combinação com uma perturbação gaussiana estocástica. Dependência entre diferentes parâmetros são representadas por uma matriz de covariâncias.
+Para o caso do CMA-ES, os novos indivíduos são escolhidos com base em uma distribuição gaussiana de múltiplas dimensões. A nova população será gerada a partir da média dos melhores indivíduos da população anterior, em combinação com uma perturbação gaussiana estocástica. Dependência entre diferentes parâmetros são representadas por uma matriz de covariâncias.
 
-Nota-se que o algoritmo, brevemente descrito, não usa derivadas nem valores das funções de custo, apenas importa a comparação entre os desempenhos dos indíviduos de uma população.
+Nota-se que o algoritmo, brevemente descrito, não usa derivadas nem valores das funções de custo, apenas importa a comparação entre os desempenhos dos indivíduos de uma população.
 
 \subsubsection{O algoritmo}
 
@@ -96,12 +96,12 @@ O algoritmo do CMA-ES pode ser separado em alguma etapas:
 \begin{enumerate}
 \item Gera novas soluções a partir da média dos melhores indivíduos da iteração anterior. Para isso usa-se uma distribuição gaussiana normal centrada em tal média e variância inicial igual ao tamanho do passo.
 \item Cálculo dos custos de cada novo indivíduo por meio de uma função chamada de fitness.
-\item Ordenação dos indíviduos, com base nos seus custos.
+\item Ordenação dos indivíduos, com base nos seus custos.
 \item Atualização dos valores de variáveis internas.
 \end{enumerate}
 \end{enumerate}
 
-Não serão abordados os detalhes técnicos do item 2d, pois a implementação desse algoritmo não é o foco desse trabalho. Essa decisão ocorreu porque, além de tal passo ser bastante complexo estatisticamente, esse item apenas otimiza a velocidade de convergência do algoritmo e não é necessário para o entendimento inicial da estratégia evolutiva. Uma descrição mais profunda e detalhada de como otimizar o CMA-ES se encontra em \cite{CMA-ES}.
+Não serão abordados os detalhes técnicos do item 2d, pois a implementação deste algoritmo não é o foco deste trabalho. Essa decisão ocorreu porque, além de tal passo ser bastante complexo estatisticamente, esse item apenas otimiza a velocidade de convergência do algoritmo e não é necessário para o entendimento inicial da estratégia evolutiva. Uma descrição mais profunda e detalhada de como otimizar o CMA-ES se encontra em \cite{CMA-ES}.
 
 \subsection{O simulador}
 
@@ -119,7 +119,7 @@ A simulação foi desenvolvida em C++ com o auxílio da biblioteca Open Dynamics
 \end{figure}
 
 
-Com isso, é possivel ter uma aproximação do comportamento do time em um jogo real. Dado que o simulador é desenvolvido pela própria equipe, é possível adicionar situações especiais de jogo, além de se adicionar condições de paradas específicas para o que se deseja testar. Essas funcionalidades são muito importantes para a criação de situações específicas de jogo e, consequentemente, de funções de custo mais rápidas e otimizadas, o que garante uma convergência mais rápida de determinados parâmetros.
+Com isso, é possível ter uma aproximação do comportamento do time em um jogo real. Dado que o simulador é desenvolvido pela própria equipe, é possível adicionar situações especiais de jogo, além de se adicionar condições de paradas específicas para o que se deseja testar. Essas funcionalidades são muito importantes para a criação de situações específicas de jogo e, consequentemente, de funções de custo mais rápidas e otimizadas, o que garante uma convergência mais rápida de determinados parâmetros.
 
 Além disso, o simulador também tem um modo de funcionar que é o chamado: modo acelerado. Normalmente, o código tem algumas funções para esperar um determinado tempo, com o objetivo de fazer que ele execute em tempo real (se ele não tivesse, a física seria muito rápida). Porém, no modo acelerado, esses tempos ociosos são removidos e a comunicação com o código principal funciona de forma assíncrona, o que garante uma velocidade de execução e simulação muito mais rápida, chegando a ser até dez vezes mais rápida que o modo de execução normal. Por essas razões, o modo acelerado é fundamental para garantir que a função de custo a ser desenvolvida seja mais eficiente e veloz.
 
@@ -127,7 +127,7 @@ Além disso, o simulador também tem um modo de funcionar que é o chamado: modo
 
 O Univector Field é o planejamento de trajetórias usado pela equipe. O problema a ser resolvido é: como chegar de um ponto inicial à um ponto destino dentro do campo, desviando de obstáculos e considerando as limitações de controle e físicas do robô. Não será detalhado o funcionamento completo do algoritmo do Univector Field, já que isso pode ser visto em \cite{univector}.
 
-Entretando, será descrito o que cada constante do algoritmo faz e uma descrição prática de como ela influencia na trajetória calculada, de modo a entender os resultados obtidos na otimização. Tem-se as seguinte constantes a serem otimizadas:
+Entretanto, será descrito o que cada constante do algoritmo faz e uma descrição prática de como ela influencia na trajetória calculada, de modo a entender os resultados obtidos na otimização. Tem-se as seguinte constantes a serem otimizadas:
 \begin{enumerate}
 \item de: É o dobro de distância entre os centros de rotação do Univector Field. Na prática, quanto maior o seu valor, menos preciso o robô é em chegar em seu alvo. Se o seu valor for muito pequeno, o agente pode ficar preso em um mínimo local e nunca chegar em seu objetivo.
 \item Kr: Define o quanto de rotação o campo gerado terá apontando para o seu alvo. Valores muito altos nessa constantes podem exigir que o robô faça curvas mais abruptas do que é possível e valores muito baixo farão que o robô faça curvas com raio muito grande, demorando mais a chegar no ponto desejado.
@@ -198,7 +198,7 @@ A Figura \ref{fig:com_obstaculo_simulacao} mostra uma posição do jogador, do o
 
 \subsection{Otimização}
 
-Nessa secção, será apresentado os resultados obtidos ao executar o algoritmo de otimização CMA-ES com as funções de custo apresentadas anteriormente. Será mostrado e comentado como foi a convergência do algoritmo em cada caso.
+Nessa seção, será apresentado os resultados obtidos ao executar o algoritmo de otimização CMA-ES com as funções de custo apresentadas anteriormente. Será mostrado e comentado como foi a convergência do algoritmo em cada caso.
 
 
 \subsubsection{Trajetórias Básicas}
@@ -229,7 +229,7 @@ A Figura \ref{fig:fitness_trajetoria_basica_ally} confirma uma correta convergê
 
 \subsection{Comparação}
 
-Nessa secção será apresentado os resultados obtidos para as trajetória antes e depois da otimização realizada. As Figuras foram obtidas usando a ferramenta de depuração da equipe, conforme a Figura \ref{fig:univector}.
+Nessa seção será apresentado os resultados obtidos para as trajetória antes e depois da otimização realizada. As Figuras foram obtidas usando a ferramenta de depuração da equipe, conforme a Figura \ref{fig:univector}.
 
 Na Figura \ref{fig:ruim_trajetoria}, tem-se a trajetória realizada por um robô quando próximo do canto superior direito do campo, com a bola atrás dele. Nota-se que o robô é representado pelo círculo vermelho, a bola é representada pelo pequeno círculo azul claro e a trajetória é representada em verde.
 
